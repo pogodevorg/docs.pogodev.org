@@ -1,0 +1,101 @@
+// Header
+
+.site-header {
+  color: $header-color;
+  background-color: $header-bg-color;
+  border-bottom-color: #1a1b23;
+  padding: golden-ratio($base-font-size, 1);
+
+  a { color: inherit; }
+
+  a.active,
+  a:hover {
+    text-decoration: none;
+    color: $header-color-strong;
+  }
+
+  a:active { color: $header-color-subtle; }
+}
+
+.site-header-logo {
+  float: left;
+}
+
+.site-header-nav {
+  float: right;
+  margin-top: 7px;
+}
+
+.site-header-icon {
+  width: 46px;
+  height: 46px;
+  vertical-align: middle;
+  margin-right: golden-ratio($base-font-size, -2);
+
+  .svg-stroke {
+    stroke: currentColor;
+    stroke-width: 1.2;
+    stroke-linecap: round;
+  }
+
+  .svg-fill {
+    fill: currentColor;
+  }
+}
+
+.site-header-nav-item {
+  display: inline-block;
+}
+
+.site-header-nav-item+.site-header-nav-item {
+    margin-left: golden-ratio($base-font-size, 1);
+}
+
+.site-header-nav-icon {
+  font-size: 32px;
+  vertical-align: middle !important;
+}
+
+// Grids
+.container {
+  @include outer-container(golden-ratio($base-font-size, 9));
+}
+
+.container-narrow {
+  @include outer-container(golden-ratio($base-font-size, 8));
+}
+
+// Footer
+
+.footer {
+  margin-top: auto;
+  border-color: #e0e5e6;
+  background: #f6f8f8;
+
+  position: relative;
+  font-size: 13px;
+  padding: golden-ratio($base-font-size, 1);
+  text-align: center;
+  border-top: 1px solid #e8e8e8;
+
+  a {
+    color: #7c9398;
+  }
+
+  a:hover {
+    color: #3a585f;
+    text-decoration: underline;
+  }
+}
+
+.footer-nav {
+  float: left;
+}
+
+.footer-nav-item+.footer-nav-item {
+  margin-left: golden-ratio(13px, 1);
+}
+
+.footer-love {
+  float: right;
+}

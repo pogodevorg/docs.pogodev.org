@@ -1,0 +1,22 @@
+$base-hue: 208;
+$base-font-size: 16px;
+
+// main
+$main-bg-color:       hsl($base-hue, 12%, 100%);
+$main-bg-color-shade: hsl($base-hue, 12%, 97%);
+$main-color-subtle:   hsl($base-hue, 12%, 54%);
+$main-color:          hsl($base-hue, 24%, 30%);
+$main-color-strong:   hsl($base-hue, 48%, 24%);
+
+// site header
+$header-bg-color:     hsl($base-hue, 62%, 14%);
+$header-color-subtle: hsl($base-hue, 24%, 52%);
+$header-color:        hsl($base-hue, 36%, 60%);
+$header-color-strong: hsl($base-hue, 88%, 80%);
+
+// base
+$body-color:    $main-color;
+$heading-color: $main-color-strong;
+
+// Sections
+$page-header-bg-color: $main-bg-color-shade;

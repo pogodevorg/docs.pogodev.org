@@ -1,0 +1,77 @@
+---
+title: Docs
+permalink: /docs/
+excerpt: API reference documentation.
+layout: default
+---
+
+<div class='page-header'>
+  <div class='container-narrow'>
+    <h1>{{ site.title }} Documentation</h1>
+    <p class="lead">
+      Check out the <a href="{{ site.baseurl }}/docs/faq/">FAQ</a>.
+    </p>
+  </div>
+</div>
+
+<section class='page-section'>
+  <div class='container'>
+
+    <div class="guides">
+      <h2 class="docs-heading">
+        <a class="docs-title" href="{{ site.baseurl }}/docs/guides/">
+          <span class="docs-title-icon fa fa-book"></span>Guides
+        </a>
+      </h2>
+      <ul class="docs-list">
+      {% for doc in site.docs %}
+        {% if doc.category == 'Guide' %}
+          <li>
+            <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
+            <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
+          </li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+    </div>
+
+    <div class="apis">
+      <h2 class="docs-heading">
+        <a class="docs-title" href="{{ site.baseurl }}/docs/api/">
+          <span class="docs-title-icon fa fa-gear pr-3"></span>API Reference
+        </a>
+        </h2>
+      <h3>Data</h3>
+      <ul class="docs-list">
+      {% for doc in site.docs %}
+        {% if doc.category == 'API' and site.data.apis[doc.title] == 'Data APIs' %}
+        <li>
+          <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+      <h3>Enums</h3>
+      <ul class="docs-list">
+      {% for doc in site.docs %}
+        {% if doc.category == 'API' and site.data.apis[doc.title] == 'Enum APIs' %}
+        <li>
+          <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+      <h3>Inventory</h3>
+      <ul class="docs-list">
+      {% for doc in site.docs %}
+        {% if doc.category == 'API' and site.data.apis[doc.title] == 'Inventory APIs' %}
+        <li>
+          <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+    </div>
+
+  </div>
+</section>

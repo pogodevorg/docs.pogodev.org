@@ -1,0 +1,33 @@
+title: P-Doc
+description: 'Documenting changes'
+url: 'http://pdoc.io'
+baseurl: '/pdoc'
+
+markdown: kramdown
+highlighter: rouge
+
+sass:
+#    style: compressed
+
+collections:
+    docs: {output: true, permalink: '/docs/:path/'}
+
+defaults:
+    - {scope: {type: docs}, values: {layout: docs}}
+    - {scope: {type: posts}, values: {layout: post, permalink: '/blog/:year/:month/:day/:title'}}
+
+exclude:
+    - bin
+    - README.md
+    - LICENSE.md
+    - CNAME
+    - Gemfile
+    - Gemfile.lock
+include:
+    - _pages
+
+gems:
+    - jekyll-sitemap
+    - jekyll-seo-tag
+    - jekyll-feed
+    - jemoji

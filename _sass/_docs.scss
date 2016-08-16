@@ -1,0 +1,26 @@
+.doc-meta {
+  text-align: left;
+}
+
+.guides, .apis {
+  @include span-columns(6);
+}
+
+.docs-heading {
+  border-bottom: 1px solid #eee;
+  padding-bottom: golden-ratio($base-font-size, -1);
+  margin-bottom: golden-ratio($base-font-size, -1);
+}
+
+.docs-title {
+  color: inherit;
+}
+
+.docs-title-icon {
+  padding-right: golden-ratio($base-font-size, -1);
+}
+
+.docs-list {
+  padding-left: 0;
+  list-style: none
+}
