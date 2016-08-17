@@ -5,8 +5,8 @@ excerpt: API reference documentation.
 layout: default
 ---
 
-{% assign enums = site.data.apis_0_33_0.enums | sort: 'sort_title' %}
-{% assign messages = site.data.apis_0_33_0.messages | sort: 'sort_title' %}
+{% assign enums = site.data.apis.enums | sort: 'sort_title' %}
+{% assign messages = site.data.apis.messages | sort: 'sort_title' %}
 
 <div class='page-header'>
   <div class='container-narrow'>
@@ -49,7 +49,7 @@ layout: default
 
         {% for enum in enums %}
           <li>
-            <a href="{{ site.baseurl }}api/enums/{{ enum.name }}">{{ enum.name }}</a>
+            <a href="{{ site.baseurl }}/docs/api/enums/{{ enum.name }}">{{ enum.name }}</a>
           </li>
         {% endfor %}
       </ul>
@@ -57,7 +57,7 @@ layout: default
       <ul class="docs-list">
         {% for message in messages %}
           <li>
-            <a href="{{ site.baseurl }}api/messages/{{ message.name }}">{{ message.name }}</a>
+            <a href="{{ site.baseurl }}/docs/api/messages/{{ message.name }}">{{ message.name }}</a>
           </li>
         {% endfor %}
       </ul>

@@ -26,7 +26,7 @@ if !File.exists?(file_arg)
   exit 1
 end
 
-# file_arg = '_data/apis_0_33_0.yml'
+# file_arg = '_data/apis.yml'
 # I prefer objects with direct access to hashes...
 hash = YAML.load_file(file_arg)
 json = hash.to_json
