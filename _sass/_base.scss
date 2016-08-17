@@ -13,10 +13,7 @@ body {
 
 // Links
 a {
-    color: #5667bd;
-}
-a {
-    color: #4078c0;
+    color: $link-color;
     text-decoration: none;
     // background-color: transparent;
 }

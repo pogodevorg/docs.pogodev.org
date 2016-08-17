@@ -1,0 +1,26 @@
+// Headers ------------------------------
+
+// Versions
+.home-versions {
+  display: inline-block;
+  margin: 0 auto;
+  color: $main-color-subtle;
+  font-size: .88em;
+}
+
+.home-versions span {
+  display: inline-block;
+  line-height: 1;
+  padding: 0.6em 0.8em;
+}
+
+.home-versions strong {
+  color: $main-color-strong;
+}
+
+.home-versions-api {
+  border-radius: 3px;
+  color: $main-color;
+  border: 1px solid $border-color;
+  background-color: lighten($page-header-bg-color, 6%);
+}

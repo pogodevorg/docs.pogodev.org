@@ -4,6 +4,8 @@ url: 'http://pdoc.io'
 baseurl: '/pdoc'
 repository: 'hamue/pdoc'
 
+latest_api_version: 0.33.0
+
 markdown: kramdown
 highlighter: rouge
 
