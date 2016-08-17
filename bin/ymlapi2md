@@ -38,7 +38,7 @@ basedir =  File.expand_path("../../_docs/api/enums/", __FILE__)
 FileUtils.mkdir_p basedir
 
 proto.enums.each do |enum|
-  outpath = File.join(basedir, "#{enum.name.underscore}.md")
+  outpath = File.join(basedir, "#{enum.name}.md")
   IO.write(outpath, ERB.new(template).result(binding))
 end
 
@@ -48,6 +48,6 @@ basedir =  File.expand_path("../../_docs/api/messages/", __FILE__)
 FileUtils.mkdir_p basedir
 
 proto.messages.each do |message|
-  outpath = File.join(basedir, "#{message.name.underscore}.md")
+  outpath = File.join(basedir, "#{message.name}.md")
   IO.write(outpath, ERB.new(template).result(binding))
 end

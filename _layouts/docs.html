@@ -24,16 +24,6 @@ layout: default
   </div>
 </div>
 
-{% if page.category == 'API' %}
-<div>
-  <div class="container-narrow position-relative">
-    <ul class="docs-tags">
-      <li class="docs-tag">{{ site.data.processes[page.title] }}</li>
-    </ul>
-  </div>
-</div>
-{% endif %}
-
 <section class='page-section docs strong-headers'>
   <div class='container-narrow'>
 
@@ -45,7 +35,7 @@ layout: default
     <div class='text-center'>
       <span class="d-inline-block text-left">
         <span class="fa fa-pencil"></span>
-        See something that needs fixing? Propose a change on the <a href='{{ page.source_url }}'>source</a>.
+        <a href="https://github.com/{{ site.repository }}/edit/master/{{ page.path }}">Improve this page</a>
       </span>
     </div>
     {% endif %}

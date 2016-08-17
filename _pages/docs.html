@@ -5,6 +5,9 @@ excerpt: API reference documentation.
 layout: default
 ---
 
+{% assign enums = site.data.apis_0_33_0.enums | sort: 'sort_title' %}
+{% assign messages = site.data.apis_0_33_0.messages | sort: 'sort_title' %}
+
 <div class='page-header'>
   <div class='container-narrow'>
     <h1>{{ site.title }} Documentation</h1>
@@ -38,40 +41,27 @@ layout: default
     <div class="apis">
       <h2 class="docs-heading">
         <a class="docs-title" href="{{ site.baseurl }}/docs/api/">
-          <span class="docs-title-icon fa fa-gear pr-3"></span>API Reference
+          <span class="docs-title-icon fa fa-gear"></span>API Reference
         </a>
-        </h2>
-      <h3>Data</h3>
-      <ul class="docs-list">
-      {% for doc in site.docs %}
-        {% if doc.category == 'API' and site.data.apis[doc.title] == 'Data APIs' %}
-        <li>
-          <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
-        </li>
-        {% endif %}
-      {% endfor %}
-      </ul>
+      </h2>
       <h3>Enums</h3>
       <ul class="docs-list">
-      {% for doc in site.docs %}
-        {% if doc.category == 'API' and site.data.apis[doc.title] == 'Enum APIs' %}
-        <li>
-          <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
-        </li>
-        {% endif %}
-      {% endfor %}
-      </ul>
-      <h3>Inventory</h3>
-      <ul class="docs-list">
-      {% for doc in site.docs %}
-        {% if doc.category == 'API' and site.data.apis[doc.title] == 'Inventory APIs' %}
-        <li>
-          <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
-        </li>
-        {% endif %}
-      {% endfor %}
-      </ul>
-    </div>
 
+        {% for enum in enums %}
+          <li>
+            <a href="{{ site.baseurl }}api/enums/{{ enum.name }}">{{ enum.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+      <h3>Messages</h3>
+      <ul class="docs-list">
+        {% for message in messages %}
+          <li>
+            <a href="{{ site.baseurl }}api/messages/{{ message.name }}">{{ message.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+
+    </div>
   </div>
 </section>

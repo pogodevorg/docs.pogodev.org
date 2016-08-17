@@ -2,6 +2,7 @@ title: P-Doc
 description: 'Documenting changes'
 url: 'http://pdoc.io'
 baseurl: '/pdoc'
+repository: 'hamue/pdoc'
 
 markdown: kramdown
 highlighter: rouge
@@ -23,6 +24,7 @@ exclude:
     - CNAME
     - Gemfile
     - Gemfile.lock
+    - proto
     - templates
 include:
     - _pages

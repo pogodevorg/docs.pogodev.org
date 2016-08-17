@@ -1,0 +1,24 @@
+---
+title: API Reference
+permalink: /docs/api/
+layout: docs
+category: ignore
+breadcrumb: API
+---
+
+{% assign docs = site.docs | sort: 'sort_title' %}
+
+<h2 class="docs-heading">
+  <span class="docs-title-icon fa fa-gear"></span>API Reference
+</h2>
+
+<table>
+  {% for doc in docs %}
+    {% if doc.category == 'API' %}
+      <tr>
+        <td><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></td>
+        <td>{{ doc.excerpt }}</td>
+      </tr>
+    {% endif %}
+  {% endfor %}
+</table>

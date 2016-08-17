@@ -5,6 +5,7 @@
 require 'optparse'
 require 'ostruct'
 require 'yaml'
+require 'active_support/all'
 
 # Nested to_h for OpenStruct
 class OpenStruct
@@ -62,7 +63,7 @@ proto.each_with_index do |line, i|
     else
       puts "Enum: #{m['name']} (in #{stack.last.name})" if options[:verbose]
     end
-    enum = OpenStruct.new(name: m['name'], values: [])
+    enum = OpenStruct.new(name: m['name'], sort_title: m['name'].underscore, values: [])
     stack.last.enums.push enum
     stack.push enum
     next
@@ -71,7 +72,7 @@ proto.each_with_index do |line, i|
   # Parse messages
   if m = line.match(/^message\s*(?<name>[[:graph:]]+)\s*$/)
     puts "Message: #{m['name']}" if options[:verbose]
-    message = OpenStruct.new(name: m['name'], attributes: [], enums: [])
+    message = OpenStruct.new(name: m['name'], sort_title: m['name'].underscore, attributes: [], enums: [])
     stack.last.messages.push message
     stack.push message
     next
