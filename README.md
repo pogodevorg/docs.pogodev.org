@@ -18,7 +18,21 @@ Run the server and watch for changes in your files
 ./bin/server
 ```
 
-## Issues
+### Helper scripts
+
+- proto2yml : Create a yml file out of a .proto file
+
+```sh
+./bin/proto2yml proto/0.33.0.proto > _data/apis_0_33_0.yml
+```
+
+- ymlapi2md : Create default .md files for enums and messages (templates used are in `./templates`)
+
+```sh
+./bin/ymlapi2md _data/apis_0_33_0.yml
+```
+
+### Issues
 
 If you have problems, please create a
 [GitHub Issue](https://github.com/hamue/pdoc/issues).

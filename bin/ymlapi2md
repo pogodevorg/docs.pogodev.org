@@ -1,0 +1,53 @@
+#!/usr/bin/env ruby
+# Bootstrap doc files
+
+require 'optparse'
+require 'yaml'
+require 'json'
+require 'erb'
+require 'active_support/all'
+require 'fileutils'
+
+USAGE = "Usage: #{__FILE__} file.yml"
+options = {}
+OptionParser.new do |opts|
+  opts.banner = USAGE
+
+  opts.on("-v", "--[no-]verbose", "Run verbosely") do |v|
+    options[:verbose] = v
+  end
+end.parse!
+
+file_arg = ARGV[0]
+puts USAGE unless file_arg
+
+if !File.exists?(file_arg)
+  puts "#{__FILE__}: #{file_arg}: No such file"
+  exit 1
+end
+
+# file_arg = '_data/apis_0_33_0.yml'
+# I prefer objects with direct access to hashes...
+hash = YAML.load_file(file_arg)
+json = hash.to_json
+proto = JSON.parse(json, object_class: OpenStruct)
+
+# Generate .md files for enums
+template = File.read(File.expand_path('../../templates/enum.md.erb', __FILE__))
+basedir =  File.expand_path("../../_docs/api/enums/", __FILE__)
+FileUtils.mkdir_p basedir
+
+proto.enums.each do |enum|
+  outpath = File.join(basedir, "#{enum.name.underscore}.md")
+  IO.write(outpath, ERB.new(template).result(binding))
+end
+
+# Generate .md files for messages
+template = File.read(File.expand_path('../../templates/message.md.erb', __FILE__))
+basedir =  File.expand_path("../../_docs/api/messages/", __FILE__)
+FileUtils.mkdir_p basedir
+
+proto.messages.each do |message|
+  outpath = File.join(basedir, "#{message.name.underscore}.md")
+  IO.write(outpath, ERB.new(template).result(binding))
+end

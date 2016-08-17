@@ -23,6 +23,7 @@ exclude:
     - CNAME
     - Gemfile
     - Gemfile.lock
+    - templates
 include:
     - _pages
 
