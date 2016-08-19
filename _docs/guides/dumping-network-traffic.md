@@ -1,6 +1,6 @@
 ---
 title: 'Dumping Network Traffic'
-category: Guide
+category: Guides
 ---
 
 # Dumping Network Traffic

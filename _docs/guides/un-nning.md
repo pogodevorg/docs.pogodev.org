@@ -1,6 +1,6 @@
 ---
 title: 'Un*inning'
-category: Guide
+category: Guides
 ---
 
 # Un*inning

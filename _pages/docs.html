@@ -28,7 +28,7 @@ layout: default
       </h2>
       <ul class="docs-list">
       {% for doc in site.docs %}
-        {% if doc.category == 'Guide' %}
+        {% if doc.category == 'Guides' %}
           <li>
             <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
             <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
