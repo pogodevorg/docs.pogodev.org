@@ -9,6 +9,20 @@ excerpt: FIXME
 
 > FIXME
 
+## Values:
+
 <%- enum.values.each do |value| -%>
 - <%= value.tag %>: <%= value.name %>
+<%- end -%>
+
+## Referenced by:
+
+<%- # Find if any messages references an enum with the same name
+if (references = proto.messages.find_all{|m| (m.attributes.map(&:type) - m.enums.map(&:name)).include?(enum.name)}).empty?
+-%>
+- None
+<%- else -%>
+<%- references.each do |ref| -%>
+- [<%= ref.name %>](../../messages/<%= ref.name %>/)
+<%- end -%>
 <%- end -%>

@@ -24,14 +24,28 @@ excerpt: FIXME
 -%>
 - <%= attribute.tag %>: <%= attribute.name %> (<%= linked_type %>)<%= " #{attribute.modifier}" if attribute.modifier %>
 <%- end -%>
-<%- if !message.enums.empty? -%>
 
 ## Enums:
 
+<%- if message.enums.empty? -%>
+- None
+<%- else -%>
 <%- message.enums.each do |enum| -%>
 ### <%= enum.name %>
 <%- enum.values.each do |value| -%>
 - <%= value.tag %>: <%= value.name %>
 <%- end -%>
+<%- end -%>
+<%- end -%>
+
+## Referenced by:
+
+<%- # Find if any messages references an enum with the same name
+if (references = proto.messages.find_all{|m| (m.attributes.map(&:type) - m.enums.map(&:name)).include?(message.name)}).empty?
+-%>
+- None
+<%- else -%>
+<%- references.each do |ref| -%>
+- [<%= ref.name %>](../<%= ref.name %>/)
 <%- end -%>
 <%- end -%>
