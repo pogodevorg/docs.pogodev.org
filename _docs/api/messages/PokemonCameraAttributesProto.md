@@ -16,3 +16,11 @@ excerpt: FIXME
 - 3: cyl_height_m (float)
 - 4: cyl_ground_m (float)
 - 5: shoulder_mode_scale (float)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [PokemonSettingsProto](../PokemonSettingsProto/)

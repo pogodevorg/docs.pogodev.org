@@ -9,6 +9,8 @@ excerpt: FIXME
 
 > FIXME
 
+## Values:
+
 - 0: POKEMON_ENC_MOVEMENT_STATIC
 - 1: POKEMON_ENC_MOVEMENT_JUMP
 - 2: POKEMON_ENC_MOVEMENT_VERTICAL
@@ -16,3 +18,7 @@ excerpt: FIXME
 - 4: POKEMON_ENC_MOVEMENT_ELECTRIC
 - 5: POKEMON_ENC_MOVEMENT_FLYING
 - 6: POKEMON_ENC_MOVEMENT_HOVERING
+
+## Referenced by:
+
+- [PokemonEncounterAttributesProto](../../messages/PokemonEncounterAttributesProto/)

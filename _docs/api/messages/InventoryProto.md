@@ -12,3 +12,11 @@ excerpt: FIXME
 ## Attributes:
 
 - 1: inventory_item ([InventoryItemProto](../InventoryItemProto/)) 
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

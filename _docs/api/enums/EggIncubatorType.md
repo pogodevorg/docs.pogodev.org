@@ -9,5 +9,12 @@ excerpt: FIXME
 
 > FIXME
 
+## Values:
+
 - 0: INCUBATOR_UNSET
 - 1: INCUBATOR_DISTANCE
+
+## Referenced by:
+
+- [EggIncubatorAttributesProto](../../messages/EggIncubatorAttributesProto/)
+- [EggIncubatorProto](../../messages/EggIncubatorProto/)

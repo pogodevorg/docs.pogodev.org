@@ -9,6 +9,8 @@ excerpt: FIXME
 
 > FIXME
 
+## Values:
+
 - 0: FAMILY_UNSET
 - 1: V0001_FAMILY_BULBASAUR
 - 4: V0004_FAMILY_CHARMANDER
@@ -89,3 +91,8 @@ excerpt: FIXME
 - 147: V0147_FAMILY_DRATINI
 - 150: V0150_FAMILY_MEWTWO
 - 151: V0151_FAMILY_MEW
+
+## Referenced by:
+
+- [PokemonSettingsProto](../../messages/PokemonSettingsProto/)
+- [PokemonFamilyProto](../../messages/PokemonFamilyProto/)

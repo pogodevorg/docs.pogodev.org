@@ -12,3 +12,11 @@ excerpt: FIXME
 ## Attributes:
 
 - 1: level (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 1: item ([Item](../../enums/Item/))
 - 2: pokemon_id (fixed64)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

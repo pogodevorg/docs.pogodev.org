@@ -12,3 +12,11 @@ excerpt: FIXME
 ## Attributes:
 
 - 1: incense_type ([Item](../../enums/Item/))
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

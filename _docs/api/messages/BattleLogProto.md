@@ -30,3 +30,8 @@ excerpt: FIXME
 - 0: BATTLE_TYPE_UNSET
 - 1: NORMAL
 - 2: TRAINING
+
+## Referenced by:
+
+- [StartGymBattleOutProto](../StartGymBattleOutProto/)
+- [AttackGymOutProto](../AttackGymOutProto/)

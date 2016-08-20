@@ -12,3 +12,11 @@ excerpt: FIXME
 ## Attributes:
 
 - 1: sfida_id (string)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

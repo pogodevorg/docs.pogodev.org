@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 1: player_lat_degrees (double)
 - 2: player_lng_degrees (double)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

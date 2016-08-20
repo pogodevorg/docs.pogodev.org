@@ -16,3 +16,11 @@ excerpt: FIXME
 - 3: cp_multiplier (float) 
 - 4: max_egg_player_level (int32)
 - 5: max_encounter_player_level (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [GameMasterClientTemplateProto](../GameMasterClientTemplateProto/)

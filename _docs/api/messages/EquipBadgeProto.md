@@ -12,3 +12,11 @@ excerpt: FIXME
 ## Attributes:
 
 - 1: badge ([HoloBadgeType](../../enums/HoloBadgeType/))
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

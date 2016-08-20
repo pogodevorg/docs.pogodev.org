@@ -15,3 +15,11 @@ excerpt: FIXME
 - 2: url (string)
 - 3: size (int32)
 - 4: checksum (fixed32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [DownloadUrlOutProto](../DownloadUrlOutProto/)

@@ -18,3 +18,11 @@ excerpt: FIXME
 - 5: stop_attack (bool)
 - 6: target_max (bool)
 - 7: target_slow (bool)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

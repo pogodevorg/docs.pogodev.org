@@ -24,3 +24,13 @@ excerpt: FIXME
 - 11: longitude (double)
 - 12: description (string)
 - 13: modifier ([ClientFortModifierProto](../ClientFortModifierProto/)) 
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [FortDeployOutProto](../FortDeployOutProto/)
+- [FortRecallOutProto](../FortRecallOutProto/)
+- [AddFortModifierOutProto](../AddFortModifierOutProto/)

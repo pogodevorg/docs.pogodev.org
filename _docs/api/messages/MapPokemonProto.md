@@ -17,3 +17,12 @@ excerpt: FIXME
 - 4: expiration_time_ms (int64)
 - 5: latitude (double)
 - 6: longitude (double)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [ClientMapCellProto](../ClientMapCellProto/)
+- [PokemonFortProto](../PokemonFortProto/)

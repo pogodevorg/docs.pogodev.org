@@ -13,3 +13,12 @@ excerpt: FIXME
 
 - 1: item ([Item](../../enums/Item/))
 - 2: item_count (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [FortSearchOutProto](../FortSearchOutProto/)
+- [LevelUpRewardsOutProto](../LevelUpRewardsOutProto/)

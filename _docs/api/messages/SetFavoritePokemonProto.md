@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 1: pokemon_id (int64)
 - 2: is_favorite (bool)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 1: item_id (string)
 - 2: pokemond_id (int64)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

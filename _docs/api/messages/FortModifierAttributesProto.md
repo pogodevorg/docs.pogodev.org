@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 1: modifier_lifetime_seconds (int32)
 - 2: troy_disk_num_pokemon_spawned (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [ItemSettingsProto](../ItemSettingsProto/)

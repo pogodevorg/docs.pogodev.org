@@ -14,3 +14,12 @@ excerpt: FIXME
 - 1: pokemon ([PokemonProto](../PokemonProto/))
 - 2: current_health (int32)
 - 3: current_energy (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [AttackGymOutProto](../AttackGymOutProto/)
+- [BattleParticipantProto](../BattleParticipantProto/)

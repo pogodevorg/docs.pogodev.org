@@ -9,6 +9,8 @@ excerpt: FIXME
 
 > FIXME
 
+## Values:
+
 - 0: ITEM_TYPE_NONE
 - 1: ITEM_TYPE_POKEBALL
 - 2: ITEM_TYPE_POTION
@@ -22,3 +24,8 @@ excerpt: FIXME
 - 10: ITEM_TYPE_INCENSE
 - 11: ITEM_TYPE_XP_BOOST
 - 12: ITEM_TYPE_INVENTORY_UPGRADE
+
+## Referenced by:
+
+- [ItemSettingsProto](../../messages/ItemSettingsProto/)
+- [AppliedItemProto](../../messages/AppliedItemProto/)

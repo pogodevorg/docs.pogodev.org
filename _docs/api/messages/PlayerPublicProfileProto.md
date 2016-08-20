@@ -14,3 +14,12 @@ excerpt: FIXME
 - 1: name (string)
 - 2: level (int32)
 - 3: avatar ([PlayerAvatarProto](../PlayerAvatarProto/))
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [GymMembershipProto](../GymMembershipProto/)
+- [BattleParticipantProto](../BattleParticipantProto/)

@@ -24,3 +24,7 @@ excerpt: FIXME
 - 1: SUCCESS
 - 2: ERROR_INVALID_ATTACK_ACTIONS
 - 3: ERROR_NOT_IN_RANGE
+
+## Referenced by:
+
+- None

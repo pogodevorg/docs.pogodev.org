@@ -9,6 +9,12 @@ excerpt: FIXME
 
 > FIXME
 
+## Values:
+
 - 0: PLAYER_AVATAR_UNSET
 - 1: PLAYER_AVATAR_MALE
 - 2: PLAYER_AVATAR_FEMALE
+
+## Referenced by:
+
+- None

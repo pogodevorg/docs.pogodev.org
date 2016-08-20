@@ -15,3 +15,11 @@ excerpt: FIXME
 - 2: spawnpoint_id (string)
 - 3: player_lat_degrees (double)
 - 4: player_lng_degrees (double)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

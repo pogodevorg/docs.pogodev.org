@@ -19,3 +19,7 @@ excerpt: FIXME
 - 0: UNSET
 - 1: TRADE_COMPLETE
 - 2: TRADE_CANCELLED_OFFER
+
+## Referenced by:
+
+- None

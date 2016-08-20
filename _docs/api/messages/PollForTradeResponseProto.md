@@ -14,3 +14,11 @@ excerpt: FIXME
 - 1: trade_id (uint64)
 - 2: pokemon_id (fixed64)
 - 3: request_cancel (bool)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

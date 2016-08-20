@@ -16,3 +16,11 @@ excerpt: FIXME
 - 3: device_model (string)
 - 4: locale (string)
 - 5: app_version (uint32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

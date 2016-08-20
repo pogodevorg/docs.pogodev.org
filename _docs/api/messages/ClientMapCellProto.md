@@ -22,3 +22,11 @@ excerpt: FIXME
 - 9: decimated_spawn_point ([ClientSpawnPointProto](../ClientSpawnPointProto/)) 
 - 10: catchable_pokemon ([MapPokemonProto](../MapPokemonProto/)) 
 - 11: nearby_pokemon ([NearbyPokemonProto](../NearbyPokemonProto/)) 
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [GetMapObjectsOutProto](../GetMapObjectsOutProto/)

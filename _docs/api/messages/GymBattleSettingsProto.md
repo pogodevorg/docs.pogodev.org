@@ -26,3 +26,11 @@ excerpt: FIXME
 - 13: minimum_player_level (int32)
 - 14: swap_duration_ms (int32)
 - 15: dodge_damage_reduction_percent (float)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [GameMasterClientTemplateProto](../GameMasterClientTemplateProto/)

@@ -16,3 +16,11 @@ excerpt: FIXME
 - 3: player_xp_awarded (int32) 
 - 4: next_defender_pokemon_id (int64)
 - 5: gym_points_delta (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [BattleActionProto](../BattleActionProto/)

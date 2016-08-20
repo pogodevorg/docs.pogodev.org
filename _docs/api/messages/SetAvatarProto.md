@@ -12,3 +12,11 @@ excerpt: FIXME
 ## Attributes:
 
 - 2: player_avatar_proto ([PlayerAvatarProto](../PlayerAvatarProto/))
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

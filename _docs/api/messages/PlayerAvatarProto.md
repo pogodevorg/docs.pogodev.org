@@ -20,3 +20,13 @@ excerpt: FIXME
 - 7: shoes (int32)
 - 9: eyes (int32)
 - 10: backpack (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [PlayerPublicProfileProto](../PlayerPublicProfileProto/)
+- [ClientPlayerProto](../ClientPlayerProto/)
+- [SetAvatarProto](../SetAvatarProto/)

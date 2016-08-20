@@ -9,6 +9,8 @@ excerpt: FIXME
 
 > FIXME
 
+## Values:
+
 - 0: ITEM_UNKNOWN
 - 1: ITEM_POKE_BALL
 - 2: ITEM_GREAT_BALL
@@ -39,3 +41,28 @@ excerpt: FIXME
 - 902: ITEM_INCUBATOR_BASIC
 - 1001: ITEM_POKEMON_STORAGE_UPGRADE
 - 1002: ITEM_ITEM_STORAGE_UPGRADE
+
+## Referenced by:
+
+- [UseItemCaptureProto](../../messages/UseItemCaptureProto/)
+- [CaptureProbabilityProto](../../messages/CaptureProbabilityProto/)
+- [UseIncenseActionProto](../../messages/UseIncenseActionProto/)
+- [AwardItemProto](../../messages/AwardItemProto/)
+- [ClientFortModifierProto](../../messages/ClientFortModifierProto/)
+- [AddFortModifierProto](../../messages/AddFortModifierProto/)
+- [ItemSettingsProto](../../messages/ItemSettingsProto/)
+- [IapItemDisplayProto](../../messages/IapItemDisplayProto/)
+- [HoloInventoryKeyProto](../../messages/HoloInventoryKeyProto/)
+- [PokemonProto](../../messages/PokemonProto/)
+- [ItemProto](../../messages/ItemProto/)
+- [InventoryUpgradeProto](../../messages/InventoryUpgradeProto/)
+- [EggIncubatorProto](../../messages/EggIncubatorProto/)
+- [AppliedItemProto](../../messages/AppliedItemProto/)
+- [LevelUpRewardsOutProto](../../messages/LevelUpRewardsOutProto/)
+- [PokemonFortProto](../../messages/PokemonFortProto/)
+- [GetInventoryProto](../../messages/GetInventoryProto/)
+- [RecycleItemProto](../../messages/RecycleItemProto/)
+- [UseItemPotionProto](../../messages/UseItemPotionProto/)
+- [UseItemReviveProto](../../messages/UseItemReviveProto/)
+- [UseItemGymProto](../../messages/UseItemGymProto/)
+- [UseItemXpBoostProto](../../messages/UseItemXpBoostProto/)

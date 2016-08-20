@@ -22,3 +22,7 @@ excerpt: FIXME
 - 2: ERROR_NOT_IN_RANGE
 - 3: ERROR_POKEMON_NOT_ON_FORT
 - 4: ERROR_NO_PLAYER
+
+## Referenced by:
+
+- None

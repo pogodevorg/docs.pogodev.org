@@ -12,3 +12,11 @@ excerpt: FIXME
 ## Attributes:
 
 - 1: pokemon_id (fixed64)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

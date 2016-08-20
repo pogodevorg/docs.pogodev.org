@@ -21,3 +21,11 @@ excerpt: FIXME
 - 8: applied_items (bool)
 - 9: egg_incubators (bool)
 - 10: pokemon_family_id (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

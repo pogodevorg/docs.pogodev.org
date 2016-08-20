@@ -14,3 +14,11 @@ excerpt: FIXME
 - 1: modifier_type ([Item](../../enums/Item/))
 - 2: expiration_time_ms (int64)
 - 3: deploying_player_codename (string)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [FortDetailsOutProto](../FortDetailsOutProto/)

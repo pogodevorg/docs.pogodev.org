@@ -22,3 +22,7 @@ excerpt: FIXME
 - 2: ERROR_NO_POKEMON
 - 3: ERROR_CANNOT_USE
 - 4: ERROR_DEPLOYED_TO_FORT
+
+## Referenced by:
+
+- None

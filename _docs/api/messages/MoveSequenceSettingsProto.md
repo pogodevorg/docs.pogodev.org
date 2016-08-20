@@ -12,3 +12,11 @@ excerpt: FIXME
 ## Attributes:
 
 - 1: sequence (string) 
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [GameMasterClientTemplateProto](../GameMasterClientTemplateProto/)

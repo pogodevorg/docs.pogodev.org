@@ -22,3 +22,7 @@ excerpt: FIXME
 - 2: POKEMON_DEPLOYED
 - 3: FAILED
 - 4: ERROR_POKEMON_IS_EGG
+
+## Referenced by:
+
+- None

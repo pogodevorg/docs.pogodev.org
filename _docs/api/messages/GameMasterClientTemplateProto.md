@@ -27,3 +27,11 @@ excerpt: FIXME
 - 17: iap_settings ([IapSettingsProto](../IapSettingsProto/))
 - 18: pokemon_upgrades ([PokemonUpgradeSettingsProto](../PokemonUpgradeSettingsProto/))
 - 19: equipped_badges ([EquippedBadgeSettingsProto](../EquippedBadgeSettingsProto/))
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [GetGameMasterClientTemplatesOutProto](../GetGameMasterClientTemplatesOutProto/)

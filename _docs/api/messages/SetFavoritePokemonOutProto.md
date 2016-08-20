@@ -20,3 +20,7 @@ excerpt: FIXME
 - 1: SUCCESS
 - 2: ERROR_POKEMON_NOT_FOUND
 - 3: ERROR_POKEMON_IS_EGG
+
+## Referenced by:
+
+- None

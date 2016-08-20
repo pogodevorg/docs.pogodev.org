@@ -9,6 +9,8 @@ excerpt: FIXME
 
 > FIXME
 
+## Values:
+
 - 0: ACTIVITY_UNKNOWN
 - 1: ACTIVITY_CATCH_POKEMON
 - 2: ACTIVITY_CATCH_LEGEND_POKEMON
@@ -33,3 +35,7 @@ excerpt: FIXME
 - 21: ACTIVITY_HATCH_EGG_LARGE_BONUS
 - 22: ACTIVITY_DEFEAT_GYM_DEFENDER
 - 23: ACTIVITY_DEFEAT_GYM_LEADER
+
+## Referenced by:
+
+- [CaptureScoreProto](../../messages/CaptureScoreProto/)

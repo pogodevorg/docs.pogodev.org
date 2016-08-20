@@ -18,3 +18,11 @@ excerpt: FIXME
 - 5: min_time_between_claims_ms (int64)
 - 6: daily_bonus_enabled (bool)
 - 7: daily_defender_bonus_enabled (bool)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [GameMasterClientTemplateProto](../GameMasterClientTemplateProto/)

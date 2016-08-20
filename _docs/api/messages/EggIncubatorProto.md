@@ -18,3 +18,12 @@ excerpt: FIXME
 - 5: pokemon_id (int64)
 - 6: start_km_walked (double)
 - 7: target_km_walked (double)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [EggIncubatorsProto](../EggIncubatorsProto/)
+- [UseItemEggIncubatorOutProto](../UseItemEggIncubatorOutProto/)

@@ -15,3 +15,11 @@ excerpt: FIXME
 - 2: atk_percent (float)
 - 3: def_percent (float)
 - 4: duration_s (float)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [ItemSettingsProto](../ItemSettingsProto/)

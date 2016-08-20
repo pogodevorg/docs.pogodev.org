@@ -21,3 +21,7 @@ excerpt: FIXME
 - 0: UNSET
 - 1: SUCCESS
 - 2: AWARDED_ALREADY
+
+## Referenced by:
+
+- None

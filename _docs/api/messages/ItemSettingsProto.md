@@ -26,3 +26,11 @@ excerpt: FIXME
 - 13: incense ([IncenseAttributesProto](../IncenseAttributesProto/))
 - 14: egg_incubator ([EggIncubatorAttributesProto](../EggIncubatorAttributesProto/))
 - 15: fort_modifier ([FortModifierAttributesProto](../FortModifierAttributesProto/))
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [GameMasterClientTemplateProto](../GameMasterClientTemplateProto/)

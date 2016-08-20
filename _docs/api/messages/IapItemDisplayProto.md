@@ -16,3 +16,11 @@ excerpt: FIXME
 - 3: sort_order (int32)
 - 4: items ([Item](../../enums/Item/)) 
 - 5: counts (int32) 
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [GameMasterClientTemplateProto](../GameMasterClientTemplateProto/)

@@ -12,3 +12,11 @@ excerpt: FIXME
 ## Attributes:
 
 - 1: codename (string)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

@@ -16,3 +16,11 @@ excerpt: FIXME
 - 3: player_lng_degrees (double)
 - 4: fort_lat_degrees (double)
 - 5: fort_lng_degrees (double)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

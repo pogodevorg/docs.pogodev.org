@@ -18,3 +18,11 @@ excerpt: FIXME
 - 5: get_map_objects_max_refresh_seconds (float)
 - 6: get_map_objects_min_distance_meters (float)
 - 7: google_maps_api_key (string)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [GlobalSettingsProto](../GlobalSettingsProto/)

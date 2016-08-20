@@ -12,3 +12,11 @@ excerpt: FIXME
 ## Attributes:
 
 - 1: pokedex_id (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

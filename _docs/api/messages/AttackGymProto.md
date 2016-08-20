@@ -17,3 +17,11 @@ excerpt: FIXME
 - 4: last_retrieved_action ([BattleActionProto](../BattleActionProto/))
 - 5: player_lat_degrees (double)
 - 6: player_lng_degrees (double)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

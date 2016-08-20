@@ -24,3 +24,7 @@ excerpt: FIXME
 - 3: NOT_IN_RANGE
 - 4: ENCOUNTER_ALREADY_FINISHED
 - 5: POKEMON_INVENTORY_FULL
+
+## Referenced by:
+
+- None

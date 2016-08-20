@@ -9,6 +9,8 @@ excerpt: FIXME
 
 > FIXME
 
+## Values:
+
 - 0: METHOD_UNSET
 - 1: PLAYER_UPDATE
 - 2: GET_PLAYER
@@ -80,3 +82,7 @@ excerpt: FIXME
 - 804: SFIDA_ACTION
 - 805: SFIDA_DOWSER
 - 806: SFIDA_CAPTURE
+
+## Referenced by:
+
+- None

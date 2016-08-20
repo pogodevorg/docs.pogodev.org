@@ -27,3 +27,7 @@ excerpt: FIXME
 - 2: OUT_OF_RANGE
 - 3: IN_COOLDOWN_PERIOD
 - 4: INVENTORY_FULL
+
+## Referenced by:
+
+- None

@@ -12,3 +12,11 @@ excerpt: FIXME
 ## Attributes:
 
 - 1: default_camera (bool)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [HoloInventoryItemProto](../HoloInventoryItemProto/)

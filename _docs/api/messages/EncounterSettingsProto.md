@@ -16,3 +16,11 @@ excerpt: FIXME
 - 3: great_throw_threshold (float)
 - 4: nice_throw_threshold (float)
 - 5: milestone_threshold (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [GameMasterClientTemplateProto](../GameMasterClientTemplateProto/)

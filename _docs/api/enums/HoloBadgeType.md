@@ -9,6 +9,8 @@ excerpt: FIXME
 
 > FIXME
 
+## Values:
+
 - 0: BADGE_UNSET
 - 1: BADGE_TRAVEL_KM
 - 2: BADGE_POKEDEX_ENTRIES
@@ -47,3 +49,11 @@ excerpt: FIXME
 - 35: BADGE_TYPE_FAIRY
 - 36: BADGE_SMALL_RATTATA
 - 37: BADGE_PIKACHU
+
+## Referenced by:
+
+- [BadgeSettingsProto](../../messages/BadgeSettingsProto/)
+- [PlayerBadgeProto](../../messages/PlayerBadgeProto/)
+- [EquippedBadgeProto](../../messages/EquippedBadgeProto/)
+- [CheckAwardedBadgesOutProto](../../messages/CheckAwardedBadgesOutProto/)
+- [EquipBadgeProto](../../messages/EquipBadgeProto/)

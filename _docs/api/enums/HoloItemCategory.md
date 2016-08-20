@@ -9,6 +9,8 @@ excerpt: FIXME
 
 > FIXME
 
+## Values:
+
 - 0: ITEM_CATEGORY_NONE
 - 1: ITEM_CATEGORY_POKEBALL
 - 2: ITEM_CATEGORY_FOOD
@@ -21,3 +23,7 @@ excerpt: FIXME
 - 9: ITEM_CATEGORY_INCENSE
 - 10: ITEM_CATEGORY_XP_BOOST
 - 11: ITEM_CATEGORY_INVENTORY_UPGRADE
+
+## Referenced by:
+
+- [ItemSettingsProto](../../messages/ItemSettingsProto/)

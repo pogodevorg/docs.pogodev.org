@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 1: sta_percent (float)
 - 2: sta_amount (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [ItemSettingsProto](../ItemSettingsProto/)

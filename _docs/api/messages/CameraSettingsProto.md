@@ -27,3 +27,11 @@ excerpt: FIXME
 - 14: distance_m (float) 
 - 15: height_percent (float) 
 - 16: vert_ctr_ratio (float) 
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [GameMasterClientTemplateProto](../GameMasterClientTemplateProto/)

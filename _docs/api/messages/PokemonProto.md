@@ -41,3 +41,24 @@ excerpt: FIXME
 - 29: favorite (bool)
 - 30: nickname (string)
 - 31: from_fort (bool)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [EncounterTutorialCompleteOutProto](../EncounterTutorialCompleteOutProto/)
+- [IncenseEncounterOutProto](../IncenseEncounterOutProto/)
+- [DiskEncounterOutProto](../DiskEncounterOutProto/)
+- [EvolvePokemonOutProto](../EvolvePokemonOutProto/)
+- [FortSearchOutProto](../FortSearchOutProto/)
+- [FortDetailsOutProto](../FortDetailsOutProto/)
+- [FortDeployOutProto](../FortDeployOutProto/)
+- [GymMembershipProto](../GymMembershipProto/)
+- [PokemonInfo](../PokemonInfo/)
+- [HoloInventoryItemProto](../HoloInventoryItemProto/)
+- [WildPokemonProto](../WildPokemonProto/)
+- [DebugUpdateInventoryProto](../DebugUpdateInventoryProto/)
+- [PollForTradeResponseOutProto](../PollForTradeResponseOutProto/)
+- [UpgradePokemonOutProto](../UpgradePokemonOutProto/)

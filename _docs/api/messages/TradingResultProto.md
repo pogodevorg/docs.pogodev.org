@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 1: trade_id (uint64)
 - 2: player_accept (bool)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

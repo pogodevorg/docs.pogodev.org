@@ -21,3 +21,7 @@ excerpt: FIXME
 - 2: ERROR_INVALID_NICKNAME
 - 3: ERROR_POKEMON_NOT_FOUND
 - 4: ERROR_POKEMON_IS_EGG
+
+## Referenced by:
+
+- None

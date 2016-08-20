@@ -12,3 +12,11 @@ excerpt: FIXME
 ## Attributes:
 
 - 1: egg_incubator ([EggIncubatorProto](../EggIncubatorProto/)) 
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [HoloInventoryItemProto](../HoloInventoryItemProto/)

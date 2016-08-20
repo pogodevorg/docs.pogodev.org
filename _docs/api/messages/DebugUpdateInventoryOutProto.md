@@ -12,3 +12,11 @@ excerpt: FIXME
 ## Attributes:
 
 - 1: success (bool)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

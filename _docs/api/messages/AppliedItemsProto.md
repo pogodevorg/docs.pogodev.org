@@ -12,3 +12,12 @@ excerpt: FIXME
 ## Attributes:
 
 - 4: item ([AppliedItemProto](../AppliedItemProto/)) 
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [HoloInventoryItemProto](../HoloInventoryItemProto/)
+- [UseItemXpBoostOutProto](../UseItemXpBoostOutProto/)

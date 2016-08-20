@@ -23,3 +23,7 @@ excerpt: FIXME
 - 1: POKEMON_CAPTURED
 - 2: POKEMON_FLED
 - 3: POKEMON_HATCHED
+
+## Referenced by:
+
+- [ActionLogEntry](../ActionLogEntry/)

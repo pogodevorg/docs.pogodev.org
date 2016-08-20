@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 1: encounter_id (int64)
 - 2: encounter_location (string)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

@@ -12,3 +12,11 @@ excerpt: FIXME
 ## Attributes:
 
 - 1: gems (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [HoloInventoryItemProto](../HoloInventoryItemProto/)

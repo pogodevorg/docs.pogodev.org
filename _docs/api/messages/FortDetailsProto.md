@@ -14,3 +14,11 @@ excerpt: FIXME
 - 1: id (string)
 - 2: latitude (double)
 - 3: longitude (double)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

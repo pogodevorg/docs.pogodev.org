@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 1: timestamp_millis (int64)
 - 2: item_been_seen ([Item](../../enums/Item/)) 
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

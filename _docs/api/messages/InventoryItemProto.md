@@ -14,3 +14,12 @@ excerpt: FIXME
 - 1: modified_timestamp (int64)
 - 2: deleted_item_key (bytes)
 - 3: item (bytes)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [InventoryProto](../InventoryProto/)
+- [InventoryDeltaProto](../InventoryDeltaProto/)

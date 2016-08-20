@@ -20,3 +20,11 @@ excerpt: FIXME
 - 7: movement_timer_s (float)
 - 8: jump_time_s (float)
 - 9: attack_timer_s (float)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [PokemonSettingsProto](../PokemonSettingsProto/)

@@ -14,3 +14,11 @@ excerpt: FIXME
 - 1: item ([Item](../../enums/Item/))
 - 2: encounter_id (fixed64)
 - 3: spawn_point_guid (string)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

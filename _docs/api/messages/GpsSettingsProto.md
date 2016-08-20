@@ -15,3 +15,11 @@ excerpt: FIXME
 - 2: driving_warning_cooldown_minutes (float)
 - 3: driving_speed_sample_interval_seconds (float)
 - 4: driving_speed_sample_count (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [GlobalSettingsProto](../GlobalSettingsProto/)

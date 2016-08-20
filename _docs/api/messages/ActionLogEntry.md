@@ -15,3 +15,11 @@ excerpt: FIXME
 - 2: sfida (bool)
 - 3: catch_pokemon ([CatchPokemonLogEntry](../CatchPokemonLogEntry/))
 - 4: fort_search ([FortSearchLogEntry](../FortSearchLogEntry/))
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [GetActionLogResponse](../GetActionLogResponse/)

@@ -18,3 +18,11 @@ excerpt: FIXME
 - 5: moving_time_between_encounter_sec (int32)
 - 6: distance_required_for_shorter_interval_meters (int32)
 - 7: pokemon_attracted_length_sec (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [ItemSettingsProto](../ItemSettingsProto/)

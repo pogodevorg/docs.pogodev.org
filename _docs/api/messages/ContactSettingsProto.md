@@ -13,3 +13,12 @@ excerpt: FIXME
 
 - 1: send_marketing_emails (bool)
 - 2: send_push_notifications (bool)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [ClientPlayerProto](../ClientPlayerProto/)
+- [SetContactSettingsProto](../SetContactSettingsProto/)

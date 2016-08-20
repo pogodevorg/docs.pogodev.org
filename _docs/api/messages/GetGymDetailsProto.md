@@ -17,3 +17,11 @@ excerpt: FIXME
 - 4: gym_lat_degrees (double)
 - 5: gym_lng_degrees (double)
 - 6: client_version (string)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

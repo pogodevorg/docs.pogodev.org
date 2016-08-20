@@ -9,6 +9,8 @@ excerpt: FIXME
 
 > FIXME
 
+## Values:
+
 - 0: POKEMON_TYPE_NONE
 - 1: POKEMON_TYPE_NORMAL
 - 2: POKEMON_TYPE_FIGHTING
@@ -28,3 +30,10 @@ excerpt: FIXME
 - 16: POKEMON_TYPE_DRAGON
 - 17: POKEMON_TYPE_DARK
 - 18: POKEMON_TYPE_FAIRY
+
+## Referenced by:
+
+- [PokemonSettingsProto](../../messages/PokemonSettingsProto/)
+- [IncenseAttributesProto](../../messages/IncenseAttributesProto/)
+- [MoveSettingsProto](../../messages/MoveSettingsProto/)
+- [TypeEffectiveSettingsProto](../../messages/TypeEffectiveSettingsProto/)

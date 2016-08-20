@@ -15,3 +15,11 @@ excerpt: FIXME
 - 2: allowed_levels_above_player (int32)
 - 3: candy_cost (int32) 
 - 4: stardust_cost (int32) 
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [GameMasterClientTemplateProto](../GameMasterClientTemplateProto/)

@@ -12,3 +12,11 @@ excerpt: FIXME
 ## Attributes:
 
 - 1: team ([Team](../../enums/Team/))
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

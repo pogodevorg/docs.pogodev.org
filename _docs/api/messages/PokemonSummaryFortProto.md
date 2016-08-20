@@ -15,3 +15,11 @@ excerpt: FIXME
 - 2: last_modified_ms (int64)
 - 3: latitude (double)
 - 4: longitude (double)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [ClientMapCellProto](../ClientMapCellProto/)

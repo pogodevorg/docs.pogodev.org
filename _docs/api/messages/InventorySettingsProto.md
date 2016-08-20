@@ -16,3 +16,11 @@ excerpt: FIXME
 - 3: base_pokemon (int32)
 - 4: base_bag_items (int32)
 - 5: base_eggs (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [GlobalSettingsProto](../GlobalSettingsProto/)

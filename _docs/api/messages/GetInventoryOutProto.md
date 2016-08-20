@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 1: success (bool)
 - 2: inventory_delta ([InventoryDeltaProto](../InventoryDeltaProto/))
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

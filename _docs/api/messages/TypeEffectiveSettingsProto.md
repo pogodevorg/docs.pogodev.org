@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 2: attack_type ([HoloPokemonType](../../enums/HoloPokemonType/))
 - 1: attack_scalar (float) 
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [GameMasterClientTemplateProto](../GameMasterClientTemplateProto/)

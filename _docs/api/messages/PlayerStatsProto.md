@@ -34,3 +34,11 @@ excerpt: FIXME
 - 21: num_pokemon_deployed (int32)
 - 22: num_pokemon_caught_by_type (int32) 
 - 23: small_rattata_caught (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [HoloInventoryItemProto](../HoloInventoryItemProto/)

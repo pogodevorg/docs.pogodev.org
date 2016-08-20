@@ -17,3 +17,11 @@ excerpt: FIXME
 - 4: checksum (fixed32)
 - 5: size (int32)
 - 6: key (bytes)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [AssetDigestOutProto](../AssetDigestOutProto/)

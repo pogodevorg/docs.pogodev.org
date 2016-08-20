@@ -13,3 +13,13 @@ excerpt: FIXME
 
 - 1: fort_map_data ([PokemonFortProto](../PokemonFortProto/))
 - 2: gym_membership ([GymMembershipProto](../GymMembershipProto/)) 
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [FortDeployOutProto](../FortDeployOutProto/)
+- [GetGymDetailsOutProto](../GetGymDetailsOutProto/)
+- [BattleResultsProto](../BattleResultsProto/)

@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 1: pokemon_id (fixed64)
 - 2: nickname (string)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

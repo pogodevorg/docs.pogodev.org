@@ -39,3 +39,8 @@ excerpt: FIXME
 - 8: VICTORY
 - 9: DEFEAT
 - 10: TIMED_OUT
+
+## Referenced by:
+
+- [AttackGymProto](../AttackGymProto/)
+- [BattleLogProto](../BattleLogProto/)

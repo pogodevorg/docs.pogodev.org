@@ -32,3 +32,11 @@ excerpt: FIXME
 - 20: km_distance_to_hatch (float)
 - 21: family_id ([HoloPokemonFamilyId](../../enums/HoloPokemonFamilyId/))
 - 22: candy_to_evolve (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [GameMasterClientTemplateProto](../GameMasterClientTemplateProto/)

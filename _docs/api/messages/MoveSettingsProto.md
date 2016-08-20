@@ -26,3 +26,11 @@ excerpt: FIXME
 - 13: damage_window_start_ms (int32)
 - 14: damage_window_end_ms (int32)
 - 15: energy_delta (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [GameMasterClientTemplateProto](../GameMasterClientTemplateProto/)

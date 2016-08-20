@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 1: xp_multiplier (float)
 - 2: boost_duration_ms (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [ItemSettingsProto](../ItemSettingsProto/)

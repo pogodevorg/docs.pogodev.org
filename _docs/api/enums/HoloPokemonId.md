@@ -9,6 +9,8 @@ excerpt: FIXME
 
 > FIXME
 
+## Values:
+
 - 0: POKEMON_UNSET
 - 1: V0001_POKEMON_BULBASAUR
 - 2: V0002_POKEMON_IVYSAUR
@@ -161,3 +163,7 @@ excerpt: FIXME
 - 149: V0149_POKEMON_DRAGONITE
 - 150: V0150_POKEMON_MEWTWO
 - 151: V0151_POKEMON_MEW
+
+## Referenced by:
+
+- [PokemonSettingsProto](../../messages/PokemonSettingsProto/)

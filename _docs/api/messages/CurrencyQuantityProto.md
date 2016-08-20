@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 1: currency_type (string)
 - 2: quantity (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [ClientPlayerProto](../ClientPlayerProto/)

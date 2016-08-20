@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 1: digest ([AssetDigestEntryProto](../AssetDigestEntryProto/)) 
 - 2: timestamp (uint64)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

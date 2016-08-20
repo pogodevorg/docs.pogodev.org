@@ -17,3 +17,11 @@ excerpt: FIXME
 - 4: deploy_stamina_multiplier (double)
 - 5: deploy_attack_multiplier (double)
 - 6: far_interaction_range_meters (double)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [GlobalSettingsProto](../GlobalSettingsProto/)

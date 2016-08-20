@@ -14,3 +14,11 @@ excerpt: FIXME
 - 1: wild_pokemon ([WildPokemonProto](../WildPokemonProto/)) 
 - 2: fort ([PokemonFortProto](../PokemonFortProto/)) 
 - 3: forts_nearby (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

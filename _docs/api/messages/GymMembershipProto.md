@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 1: pokemon ([PokemonProto](../PokemonProto/))
 - 2: trainer_public_profile ([PlayerPublicProfileProto](../PlayerPublicProfileProto/))
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [GymStateProto](../GymStateProto/)

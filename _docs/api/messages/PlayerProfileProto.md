@@ -12,3 +12,11 @@ excerpt: FIXME
 ## Attributes:
 
 - 1: player_name (string)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

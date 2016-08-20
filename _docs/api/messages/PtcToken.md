@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 1: token (string)
 - 2: expiration (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

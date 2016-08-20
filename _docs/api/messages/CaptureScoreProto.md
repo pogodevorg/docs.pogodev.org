@@ -15,3 +15,12 @@ excerpt: FIXME
 - 2: exp (int32) 
 - 3: candy (int32) 
 - 4: stardust (int32) 
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [CatchPokemonOutProto](../CatchPokemonOutProto/)
+- [EncounterTutorialCompleteOutProto](../EncounterTutorialCompleteOutProto/)

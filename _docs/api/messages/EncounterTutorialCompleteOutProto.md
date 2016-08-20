@@ -21,3 +21,7 @@ excerpt: FIXME
 - 0: UNSET
 - 1: SUCCESS
 - 2: ERROR_INVALID_POKEMON
+
+## Referenced by:
+
+- None

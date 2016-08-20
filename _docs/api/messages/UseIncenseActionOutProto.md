@@ -22,3 +22,7 @@ excerpt: FIXME
 - 2: INCENSE_ALREADY_ACTIVE
 - 3: NONE_IN_INVENTORY
 - 4: LOCATION_UNSET
+
+## Referenced by:
+
+- None

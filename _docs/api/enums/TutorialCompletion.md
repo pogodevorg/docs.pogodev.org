@@ -9,6 +9,8 @@ excerpt: FIXME
 
 > FIXME
 
+## Values:
+
 - 0: LEGAL_SCREEN
 - 1: AVATAR_SELECTION
 - 2: ACCOUNT_CREATION
@@ -19,3 +21,8 @@ excerpt: FIXME
 - 7: FIRST_TIME_EXPERIENCE_COMPLETE
 - 8: POKESTOP_TUTORIAL
 - 9: GYM_TUTORIAL
+
+## Referenced by:
+
+- [ClientPlayerProto](../../messages/ClientPlayerProto/)
+- [MarkTutorialCompleteProto](../../messages/MarkTutorialCompleteProto/)

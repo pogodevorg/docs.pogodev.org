@@ -15,3 +15,13 @@ excerpt: FIXME
 - 2: trainer_public_profile ([PlayerPublicProfileProto](../PlayerPublicProfileProto/))
 - 3: reserve_pokemon ([PokemonInfo](../PokemonInfo/)) 
 - 4: defeated_pokemon ([PokemonInfo](../PokemonInfo/)) 
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [StartGymBattleOutProto](../StartGymBattleOutProto/)
+- [BattleActionProto](../BattleActionProto/)
+- [BattleResultsProto](../BattleResultsProto/)

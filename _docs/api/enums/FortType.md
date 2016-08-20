@@ -9,5 +9,12 @@ excerpt: FIXME
 
 > FIXME
 
+## Values:
+
 - 0: GYM
 - 1: CHECKPOINT
+
+## Referenced by:
+
+- [FortDetailsOutProto](../../messages/FortDetailsOutProto/)
+- [PokemonFortProto](../../messages/PokemonFortProto/)

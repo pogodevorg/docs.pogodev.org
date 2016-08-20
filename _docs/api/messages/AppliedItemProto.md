@@ -15,3 +15,12 @@ excerpt: FIXME
 - 2: item_type ([HoloItemType](../../enums/HoloItemType/))
 - 3: expiration_ms (int64)
 - 4: applied_ms (int64)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [UseIncenseActionOutProto](../UseIncenseActionOutProto/)
+- [AppliedItemsProto](../AppliedItemsProto/)

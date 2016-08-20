@@ -17,3 +17,11 @@ excerpt: FIXME
 - 5: inventory_settings ([InventorySettingsProto](../InventorySettingsProto/))
 - 6: minimum_client_version (string)
 - 7: gps_settings ([GpsSettingsProto](../GpsSettingsProto/))
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

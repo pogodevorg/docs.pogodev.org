@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 1: lat (double)
 - 2: lng (double)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

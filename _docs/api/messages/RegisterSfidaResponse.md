@@ -12,3 +12,11 @@ excerpt: FIXME
 ## Attributes:
 
 - 1: access_token (bytes)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

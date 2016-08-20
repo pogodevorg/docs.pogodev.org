@@ -22,3 +22,7 @@ excerpt: FIXME
 - 2: FORT_ALREADY_HAS_MODIFIER
 - 3: TOO_FAR_AWAY
 - 4: NO_ITEM_IN_INVENTORY
+
+## Referenced by:
+
+- None

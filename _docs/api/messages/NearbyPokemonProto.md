@@ -16,3 +16,11 @@ excerpt: FIXME
 - 3: encounter_id (fixed64)
 - 4: fort_id (string)
 - 5: fort_image_url (string)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [ClientMapCellProto](../ClientMapCellProto/)

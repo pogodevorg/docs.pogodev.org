@@ -21,3 +21,7 @@ excerpt: FIXME
 - 1: SUCCESS
 - 2: AVATAR_ALREADY_SET
 - 3: FAILURE
+
+## Referenced by:
+
+- None

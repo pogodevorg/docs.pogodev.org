@@ -12,3 +12,11 @@ excerpt: FIXME
 ## Attributes:
 
 - 1: sha1 (string)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

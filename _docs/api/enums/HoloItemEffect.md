@@ -9,6 +9,8 @@ excerpt: FIXME
 
 > FIXME
 
+## Values:
+
 - 0: ITEM_EFFECT_NONE
 - 1000: ITEM_EFFECT_CAP_NO_FLEE
 - 1002: ITEM_EFFECT_CAP_NO_MOVEMENT
@@ -24,3 +26,8 @@ excerpt: FIXME
 - 1012: ITEM_EFFECT_CAP_CHANCE_MULTI_THROW
 - 1013: ITEM_EFFECT_CAP_CHANCE_ALWAYS
 - 1014: ITEM_EFFECT_CAP_CHANCE_SINGLE_THROW
+
+## Referenced by:
+
+- [PokeBallAttributesProto](../../messages/PokeBallAttributesProto/)
+- [FoodAttributesProto](../../messages/FoodAttributesProto/)

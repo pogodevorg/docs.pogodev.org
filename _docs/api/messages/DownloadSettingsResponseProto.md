@@ -14,3 +14,11 @@ excerpt: FIXME
 - 1: error (string)
 - 2: sha1 (string)
 - 3: values (bytes)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

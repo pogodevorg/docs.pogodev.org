@@ -18,3 +18,11 @@ excerpt: FIXME
 - 5: hit_pokemon (bool)
 - 6: spin_modifier (double)
 - 7: normalized_hit_position (double)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

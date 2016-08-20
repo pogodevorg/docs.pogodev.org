@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 1: pokemon ([PokemonProto](../PokemonProto/)) 
 - 2: item ([ItemProto](../ItemProto/)) 
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

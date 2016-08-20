@@ -16,3 +16,11 @@ excerpt: FIXME
 - 3: exp_awarded (int32) 
 - 4: candy_awarded (int32) 
 - 5: stardust_awarded (int32) 
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

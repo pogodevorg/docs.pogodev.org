@@ -18,3 +18,13 @@ excerpt: FIXME
 - 5: spawn_point_id (string)
 - 7: pokemon ([PokemonProto](../PokemonProto/))
 - 11: time_till_hidden_ms (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [EncounterOutProto](../EncounterOutProto/)
+- [ClientMapCellProto](../ClientMapCellProto/)
+- [PlayerUpdateOutProto](../PlayerUpdateOutProto/)

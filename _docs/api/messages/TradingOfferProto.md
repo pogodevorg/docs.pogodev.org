@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 1: trading_player (string)
 - 2: pokemon_id (fixed64)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None

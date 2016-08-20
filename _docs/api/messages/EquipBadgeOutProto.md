@@ -21,3 +21,7 @@ excerpt: FIXME
 - 1: SUCCESS
 - 2: COOLDOWN_ACTIVE
 - 3: NOT_QUALIFIED
+
+## Referenced by:
+
+- None

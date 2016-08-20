@@ -16,3 +16,11 @@ excerpt: FIXME
 - 3: times_captured (int32)
 - 4: evolution_stone_pieces (int32)
 - 5: evolution_stones (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [HoloInventoryItemProto](../HoloInventoryItemProto/)

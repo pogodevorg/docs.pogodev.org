@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 2: latitude (double)
 - 3: longitude (double)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [ClientMapCellProto](../ClientMapCellProto/)

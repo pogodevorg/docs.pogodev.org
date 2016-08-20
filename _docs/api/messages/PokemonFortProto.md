@@ -37,3 +37,9 @@ excerpt: FIXME
 ### RenderingType
 - 0: DEFAULT
 - 1: INTERNAL_TEST
+
+## Referenced by:
+
+- [ClientMapCellProto](../ClientMapCellProto/)
+- [GymStateProto](../GymStateProto/)
+- [PlayerUpdateOutProto](../PlayerUpdateOutProto/)

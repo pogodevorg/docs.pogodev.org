@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 1: next_collect_timestamp_ms (int64)
 - 2: next_defender_bonus_collect_timestamp_ms (int64)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [ClientPlayerProto](../ClientPlayerProto/)

@@ -9,6 +9,8 @@ excerpt: FIXME
 
 > FIXME
 
+## Values:
+
 - 0: MOVE_UNSET
 - 1: V0001_MOVE_THUNDER_SHOCK
 - 2: V0002_MOVE_QUICK_ATTACK
@@ -189,3 +191,8 @@ excerpt: FIXME
 - 239: V0239_MOVE_STEEL_WING_FAST
 - 240: V0240_MOVE_FIRE_FANG_FAST
 - 241: V0241_MOVE_ROCK_SMASH_FAST
+
+## Referenced by:
+
+- [PokemonSettingsProto](../../messages/PokemonSettingsProto/)
+- [MoveSettingsProto](../../messages/MoveSettingsProto/)

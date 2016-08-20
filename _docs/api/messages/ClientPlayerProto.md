@@ -23,3 +23,16 @@ excerpt: FIXME
 - 13: contact_settings_proto ([ContactSettingsProto](../ContactSettingsProto/))
 - 14: currency_balance ([CurrencyQuantityProto](../CurrencyQuantityProto/)) 
 - 15: remaining_codename_claims (int32)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [GetPlayerOutProto](../GetPlayerOutProto/)
+- [CodenameResultProto](../CodenameResultProto/)
+- [SetAvatarOutProto](../SetAvatarOutProto/)
+- [SetContactSettingsOutProto](../SetContactSettingsOutProto/)
+- [SetPlayerTeamOutProto](../SetPlayerTeamOutProto/)
+- [MarkTutorialCompleteOutProto](../MarkTutorialCompleteOutProto/)

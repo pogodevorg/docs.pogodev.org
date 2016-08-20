@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 1: additional_storage (int32)
 - 2: upgrade_type ([InventoryUpgradeType](../../enums/InventoryUpgradeType/))
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [ItemSettingsProto](../ItemSettingsProto/)

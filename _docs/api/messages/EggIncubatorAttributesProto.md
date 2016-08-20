@@ -14,3 +14,11 @@ excerpt: FIXME
 - 1: incubator_type ([EggIncubatorType](../../enums/EggIncubatorType/))
 - 2: uses (int32)
 - 3: distance_multiplier (float)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- [ItemSettingsProto](../ItemSettingsProto/)

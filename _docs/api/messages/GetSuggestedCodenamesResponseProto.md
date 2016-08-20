@@ -13,3 +13,11 @@ excerpt: FIXME
 
 - 1: codename (string) 
 - 2: success (bool)
+
+## Enums:
+
+- None
+
+## Referenced by:
+
+- None
