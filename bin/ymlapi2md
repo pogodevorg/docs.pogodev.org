@@ -39,7 +39,7 @@ FileUtils.mkdir_p basedir
 
 proto.enums.each do |enum|
   outpath = File.join(basedir, "#{enum.name}.md")
-  IO.write(outpath, ERB.new(template).result(binding))
+  IO.write(outpath, ERB.new(template, nil, '-').result(binding))
 end
 
 # Generate .md files for messages
@@ -49,5 +49,5 @@ FileUtils.mkdir_p basedir
 
 proto.messages.each do |message|
   outpath = File.join(basedir, "#{message.name}.md")
-  IO.write(outpath, ERB.new(template).result(binding))
+  IO.write(outpath, ERB.new(template, nil, '-').result(binding))
 end

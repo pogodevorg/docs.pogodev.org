@@ -9,4 +9,29 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Attributes:
+
+<%- message.attributes.each do |attribute| -%>
+<%- # Link if we are referencing a global or local Enum or an other Message
+  linked_type = attribute.type
+  if enum = message.enums.find{|e| e.name == attribute.type}
+    linked_type = "[#{attribute.type}](##{enum.name.underscore})"
+  elsif enum = proto.enums.find{|e| e.name == attribute.type}
+    linked_type = "[#{attribute.type}](../../enums/#{enum.name}/)"
+  elsif msg = proto.messages.find{|m| m.name == attribute.type}
+    linked_type = "[#{attribute.type}](../#{msg.name}/)"
+  end
+-%>
+- <%= attribute.tag %>: <%= attribute.name %> (<%= linked_type %>)<%= " #{attribute.modifier}" if attribute.modifier %>
+<%- end -%>
+<%- if !message.enums.empty? -%>
+
+## Enums:
+
+<%- message.enums.each do |enum| -%>
+### <%= enum.name %>
+<%- enum.values.each do |value| -%>
+- <%= value.tag %>: <%= value.name %>
+<%- end -%>
+<%- end -%>
+<%- end -%>
