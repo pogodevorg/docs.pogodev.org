@@ -9,4 +9,17 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Attributes:
+
+- 1: result ([Result](#result))
+- 2: pokedex_number (int32)
+- 3: combat_points (int32)
+- 4: pokemon_id (fixed64)
+
+## Enums:
+
+### Result
+- 0: UNSET
+- 1: POKEMON_CAPTURED
+- 2: POKEMON_FLED
+- 3: POKEMON_HATCHED

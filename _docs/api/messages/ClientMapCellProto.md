@@ -9,4 +9,16 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Attributes:
+
+- 1: s2_cell_id (uint64)
+- 2: as_of_time_ms (int64)
+- 3: fort ([PokemonFortProto](../PokemonFortProto/)) 
+- 4: spawn_point ([ClientSpawnPointProto](../ClientSpawnPointProto/)) 
+- 5: wild_pokemon ([WildPokemonProto](../WildPokemonProto/)) 
+- 6: deleted_object (string) 
+- 7: is_truncated_list (bool)
+- 8: fort_summary ([PokemonSummaryFortProto](../PokemonSummaryFortProto/)) 
+- 9: decimated_spawn_point ([ClientSpawnPointProto](../ClientSpawnPointProto/)) 
+- 10: catchable_pokemon ([MapPokemonProto](../MapPokemonProto/)) 
+- 11: nearby_pokemon ([NearbyPokemonProto](../NearbyPokemonProto/)) 

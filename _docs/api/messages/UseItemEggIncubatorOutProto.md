@@ -9,4 +9,19 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Attributes:
+
+- 1: result ([Result](#result))
+- 2: egg_incubator ([EggIncubatorProto](../EggIncubatorProto/))
+
+## Enums:
+
+### Result
+- 0: UNSET
+- 1: SUCCESS
+- 2: ERROR_INCUBATOR_NOT_FOUND
+- 3: ERROR_POKEMON_EGG_NOT_FOUND
+- 4: ERROR_POKEMON_ID_NOT_EGG
+- 5: ERROR_INCUBATOR_ALREADY_IN_USE
+- 6: ERROR_POKEMON_ALREADY_INCUBATING
+- 7: ERROR_INCUBATOR_NO_USES_REMAINING

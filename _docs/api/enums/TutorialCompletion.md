@@ -9,4 +9,13 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+- 0: LEGAL_SCREEN
+- 1: AVATAR_SELECTION
+- 2: ACCOUNT_CREATION
+- 3: POKEMON_CAPTURE
+- 4: NAME_SELECTION
+- 5: POKEMON_BERRY
+- 6: USE_ITEM
+- 7: FIRST_TIME_EXPERIENCE_COMPLETE
+- 8: POKESTOP_TUTORIAL
+- 9: GYM_TUTORIAL

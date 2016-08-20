@@ -9,4 +9,12 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Attributes:
+
+- 1: encounter_id (fixed64)
+- 2: pokeball (int32)
+- 3: normalized_reticle_size (double)
+- 4: spawn_point_guid (string)
+- 5: hit_pokemon (bool)
+- 6: spin_modifier (double)
+- 7: normalized_hit_position (double)

@@ -9,4 +9,18 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+- 0: ITEM_EFFECT_NONE
+- 1000: ITEM_EFFECT_CAP_NO_FLEE
+- 1002: ITEM_EFFECT_CAP_NO_MOVEMENT
+- 1003: ITEM_EFFECT_CAP_NO_THREAT
+- 1004: ITEM_EFFECT_CAP_TARGET_MAX
+- 1005: ITEM_EFFECT_CAP_TARGET_SLOW
+- 1006: ITEM_EFFECT_CAP_CHANCE_NIGHT
+- 1007: ITEM_EFFECT_CAP_CHANCE_TRAINER
+- 1008: ITEM_EFFECT_CAP_CHANCE_FIRST_THROW
+- 1009: ITEM_EFFECT_CAP_CHANCE_LEGEND
+- 1010: ITEM_EFFECT_CAP_CHANCE_HEAVY
+- 1011: ITEM_EFFECT_CAP_CHANCE_REPEAT
+- 1012: ITEM_EFFECT_CAP_CHANCE_MULTI_THROW
+- 1013: ITEM_EFFECT_CAP_CHANCE_ALWAYS
+- 1014: ITEM_EFFECT_CAP_CHANCE_SINGLE_THROW

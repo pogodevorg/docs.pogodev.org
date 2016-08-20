@@ -9,4 +9,17 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+- 0: CAM_TARGET_ATTACKER
+- 1: CAM_TARGET_ATTACKER_EDGE
+- 2: CAM_TARGET_ATTACKER_GROUND
+- 3: CAM_TARGET_DEFENDER
+- 4: CAM_TARGET_DEFENDER_EDGE
+- 5: CAM_TARGET_DEFENDER_GROUND
+- 6: CAM_TARGET_ATTACKER_DEFENDER
+- 7: CAM_TARGET_ATTACKER_DEFENDER_EDGE
+- 8: CAM_TARGET_DEFENDER_ATTACKER
+- 9: CAM_TARGET_DEFENDER_ATTACKER_EDGE
+- 11: CAM_TARGET_ATTACKER_DEFENDER_MIRROR
+- 12: CAM_TARGET_SHOULDER_ATTACKER_DEFENDER
+- 13: CAM_TARGET_SHOULDER_ATTACKER_DEFENDER_MIRROR
+- 14: CAM_TARGET_ATTACKER_DEFENDER_WORLD

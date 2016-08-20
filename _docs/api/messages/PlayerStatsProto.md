@@ -9,4 +9,28 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Attributes:
+
+- 1: level (int32)
+- 2: experience (int64)
+- 3: prev_level_exp (int64)
+- 4: next_level_exp (int64)
+- 5: km_walked (float)
+- 6: num_pokemon_encountered (int32)
+- 7: num_unique_pokedex_entries (int32)
+- 8: num_pokemon_captured (int32)
+- 9: num_evolutions (int32)
+- 10: poke_stop_visits (int32)
+- 11: number_of_pokeball_thrown (int32)
+- 12: num_eggs_hatched (int32)
+- 13: big_magikarp_caught (int32)
+- 14: num_battle_attack_won (int32)
+- 15: num_battle_attack_total (int32)
+- 16: num_battle_defended_won (int32)
+- 17: num_battle_training_won (int32)
+- 18: num_battle_training_total (int32)
+- 19: prestige_raised_total (int32)
+- 20: prestige_dropped_total (int32)
+- 21: num_pokemon_deployed (int32)
+- 22: num_pokemon_caught_by_type (int32) 
+- 23: small_rattata_caught (int32)

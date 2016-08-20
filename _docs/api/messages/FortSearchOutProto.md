@@ -9,4 +9,21 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Attributes:
+
+- 1: result ([Result](#result))
+- 2: items ([AwardItemProto](../AwardItemProto/)) 
+- 3: gems_awarded (int32)
+- 4: egg_pokemon ([PokemonProto](../PokemonProto/))
+- 5: xp_awarded (int32)
+- 6: cooldown_complete (int64)
+- 7: chain_hack_sequence_number (int32)
+
+## Enums:
+
+### Result
+- 0: NO_RESULT_SET
+- 1: SUCCESS
+- 2: OUT_OF_RANGE
+- 3: IN_COOLDOWN_PERIOD
+- 4: INVENTORY_FULL

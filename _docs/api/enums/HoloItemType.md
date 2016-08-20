@@ -9,4 +9,16 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+- 0: ITEM_TYPE_NONE
+- 1: ITEM_TYPE_POKEBALL
+- 2: ITEM_TYPE_POTION
+- 3: ITEM_TYPE_REVIVE
+- 4: ITEM_TYPE_MAP
+- 5: ITEM_TYPE_BATTLE
+- 6: ITEM_TYPE_FOOD
+- 7: ITEM_TYPE_CAMERA
+- 8: ITEM_TYPE_DISK
+- 9: ITEM_TYPE_INCUBATOR
+- 10: ITEM_TYPE_INCENSE
+- 11: ITEM_TYPE_XP_BOOST
+- 12: ITEM_TYPE_INVENTORY_UPGRADE

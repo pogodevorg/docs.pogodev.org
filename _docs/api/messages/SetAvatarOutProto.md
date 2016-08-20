@@ -9,4 +9,15 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Attributes:
+
+- 1: status ([Status](#status))
+- 2: player ([ClientPlayerProto](../ClientPlayerProto/))
+
+## Enums:
+
+### Status
+- 0: UNSET
+- 1: SUCCESS
+- 2: AVATAR_ALREADY_SET
+- 3: FAILURE

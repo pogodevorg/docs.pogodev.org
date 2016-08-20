@@ -9,4 +9,14 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Attributes:
+
+- 1: base_capture_rate (float)
+- 2: base_flee_rate (float)
+- 3: collision_radius_m (float)
+- 4: collision_height_m (float)
+- 5: collision_head_radius_m (float)
+- 6: movement_type ([HoloPokemonMovementType](../../enums/HoloPokemonMovementType/))
+- 7: movement_timer_s (float)
+- 8: jump_time_s (float)
+- 9: attack_timer_s (float)

@@ -9,4 +9,11 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+- 0: NATURE_UNKNOWN
+- 1: V0001_POKEMON_NATURE_STOIC
+- 2: V0002_POKEMON_NATURE_ASSASSIN
+- 3: V0003_POKEMON_NATURE_GUARDIAN
+- 4: V0004_POKEMON_NATURE_RAIDER
+- 5: V0005_POKEMON_NATURE_PROTECTOR
+- 6: V0006_POKEMON_NATURE_SENTRY
+- 7: V0007_POKEMON_NATURE_CHAMPION

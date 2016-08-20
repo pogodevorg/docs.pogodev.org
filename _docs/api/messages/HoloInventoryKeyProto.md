@@ -9,4 +9,15 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Attributes:
+
+- 1: pokemon_id (fixed64)
+- 2: item ([Item](../../enums/Item/))
+- 3: pokedex_entry_id (int32)
+- 4: player_stats (bool)
+- 5: player_currency (bool)
+- 6: player_camera (bool)
+- 7: inventory_upgrades (bool)
+- 8: applied_items (bool)
+- 9: egg_incubators (bool)
+- 10: pokemon_family_id (int32)

@@ -9,4 +9,20 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Attributes:
+
+- 1: unique_id ([HoloPokemonMove](../../enums/HoloPokemonMove/))
+- 2: animation_id (int32)
+- 3: type ([HoloPokemonType](../../enums/HoloPokemonType/))
+- 4: power (float)
+- 5: accuracy_chance (float)
+- 6: critical_chance (float)
+- 7: heal_scalar (float)
+- 8: stamina_loss_scalar (float)
+- 9: trainer_level_min (int32)
+- 10: trainer_level_max (int32)
+- 11: vfx_name (string)
+- 12: duration_ms (int32)
+- 13: damage_window_start_ms (int32)
+- 14: damage_window_end_ms (int32)
+- 15: energy_delta (int32)

@@ -9,4 +9,29 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Attributes:
+
+- 1: result ([Result](#result))
+- 2: battle_start_ms (int64)
+- 3: battle_end_ms (int64)
+- 4: battle_id (string)
+- 5: defender ([BattleParticipantProto](../BattleParticipantProto/))
+- 6: battle_log ([BattleLogProto](../BattleLogProto/))
+
+## Enums:
+
+### Result
+- 0: UNSET
+- 1: SUCCESS
+- 2: ERROR_GYM_NOT_FOUND
+- 3: ERROR_GYM_NEUTRAL
+- 4: ERROR_GYM_WRONG_TEAM
+- 5: ERROR_GYM_EMPTY
+- 6: ERROR_INVALID_DEFENDER
+- 7: ERROR_TRAINING_INVALID_ATTACKER_COUNT
+- 8: ERROR_ALL_POKEMON_FAINTED
+- 9: ERROR_TOO_MANY_BATTLES
+- 10: ERROR_TOO_MANY_PLAYERS
+- 11: ERROR_GYM_BATTLE_LOCKOUT
+- 12: ERROR_PLAYER_BELOW_MINIMUM_LEVEL
+- 13: ERROR_NOT_IN_RANGE

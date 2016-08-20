@@ -9,4 +9,33 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+- 0: ITEM_UNKNOWN
+- 1: ITEM_POKE_BALL
+- 2: ITEM_GREAT_BALL
+- 3: ITEM_ULTRA_BALL
+- 4: ITEM_MASTER_BALL
+- 101: ITEM_POTION
+- 102: ITEM_SUPER_POTION
+- 103: ITEM_HYPER_POTION
+- 104: ITEM_MAX_POTION
+- 201: ITEM_REVIVE
+- 202: ITEM_MAX_REVIVE
+- 301: ITEM_LUCKY_EGG
+- 401: ITEM_INCENSE_ORDINARY
+- 402: ITEM_INCENSE_SPICY
+- 403: ITEM_INCENSE_COOL
+- 404: ITEM_INCENSE_FLORAL
+- 501: ITEM_TROY_DISK
+- 602: ITEM_X_ATTACK
+- 603: ITEM_X_DEFENSE
+- 604: ITEM_X_MIRACLE
+- 701: ITEM_RAZZ_BERRY
+- 702: ITEM_BLUK_BERRY
+- 703: ITEM_NANAB_BERRY
+- 704: ITEM_WEPAR_BERRY
+- 705: ITEM_PINAP_BERRY
+- 801: ITEM_SPECIAL_CAMERA
+- 901: ITEM_INCUBATOR_BASIC_UNLIMITED
+- 902: ITEM_INCUBATOR_BASIC
+- 1001: ITEM_POKEMON_STORAGE_UPGRADE
+- 1002: ITEM_ITEM_STORAGE_UPGRADE

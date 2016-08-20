@@ -9,4 +9,18 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Attributes:
+
+- 1: result ([Result](#result))
+- 2: currency_type (string) 
+- 3: currency_awarded (int32) 
+- 4: num_defenders (int32)
+
+## Enums:
+
+### Result
+- 0: UNSET
+- 1: SUCCESS
+- 2: FAILURE
+- 3: TOO_SOON
+- 4: NO_DEFENDERS

@@ -9,4 +9,12 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Attributes:
+
+- 1: incense_lifetime_seconds (int32)
+- 2: pokemon_type ([HoloPokemonType](../../enums/HoloPokemonType/)) 
+- 3: pokemon_incense_type_probability (float)
+- 4: standing_time_between_encounters_sec (int32)
+- 5: moving_time_between_encounter_sec (int32)
+- 6: distance_required_for_shorter_interval_meters (int32)
+- 7: pokemon_attracted_length_sec (int32)

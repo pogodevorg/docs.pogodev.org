@@ -9,4 +9,22 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+- 0: POKEMON_TYPE_NONE
+- 1: POKEMON_TYPE_NORMAL
+- 2: POKEMON_TYPE_FIGHTING
+- 3: POKEMON_TYPE_FLYING
+- 4: POKEMON_TYPE_POISON
+- 5: POKEMON_TYPE_GROUND
+- 6: POKEMON_TYPE_ROCK
+- 7: POKEMON_TYPE_BUG
+- 8: POKEMON_TYPE_GHOST
+- 9: POKEMON_TYPE_STEEL
+- 10: POKEMON_TYPE_FIRE
+- 11: POKEMON_TYPE_WATER
+- 12: POKEMON_TYPE_GRASS
+- 13: POKEMON_TYPE_ELECTRIC
+- 14: POKEMON_TYPE_PSYCHIC
+- 15: POKEMON_TYPE_ICE
+- 16: POKEMON_TYPE_DRAGON
+- 17: POKEMON_TYPE_DARK
+- 18: POKEMON_TYPE_FAIRY

@@ -9,4 +9,18 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Attributes:
+
+- 1: result ([Result](#result))
+- 2: battle_log ([BattleLogProto](../BattleLogProto/))
+- 3: battle_id (string)
+- 4: active_defender ([PokemonInfo](../PokemonInfo/))
+- 5: active_attacker ([PokemonInfo](../PokemonInfo/))
+
+## Enums:
+
+### Result
+- 0: UNSET
+- 1: SUCCESS
+- 2: ERROR_INVALID_ATTACK_ACTIONS
+- 3: ERROR_NOT_IN_RANGE

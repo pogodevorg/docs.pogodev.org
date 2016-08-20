@@ -9,4 +9,21 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Attributes:
+
+- 1: next_camera (string)
+- 2: interpolation ([CameraInterpolation](../../enums/CameraInterpolation/)) 
+- 3: target_type ([CameraTarget](../../enums/CameraTarget/)) 
+- 4: ease_in_speed (float) 
+- 5: ease_out_speed (float) 
+- 6: duration_s (float) 
+- 7: wait_s (float) 
+- 8: transition_s (float) 
+- 9: angle_deg (float) 
+- 10: angle_offset_deg (float) 
+- 11: pitch_deg (float) 
+- 12: pitch_offset_deg (float) 
+- 13: roll_deg (float) 
+- 14: distance_m (float) 
+- 15: height_percent (float) 
+- 16: vert_ctr_ratio (float) 

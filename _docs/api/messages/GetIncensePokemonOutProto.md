@@ -9,4 +9,19 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Attributes:
+
+- 1: result ([Result](#result))
+- 2: pokemon_type_id (int32)
+- 3: lat (double)
+- 4: lng (double)
+- 5: encounter_location (string)
+- 6: encounter_id (fixed64)
+- 7: disappear_time_ms (int64)
+
+## Enums:
+
+### Result
+- 0: INCENSE_ENCOUNTER_UNKNOWN
+- 1: INCENSE_ENCOUNTER_AVAILABLE
+- 2: INCENSE_ENCOUNTER_NOT_AVAILABLE

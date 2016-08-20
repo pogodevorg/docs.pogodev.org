@@ -9,4 +9,15 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Attributes:
+
+- 1: pokemon ([PokemonProto](../PokemonProto/))
+- 2: item ([ItemProto](../ItemProto/))
+- 3: pokedex_entry ([PokedexEntryProto](../PokedexEntryProto/))
+- 4: player_stats ([PlayerStatsProto](../PlayerStatsProto/))
+- 5: player_currency ([PlayerCurrencyProto](../PlayerCurrencyProto/))
+- 6: player_camera ([PlayerCameraProto](../PlayerCameraProto/))
+- 7: inventory_upgrades ([InventoryUpgradesProto](../InventoryUpgradesProto/))
+- 8: applied_items ([AppliedItemsProto](../AppliedItemsProto/))
+- 9: egg_incubators ([EggIncubatorsProto](../EggIncubatorsProto/))
+- 10: pokemon_family ([PokemonFamilyProto](../PokemonFamilyProto/))

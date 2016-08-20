@@ -9,4 +9,17 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Attributes:
+
+- 1: creation_time_ms (int64)
+- 2: name (string)
+- 5: team (int32)
+- 7: tutorial_complete ([TutorialCompletion](../../enums/TutorialCompletion/)) 
+- 8: player_avatar_proto ([PlayerAvatarProto](../PlayerAvatarProto/))
+- 9: max_pokemon_storage (int32)
+- 10: max_item_storage (int32)
+- 11: daily_bonus_proto ([DailyBonusProto](../DailyBonusProto/))
+- 12: equipped_badge_proto ([EquippedBadgeProto](../EquippedBadgeProto/))
+- 13: contact_settings_proto ([ContactSettingsProto](../ContactSettingsProto/))
+- 14: currency_balance ([CurrencyQuantityProto](../CurrencyQuantityProto/)) 
+- 15: remaining_codename_claims (int32)

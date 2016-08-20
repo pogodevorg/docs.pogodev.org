@@ -9,4 +9,31 @@ excerpt: FIXME
 
 > FIXME
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Attributes:
+
+- 1: fort_id (string)
+- 2: last_modified_ms (int64)
+- 3: latitude (double)
+- 4: longitude (double)
+- 5: team (int32)
+- 6: guard_pokemon_id (int32)
+- 7: guard_pokemon_level (int32)
+- 8: enabled (bool)
+- 9: fort_type ([FortType](../../enums/FortType/))
+- 10: gym_points (int64)
+- 11: is_in_battle (bool)
+- 12: active_fort_modifier ([Item](../../enums/Item/)) 
+- 13: active_pokemon ([MapPokemonProto](../MapPokemonProto/))
+- 14: cooldown_complete_ms (int64)
+- 15: sponsor ([Sponsor](#sponsor))
+- 16: rendering_type ([RenderingType](#rendering_type))
+
+## Enums:
+
+### Sponsor
+- 0: UNSET
+- 1: MCDONALDS
+- 2: POKEMON_STORE
+### RenderingType
+- 0: DEFAULT
+- 1: INTERNAL_TEST
