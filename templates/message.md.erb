@@ -2,12 +2,14 @@
 title: '<%= message.name %>'
 sort_title: '<%= message.name.underscore %>'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # <%= message.name %>
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -49,3 +51,5 @@ if (references = proto.messages.find_all{|m| (m.attributes.map(&:type) - m.enums
 - [<%= ref.name %>](../<%= ref.name %>/)
 <%- end -%>
 <%- end -%>
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

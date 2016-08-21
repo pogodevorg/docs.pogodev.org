@@ -1,20 +1,20 @@
 ---
 title: Guides
-permalink: /docs/guides/
+permalink: /docs/changelogs/
 layout: docs
 category: ignore
-breadcrumb: Guides
+breadcrumb: Changelogs
 ---
 
 <h2 class="docs-heading">
-  <span class="docs-title-icon fa fa-book"></span>Guides
+  <span class="docs-title-icon fa fa-book"></span>Changelogs
 </h2>
 
 
 <ul class="docs-list">
 {% assign docs = site.docs %}
 {% for doc in docs %}
-  {% if doc.category == 'Guides' %}
+  {% if doc.category == 'Changelogs' %}
     <li>
       <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
       <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->

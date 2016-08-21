@@ -1,0 +1,37 @@
+#!/usr/bin/env ruby
+
+root_dir = File.expand_path('../../', __FILE__)
+proto_files = Dir[File.join(root_dir, 'proto/*.proto')]
+versions = []
+
+def extract_version_number(filename)
+  File.basename(filename, '.proto').gsub(/[v]/i, '').split('.').map(&:to_i)
+end
+
+proto_files.sort!{|a,b| extract_version_number(a) <=> extract_version_number(b)}
+latest_api_file = proto_files.last
+
+# Generate all yml files
+puts '# Generating YAML files from proto'
+proto_files.each do |file|
+  version = extract_version_number(file).join('_')
+  dest = File.join(root_dir, "_data/api_#{version}.yml")
+  versions << dest
+  `#{File.join(root_dir, 'bin/proto2yml')} #{file} > #{dest}`
+  if file == latest_api_file
+    latest_dest = File.join(root_dir, "_data/api_latest.yml")
+    puts `cp #{dest} #{latest_dest}`
+  end
+end
+
+# Generate pages for latest doc
+puts '# Generating doc...'
+puts `#{File.join(root_dir, 'bin/ymlapi2md')} _data/api_latest.yml`
+
+# Generate Changelogs
+puts '# Generating Changelog...'
+versions.each_with_index do |version, i|
+  if versions[i+1]
+    puts `#{File.join(root_dir, 'bin/ymlapi2changelog')} #{versions[i]} #{versions[i+1]}`
+  end
+end

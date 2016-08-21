@@ -2,8 +2,8 @@
   text-align: left;
 }
 
-.guides, .apis {
-  @include span-columns(6);
+.guides, .apis, .changelog {
+  @include span-columns(4);
 }
 
 .docs-heading {

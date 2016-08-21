@@ -1,0 +1,104 @@
+#!/usr/bin/env ruby
+# Diff 2 API versions and generate a changelog
+
+require 'optparse'
+require 'yaml'
+require 'json'
+require 'ostruct'
+require 'erb'
+require 'fileutils'
+require 'hashdiff'
+
+# Nested to_h for OpenStruct
+class OpenStruct
+  def to_hash(hash = {})
+    self.each_pair do |key, value|
+      key = key.to_s
+      if value.is_a?(OpenStruct)
+        hash[key] = value.to_hash
+      elsif value.is_a?(Array)
+        hash[key] = value.map(&:to_hash)
+      else
+        hash[key] = value
+      end
+    end
+    hash
+  end
+end
+
+USAGE = "Usage: #{__FILE__} apiv1.yml apiv2.yml"
+options = {}
+OptionParser.new do |opts|
+  opts.banner = USAGE
+
+  opts.on("-v", "--[no-]verbose", "Run verbosely") do |v|
+    options[:verbose] = v
+  end
+end.parse!
+
+file_arg1 = ARGV[0]
+file_arg2 = ARGV[1]
+puts USAGE unless file_arg1 && file_arg2
+
+if !File.exists?(file_arg1)
+  puts "#{__FILE__}: #{file_arg1}: No such file"
+  exit 1
+end
+
+if !File.exists?(file_arg2)
+  puts "#{__FILE__}: #{file_arg2}: No such file"
+  exit 1
+end
+
+v1 = File.basename(file_arg1, '.yml').gsub('api_', '').split('_').map(&:to_i)
+v2 = File.basename(file_arg2, '.yml').gsub('api_', '').split('_').map(&:to_i)
+
+hash1 = YAML.load_file(file_arg1)
+hash2 = YAML.load_file(file_arg2)
+# I prefer objects with direct access to hashes...
+json1 = hash1.to_json
+json2 = hash2.to_json
+proto1 = JSON.parse(json1, object_class: OpenStruct)
+proto2 = JSON.parse(json2, object_class: OpenStruct)
+
+puts "  - Computing changes from v#{v1.join('.')} to v#{v2.join('.')}..."
+enums_added = proto2.enums.map(&:name) - proto1.enums.map(&:name)
+messages_added = proto2.messages.map(&:name) - proto1.messages.map(&:name)
+
+enums_removed = proto1.enums.map(&:name) - proto2.enums.map(&:name)
+messages_removed = proto1.messages.map(&:name) - proto2.messages.map(&:name)
+
+enums = proto2.enums.map(&:name) - enums_added
+messages = proto2.messages.map(&:name) - messages_added
+
+# Index by name
+named_enums1 = Hash[proto1.enums.map{|e| [e.name, e]}]
+named_enums2 = Hash[proto2.enums.map{|e| [e.name, e]}]
+named_messages1 = Hash[proto1.messages.map{|e| [e.name, e]}]
+named_messages2 = Hash[proto2.messages.map{|e| [e.name, e]}]
+
+enums_updated = []
+messages_updated = []
+
+enums.each do |name|
+  enum1, enum2 = named_enums1[name], named_enums2[name]
+  if enum1 != enum2
+    enums_updated << OpenStruct.new(name: name, changes: HashDiff.diff(enum1.to_hash, enum2.to_hash))
+  end
+end
+messages.each do |name|
+  message1, message2 = named_messages1[name], named_messages2[name]
+  if message1 != message2
+    messages_updated << OpenStruct.new(name: name, changes: HashDiff.diff(message1.to_hash, message2.to_hash))
+  end
+end
+
+# diffs_per_root = HashDiff.diff(hash1, hash2).group_by{|e| e[1].split('.')[0]}
+
+# Generate .md files for enums
+template = File.read(File.expand_path('../../templates/changelog.md.erb', __FILE__))
+basedir =  File.expand_path("../../_docs/api/changelogs/", __FILE__)
+FileUtils.mkdir_p basedir
+
+outpath = File.join(basedir, "v#{v1.join('_')}_to_v#{v2.join('_')}.md")
+IO.write(outpath, ERB.new(template, nil, '-').result(binding))

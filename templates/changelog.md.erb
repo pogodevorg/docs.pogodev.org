@@ -1,0 +1,55 @@
+---
+title: 'v<%= v1.join('.') %> to v<%= v2.join('.') %>'
+category: Changelogs
+---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
+
+# {{ page.title }}
+
+<%- if !enums_added.empty? || !messages_added.empty? %>
+## Added
+<%- enums_added.each do |name| %>
+- [<%= name %>](../../enums/<%= name %>/)
+<%- end -%>
+<%- messages_added.each do |name| %>
+- [<%= name %>](../../messages/<%= name %>/)
+<%- end -%>
+
+<% end %>
+<%- if !enums_removed.empty? || !messages_removed.empty? %>
+## Removed
+<%- enums_removed.each do |name| %>
+- ~~<%= name %>~~
+<%- end -%>
+<%- messages_removed.each do |name| %>
+- ~~<%= name %>~~
+<%- end -%>
+
+<% end %>
+<%- if !enums_updated.empty? || !messages_updated.empty? %>
+## Updated
+<%- enums_updated.each do |enum| %>
+- ### [<%= enum.name %>](../../enums/<%= enum.name %>/)
+<%- enum.changes.each do |diff| -%>
+<%- type, path, change = diff -%>
+  - `<%= type.gsub('+', 'ADDED').gsub('-', 'REMOVED') %> <%= path %>`:
+  <%- change.each do |key, value| -%>
+    - <%= key %>: `<%= value %>`
+  <%- end -%>
+<%- end -%>
+<%- end -%>
+<%- messages_updated.each do |message| %>
+- ### [<%= message.name %>](../../messages/<%= message.name %>/)
+<%- message.changes.each do |diff| -%>
+<%- type, path, change = diff -%>
+  - `<%= type.gsub('+', 'ADDED').gsub('-', 'REMOVED') %> <%= path %>`:
+  <%- change.each do |key, value| -%>
+    - <%= key %>: `<%= value %>`
+  <%- end -%>
+<%- end -%>
+<%- end -%>
+
+<% end %>
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

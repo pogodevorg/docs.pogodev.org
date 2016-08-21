@@ -23,13 +23,13 @@ Run the server and watch for changes in your files
 - proto2yml : Create a yml file out of a .proto file
 
 ```sh
-./bin/proto2yml proto/0.33.0.proto > _data/apis.yml
+./bin/proto2yml proto/v0.33.0.proto > _data/api_latest.yml
 ```
 
 - ymlapi2md : Create default .md files for enums and messages (templates used are in `./templates`)
 
 ```sh
-./bin/ymlapi2md _data/apis.yml
+./bin/ymlapi2md _data/api_latest.yml
 ```
 
 ### Issues

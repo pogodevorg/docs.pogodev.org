@@ -102,4 +102,9 @@ proto.each_with_index do |line, i|
   STDERR.puts "Warn: unmatched line #{i}: #{line}"
 end
 
+# Sort stuff a bit
+global.enums.sort_by!(&:name)
+global.messages.sort_by!(&:name)
+global.messages.each{|m| m.enums.sort_by!(&:name)}
+
 puts YAML.dump(global.to_hash)

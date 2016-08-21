@@ -61,7 +61,24 @@ layout: default
           </li>
         {% endfor %}
       </ul>
+    </div>
 
+    <div class="changelog">
+      <h2 class="docs-heading">
+        <a class="docs-title" href="{{ site.baseurl }}/docs/guides/">
+          <span class="docs-title-icon fa fa-history"></span>Changelogs
+        </a>
+      </h2>
+      <ul class="docs-list">
+      {% for doc in site.docs %}
+        {% if doc.category == 'Changelogs' %}
+          <li>
+            <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
+            <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
+          </li>
+        {% endif %}
+      {% endfor %}
+      </ul>
     </div>
   </div>
 </section>

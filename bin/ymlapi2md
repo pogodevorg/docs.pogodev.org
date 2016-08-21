@@ -27,8 +27,8 @@ if !File.exists?(file_arg)
 end
 
 # file_arg = '_data/apis.yml'
-# I prefer objects with direct access to hashes...
 hash = YAML.load_file(file_arg)
+# I prefer objects with direct access to hashes...
 json = hash.to_json
 proto = JSON.parse(json, object_class: OpenStruct)
 
