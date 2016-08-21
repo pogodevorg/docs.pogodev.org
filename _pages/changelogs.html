@@ -12,8 +12,7 @@ breadcrumb: Changelogs
 
 
 <ul class="docs-list">
-{% assign docs = site.docs %}
-{% for doc in docs %}
+{% for doc in site.docs reversed %}
   {% if doc.category == 'Changelogs' %}
     <li>
       <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>

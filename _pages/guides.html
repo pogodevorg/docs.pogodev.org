@@ -12,8 +12,7 @@ breadcrumb: Guides
 
 
 <ul class="docs-list">
-{% assign docs = site.docs %}
-{% for doc in docs %}
+{% for doc in site.docs %}
   {% if doc.category == 'Guides' %}
     <li>
       <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
