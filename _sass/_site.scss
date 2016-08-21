@@ -1,12 +1,13 @@
 // Header
-
-.site-header {
+ .site-header {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: $header-font-size;
   color: $header-color;
   background-color: $header-bg-color;
-  border-bottom-color: #1a1b23;
-  padding: golden-ratio($base-font-size, 1);
+  border-bottom: 1px solid darken($header-bg-color, 8%);
+  padding: golden-ratio($header-font-size, -1);
 
-  a { color: inherit; }
+  a { color: inherit; font-weight: bold; }
 
   a.active,
   a:hover {
@@ -23,24 +24,22 @@
 
 .site-header-nav {
   float: right;
-  margin-top: 7px;
+  line-height: golden-ratio($header-font-size, 2);
 }
 
 .site-header-icon {
-  width: 46px;
-  height: 46px;
+  width: golden-ratio($header-font-size, 2);
+  height: golden-ratio($header-font-size, 2);
   vertical-align: middle;
-  margin-right: golden-ratio($base-font-size, -2);
+  margin-right: golden-ratio($header-font-size, -2);
+}
 
-  .svg-stroke {
-    stroke: currentColor;
-    stroke-width: 1.2;
-    stroke-linecap: round;
-  }
+.svg-fill {
+  fill: currentColor;
+}
 
-  .svg-fill {
-    fill: currentColor;
-  }
+.site-header-title {
+  vertical-align: middle;
 }
 
 .site-header-nav-item {
@@ -48,11 +47,11 @@
 }
 
 .site-header-nav-item+.site-header-nav-item {
-    margin-left: golden-ratio($base-font-size, 1);
+    margin-left: golden-ratio($header-font-size, 1);
 }
 
 .site-header-nav-icon {
-  font-size: 32px;
+  font-size: golden-ratio($header-font-size, 2);;
   vertical-align: middle !important;
 }
 
@@ -69,14 +68,13 @@
 
 .footer {
   margin-top: auto;
-  border-color: #e0e5e6;
-  background: #f6f8f8;
+  background-color: $page-header-bg-color;
+  border-top: 1px solid darken($page-header-bg-color, 8%);
 
   position: relative;
   font-size: 13px;
   padding: golden-ratio($base-font-size, 1);
   text-align: center;
-  border-top: 1px solid #e8e8e8;
 
   a {
     color: #7c9398;
