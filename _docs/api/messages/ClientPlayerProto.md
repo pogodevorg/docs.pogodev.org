@@ -2,12 +2,14 @@
 title: 'ClientPlayerProto'
 sort_title: 'client_player_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # ClientPlayerProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -30,9 +32,11 @@ excerpt: FIXME
 
 ## Referenced by:
 
-- [GetPlayerOutProto](../GetPlayerOutProto/)
 - [CodenameResultProto](../CodenameResultProto/)
+- [GetPlayerOutProto](../GetPlayerOutProto/)
+- [MarkTutorialCompleteOutProto](../MarkTutorialCompleteOutProto/)
 - [SetAvatarOutProto](../SetAvatarOutProto/)
 - [SetContactSettingsOutProto](../SetContactSettingsOutProto/)
 - [SetPlayerTeamOutProto](../SetPlayerTeamOutProto/)
-- [MarkTutorialCompleteOutProto](../MarkTutorialCompleteOutProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

@@ -2,12 +2,14 @@
 title: 'TutorialCompletion'
 sort_title: 'tutorial_completion'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # TutorialCompletion
 
-> FIXME
+> {{ page.description }}
 
 ## Values:
 
@@ -26,3 +28,5 @@ excerpt: FIXME
 
 - [ClientPlayerProto](../../messages/ClientPlayerProto/)
 - [MarkTutorialCompleteProto](../../messages/MarkTutorialCompleteProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

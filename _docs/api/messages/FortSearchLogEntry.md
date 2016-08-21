@@ -2,12 +2,14 @@
 title: 'FortSearchLogEntry'
 sort_title: 'fort_search_log_entry'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # FortSearchLogEntry
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -25,3 +27,5 @@ excerpt: FIXME
 ## Referenced by:
 
 - [ActionLogEntry](../ActionLogEntry/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

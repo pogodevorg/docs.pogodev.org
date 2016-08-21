@@ -2,12 +2,14 @@
 title: 'AppliedItemsProto'
 sort_title: 'applied_items_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # AppliedItemsProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -21,3 +23,5 @@ excerpt: FIXME
 
 - [HoloInventoryItemProto](../HoloInventoryItemProto/)
 - [UseItemXpBoostOutProto](../UseItemXpBoostOutProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

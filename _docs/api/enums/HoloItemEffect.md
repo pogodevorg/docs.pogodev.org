@@ -2,12 +2,14 @@
 title: 'HoloItemEffect'
 sort_title: 'holo_item_effect'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # HoloItemEffect
 
-> FIXME
+> {{ page.description }}
 
 ## Values:
 
@@ -29,5 +31,7 @@ excerpt: FIXME
 
 ## Referenced by:
 
-- [PokeBallAttributesProto](../../messages/PokeBallAttributesProto/)
 - [FoodAttributesProto](../../messages/FoodAttributesProto/)
+- [PokeBallAttributesProto](../../messages/PokeBallAttributesProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

@@ -2,12 +2,14 @@
 title: 'HoloItemType'
 sort_title: 'holo_item_type'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # HoloItemType
 
-> FIXME
+> {{ page.description }}
 
 ## Values:
 
@@ -27,5 +29,7 @@ excerpt: FIXME
 
 ## Referenced by:
 
-- [ItemSettingsProto](../../messages/ItemSettingsProto/)
 - [AppliedItemProto](../../messages/AppliedItemProto/)
+- [ItemSettingsProto](../../messages/ItemSettingsProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

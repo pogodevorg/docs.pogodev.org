@@ -2,12 +2,14 @@
 title: 'EquippedBadgeProto'
 sort_title: 'equipped_badge_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # EquippedBadgeProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -23,3 +25,5 @@ excerpt: FIXME
 
 - [ClientPlayerProto](../ClientPlayerProto/)
 - [EquipBadgeOutProto](../EquipBadgeOutProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

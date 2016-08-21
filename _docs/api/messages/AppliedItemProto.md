@@ -2,12 +2,14 @@
 title: 'AppliedItemProto'
 sort_title: 'applied_item_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # AppliedItemProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -22,5 +24,7 @@ excerpt: FIXME
 
 ## Referenced by:
 
-- [UseIncenseActionOutProto](../UseIncenseActionOutProto/)
 - [AppliedItemsProto](../AppliedItemsProto/)
+- [UseIncenseActionOutProto](../UseIncenseActionOutProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

@@ -2,12 +2,14 @@
 title: 'BattleLogProto'
 sort_title: 'battle_log_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # BattleLogProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -20,18 +22,20 @@ excerpt: FIXME
 
 ## Enums:
 
+### BattleType
+- 0: BATTLE_TYPE_UNSET
+- 1: NORMAL
+- 2: TRAINING
 ### State
 - 0: STATE_UNSET
 - 1: ACTIVE
 - 2: VICTORY
 - 3: DEFEATED
 - 4: TIMED_OUT
-### BattleType
-- 0: BATTLE_TYPE_UNSET
-- 1: NORMAL
-- 2: TRAINING
 
 ## Referenced by:
 
-- [StartGymBattleOutProto](../StartGymBattleOutProto/)
 - [AttackGymOutProto](../AttackGymOutProto/)
+- [StartGymBattleOutProto](../StartGymBattleOutProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

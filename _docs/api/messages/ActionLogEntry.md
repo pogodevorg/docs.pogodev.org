@@ -2,12 +2,14 @@
 title: 'ActionLogEntry'
 sort_title: 'action_log_entry'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # ActionLogEntry
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -23,3 +25,5 @@ excerpt: FIXME
 ## Referenced by:
 
 - [GetActionLogResponse](../GetActionLogResponse/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

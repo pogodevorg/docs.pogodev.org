@@ -2,12 +2,14 @@
 title: 'EncounterSettingsProto'
 sort_title: 'encounter_settings_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # EncounterSettingsProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -24,3 +26,5 @@ excerpt: FIXME
 ## Referenced by:
 
 - [GameMasterClientTemplateProto](../GameMasterClientTemplateProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

@@ -2,12 +2,14 @@
 title: 'PokemonInfo'
 sort_title: 'pokemon_info'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # PokemonInfo
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -23,3 +25,5 @@ excerpt: FIXME
 
 - [AttackGymOutProto](../AttackGymOutProto/)
 - [BattleParticipantProto](../BattleParticipantProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

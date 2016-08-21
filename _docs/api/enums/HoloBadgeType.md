@@ -2,12 +2,14 @@
 title: 'HoloBadgeType'
 sort_title: 'holo_badge_type'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # HoloBadgeType
 
-> FIXME
+> {{ page.description }}
 
 ## Values:
 
@@ -53,7 +55,9 @@ excerpt: FIXME
 ## Referenced by:
 
 - [BadgeSettingsProto](../../messages/BadgeSettingsProto/)
-- [PlayerBadgeProto](../../messages/PlayerBadgeProto/)
-- [EquippedBadgeProto](../../messages/EquippedBadgeProto/)
 - [CheckAwardedBadgesOutProto](../../messages/CheckAwardedBadgesOutProto/)
 - [EquipBadgeProto](../../messages/EquipBadgeProto/)
+- [EquippedBadgeProto](../../messages/EquippedBadgeProto/)
+- [PlayerBadgeProto](../../messages/PlayerBadgeProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

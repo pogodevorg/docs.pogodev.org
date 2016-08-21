@@ -2,12 +2,14 @@
 title: 'Platform'
 sort_title: 'platform'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # Platform
 
-> FIXME
+> {{ page.description }}
 
 ## Values:
 
@@ -21,3 +23,5 @@ excerpt: FIXME
 
 - [AssetDigestRequestProto](../../messages/AssetDigestRequestProto/)
 - [GetRemoteConfigVersionsProto](../../messages/GetRemoteConfigVersionsProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

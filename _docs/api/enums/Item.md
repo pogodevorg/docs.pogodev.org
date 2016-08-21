@@ -2,12 +2,14 @@
 title: 'Item'
 sort_title: 'item'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # Item
 
-> FIXME
+> {{ page.description }}
 
 ## Values:
 
@@ -44,25 +46,27 @@ excerpt: FIXME
 
 ## Referenced by:
 
-- [UseItemCaptureProto](../../messages/UseItemCaptureProto/)
-- [CaptureProbabilityProto](../../messages/CaptureProbabilityProto/)
-- [UseIncenseActionProto](../../messages/UseIncenseActionProto/)
-- [AwardItemProto](../../messages/AwardItemProto/)
-- [ClientFortModifierProto](../../messages/ClientFortModifierProto/)
 - [AddFortModifierProto](../../messages/AddFortModifierProto/)
-- [ItemSettingsProto](../../messages/ItemSettingsProto/)
-- [IapItemDisplayProto](../../messages/IapItemDisplayProto/)
-- [HoloInventoryKeyProto](../../messages/HoloInventoryKeyProto/)
-- [PokemonProto](../../messages/PokemonProto/)
-- [ItemProto](../../messages/ItemProto/)
-- [InventoryUpgradeProto](../../messages/InventoryUpgradeProto/)
-- [EggIncubatorProto](../../messages/EggIncubatorProto/)
 - [AppliedItemProto](../../messages/AppliedItemProto/)
+- [AwardItemProto](../../messages/AwardItemProto/)
+- [CaptureProbabilityProto](../../messages/CaptureProbabilityProto/)
+- [ClientFortModifierProto](../../messages/ClientFortModifierProto/)
+- [EggIncubatorProto](../../messages/EggIncubatorProto/)
+- [GetInventoryProto](../../messages/GetInventoryProto/)
+- [HoloInventoryKeyProto](../../messages/HoloInventoryKeyProto/)
+- [IapItemDisplayProto](../../messages/IapItemDisplayProto/)
+- [InventoryUpgradeProto](../../messages/InventoryUpgradeProto/)
+- [ItemProto](../../messages/ItemProto/)
+- [ItemSettingsProto](../../messages/ItemSettingsProto/)
 - [LevelUpRewardsOutProto](../../messages/LevelUpRewardsOutProto/)
 - [PokemonFortProto](../../messages/PokemonFortProto/)
-- [GetInventoryProto](../../messages/GetInventoryProto/)
+- [PokemonProto](../../messages/PokemonProto/)
 - [RecycleItemProto](../../messages/RecycleItemProto/)
+- [UseIncenseActionProto](../../messages/UseIncenseActionProto/)
+- [UseItemCaptureProto](../../messages/UseItemCaptureProto/)
+- [UseItemGymProto](../../messages/UseItemGymProto/)
 - [UseItemPotionProto](../../messages/UseItemPotionProto/)
 - [UseItemReviveProto](../../messages/UseItemReviveProto/)
-- [UseItemGymProto](../../messages/UseItemGymProto/)
 - [UseItemXpBoostProto](../../messages/UseItemXpBoostProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

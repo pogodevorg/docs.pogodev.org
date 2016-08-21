@@ -2,12 +2,14 @@
 title: 'BattleParticipantProto'
 sort_title: 'battle_participant_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # BattleParticipantProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -22,6 +24,8 @@ excerpt: FIXME
 
 ## Referenced by:
 
-- [StartGymBattleOutProto](../StartGymBattleOutProto/)
 - [BattleActionProto](../BattleActionProto/)
 - [BattleResultsProto](../BattleResultsProto/)
+- [StartGymBattleOutProto](../StartGymBattleOutProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

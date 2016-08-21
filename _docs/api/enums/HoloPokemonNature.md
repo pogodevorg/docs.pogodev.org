@@ -2,12 +2,14 @@
 title: 'HoloPokemonNature'
 sort_title: 'holo_pokemon_nature'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # HoloPokemonNature
 
-> FIXME
+> {{ page.description }}
 
 ## Values:
 
@@ -23,3 +25,5 @@ excerpt: FIXME
 ## Referenced by:
 
 - None
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

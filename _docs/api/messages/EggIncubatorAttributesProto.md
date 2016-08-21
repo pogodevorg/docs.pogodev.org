@@ -2,12 +2,14 @@
 title: 'EggIncubatorAttributesProto'
 sort_title: 'egg_incubator_attributes_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # EggIncubatorAttributesProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -22,3 +24,5 @@ excerpt: FIXME
 ## Referenced by:
 
 - [ItemSettingsProto](../ItemSettingsProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

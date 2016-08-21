@@ -2,12 +2,14 @@
 title: 'NearbyPokemonProto'
 sort_title: 'nearby_pokemon_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # NearbyPokemonProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -24,3 +26,5 @@ excerpt: FIXME
 ## Referenced by:
 
 - [ClientMapCellProto](../ClientMapCellProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

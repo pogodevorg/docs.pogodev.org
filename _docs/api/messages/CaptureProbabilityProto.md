@@ -2,12 +2,14 @@
 title: 'CaptureProbabilityProto'
 sort_title: 'capture_probability_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # CaptureProbabilityProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -21,6 +23,8 @@ excerpt: FIXME
 
 ## Referenced by:
 
+- [DiskEncounterOutProto](../DiskEncounterOutProto/)
 - [EncounterOutProto](../EncounterOutProto/)
 - [IncenseEncounterOutProto](../IncenseEncounterOutProto/)
-- [DiskEncounterOutProto](../DiskEncounterOutProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

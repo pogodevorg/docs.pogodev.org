@@ -2,12 +2,14 @@
 title: 'EggIncubatorsProto'
 sort_title: 'egg_incubators_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # EggIncubatorsProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -20,3 +22,5 @@ excerpt: FIXME
 ## Referenced by:
 
 - [HoloInventoryItemProto](../HoloInventoryItemProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

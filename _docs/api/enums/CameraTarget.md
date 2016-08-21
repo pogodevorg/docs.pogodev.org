@@ -2,12 +2,14 @@
 title: 'CameraTarget'
 sort_title: 'camera_target'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # CameraTarget
 
-> FIXME
+> {{ page.description }}
 
 ## Values:
 
@@ -29,3 +31,5 @@ excerpt: FIXME
 ## Referenced by:
 
 - [CameraSettingsProto](../../messages/CameraSettingsProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

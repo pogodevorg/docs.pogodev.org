@@ -2,12 +2,14 @@
 title: 'GameMasterClientTemplateProto'
 sort_title: 'game_master_client_template_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # GameMasterClientTemplateProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -35,3 +37,5 @@ excerpt: FIXME
 ## Referenced by:
 
 - [GetGameMasterClientTemplatesOutProto](../GetGameMasterClientTemplatesOutProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

@@ -2,12 +2,14 @@
 title: 'FortDetailsOutProto'
 sort_title: 'fort_details_out_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # FortDetailsOutProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -31,6 +33,8 @@ excerpt: FIXME
 
 ## Referenced by:
 
+- [AddFortModifierOutProto](../AddFortModifierOutProto/)
 - [FortDeployOutProto](../FortDeployOutProto/)
 - [FortRecallOutProto](../FortRecallOutProto/)
-- [AddFortModifierOutProto](../AddFortModifierOutProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

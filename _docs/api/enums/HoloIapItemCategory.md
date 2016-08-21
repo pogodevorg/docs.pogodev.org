@@ -2,12 +2,14 @@
 title: 'HoloIapItemCategory'
 sort_title: 'holo_iap_item_category'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # HoloIapItemCategory
 
-> FIXME
+> {{ page.description }}
 
 ## Values:
 
@@ -20,3 +22,5 @@ excerpt: FIXME
 ## Referenced by:
 
 - [IapItemDisplayProto](../../messages/IapItemDisplayProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

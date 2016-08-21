@@ -2,12 +2,14 @@
 title: 'PokemonProto'
 sort_title: 'pokemon_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # PokemonProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -48,17 +50,19 @@ excerpt: FIXME
 
 ## Referenced by:
 
-- [EncounterTutorialCompleteOutProto](../EncounterTutorialCompleteOutProto/)
-- [IncenseEncounterOutProto](../IncenseEncounterOutProto/)
-- [DiskEncounterOutProto](../DiskEncounterOutProto/)
-- [EvolvePokemonOutProto](../EvolvePokemonOutProto/)
-- [FortSearchOutProto](../FortSearchOutProto/)
-- [FortDetailsOutProto](../FortDetailsOutProto/)
-- [FortDeployOutProto](../FortDeployOutProto/)
-- [GymMembershipProto](../GymMembershipProto/)
-- [PokemonInfo](../PokemonInfo/)
-- [HoloInventoryItemProto](../HoloInventoryItemProto/)
-- [WildPokemonProto](../WildPokemonProto/)
 - [DebugUpdateInventoryProto](../DebugUpdateInventoryProto/)
+- [DiskEncounterOutProto](../DiskEncounterOutProto/)
+- [EncounterTutorialCompleteOutProto](../EncounterTutorialCompleteOutProto/)
+- [EvolvePokemonOutProto](../EvolvePokemonOutProto/)
+- [FortDeployOutProto](../FortDeployOutProto/)
+- [FortDetailsOutProto](../FortDetailsOutProto/)
+- [FortSearchOutProto](../FortSearchOutProto/)
+- [GymMembershipProto](../GymMembershipProto/)
+- [HoloInventoryItemProto](../HoloInventoryItemProto/)
+- [IncenseEncounterOutProto](../IncenseEncounterOutProto/)
+- [PokemonInfo](../PokemonInfo/)
 - [PollForTradeResponseOutProto](../PollForTradeResponseOutProto/)
 - [UpgradePokemonOutProto](../UpgradePokemonOutProto/)
+- [WildPokemonProto](../WildPokemonProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

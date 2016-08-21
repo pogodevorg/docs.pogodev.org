@@ -2,12 +2,14 @@
 title: 'ExperienceBoostAttributesProto'
 sort_title: 'experience_boost_attributes_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # ExperienceBoostAttributesProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -21,3 +23,5 @@ excerpt: FIXME
 ## Referenced by:
 
 - [ItemSettingsProto](../ItemSettingsProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

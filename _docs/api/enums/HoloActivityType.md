@@ -2,12 +2,14 @@
 title: 'HoloActivityType'
 sort_title: 'holo_activity_type'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # HoloActivityType
 
-> FIXME
+> {{ page.description }}
 
 ## Values:
 
@@ -39,3 +41,5 @@ excerpt: FIXME
 ## Referenced by:
 
 - [CaptureScoreProto](../../messages/CaptureScoreProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

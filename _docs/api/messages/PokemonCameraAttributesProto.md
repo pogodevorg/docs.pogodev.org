@@ -2,12 +2,14 @@
 title: 'PokemonCameraAttributesProto'
 sort_title: 'pokemon_camera_attributes_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # PokemonCameraAttributesProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -24,3 +26,5 @@ excerpt: FIXME
 ## Referenced by:
 
 - [PokemonSettingsProto](../PokemonSettingsProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

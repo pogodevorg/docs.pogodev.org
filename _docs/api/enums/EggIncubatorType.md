@@ -2,12 +2,14 @@
 title: 'EggIncubatorType'
 sort_title: 'egg_incubator_type'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # EggIncubatorType
 
-> FIXME
+> {{ page.description }}
 
 ## Values:
 
@@ -18,3 +20,5 @@ excerpt: FIXME
 
 - [EggIncubatorAttributesProto](../../messages/EggIncubatorAttributesProto/)
 - [EggIncubatorProto](../../messages/EggIncubatorProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

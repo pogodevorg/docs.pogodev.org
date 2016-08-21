@@ -2,12 +2,14 @@
 title: 'CatchPokemonLogEntry'
 sort_title: 'catch_pokemon_log_entry'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # CatchPokemonLogEntry
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -27,3 +29,5 @@ excerpt: FIXME
 ## Referenced by:
 
 - [ActionLogEntry](../ActionLogEntry/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

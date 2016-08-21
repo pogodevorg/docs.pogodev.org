@@ -2,12 +2,14 @@
 title: 'CurrencyQuantityProto'
 sort_title: 'currency_quantity_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # CurrencyQuantityProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -21,3 +23,5 @@ excerpt: FIXME
 ## Referenced by:
 
 - [ClientPlayerProto](../ClientPlayerProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

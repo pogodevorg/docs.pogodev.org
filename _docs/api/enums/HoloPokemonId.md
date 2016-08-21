@@ -2,12 +2,14 @@
 title: 'HoloPokemonId'
 sort_title: 'holo_pokemon_id'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # HoloPokemonId
 
-> FIXME
+> {{ page.description }}
 
 ## Values:
 
@@ -167,3 +169,5 @@ excerpt: FIXME
 ## Referenced by:
 
 - [PokemonSettingsProto](../../messages/PokemonSettingsProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

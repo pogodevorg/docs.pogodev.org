@@ -2,12 +2,14 @@
 title: 'InventoryUpgradeType'
 sort_title: 'inventory_upgrade_type'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # InventoryUpgradeType
 
-> FIXME
+> {{ page.description }}
 
 ## Values:
 
@@ -19,3 +21,5 @@ excerpt: FIXME
 
 - [InventoryUpgradeAttributesProto](../../messages/InventoryUpgradeAttributesProto/)
 - [InventoryUpgradeProto](../../messages/InventoryUpgradeProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

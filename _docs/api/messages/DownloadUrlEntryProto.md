@@ -2,12 +2,14 @@
 title: 'DownloadUrlEntryProto'
 sort_title: 'download_url_entry_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # DownloadUrlEntryProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -23,3 +25,5 @@ excerpt: FIXME
 ## Referenced by:
 
 - [DownloadUrlOutProto](../DownloadUrlOutProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

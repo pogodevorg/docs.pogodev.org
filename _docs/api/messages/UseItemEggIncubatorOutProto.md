@@ -2,12 +2,14 @@
 title: 'UseItemEggIncubatorOutProto'
 sort_title: 'use_item_egg_incubator_out_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # UseItemEggIncubatorOutProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -29,3 +31,5 @@ excerpt: FIXME
 ## Referenced by:
 
 - None
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

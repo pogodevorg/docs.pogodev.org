@@ -2,12 +2,14 @@
 title: 'HoloPokemonType'
 sort_title: 'holo_pokemon_type'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # HoloPokemonType
 
-> FIXME
+> {{ page.description }}
 
 ## Values:
 
@@ -33,7 +35,9 @@ excerpt: FIXME
 
 ## Referenced by:
 
-- [PokemonSettingsProto](../../messages/PokemonSettingsProto/)
 - [IncenseAttributesProto](../../messages/IncenseAttributesProto/)
 - [MoveSettingsProto](../../messages/MoveSettingsProto/)
+- [PokemonSettingsProto](../../messages/PokemonSettingsProto/)
 - [TypeEffectiveSettingsProto](../../messages/TypeEffectiveSettingsProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

@@ -2,12 +2,14 @@
 title: 'PokemonFortProto'
 sort_title: 'pokemon_fort_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # PokemonFortProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -30,16 +32,18 @@ excerpt: FIXME
 
 ## Enums:
 
+### RenderingType
+- 0: DEFAULT
+- 1: INTERNAL_TEST
 ### Sponsor
 - 0: UNSET
 - 1: MCDONALDS
 - 2: POKEMON_STORE
-### RenderingType
-- 0: DEFAULT
-- 1: INTERNAL_TEST
 
 ## Referenced by:
 
 - [ClientMapCellProto](../ClientMapCellProto/)
 - [GymStateProto](../GymStateProto/)
 - [PlayerUpdateOutProto](../PlayerUpdateOutProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

@@ -2,12 +2,14 @@
 title: 'PokemonUpgradeSettingsProto'
 sort_title: 'pokemon_upgrade_settings_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # PokemonUpgradeSettingsProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -23,3 +25,5 @@ excerpt: FIXME
 ## Referenced by:
 
 - [GameMasterClientTemplateProto](../GameMasterClientTemplateProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

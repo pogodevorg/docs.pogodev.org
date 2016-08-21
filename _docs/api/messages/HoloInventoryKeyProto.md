@@ -2,12 +2,14 @@
 title: 'HoloInventoryKeyProto'
 sort_title: 'holo_inventory_key_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # HoloInventoryKeyProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -29,3 +31,5 @@ excerpt: FIXME
 ## Referenced by:
 
 - None
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

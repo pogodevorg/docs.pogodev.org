@@ -2,12 +2,14 @@
 title: 'Team'
 sort_title: 'team'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # Team
 
-> FIXME
+> {{ page.description }}
 
 ## Values:
 
@@ -19,3 +21,5 @@ excerpt: FIXME
 ## Referenced by:
 
 - [SetPlayerTeamProto](../../messages/SetPlayerTeamProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

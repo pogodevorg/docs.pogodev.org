@@ -2,12 +2,14 @@
 title: 'ClientMapCellProto'
 sort_title: 'client_map_cell_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # ClientMapCellProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -30,3 +32,5 @@ excerpt: FIXME
 ## Referenced by:
 
 - [GetMapObjectsOutProto](../GetMapObjectsOutProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)

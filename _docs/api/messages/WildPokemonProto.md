@@ -2,12 +2,14 @@
 title: 'WildPokemonProto'
 sort_title: 'wild_pokemon_proto'
 category: API
-excerpt: FIXME
+excerpt: 'FIXME: Add a description'
 ---
+
+[comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
 # WildPokemonProto
 
-> FIXME
+> {{ page.excerpt }}
 
 ## Attributes:
 
@@ -25,6 +27,8 @@ excerpt: FIXME
 
 ## Referenced by:
 
-- [EncounterOutProto](../EncounterOutProto/)
 - [ClientMapCellProto](../ClientMapCellProto/)
+- [EncounterOutProto](../EncounterOutProto/)
 - [PlayerUpdateOutProto](../PlayerUpdateOutProto/)
+
+[comment]: <> (YOU CAN EDIT AFTER THIS)
