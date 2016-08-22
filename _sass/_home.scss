@@ -12,12 +12,41 @@
   }
 }
 
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 .hero-logo {
-  max-width: 200px;
+  max-width: 216px;
+  line-height: 0;
   margin: auto;
+  -webkit-animation: spin 5s linear 0s infinite;
+  animation: spin 5s linear 0s infinite;
+
+  svg {
+    -webkit-animation: spin golden-ratio(5s, -2) linear 0s infinite;
+    animation: spin golden-ratio(5s, -2) linear 0s infinite;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+
+  &:hover {
+    svg {
+      -webkit-animation-play-state: running;
+      animation-play-state: running;
+    }
+  }
 
   @media screen and (max-width: $small-screen) {
-    max-width: 90px;
+    max-width: 108px;
   }
 }
 
