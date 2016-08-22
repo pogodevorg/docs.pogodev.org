@@ -1,11 +1,11 @@
-# pdoc
+# Pokekon Go Dev Documentation
 
 ### Getting Started
 
 Set up your project in your code directory
 ```
-git clone https://github.com/hamue/pdoc.git
-cd pdoc
+git clone https://github.com/pogodevorg/pogodevorg.github.io.git
+cd pogodevorg.github.io.git
 ```
 
 Install dependencies
@@ -35,16 +35,16 @@ Run the server and watch for changes in your files
 ### Issues
 
 If you have problems, please create a
-[GitHub Issue](https://github.com/hamue/pdoc/issues).
+[GitHub Issue](https://github.com/pogodevorg/pogodevorg.github.io/issues).
 
 ### Contributing
 
 Have a fix or want to add a feature?
-[Pull Requests](https://github.com/hamue/pdoc/pulls) are welcome!
+[Pull Requests](https://github.com/pogodevorg/pogodevorg.github.io/pulls) are welcome!
 
 ### Credits
 
-Thank you to all of [the contributors](https://github.com/hamue/pdoc/contributors)!
+Thank you to all of [the contributors](https://github.com/pogodevorg/pogodevorg.github.io/contributors)!
 
 ### License
 
