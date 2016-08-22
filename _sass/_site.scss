@@ -20,6 +20,11 @@
 
 .site-header-logo {
   float: left;
+
+  &:hover .site-header-icon {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 .site-header-nav {
@@ -32,6 +37,8 @@
   height: golden-ratio($header-font-size, 2);
   vertical-align: middle;
   margin-right: golden-ratio($header-font-size, -2);
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
 }
 
 .svg-fill {
