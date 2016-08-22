@@ -3,7 +3,7 @@ description: 'Unofficial Pokemon GO Development'
 url: 'http://docs.pogodev.org'
 baseurl: ''
 repository: 'pogodevorg/pogodevorg.github.io'
-branch: 'gh-pages'
+branch: 'master'
 
 latest_api_version: 0.33.0
 
