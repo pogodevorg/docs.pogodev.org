@@ -6,11 +6,19 @@
   color: $hero-color;
   font-size: golden-ratio($base-font-size, 2);
   font-weight: 300;
+
+  @media screen and (max-width: $small-screen) {
+    font-size: golden-ratio($base-font-size, 1);
+  }
 }
 
 .hero-logo {
   max-width: 200px;
   margin: auto;
+
+  @media screen and (max-width: $small-screen) {
+    max-width: 90px;
+  }
 }
 
 .hero-lead {
@@ -23,6 +31,11 @@
   border-bottom: 1px solid darken($header-bg-color, 8%);
   padding: golden-ratio($base-font-size, 1);
   text-align: center;
+
+  @media screen and (max-width: $small-screen) {
+    font-size: 14px;
+    padding: golden-ratio($base-font-size, 0);
+  }
 
   span + span:not(:last-child) {
     border-right: 1px solid darken($header-bg-color, 8%);
@@ -67,7 +80,7 @@
   background-color: $header-bg-color;
   color: $main-color-subtle;
 
-  a { color: inherit; font-weight: bold; }
+  a { color: inherit }
 
   a:hover {
     text-decoration: none;
@@ -91,6 +104,10 @@
 
 .hero-link {
   @include span-columns(3);
+  @media screen and (max-width: $small-screen) {
+    @include span-columns(12);
+    margin: golden-ratio($base-font-size, 1) auto;
+  }
 }
 
 .hero-icon {
@@ -110,4 +127,11 @@
 .footer.footer-home {
   background-color: lighten($header-bg-color, 3%);
   border-top: 1px solid darken($header-bg-color, 8%);
+
+
+  .footer-love {
+    @media screen and (max-width: $small-screen) {
+      border-top: 1px solid darken($header-bg-color, 8%);
+    }
+  }
 }

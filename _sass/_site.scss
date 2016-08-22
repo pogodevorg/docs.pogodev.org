@@ -16,6 +16,11 @@
   }
 
   a:active { color: $header-color-subtle; }
+
+  @media screen and (max-width: $small-screen) {
+    text-align: center;
+    padding: 0;
+  }
 }
 
 .site-header-logo {
@@ -30,6 +35,18 @@
 .site-header-nav {
   float: right;
   line-height: golden-ratio($header-font-size, 2);
+}
+
+@media screen and (max-width: $small-screen) {
+  .site-header-logo,
+  .site-header-nav {
+    padding: golden-ratio($header-font-size, -1);
+    display: block;
+    float: none;
+  }
+  .site-header-nav {
+    border-top: 1px solid darken($header-bg-color, 8%);
+  }
 }
 
 .site-header-icon {
@@ -79,7 +96,7 @@
   border-top: 1px solid darken($page-header-bg-color, 8%);
 
   position: relative;
-  font-size: 13px;
+  font-size: $header-font-size;
   padding: golden-ratio($base-font-size, 1);
   text-align: center;
 
@@ -91,6 +108,15 @@
     color: #3a585f;
     text-decoration: underline;
   }
+
+  @media screen and (max-width: $small-screen) {
+    text-align: center;
+    padding: 0;
+
+    a {
+      line-height: golden-ratio($base-font-size, 2);
+    }
+  }
 }
 
 .footer-nav {
@@ -98,9 +124,26 @@
 }
 
 .footer-nav-item+.footer-nav-item {
-  margin-left: golden-ratio(13px, 1);
+  margin-left: golden-ratio($header-font-size, 1);
+
+  @media screen and (max-width: $small-screen) {
+    margin-left: golden-ratio($header-font-size, 0);
+    margin-right: golden-ratio($header-font-size, 0);
+  }
 }
 
 .footer-love {
   float: right;
+}
+
+@media screen and (max-width: $small-screen) {
+  .footer-nav,
+  .footer-love {
+    padding: golden-ratio($header-font-size, -1);
+    display: block;
+    float: none;
+  }
+  .footer-love {
+    border-top: 1px solid darken($page-header-bg-color, 8%);
+  }
 }

@@ -3,6 +3,12 @@ $base-header-hue: 1;
 $base-font-size: 16px;
 $header-font-size: 13px;
 
+// breakpoints
+$small-screen: 735px;     // small: 735x*
+$medium-screen: 1068px;   // medium: 1068x890
+// large is default
+$xlarge-screen: 1442px;   // xlarge: 1442x1050
+
 // main
 $main-bg-color:       hsl($base-hue, 12%, 100%);
 $main-bg-color-shade: hsl($base-hue, 12%, 97%);

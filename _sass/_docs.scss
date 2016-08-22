@@ -4,6 +4,9 @@
 
 .guides, .apis, .changelog {
   @include span-columns(4);
+  @media screen and (max-width: $small-screen) {
+    @include span-columns(12);
+  }
 }
 
 .docs-heading {
