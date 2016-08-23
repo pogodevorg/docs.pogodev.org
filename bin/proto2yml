@@ -79,7 +79,7 @@ proto.each_with_index do |line, i|
   end
 
   # Parse message attributes
-  if m = line.match(/^\s*((?<modifier>)[[:graph:]]+\s+){0,1}(?<type>[[:graph:]]+)\s+(?<name>[[:graph:]]+)\s+=\s+(?<tag>[[:graph:]]+);\s*$/)
+  if m = line.match(/^\s*((?<modifier>[[:graph:]]+)\s+){0,1}(?<type>[[:graph:]]+)\s+(?<name>[[:graph:]]+)\s+=\s+(?<tag>[[:graph:]]+);\s*$/)
     puts "  Attribute: #{m['name']} (#{m['type']}) #{m['tag']}" if options[:verbose]
     attribute = OpenStruct.new(type: m['type'], name: m['name'], tag: m['tag'], modifier: m['modifier'])
     stack.last.attributes.push attribute
