@@ -133,8 +133,23 @@
   }
 }
 
+.hero-block {
+  @include row();
+}
+
+.hero-block {
+  margin-bottom: golden-ratio($base-font-size, 2);
+}
+
+.hero-block {
+  &:last-child { margin-bottom: 0;}
+  @media screen and (max-width: $small-screen) {
+    margin-bottom: 0;
+  }
+}
+
 .hero-link {
-  @include span-columns(3);
+  @include span-columns(4);
   @media screen and (max-width: $small-screen) {
     @include span-columns(12);
     margin: golden-ratio($base-font-size, 1) auto;
