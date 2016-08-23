@@ -32,8 +32,8 @@
   animation: spin 5s linear 0s infinite;
 
   svg {
-    -webkit-animation: spin golden-ratio(5s, -2) linear 0s infinite;
-    animation: spin golden-ratio(5s, -2) linear 0s infinite;
+    -webkit-animation: spin golden-ratio(5s, -3) linear 0s infinite;
+    animation: spin golden-ratio(5s, -3) linear 0s infinite;
     -webkit-animation-play-state: paused;
     animation-play-state: paused;
   }
@@ -47,6 +47,8 @@
 
   @media screen and (max-width: $small-screen) {
     max-width: 108px;
+    -webkit-animation: spin golden-ratio(5s, -4) ease-in-out golden-ratio(5s, -4) 1;
+    animation: spin golden-ratio(5s, -4) ease-in-out golden-ratio(5s, -4) 1;
   }
 }
 
