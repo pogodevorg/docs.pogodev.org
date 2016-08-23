@@ -14,8 +14,8 @@ excerpt: 'FIXME: Add a description'
 ## Attributes:
 
 - 1: result ([Result](#result))
-- 2: currency_type (string) 
-- 3: currency_awarded (int32) 
+- 2: currency_type (string) repeated
+- 3: currency_awarded (int32) repeated
 - 4: num_defenders (int32)
 
 ## Enums:

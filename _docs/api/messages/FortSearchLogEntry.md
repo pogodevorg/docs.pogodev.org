@@ -15,7 +15,7 @@ excerpt: 'FIXME: Add a description'
 
 - 1: result ([Result](#result))
 - 2: fort_id (string)
-- 3: items ([ItemProto](../ItemProto/)) 
+- 3: items ([ItemProto](../ItemProto/)) repeated
 - 4: eggs (int32)
 
 ## Enums:

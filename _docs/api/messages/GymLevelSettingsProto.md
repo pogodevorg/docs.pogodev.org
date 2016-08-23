@@ -13,10 +13,10 @@ excerpt: 'FIXME: Add a description'
 
 ## Attributes:
 
-- 1: required_exp (int32) 
-- 2: leader_slots (int32) 
-- 3: trainer_slots (int32) 
-- 4: search_roll_bonus (int32) 
+- 1: required_exp (int32) repeated
+- 2: leader_slots (int32) repeated
+- 3: trainer_slots (int32) repeated
+- 4: search_roll_bonus (int32) repeated
 
 ## Enums:
 

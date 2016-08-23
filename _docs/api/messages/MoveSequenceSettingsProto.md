@@ -13,7 +13,7 @@ excerpt: 'FIXME: Add a description'
 
 ## Attributes:
 
-- 1: sequence (string) 
+- 1: sequence (string) repeated
 
 ## Enums:
 

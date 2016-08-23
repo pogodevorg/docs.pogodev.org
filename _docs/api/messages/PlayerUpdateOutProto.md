@@ -13,8 +13,8 @@ excerpt: 'FIXME: Add a description'
 
 ## Attributes:
 
-- 1: wild_pokemon ([WildPokemonProto](../WildPokemonProto/)) 
-- 2: fort ([PokemonFortProto](../PokemonFortProto/)) 
+- 1: wild_pokemon ([WildPokemonProto](../WildPokemonProto/)) repeated
+- 2: fort ([PokemonFortProto](../PokemonFortProto/)) repeated
 - 3: forts_nearby (int32)
 
 ## Enums:

@@ -13,7 +13,7 @@ excerpt: 'FIXME: Add a description'
 
 ## Attributes:
 
-- 1: codename (string) 
+- 1: codename (string) repeated
 - 2: success (bool)
 
 ## Enums:

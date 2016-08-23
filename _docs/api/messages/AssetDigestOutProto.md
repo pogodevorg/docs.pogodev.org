@@ -13,7 +13,7 @@ excerpt: 'FIXME: Add a description'
 
 ## Attributes:
 
-- 1: digest ([AssetDigestEntryProto](../AssetDigestEntryProto/)) 
+- 1: digest ([AssetDigestEntryProto](../AssetDigestEntryProto/)) repeated
 - 2: timestamp (uint64)
 
 ## Enums:

@@ -14,8 +14,8 @@ excerpt: 'FIXME: Add a description'
 ## Attributes:
 
 - 1: result ([Result](#result))
-- 2: items ([AwardItemProto](../AwardItemProto/)) 
-- 4: items_unlocked ([Item](../../enums/Item/)) 
+- 2: items ([AwardItemProto](../AwardItemProto/)) repeated
+- 4: items_unlocked ([Item](../../enums/Item/)) repeated
 
 ## Enums:
 

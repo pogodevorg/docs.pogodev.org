@@ -20,10 +20,10 @@ excerpt: 'FIXME: Add a description'
 - 6: camera ([PokemonCameraAttributesProto](../PokemonCameraAttributesProto/))
 - 7: encounter ([PokemonEncounterAttributesProto](../PokemonEncounterAttributesProto/))
 - 8: stats ([PokemonStatsAttributesProto](../PokemonStatsAttributesProto/))
-- 9: quick_moves ([HoloPokemonMove](../../enums/HoloPokemonMove/)) 
-- 10: cinematic_moves ([HoloPokemonMove](../../enums/HoloPokemonMove/)) 
-- 11: anim_time (float) 
-- 12: evolution ([HoloPokemonId](../../enums/HoloPokemonId/)) 
+- 9: quick_moves ([HoloPokemonMove](../../enums/HoloPokemonMove/)) repeated
+- 10: cinematic_moves ([HoloPokemonMove](../../enums/HoloPokemonMove/)) repeated
+- 11: anim_time (float) repeated
+- 12: evolution ([HoloPokemonId](../../enums/HoloPokemonId/)) repeated
 - 13: evolution_pips (int32)
 - 14: pokemon_class ([HoloPokemonClass](../../enums/HoloPokemonClass/))
 - 15: pokedex_height_m (float)

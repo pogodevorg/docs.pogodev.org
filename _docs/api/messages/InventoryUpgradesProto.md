@@ -13,7 +13,7 @@ excerpt: 'FIXME: Add a description'
 
 ## Attributes:
 
-- 1: inventory_upgrade ([InventoryUpgradeProto](../InventoryUpgradeProto/)) 
+- 1: inventory_upgrade ([InventoryUpgradeProto](../InventoryUpgradeProto/)) repeated
 
 ## Enums:
 

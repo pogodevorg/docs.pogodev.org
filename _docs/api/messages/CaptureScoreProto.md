@@ -13,10 +13,10 @@ excerpt: 'FIXME: Add a description'
 
 ## Attributes:
 
-- 1: activity_type ([HoloActivityType](../../enums/HoloActivityType/)) 
-- 2: exp (int32) 
-- 3: candy (int32) 
-- 4: stardust (int32) 
+- 1: activity_type ([HoloActivityType](../../enums/HoloActivityType/)) repeated
+- 2: exp (int32) repeated
+- 3: candy (int32) repeated
+- 4: stardust (int32) repeated
 
 ## Enums:
 

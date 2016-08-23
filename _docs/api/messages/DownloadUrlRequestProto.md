@@ -13,7 +13,7 @@ excerpt: 'FIXME: Add a description'
 
 ## Attributes:
 
-- 1: asset_id (string) 
+- 1: asset_id (string) repeated
 
 ## Enums:
 

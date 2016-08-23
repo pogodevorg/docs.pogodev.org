@@ -13,7 +13,7 @@ excerpt: 'FIXME: Add a description'
 
 ## Attributes:
 
-- 1: tutorial_complete ([TutorialCompletion](../../enums/TutorialCompletion/)) 
+- 1: tutorial_complete ([TutorialCompletion](../../enums/TutorialCompletion/)) repeated
 - 2: send_marketing_emails (bool)
 - 3: send_push_notifications (bool)
 

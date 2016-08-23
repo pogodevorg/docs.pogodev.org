@@ -15,9 +15,9 @@ excerpt: 'FIXME: Add a description'
 
 - 1: id (string)
 - 2: team (int32)
-- 3: pokemon ([PokemonProto](../PokemonProto/)) 
+- 3: pokemon ([PokemonProto](../PokemonProto/)) repeated
 - 4: name (string)
-- 5: image_url (string) 
+- 5: image_url (string) repeated
 - 6: fp (int32)
 - 7: stamina (int32)
 - 8: max_stamina (int32)
@@ -25,7 +25,7 @@ excerpt: 'FIXME: Add a description'
 - 10: latitude (double)
 - 11: longitude (double)
 - 12: description (string)
-- 13: modifier ([ClientFortModifierProto](../ClientFortModifierProto/)) 
+- 13: modifier ([ClientFortModifierProto](../ClientFortModifierProto/)) repeated
 
 ## Enums:
 

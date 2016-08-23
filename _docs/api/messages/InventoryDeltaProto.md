@@ -15,7 +15,7 @@ excerpt: 'FIXME: Add a description'
 
 - 1: original_timestamp (int64)
 - 2: new_timestamp (int64)
-- 3: inventory_item ([InventoryItemProto](../InventoryItemProto/)) 
+- 3: inventory_item ([InventoryItemProto](../InventoryItemProto/)) repeated
 
 ## Enums:
 

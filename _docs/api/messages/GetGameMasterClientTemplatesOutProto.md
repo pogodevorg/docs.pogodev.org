@@ -14,7 +14,7 @@ excerpt: 'FIXME: Add a description'
 ## Attributes:
 
 - 1: result ([Result](#result))
-- 2: items ([GameMasterClientTemplateProto](../GameMasterClientTemplateProto/)) 
+- 2: items ([GameMasterClientTemplateProto](../GameMasterClientTemplateProto/)) repeated
 - 3: timestamp (uint64)
 
 ## Enums:

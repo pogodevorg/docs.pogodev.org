@@ -1583,7 +1583,7 @@ messages:
   - type: AppliedItemProto
     name: item
     tag: '4'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: AssetDigestEntryProto
   sort_title: asset_digest_entry_proto
@@ -1619,7 +1619,7 @@ messages:
   - type: AssetDigestEntryProto
     name: digest
     tag: '1'
-    modifier: ''
+    modifier: repeated
   - type: uint64
     name: timestamp
     tag: '2'
@@ -1698,7 +1698,7 @@ messages:
   - type: BattleActionProto
     name: attacker_actions
     tag: '3'
-    modifier: ''
+    modifier: repeated
   - type: BattleActionProto
     name: last_retrieved_action
     tag: '4'
@@ -1738,7 +1738,7 @@ messages:
   - type: int32
     name: targets
     tag: '3'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: BattleActionProto
   sort_title: battle_action_proto
@@ -1859,7 +1859,7 @@ messages:
   - type: BattleActionProto
     name: battle_actions
     tag: '4'
-    modifier: ''
+    modifier: repeated
   - type: int64
     name: battle_start_ms
     tag: '5'
@@ -1905,11 +1905,11 @@ messages:
   - type: PokemonInfo
     name: reserve_pokemon
     tag: '3'
-    modifier: ''
+    modifier: repeated
   - type: PokemonInfo
     name: defeated_pokemon
     tag: '4'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: BattleResultsProto
   sort_title: battle_results_proto
@@ -1921,11 +1921,11 @@ messages:
   - type: BattleParticipantProto
     name: attackers
     tag: '2'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: player_xp_awarded
     tag: '3'
-    modifier: ''
+    modifier: repeated
   - type: int64
     name: next_defender_pokemon_id
     tag: '4'
@@ -1945,63 +1945,63 @@ messages:
   - type: CameraInterpolation
     name: interpolation
     tag: '2'
-    modifier: ''
+    modifier: repeated
   - type: CameraTarget
     name: target_type
     tag: '3'
-    modifier: ''
+    modifier: repeated
   - type: float
     name: ease_in_speed
     tag: '4'
-    modifier: ''
+    modifier: repeated
   - type: float
     name: ease_out_speed
     tag: '5'
-    modifier: ''
+    modifier: repeated
   - type: float
     name: duration_s
     tag: '6'
-    modifier: ''
+    modifier: repeated
   - type: float
     name: wait_s
     tag: '7'
-    modifier: ''
+    modifier: repeated
   - type: float
     name: transition_s
     tag: '8'
-    modifier: ''
+    modifier: repeated
   - type: float
     name: angle_deg
     tag: '9'
-    modifier: ''
+    modifier: repeated
   - type: float
     name: angle_offset_deg
     tag: '10'
-    modifier: ''
+    modifier: repeated
   - type: float
     name: pitch_deg
     tag: '11'
-    modifier: ''
+    modifier: repeated
   - type: float
     name: pitch_offset_deg
     tag: '12'
-    modifier: ''
+    modifier: repeated
   - type: float
     name: roll_deg
     tag: '13'
-    modifier: ''
+    modifier: repeated
   - type: float
     name: distance_m
     tag: '14'
-    modifier: ''
+    modifier: repeated
   - type: float
     name: height_percent
     tag: '15'
-    modifier: ''
+    modifier: repeated
   - type: float
     name: vert_ctr_ratio
     tag: '16'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: CaptureProbabilityProto
   sort_title: capture_probability_proto
@@ -2009,11 +2009,11 @@ messages:
   - type: Item
     name: pokeball_type
     tag: '1'
-    modifier: ''
+    modifier: repeated
   - type: float
     name: capture_probability
     tag: '2'
-    modifier: ''
+    modifier: repeated
   - type: double
     name: reticle_difficulty_scale
     tag: '12'
@@ -2025,19 +2025,19 @@ messages:
   - type: HoloActivityType
     name: activity_type
     tag: '1'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: exp
     tag: '2'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: candy
     tag: '3'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: stardust
     tag: '4'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: CatchPokemonLogEntry
   sort_title: catch_pokemon_log_entry
@@ -2143,11 +2143,11 @@ messages:
   - type: HoloBadgeType
     name: awarded_badges
     tag: '2'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: awarded_badge_levels
     tag: '3'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: CheckAwardedBadgesProto
   sort_title: check_awarded_badges_proto
@@ -2199,19 +2199,19 @@ messages:
   - type: PokemonFortProto
     name: fort
     tag: '3'
-    modifier: ''
+    modifier: repeated
   - type: ClientSpawnPointProto
     name: spawn_point
     tag: '4'
-    modifier: ''
+    modifier: repeated
   - type: WildPokemonProto
     name: wild_pokemon
     tag: '5'
-    modifier: ''
+    modifier: repeated
   - type: string
     name: deleted_object
     tag: '6'
-    modifier: ''
+    modifier: repeated
   - type: bool
     name: is_truncated_list
     tag: '7'
@@ -2219,19 +2219,19 @@ messages:
   - type: PokemonSummaryFortProto
     name: fort_summary
     tag: '8'
-    modifier: ''
+    modifier: repeated
   - type: ClientSpawnPointProto
     name: decimated_spawn_point
     tag: '9'
-    modifier: ''
+    modifier: repeated
   - type: MapPokemonProto
     name: catchable_pokemon
     tag: '10'
-    modifier: ''
+    modifier: repeated
   - type: NearbyPokemonProto
     name: nearby_pokemon
     tag: '11'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: ClientPlayerProto
   sort_title: client_player_proto
@@ -2251,7 +2251,7 @@ messages:
   - type: TutorialCompletion
     name: tutorial_complete
     tag: '7'
-    modifier: ''
+    modifier: repeated
   - type: PlayerAvatarProto
     name: player_avatar_proto
     tag: '8'
@@ -2279,7 +2279,7 @@ messages:
   - type: CurrencyQuantityProto
     name: currency_balance
     tag: '14'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: ClientSpawnPointProto
   sort_title: client_spawn_point_proto
@@ -2361,11 +2361,11 @@ messages:
   - type: string
     name: currency_type
     tag: '2'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: currency_awarded
     tag: '3'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: num_defenders
     tag: '4'
@@ -2450,11 +2450,11 @@ messages:
   - type: PokemonProto
     name: pokemon
     tag: '1'
-    modifier: ''
+    modifier: repeated
   - type: ItemProto
     name: item
     tag: '2'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: DiskEncounterOutProto
   sort_title: disk_encounter_out_proto
@@ -2557,7 +2557,7 @@ messages:
   - type: DownloadUrlEntryProto
     name: download_urls
     tag: '1'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: DownloadUrlRequestProto
   sort_title: download_url_request_proto
@@ -2565,7 +2565,7 @@ messages:
   - type: string
     name: asset_id
     tag: '1'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: EchoOutProto
   sort_title: echo_out_proto
@@ -2633,7 +2633,7 @@ messages:
   - type: EggIncubatorProto
     name: egg_incubator
     tag: '1'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: EncounterOutProto
   sort_title: encounter_out_proto
@@ -2815,11 +2815,11 @@ messages:
   - type: float
     name: catch_probability_bonus
     tag: '2'
-    modifier: ''
+    modifier: repeated
   - type: float
     name: flee_probability_bonus
     tag: '3'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: EvolvePokemonOutProto
   sort_title: evolve_pokemon_out_proto
@@ -2882,11 +2882,11 @@ messages:
   - type: HoloItemEffect
     name: item_effect
     tag: '1'
-    modifier: ''
+    modifier: repeated
   - type: float
     name: item_effect_percent
     tag: '2'
-    modifier: ''
+    modifier: repeated
   - type: float
     name: growth_percent
     tag: '3'
@@ -2967,7 +2967,7 @@ messages:
   - type: PokemonProto
     name: pokemon
     tag: '3'
-    modifier: ''
+    modifier: repeated
   - type: string
     name: name
     tag: '4'
@@ -2975,7 +2975,7 @@ messages:
   - type: string
     name: image_url
     tag: '5'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: fp
     tag: '6'
@@ -3007,7 +3007,7 @@ messages:
   - type: ClientFortModifierProto
     name: modifier
     tag: '13'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: FortDetailsProto
   sort_title: fort_details_proto
@@ -3100,7 +3100,7 @@ messages:
   - type: ItemProto
     name: items
     tag: '3'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: eggs
     tag: '4'
@@ -3123,7 +3123,7 @@ messages:
   - type: AwardItemProto
     name: items
     tag: '2'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: gems_awarded
     tag: '3'
@@ -3296,7 +3296,7 @@ messages:
   - type: ActionLogEntry
     name: log
     tag: '2'
-    modifier: ''
+    modifier: repeated
   enums:
   - name: Result
     sort_title: result
@@ -3315,7 +3315,7 @@ messages:
   - type: GameMasterClientTemplateProto
     name: items
     tag: '2'
-    modifier: ''
+    modifier: repeated
   - type: uint64
     name: timestamp
     tag: '3'
@@ -3346,7 +3346,7 @@ messages:
   - type: string
     name: url
     tag: '3'
-    modifier: ''
+    modifier: repeated
   - type: Result
     name: result
     tag: '4'
@@ -3399,19 +3399,19 @@ messages:
   - type: fixed64
     name: pokemon_id
     tag: '2'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: exp_awarded
     tag: '3'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: candy_awarded
     tag: '4'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: stardust_awarded
     tag: '5'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: GetHatchedEggsProto
   sort_title: get_hatched_eggs_proto
@@ -3492,7 +3492,7 @@ messages:
   - type: Item
     name: item_been_seen
     tag: '2'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: GetMapObjectsOutProto
   sort_title: get_map_objects_out_proto
@@ -3500,7 +3500,7 @@ messages:
   - type: ClientMapCellProto
     name: map_cell
     tag: '1'
-    modifier: ''
+    modifier: repeated
   - type: Status
     name: status
     tag: '2'
@@ -3521,11 +3521,11 @@ messages:
   - type: uint64
     name: cell_id
     tag: '1'
-    modifier: ''
+    modifier: repeated
   - type: int64
     name: since_time_ms
     tag: '2'
-    modifier: ''
+    modifier: repeated
   - type: double
     name: player_lat
     tag: '3'
@@ -3608,7 +3608,7 @@ messages:
   - type: string
     name: codename
     tag: '1'
-    modifier: ''
+    modifier: repeated
   - type: bool
     name: success
     tag: '2'
@@ -3708,19 +3708,19 @@ messages:
   - type: int32
     name: required_exp
     tag: '1'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: leader_slots
     tag: '2'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: trainer_slots
     tag: '3'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: search_roll_bonus
     tag: '4'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: GymMembershipProto
   sort_title: gym_membership_proto
@@ -3744,7 +3744,7 @@ messages:
   - type: GymMembershipProto
     name: gym_membership
     tag: '2'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: HoloInventoryItemProto
   sort_title: holo_inventory_item_proto
@@ -3852,11 +3852,11 @@ messages:
   - type: Item
     name: items
     tag: '4'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: counts
     tag: '5'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: IapSettingsProto
   sort_title: iap_settings_proto
@@ -3868,7 +3868,7 @@ messages:
   - type: int32
     name: daily_defender_bonus_per_pokemon
     tag: '2'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: daily_defender_bonus_max_defenders
     tag: '3'
@@ -3876,7 +3876,7 @@ messages:
   - type: string
     name: daily_defender_bonus_currency
     tag: '4'
-    modifier: ''
+    modifier: repeated
   - type: int64
     name: min_time_between_claims_ms
     tag: '5'
@@ -3900,7 +3900,7 @@ messages:
   - type: HoloPokemonType
     name: pokemon_type
     tag: '2'
-    modifier: ''
+    modifier: repeated
   - type: float
     name: pokemon_incense_type_probability
     tag: '3'
@@ -3975,7 +3975,7 @@ messages:
   - type: InventoryItemProto
     name: inventory_item
     tag: '3'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: InventoryItemProto
   sort_title: inventory_item_proto
@@ -3999,7 +3999,7 @@ messages:
   - type: InventoryItemProto
     name: inventory_item
     tag: '1'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: InventorySettingsProto
   sort_title: inventory_settings_proto
@@ -4059,7 +4059,7 @@ messages:
   - type: InventoryUpgradeProto
     name: inventory_upgrade
     tag: '1'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: ItemProto
   sort_title: item_proto
@@ -4163,11 +4163,11 @@ messages:
   - type: AwardItemProto
     name: items
     tag: '2'
-    modifier: ''
+    modifier: repeated
   - type: Item
     name: items_unlocked
     tag: '4'
-    modifier: ''
+    modifier: repeated
   enums:
   - name: Result
     sort_title: result
@@ -4264,7 +4264,7 @@ messages:
   - type: TutorialCompletion
     name: tutorial_complete
     tag: '1'
-    modifier: ''
+    modifier: repeated
   - type: bool
     name: send_marketing_emails
     tag: '2'
@@ -4280,7 +4280,7 @@ messages:
   - type: string
     name: sequence
     tag: '1'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: MoveSettingsProto
   sort_title: move_settings_proto
@@ -4481,15 +4481,15 @@ messages:
   - type: int32
     name: rank_num
     tag: '1'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: required_exp
     tag: '2'
-    modifier: ''
+    modifier: repeated
   - type: float
     name: cp_multiplier
     tag: '3'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: max_egg_player_level
     tag: '4'
@@ -4513,7 +4513,7 @@ messages:
   - type: PlayerBadgeProto
     name: badges
     tag: '3'
-    modifier: ''
+    modifier: repeated
   enums:
   - name: Result
     sort_title: result
@@ -4636,7 +4636,7 @@ messages:
   - type: int32
     name: num_pokemon_caught_by_type
     tag: '22'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: small_rattata_caught
     tag: '23'
@@ -4648,11 +4648,11 @@ messages:
   - type: WildPokemonProto
     name: wild_pokemon
     tag: '1'
-    modifier: ''
+    modifier: repeated
   - type: PokemonFortProto
     name: fort
     tag: '2'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: forts_nearby
     tag: '3'
@@ -4840,7 +4840,7 @@ messages:
   - type: Item
     name: active_fort_modifier
     tag: '12'
-    modifier: ''
+    modifier: repeated
   - type: MapPokemonProto
     name: active_pokemon
     tag: '13'
@@ -5048,19 +5048,19 @@ messages:
   - type: HoloPokemonMove
     name: quick_moves
     tag: '9'
-    modifier: ''
+    modifier: repeated
   - type: HoloPokemonMove
     name: cinematic_moves
     tag: '10'
-    modifier: ''
+    modifier: repeated
   - type: float
     name: anim_time
     tag: '11'
-    modifier: ''
+    modifier: repeated
   - type: HoloPokemonId
     name: evolution
     tag: '12'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: evolution_pips
     tag: '13'
@@ -5156,11 +5156,11 @@ messages:
   - type: int32
     name: candy_cost
     tag: '3'
-    modifier: ''
+    modifier: repeated
   - type: int32
     name: stardust_cost
     tag: '4'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: PollForTradeResponseOutProto
   sort_title: poll_for_trade_response_out_proto
@@ -5309,7 +5309,7 @@ messages:
   - type: fixed64
     name: pokemon_ids
     tag: '2'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: ReviveAttributesProto
   sort_title: revive_attributes_proto
@@ -5510,7 +5510,7 @@ messages:
   - type: fixed64
     name: attacking_pokemon_id
     tag: '2'
-    modifier: ''
+    modifier: repeated
   - type: fixed64
     name: defending_pokemon_id
     tag: '3'
@@ -5596,7 +5596,7 @@ messages:
   - type: string
     name: player_names
     tag: '2'
-    modifier: ''
+    modifier: repeated
   enums:
   - name: Result
     sort_title: result
@@ -5627,7 +5627,7 @@ messages:
   - type: float
     name: attack_scalar
     tag: '1'
-    modifier: ''
+    modifier: repeated
   enums: []
 - name: UpgradePokemonOutProto
   sort_title: upgrade_pokemon_out_proto

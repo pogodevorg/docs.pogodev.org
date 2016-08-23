@@ -14,7 +14,7 @@ excerpt: 'FIXME: Add a description'
 ## Attributes:
 
 - 1: fort_map_data ([PokemonFortProto](../PokemonFortProto/))
-- 2: gym_membership ([GymMembershipProto](../GymMembershipProto/)) 
+- 2: gym_membership ([GymMembershipProto](../GymMembershipProto/)) repeated
 
 ## Enums:
 

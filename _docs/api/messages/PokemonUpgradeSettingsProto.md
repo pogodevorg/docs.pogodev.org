@@ -15,8 +15,8 @@ excerpt: 'FIXME: Add a description'
 
 - 1: upgrades_per_level (int32)
 - 2: allowed_levels_above_player (int32)
-- 3: candy_cost (int32) 
-- 4: stardust_cost (int32) 
+- 3: candy_cost (int32) repeated
+- 4: stardust_cost (int32) repeated
 
 ## Enums:
 

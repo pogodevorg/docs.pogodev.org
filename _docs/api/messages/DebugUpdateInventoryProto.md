@@ -13,8 +13,8 @@ excerpt: 'FIXME: Add a description'
 
 ## Attributes:
 
-- 1: pokemon ([PokemonProto](../PokemonProto/)) 
-- 2: item ([ItemProto](../ItemProto/)) 
+- 1: pokemon ([PokemonProto](../PokemonProto/)) repeated
+- 2: item ([ItemProto](../ItemProto/)) repeated
 
 ## Enums:
 

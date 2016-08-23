@@ -24,7 +24,7 @@ excerpt: 'FIXME: Add a description'
 - 9: fort_type ([FortType](../../enums/FortType/))
 - 10: gym_points (int64)
 - 11: is_in_battle (bool)
-- 12: active_fort_modifier ([Item](../../enums/Item/)) 
+- 12: active_fort_modifier ([Item](../../enums/Item/)) repeated
 - 13: active_pokemon ([MapPokemonProto](../MapPokemonProto/))
 - 14: cooldown_complete_ms (int64)
 - 15: sponsor ([Sponsor](#sponsor))

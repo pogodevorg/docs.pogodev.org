@@ -13,7 +13,7 @@ excerpt: 'FIXME: Add a description'
 
 ## Attributes:
 
-- 1: map_cell ([ClientMapCellProto](../ClientMapCellProto/)) 
+- 1: map_cell ([ClientMapCellProto](../ClientMapCellProto/)) repeated
 - 2: status ([Status](#status))
 
 ## Enums:

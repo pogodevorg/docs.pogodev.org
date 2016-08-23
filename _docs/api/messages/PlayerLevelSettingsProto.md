@@ -13,9 +13,9 @@ excerpt: 'FIXME: Add a description'
 
 ## Attributes:
 
-- 1: rank_num (int32) 
-- 2: required_exp (int32) 
-- 3: cp_multiplier (float) 
+- 1: rank_num (int32) repeated
+- 2: required_exp (int32) repeated
+- 3: cp_multiplier (float) repeated
 - 4: max_egg_player_level (int32)
 - 5: max_encounter_player_level (int32)
 

@@ -14,8 +14,8 @@ excerpt: 'FIXME: Add a description'
 ## Attributes:
 
 - 1: success (bool)
-- 2: awarded_badges ([HoloBadgeType](../../enums/HoloBadgeType/)) 
-- 3: awarded_badge_levels (int32) 
+- 2: awarded_badges ([HoloBadgeType](../../enums/HoloBadgeType/)) repeated
+- 3: awarded_badge_levels (int32) repeated
 
 ## Enums:
 

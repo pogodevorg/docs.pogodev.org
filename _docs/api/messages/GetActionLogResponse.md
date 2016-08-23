@@ -14,7 +14,7 @@ excerpt: 'FIXME: Add a description'
 ## Attributes:
 
 - 1: result ([Result](#result))
-- 2: log ([ActionLogEntry](../ActionLogEntry/)) 
+- 2: log ([ActionLogEntry](../ActionLogEntry/)) repeated
 
 ## Enums:
 

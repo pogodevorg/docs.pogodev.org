@@ -14,8 +14,8 @@ excerpt: 'FIXME: Add a description'
 ## Attributes:
 
 - 1: equip_badge_cooldown_ms (int64)
-- 2: catch_probability_bonus (float) 
-- 3: flee_probability_bonus (float) 
+- 2: catch_probability_bonus (float) repeated
+- 3: flee_probability_bonus (float) repeated
 
 ## Enums:
 

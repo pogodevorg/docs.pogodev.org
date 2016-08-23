@@ -15,7 +15,7 @@ excerpt: 'FIXME: Add a description'
 
 - 1: gym_state ([GymStateProto](../GymStateProto/))
 - 2: name (string)
-- 3: url (string) 
+- 3: url (string) repeated
 - 4: result ([Result](#result))
 - 5: description (string)
 

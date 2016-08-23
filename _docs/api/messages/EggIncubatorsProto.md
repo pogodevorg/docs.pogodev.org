@@ -13,7 +13,7 @@ excerpt: 'FIXME: Add a description'
 
 ## Attributes:
 
-- 1: egg_incubator ([EggIncubatorProto](../EggIncubatorProto/)) 
+- 1: egg_incubator ([EggIncubatorProto](../EggIncubatorProto/)) repeated
 
 ## Enums:
 

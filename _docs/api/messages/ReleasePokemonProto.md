@@ -14,7 +14,7 @@ excerpt: 'FIXME: Add a description'
 ## Attributes:
 
 - 1: pokemon_id (fixed64)
-- 2: pokemon_ids (fixed64) 
+- 2: pokemon_ids (fixed64) repeated
 
 ## Enums:
 

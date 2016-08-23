@@ -13,7 +13,7 @@ excerpt: 'FIXME: Add a description'
 
 ## Attributes:
 
-- 4: item ([AppliedItemProto](../AppliedItemProto/)) 
+- 4: item ([AppliedItemProto](../AppliedItemProto/)) repeated
 
 ## Enums:
 

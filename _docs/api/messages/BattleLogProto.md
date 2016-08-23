@@ -16,7 +16,7 @@ excerpt: 'FIXME: Add a description'
 - 1: state ([State](#state))
 - 2: battle_type ([BattleType](#battle_type))
 - 3: server_ms (int64)
-- 4: battle_actions ([BattleActionProto](../BattleActionProto/)) 
+- 4: battle_actions ([BattleActionProto](../BattleActionProto/)) repeated
 - 5: battle_start_ms (int64)
 - 6: battle_end_ms (int64)
 

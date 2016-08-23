@@ -14,7 +14,7 @@ excerpt: 'FIXME: Add a description'
 ## Attributes:
 
 - 1: result ([Result](#result))
-- 2: player_names (string) 
+- 2: player_names (string) repeated
 
 ## Enums:
 

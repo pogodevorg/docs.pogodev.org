@@ -14,7 +14,7 @@ excerpt: 'FIXME: Add a description'
 ## Attributes:
 
 - 1: timestamp_millis (int64)
-- 2: item_been_seen ([Item](../../enums/Item/)) 
+- 2: item_been_seen ([Item](../../enums/Item/)) repeated
 
 ## Enums:
 

@@ -16,8 +16,8 @@ excerpt: 'FIXME: Add a description'
 - 1: sku (string)
 - 2: category ([HoloIapItemCategory](../../enums/HoloIapItemCategory/))
 - 3: sort_order (int32)
-- 4: items ([Item](../../enums/Item/)) 
-- 5: counts (int32) 
+- 4: items ([Item](../../enums/Item/)) repeated
+- 5: counts (int32) repeated
 
 ## Enums:
 

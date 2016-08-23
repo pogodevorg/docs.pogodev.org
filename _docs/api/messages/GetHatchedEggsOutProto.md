@@ -14,10 +14,10 @@ excerpt: 'FIXME: Add a description'
 ## Attributes:
 
 - 1: success (bool)
-- 2: pokemon_id (fixed64) 
-- 3: exp_awarded (int32) 
-- 4: candy_awarded (int32) 
-- 5: stardust_awarded (int32) 
+- 2: pokemon_id (fixed64) repeated
+- 3: exp_awarded (int32) repeated
+- 4: candy_awarded (int32) repeated
+- 5: stardust_awarded (int32) repeated
 
 ## Enums:
 

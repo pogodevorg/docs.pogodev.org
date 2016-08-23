@@ -15,7 +15,7 @@ excerpt: 'FIXME: Add a description'
 
 - 1: gym_id (string)
 - 2: battle_id (string)
-- 3: attacker_actions ([BattleActionProto](../BattleActionProto/)) 
+- 3: attacker_actions ([BattleActionProto](../BattleActionProto/)) repeated
 - 4: last_retrieved_action ([BattleActionProto](../BattleActionProto/))
 - 5: player_lat_degrees (double)
 - 6: player_lng_degrees (double)

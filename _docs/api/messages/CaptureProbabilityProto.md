@@ -13,8 +13,8 @@ excerpt: 'FIXME: Add a description'
 
 ## Attributes:
 
-- 1: pokeball_type ([Item](../../enums/Item/)) 
-- 2: capture_probability (float) 
+- 1: pokeball_type ([Item](../../enums/Item/)) repeated
+- 2: capture_probability (float) repeated
 - 12: reticle_difficulty_scale (double)
 
 ## Enums:

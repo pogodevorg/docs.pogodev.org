@@ -13,7 +13,7 @@ excerpt: 'FIXME: Add a description'
 
 ## Attributes:
 
-- 1: download_urls ([DownloadUrlEntryProto](../DownloadUrlEntryProto/)) 
+- 1: download_urls ([DownloadUrlEntryProto](../DownloadUrlEntryProto/)) repeated
 
 ## Enums:
 

@@ -14,7 +14,7 @@ excerpt: 'FIXME: Add a description'
 ## Attributes:
 
 - 1: result ([Result](#result))
-- 2: items ([AwardItemProto](../AwardItemProto/)) 
+- 2: items ([AwardItemProto](../AwardItemProto/)) repeated
 - 3: gems_awarded (int32)
 - 4: egg_pokemon ([PokemonProto](../PokemonProto/))
 - 5: xp_awarded (int32)

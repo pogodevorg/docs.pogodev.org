@@ -15,8 +15,8 @@ excerpt: 'FIXME: Add a description'
 
 - 1: active_pokemon ([PokemonInfo](../PokemonInfo/))
 - 2: trainer_public_profile ([PlayerPublicProfileProto](../PlayerPublicProfileProto/))
-- 3: reserve_pokemon ([PokemonInfo](../PokemonInfo/)) 
-- 4: defeated_pokemon ([PokemonInfo](../PokemonInfo/)) 
+- 3: reserve_pokemon ([PokemonInfo](../PokemonInfo/)) repeated
+- 4: defeated_pokemon ([PokemonInfo](../PokemonInfo/)) repeated
 
 ## Enums:
 

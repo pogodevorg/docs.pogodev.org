@@ -14,7 +14,7 @@ excerpt: 'FIXME: Add a description'
 ## Attributes:
 
 - 1: incense_lifetime_seconds (int32)
-- 2: pokemon_type ([HoloPokemonType](../../enums/HoloPokemonType/)) 
+- 2: pokemon_type ([HoloPokemonType](../../enums/HoloPokemonType/)) repeated
 - 3: pokemon_incense_type_probability (float)
 - 4: standing_time_between_encounters_sec (int32)
 - 5: moving_time_between_encounter_sec (int32)

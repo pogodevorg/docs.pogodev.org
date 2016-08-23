@@ -15,7 +15,7 @@ excerpt: 'FIXME: Add a description'
 
 - 1: result ([Result](#result))
 - 2: start_time (int64)
-- 3: badges ([PlayerBadgeProto](../PlayerBadgeProto/)) 
+- 3: badges ([PlayerBadgeProto](../PlayerBadgeProto/)) repeated
 
 ## Enums:
 

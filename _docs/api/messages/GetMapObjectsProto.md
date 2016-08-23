@@ -13,8 +13,8 @@ excerpt: 'FIXME: Add a description'
 
 ## Attributes:
 
-- 1: cell_id (uint64) 
-- 2: since_time_ms (int64) 
+- 1: cell_id (uint64) repeated
+- 2: since_time_ms (int64) repeated
 - 3: player_lat (double)
 - 4: player_lng (double)
 
