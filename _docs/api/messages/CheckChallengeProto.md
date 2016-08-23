@@ -1,19 +1,19 @@
 ---
-title: 'GetPlayerProto'
-sort_title: 'get_player_proto'
+title: 'CheckChallengeProto'
+sort_title: 'check_challenge_proto'
 category: API
 excerpt: 'FIXME: Add a description'
 ---
 
 [comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
-# GetPlayerProto
+# CheckChallengeProto
 
 > {{ page.excerpt }}
 
 ## Attributes:
 
-- 1: player_locale ([PlayerLocaleProto](../PlayerLocaleProto/))
+- 1: debug_request (bool)
 
 ## Enums:
 

@@ -43,6 +43,7 @@ excerpt: 'FIXME: Add a description'
 - 29: favorite (bool)
 - 30: nickname (string)
 - 31: from_fort (bool)
+- 32: buddy_candy_awarded (int32)
 
 ## Enums:
 

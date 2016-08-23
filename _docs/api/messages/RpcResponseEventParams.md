@@ -1,19 +1,18 @@
 ---
-title: 'GetPlayerProto'
-sort_title: 'get_player_proto'
+title: 'RpcResponseEventParams'
+sort_title: 'rpc_response_event_params'
 category: API
 excerpt: 'FIXME: Add a description'
 ---
 
 [comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
-# GetPlayerProto
+# RpcResponseEventParams
 
 > {{ page.excerpt }}
 
 ## Attributes:
 
-- 1: player_locale ([PlayerLocaleProto](../PlayerLocaleProto/))
 
 ## Enums:
 

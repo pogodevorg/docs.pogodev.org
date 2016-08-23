@@ -29,6 +29,7 @@ excerpt: 'FIXME: Add a description'
 - 2: OUT_OF_RANGE
 - 3: IN_COOLDOWN_PERIOD
 - 4: INVENTORY_FULL
+- 5: EXCEEDED_DAILY_LIMIT
 
 ## Referenced by:
 

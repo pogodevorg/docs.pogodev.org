@@ -1,19 +1,20 @@
 ---
-title: 'GetPlayerProto'
-sort_title: 'get_player_proto'
+title: 'PlayerLocaleProto'
+sort_title: 'player_locale_proto'
 category: API
 excerpt: 'FIXME: Add a description'
 ---
 
 [comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
-# GetPlayerProto
+# PlayerLocaleProto
 
 > {{ page.excerpt }}
 
 ## Attributes:
 
-- 1: player_locale ([PlayerLocaleProto](../PlayerLocaleProto/))
+- 1: country (string)
+- 2: language (string)
 
 ## Enums:
 
@@ -21,6 +22,6 @@ excerpt: 'FIXME: Add a description'
 
 ## Referenced by:
 
-- None
+- [GetPlayerProto](../GetPlayerProto/)
 
 [comment]: <> (YOU CAN EDIT AFTER THIS)

@@ -168,6 +168,7 @@ excerpt: 'FIXME: Add a description'
 
 ## Referenced by:
 
+- [BuddyPokemonLogEntry](../../messages/BuddyPokemonLogEntry/)
 - [PokemonSettingsProto](../../messages/PokemonSettingsProto/)
 
 [comment]: <> (YOU CAN EDIT AFTER THIS)

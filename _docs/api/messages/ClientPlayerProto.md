@@ -25,6 +25,7 @@ excerpt: 'FIXME: Add a description'
 - 13: contact_settings_proto ([ContactSettingsProto](../ContactSettingsProto/))
 - 14: currency_balance ([CurrencyQuantityProto](../CurrencyQuantityProto/)) 
 - 15: remaining_codename_claims (int32)
+- 16: buddy_pokemon_proto ([BuddyPokemonProto](../BuddyPokemonProto/))
 
 ## Enums:
 

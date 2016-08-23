@@ -1,19 +1,18 @@
 ---
-title: 'GetPlayerProto'
-sort_title: 'get_player_proto'
+title: 'GoogleAuthEventParams'
+sort_title: 'google_auth_event_params'
 category: API
 excerpt: 'FIXME: Add a description'
 ---
 
 [comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
-# GetPlayerProto
+# GoogleAuthEventParams
 
 > {{ page.excerpt }}
 
 ## Attributes:
 
-- 1: player_locale ([PlayerLocaleProto](../PlayerLocaleProto/))
 
 ## Enums:
 

@@ -17,6 +17,7 @@ excerpt: 'FIXME: Add a description'
 - 2: sfida (bool)
 - 3: catch_pokemon ([CatchPokemonLogEntry](../CatchPokemonLogEntry/))
 - 4: fort_search ([FortSearchLogEntry](../FortSearchLogEntry/))
+- 5: buddy_pokemon ([BuddyPokemonLogEntry](../BuddyPokemonLogEntry/))
 
 ## Enums:
 

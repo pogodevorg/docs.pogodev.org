@@ -96,6 +96,7 @@ excerpt: 'FIXME: Add a description'
 
 ## Referenced by:
 
+- [GetBuddyWalkedOutProto](../../messages/GetBuddyWalkedOutProto/)
 - [PokemonFamilyProto](../../messages/PokemonFamilyProto/)
 - [PokemonSettingsProto](../../messages/PokemonSettingsProto/)
 

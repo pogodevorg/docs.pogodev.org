@@ -1,19 +1,19 @@
 ---
-title: 'GetPlayerProto'
-sort_title: 'get_player_proto'
+title: 'SetBuddyPokemonProto'
+sort_title: 'set_buddy_pokemon_proto'
 category: API
 excerpt: 'FIXME: Add a description'
 ---
 
 [comment]: <> (THIS PART IS GENERATED - AKA DON'T EDIT THIS PART MANUALLY)
 
-# GetPlayerProto
+# SetBuddyPokemonProto
 
 > {{ page.excerpt }}
 
 ## Attributes:
 
-- 1: player_locale ([PlayerLocaleProto](../PlayerLocaleProto/))
+- 1: pokemon_id (fixed64)
 
 ## Enums:
 

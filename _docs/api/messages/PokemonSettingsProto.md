@@ -34,10 +34,16 @@ excerpt: 'FIXME: Add a description'
 - 20: km_distance_to_hatch (float)
 - 21: family_id ([HoloPokemonFamilyId](../../enums/HoloPokemonFamilyId/))
 - 22: candy_to_evolve (int32)
+- 23: km_buddy_distance (float)
+- 24: buddy_size ([BuddySize](#buddy_size))
 
 ## Enums:
 
-- None
+### BuddySize
+- 0: BUDDY_MEDIUM
+- 1: BUDDY_SHOULDER
+- 2: BUDDY_BIG
+- 3: BUDDY_FLYING
 
 ## Referenced by:
 
