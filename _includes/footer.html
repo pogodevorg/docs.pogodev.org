@@ -1,18 +1,18 @@
-<footer class="footer">
-  <div class="container">
-    <nav class="footer-nav">
-      <a class="footer-nav-item" href="https://pogodev.org">PogoDev</a>
-      <a class="footer-nav-item" href="https://blog.pogodev.org">Blog</a>
-      <a class="footer-nav-item" href="/">Docs</a>
-      <a class="footer-nav-item" href="https://discordapp.com/invite/dKTSHZC">Discord</a>
-      <a class="footer-nav-item" href="https://talk.pogodev.org/">Forum</a>
-      <a class="footer-nav-item" href="https://www.reddit.com/r/pokemongodev/">Reddit</a>
-      <a class="footer-nav-item" href="https://wiki.pogodev.org/">Wiki</a>
-      <a class="footer-nav-item" href="https://talk.pogodev.org/d/29-frequently-asked-questions">FAQ</a>
-      <a class="footer-nav-item" href="https://github.com/pogodevorg/">Github</a>
-    </nav>
-    <span class="footer-love">
-      <a href='https://github.com/{{ site.repository }}' class="no-underline"><span class='fa fa-code'></span> with <span class='fa fa-heart'></span> by the PogoDev Team</span></a>
-    </span>
-  </div>
-</footer>
+    <footer class="footer{% if page.permalink == '/' %} footer-home{% endif %}">
+      <div class="container">
+        <nav class="footer-nav">
+          <a class="footer-nav-item" href="{{ site.homepage }}/">{{ site.homepagetitle }}</a>
+          <a class="footer-nav-item" href="https://blog.pogodev.org/">Blog</a>
+          <a class="footer-nav-item active" href="https://docs.pogodev.org/">Docs</a>
+          <a class="footer-nav-item" href="https://discordapp.com/invite/dKTSHZC">Discord</a>
+          <a class="footer-nav-item" href="https://talk.pogodev.org/">Forums</a>
+          <a class="footer-nav-item" href="https://www.reddit.com/r/pokemongodev/">Reddit</a>
+          <a class="footer-nav-item" href="https://wiki.pogodev.org/">Wiki</a>
+          <a class="footer-nav-item" href="https://talk.pogodev.org/d/29-frequently-asked-questions">FAQ</a>
+          <a class="footer-nav-item" href="https://github.com/pogodevorg/">Github</a>
+        </nav>
+        <span class="footer-love">
+          <a href='https://github.com/{{ site.repository }}' class="no-underline"><span class='fa fa-code'></span> with <span class='fa fa-heart'></span> by the PogoDev Team</span></a>
+        </span>
+      </div>
+    </footer>

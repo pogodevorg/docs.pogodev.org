@@ -2,43 +2,40 @@
 layout: default
 ---
 
-<div class='page-header doc-meta'>
-  <div class='container-narrow'>
-    <h1><span class="">Documentation</span></h1>
+    <div class='page-header doc-meta'>
+      <div class='container-narrow'>
+        <h1><span class="">Documentation</span></h1>
 
-    <h4 class="docs-breadcrumbs">
-      <a href='/'>Docs</a>
-      {% if page.category != 'ignore' %}
-      <span class="docs-breadcrumbs-divider">/</span>
-      <a href='{{ site.baseurl }}/{{ page.category | downcase }}/'>{{ page.category }}</a>
-      {% endif %}
+        <h4 class="docs-breadcrumbs">
+          <a href='/'>Docs</a>
+          {% if page.category != 'ignore' %}
+          <span class="docs-breadcrumbs-divider">/</span>
+          <a href='{{ site.baseurl }}/{{ page.category | downcase }}/'>{{ page.category }}</a>
+          {% endif %}
 
-      <span class="docs-breadcrumbs-divider">/</span>
-      {% if page.breadcrumb %}
-      {{ page.breadcrumb }}
-      {% else %}
-      {{ page.title }}
-      {% endif %}
-      <!-- <a class="ml-4" href='{{ page.source_url }}'><span class="octicon octicon-pencil"></span> Edit source</a> -->
-    </h4>
-  </div>
-</div>
-
-<section class='page-section docs strong-headers'>
-  <div class='container-narrow'>
-
-    {{ content }}
-
-
-    {% if page.category != 'ignore' %}
-    <hr>
-    <div class='text-center'>
-      <span class="d-inline-block text-left">
-        <span class="fa fa-pencil"></span>
-        <a href="https://github.com/{{ site.repository }}/edit/{{ site.branch }}/{{ page.path }}">Improve this page</a>
-      </span>
+          <span class="docs-breadcrumbs-divider">/</span>
+          {% if page.breadcrumb %}
+          {{ page.breadcrumb }}
+          {% else %}
+          {{ page.title }}
+          {% endif %}
+          <!-- <a class="ml-4" href='{{ page.source_url }}'><span class="octicon octicon-pencil"></span> Edit source</a> -->
+        </h4>
+      </div>
     </div>
-    {% endif %}
 
-  </div>
-</section>
+    <section class='page-section docs strong-headers'>
+      <div class='container-narrow'>
+        {{ content }}
+        {% if page.category != 'ignore' %}
+        <hr>
+        <div class='text-center'>
+          <span class="d-inline-block text-left">
+            <span class="fa fa-pencil"></span>
+            <a href="https://github.com/{{ site.repository }}/edit/{{ site.branch }}/{{ page.path }}">Improve this page</a>
+          </span>
+        </div>
+        {% endif %}
+
+      </div>
+    </section>
