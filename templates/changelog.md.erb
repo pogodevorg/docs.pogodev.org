@@ -10,10 +10,10 @@ category: Changelogs
 <%- if !enums_added.empty? || !messages_added.empty? %>
 ## Added
 <%- enums_added.each do |name| %>
-- [<%= name %>](../../enums/<%= name %>/)
+- [<%= name %>](../../api/enums/<%= name %>/)
 <%- end -%>
 <%- messages_added.each do |name| %>
-- [<%= name %>](../../messages/<%= name %>/)
+- [<%= name %>](../../api/messages/<%= name %>/)
 <%- end -%>
 
 <% end %>
@@ -30,7 +30,7 @@ category: Changelogs
 <%- if !enums_updated.empty? || !messages_updated.empty? %>
 ## Updated
 <%- enums_updated.each do |enum| %>
-- ### [<%= enum.name %>](../../enums/<%= enum.name %>/)
+- ### [<%= enum.name %>](../../api/enums/<%= enum.name %>/)
 <%- enum.changes.each do |diff| -%>
 <%- type, path, change = diff -%>
   - `<%= type.gsub('+', 'ADDED').gsub('-', 'REMOVED') %> <%= path %>`:
@@ -40,7 +40,7 @@ category: Changelogs
 <%- end -%>
 <%- end -%>
 <%- messages_updated.each do |message| %>
-- ### [<%= message.name %>](../../messages/<%= message.name %>/)
+- ### [<%= message.name %>](../../api/messages/<%= message.name %>/)
 <%- message.changes.each do |diff| -%>
 <%- type, path, change = diff -%>
   - `<%= type.gsub('+', 'ADDED').gsub('-', 'REMOVED') %> <%= path %>`:
