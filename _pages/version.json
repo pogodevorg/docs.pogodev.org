@@ -1,0 +1,6 @@
+---
+permalink: /version.json
+---
+{
+	"latest_api_version": "{{ site.latest_api_version }}"
+}
