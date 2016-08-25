@@ -2,7 +2,7 @@ title: PogoDev Documentation
 description: 'Unofficial Pokemon GO Development'
 url: 'http://docs.pogodev.org'
 baseurl: ''
-repository: 'pogodevorg/pogodevorg.github.io'
+repository: 'pogodevorg/docs.pogodev.org'
 branch: 'master'
 
 latest_api_version: 0.35.0
