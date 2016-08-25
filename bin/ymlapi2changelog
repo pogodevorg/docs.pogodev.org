@@ -97,7 +97,7 @@ end
 
 # Generate .md files for enums
 template = File.read(File.expand_path('../../templates/changelog.md.erb', __FILE__))
-basedir =  File.expand_path("../../_docs/api/changelogs/", __FILE__)
+basedir =  File.expand_path("../../_docs/changelogs/", __FILE__)
 FileUtils.mkdir_p basedir
 
 outpath = File.join(basedir, "v#{v1.join('_')}_to_v#{v2.join('_')}.md")

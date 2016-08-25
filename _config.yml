@@ -1,4 +1,4 @@
-title: PogoDev
+title: PogoDev Documentation
 description: 'Unofficial Pokemon GO Development'
 url: 'http://docs.pogodev.org'
 baseurl: ''
@@ -14,7 +14,7 @@ sass:
 #    style: compressed
 
 collections:
-    docs: {output: true, permalink: '/docs/:path/'}
+    docs: {output: true, permalink: '/:path/'}
 
 defaults:
     - {scope: {type: docs}, values: {layout: docs}}
