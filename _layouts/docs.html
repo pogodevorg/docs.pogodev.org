@@ -7,10 +7,10 @@ layout: default
     <h1><span class="">Documentation</span></h1>
 
     <h4 class="docs-breadcrumbs">
-      <a href='{{ site.baseurl }}/docs/'>Docs</a>
+      <a href='/'>Docs</a>
       {% if page.category != 'ignore' %}
       <span class="docs-breadcrumbs-divider">/</span>
-      <a href='{{ site.baseurl }}/docs/{{ page.category | downcase }}/'>{{ page.category }}</a>
+      <a href='{{ site.baseurl }}/{{ page.category | downcase }}/'>{{ page.category }}</a>
       {% endif %}
 
       <span class="docs-breadcrumbs-divider">/</span>
