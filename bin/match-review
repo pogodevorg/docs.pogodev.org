@@ -117,6 +117,8 @@ Do you think they are the same? [y: yes|n: no|s: skip|w: save work|wq: save & qu
       puts "=> matched".green
       matches[enum.name] = match[:file]
       break
+    when 'n'
+      next
     when 's'
       puts "=> skipped".yellow
       skipped << enum.name
@@ -171,6 +173,8 @@ unless quit
         puts "=> matched".green
         matches[message.name] = match[:file]
         break
+      when 'n'
+        next
       when 's'
         puts "=> skipped".yellow
         skipped << message.name
