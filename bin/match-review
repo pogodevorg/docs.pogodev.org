@@ -1,0 +1,205 @@
+#!/usr/bin/env ruby
+# Manually review files to match
+
+require 'optparse'
+require 'yaml'
+require 'json'
+require 'colorize'
+
+USAGE = "Usage: #{__FILE__} path_to_aeonlucid_repo"
+options = {}
+OptionParser.new do |opts|
+  opts.banner = USAGE
+
+  opts.on("-v", "--[no-]verbose", "Run verbosely") do |v|
+    options[:verbose] = v
+  end
+end.parse!
+
+file_arg = ARGV[0]
+puts USAGE unless file_arg
+
+API_SOURCE = File.expand_path(File.join(file_arg, 'src/POGOProtos/'))
+MATCH_FILE_PATH = File.expand_path('../../_data/mappings.yml', __FILE__)
+
+def strip_proto_file(source)
+  stripped_src = File.read(File.join(API_SOURCE, source))
+    .gsub(/[\t]/, ' ')
+    .gsub(/^(syntax|package|import).*/, '')
+    .gsub(' [packed=true]', '')
+    .gsub(/\/\/.*$/, '')
+    .gsub(/[ ]*oneof Action {/, '')
+    .gsub(/[ ]+enum[ ]+[a-zA-Z0-9_-]+[ \n]*{.+?}/m, '')
+    .gsub(/\.[^ ]*\./, '')
+    .gsub(/[\n{}]/, '')
+    .gsub(/[ ]+/, ' ')
+    .gsub(' ;', ';')
+    .strip
+  # puts "|#{stripped_src}|"
+  return stripped_src
+end
+
+def strip_proto_yaml_enum(enum)
+  "enum #{enum.name} #{enum.values.map{|v| "#{v.name} = #{v.tag};"}.join(' ')}"
+    .gsub(/[ \t]+/, ' ')
+end
+
+def strip_proto_yaml_message(message)
+  str = "message #{message.name} #{message.attributes.map{|a| "#{a.modifier} #{a.type} #{a.name} = #{a.tag};"}.join(' ')}"
+  # if !message.enums.empty?
+  #   str = "#{str} #{message.enums.map{|e| "enum #{e.name} #{e.values.map{|v| "#{v.name} = #{v.tag};"}.join(' ')}"}.join(' ')}"
+  # end
+  str.gsub(/[ \t]+/, ' ')
+end
+
+def colored_score(score, name_score = -1)
+  color = :green
+  if score > 50
+    color = :red
+  elsif score > 15
+    color = :yellow
+  elsif score > 0
+    color = :light_blue
+  end
+  color = :green if name_score == 0
+  "[#{score.round(2)}%]".colorize(color)
+end
+
+def save_mappings(mappings)
+  puts "Saving #{MATCH_FILE_PATH} file..."
+  File.write(MATCH_FILE_PATH, YAML.dump(mappings))
+  puts "done.".green
+end
+
+hash = YAML.load_file(File.expand_path('../../_data/api_latest.yml', __FILE__))
+# I prefer objects with direct access to hashes...
+json = hash.to_json
+proto = JSON.parse(json, object_class: OpenStruct)
+
+files_cache = {}
+sorted_matches = YAML.load_file(File.expand_path('../../_data/sorted_matches.yml', __FILE__))
+matches = File.exists?(MATCH_FILE_PATH) ? YAML.load_file(MATCH_FILE_PATH) : {}
+skipped = []
+
+quit = false
+
+puts "ENUMS:"
+proto.enums.each do |enum|
+  break if quit
+  sorted_matches[enum.name].each do |match|
+    if matches[enum.name] && File.exists?(File.join(API_SOURCE, matches[enum.name]))
+      puts "=> already matched #{enum.name} with #{matches[enum.name]}".green
+      matches[enum.name] = match[:file]
+      break
+    end
+    if match[:score] == 0
+      puts "=> matched #{enum.name} with #{match[:file]}".green
+      matches[enum.name] = match[:file]
+      break
+    end
+
+    stripped_enum = strip_proto_yaml_enum(enum)
+    stripped_file = files_cache[match[:file]] || strip_proto_file(match[:file])
+
+    title_len = "# Comparing #{enum.name} with #{match[:file]} [#{match[:score].round(2)}%]".length
+    puts <<-EOF
+
+#{'#'.white} Comparing #{enum.name.white} with #{match[:file].white} #{colored_score(match[:score], match[:name_score])}
+#{'='.white*title_len}
+
+#{stripped_enum}
+----------------
+#{stripped_file}
+
+Do you think they are the same? [y: yes|n: no|s: skip|w: save work|wq: save & quit]
+    EOF
+    resp = STDIN.gets.strip
+
+    case resp
+    when 'y'
+      puts "=> matched".green
+      matches[enum.name] = match[:file]
+      break
+    when 'n'
+      next
+    when 's'
+      puts "=> skipped".yellow
+      skipped << enum.name
+      break
+    when 'w'
+      save_mappings(matches)
+      redo
+    when 'wq'
+      quit = true
+      break
+    else
+      redo
+    end
+  end
+end
+
+unless quit
+  puts "MESSAGES:"
+  proto.messages.each do |message|
+    break if quit
+    sorted_matches[message.name].each do |match|
+      if matches[message.name] && File.exists?(File.join(API_SOURCE, matches[message.name]))
+        puts "=> already matched #{message.name} with #{matches[message.name]}".green
+        matches[message.name] = match[:file]
+        break
+      end
+      if match[:score] == 0
+        puts "=> matched #{message.name} with #{match[:file]}".green
+        matches[message.name] = match[:file]
+        break
+      end
+
+      stripped_message = strip_proto_yaml_message(message)
+      stripped_file = files_cache[match[:file]] || strip_proto_file(match[:file])
+
+      title_len = "# Comparing #{message.name} with #{match[:file]} [#{match[:score].round(2)}%]".length
+      puts <<-EOF
+
+  #{'#'.white} Comparing #{message.name.white} with #{match[:file].white} #{colored_score(match[:score], match[:name_score])}
+  #{'='.white*title_len}
+
+  #{stripped_message}
+  ----------------
+  #{stripped_file}
+
+  Do you think they are the same? [y: yes|n: no|s: skip|w: save work|wq: save & quit]
+      EOF
+      resp = STDIN.gets.strip
+
+      case resp
+      when 'y'
+        puts "=> matched".green
+        matches[message.name] = match[:file]
+        break
+      when 'n'
+        next
+      when 's'
+        puts "=> skipped".yellow
+        skipped << message.name
+        break
+      when 'w'
+        save_mappings(matches)
+        redo
+      when 'wq'
+        quit = true
+        break
+      else
+        redo
+      end
+    end
+  end
+end
+
+save_mappings(matches)
+
+if !skipped.empty?
+  puts <<-EOF
+Skipped:
+  - #{skipped.join("\n  - ")}
+  EOF
+end

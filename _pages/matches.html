@@ -1,0 +1,38 @@
+---
+title: API Reference
+permalink: /matches/
+layout: docs
+category: ignore
+breadcrumb: API
+---
+
+{% assign docs = site.docs %}
+
+<h2 class="docs-heading">
+  <span class="docs-title-icon fa fa-gear"></span>API Reference
+</h2>
+
+<table>
+  {% for doc in docs %}
+    {% if doc.category == 'API' %}
+      <tr>
+        <td>
+          <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
+          {% if site.data.mappings[doc.title] %}
+            ({{ site.data.mappings[doc.title] | split: '/' | last }})
+          {% endif %}
+        </td>
+        {% if false %}
+        <td>{{ doc.excerpt }}</td>
+        {% endif %}
+        <td>
+          {% if site.data.mappings[doc.title] %}
+          <a href="https://github.com/{{ site.proto_repository }}/blob/master/src/POGOProtos{{ site.data.mappings[doc.title] }}">
+            <small><span class="fa fa-angle-double-right"></span> source on GitHub</small>
+          </a>
+          {% endif %}
+        </td>
+      </tr>
+    {% endif %}
+  {% endfor %}
+</table>

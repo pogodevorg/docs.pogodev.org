@@ -1,0 +1,260 @@
+#!/usr/bin/env ruby
+# Try to gen mapping between AeonLucis repo and bare exported proto
+
+require 'optparse'
+require 'yaml'
+require 'json'
+require 'colorize'
+require 'fuzzystringmatch'
+
+USAGE = "Usage: #{__FILE__} path_to_aeonlucid_repo"
+options = {}
+OptionParser.new do |opts|
+  opts.banner = USAGE
+
+  opts.on("-v", "--[no-]verbose", "Run verbosely") do |v|
+    options[:verbose] = v
+  end
+end.parse!
+
+file_arg = ARGV[0]
+puts USAGE unless file_arg
+
+JAROW = FuzzyStringMatch::JaroWinkler.create( :native )
+API_SOURCE = File.expand_path(File.join(file_arg, 'src/POGOProtos/'))
+
+class String
+  def distance(t)
+    ((1 - JAROW.getDistance(self, t)) * 100)
+  end
+
+  def _distance(t)
+    m = self.length
+    n = t.length
+    return m if n == 0
+    return n if m == 0
+    d = Array.new(m+1) {Array.new(n+1)}
+
+    (0..m).each {|i| d[i][0] = i}
+    (0..n).each {|j| d[0][j] = j}
+    (1..n).each do |j|
+      (1..m).each do |i|
+        d[i][j] = if self[i-1] == t[j-1]  # adjust index into string
+                    d[i-1][j-1]           # no operation required
+                  else
+                    [ d[i-1][j]+1,        # deletion
+                      d[i][j-1]+1,        # insertion
+                      d[i-1][j-1]+1,      # substitution
+                    ].min
+                  end
+      end
+    end
+    d[m][n]
+  end
+end
+
+def colored_score(score, name_score = -1)
+  color = :green
+  if score > 50
+    color = :red
+  elsif score > 15
+    color = :yellow
+  elsif score > 0
+    color = :light_blue
+  end
+  color = :green if name_score == 0
+  "[#{score.round}%]".colorize(color)
+end
+
+def strip_proto_file(source)
+  stripped_src = File.read(source)
+    .gsub(/[\t]/, ' ')
+    .gsub(/^(syntax|package|import).*/, '')
+    .gsub(' [packed=true]', '')
+    .gsub(/\/\/.*$/, '')
+    .gsub(/[ ]*oneof Action {/, '')
+    .gsub(/[ ]+enum[ ]+[a-zA-Z0-9_-]+[ \n]*{.+?}/m, '')
+    .gsub(/\.[^ ]*\./, '')
+    .gsub(/[\n{}]/, '')
+    .gsub(/[ ]+/, ' ')
+    .gsub(' ;', ';')
+    .strip
+  # puts "|#{stripped_src}|"
+  return stripped_src
+end
+
+def strip_proto_yaml_enum(enum)
+  "enum #{enum.name} #{enum.values.map{|v| "#{v.name} = #{v.tag};"}.join(' ')}"
+    .gsub(/[ \t]+/, ' ')
+end
+
+def strip_proto_yaml_message(message)
+  "message #{message.name} #{message.attributes.map{|a| "#{a.modifier} #{a.type} #{a.name} = #{a.tag};"}.join(' ')}"
+    .gsub(/[ \t]+/, ' ')
+end
+
+def shorten_path(file)
+  source = File.expand_path(API_SOURCE)
+  basename = File.basename(file, '.proto')
+  dirname = File.dirname(file).gsub(source, '').split('/').map{|d| d[0..2]}.join('/')
+  "#{dirname}/#{basename}"
+end
+
+stripped_files = {}
+source = API_SOURCE
+proto_files = Dir["#{source}/**/*.proto"]
+proto_files.each{|f| stripped_files[f] = strip_proto_file(f)}
+base_names = proto_files.map{ |f| File.basename(f) }
+
+stripped_enums = {}
+stripped_messages = {}
+hash = YAML.load_file(File.expand_path('../../_data/api_latest.yml', __FILE__))
+# I prefer objects with direct access to hashes...
+json = hash.to_json
+proto = JSON.parse(json, object_class: OpenStruct)
+# enums = proto.enums.map(&:name)
+# messages = proto.messages.map(&:name)
+proto.enums.each{|e| stripped_enums[e.name] = strip_proto_yaml_enum(e)}
+proto.messages.each{|m| stripped_messages[m.name] = strip_proto_yaml_message(m)}
+
+sorted_matches = {}
+# mappings = {}
+# matched_names = []
+matched_files = []
+
+puts "ENUMS: "
+stripped_enums.each do |name, content|
+  # next unless name == 'Method'
+  best = 100
+  sorted_matches[name] = stripped_files.map do |file, file_content|
+    next if matched_files.include?(file)
+    next if best < 10
+    next if file_content !~ /^enum/
+
+    # puts file
+    # next unless file =~ /POGOProtos\/Enums\/BadgeType\.proto/
+
+    score = content.distance(file_content)
+    name_score = name.gsub(/Proto/, '').distance(File.basename(file, '.proto'))
+
+    best = score if score < best
+    matched_files << file if score == 0
+
+    # puts content
+    # puts file_content
+    {
+      score: score,
+      name_score: name_score,
+      file: file.gsub(source, '')
+    }
+  end.compact.sort_by{|m| m[:score]}
+
+  bests = sorted_matches[name].take(3)
+  if bests.first[:score] == 0
+    next # Comment to show it anyway
+    bests.reject!{|b| b[:score] > 0}
+  end
+  if bests.first[:name_score] == 0
+    next # Comment to show it anyway
+    bests.reject!{|b| b[:name_score] > 0}
+  end
+  bests.map!{|best| "#{shorten_path(best[:file])} #{colored_score(best[:score], best[:name_score])}"}
+  puts " - #{name} -> #{bests.join(", ")}"
+end
+
+puts "MESSAGES: "
+stripped_messages.each do |name, content|
+  # next unless name == 'Method'
+  best = 1000
+  sorted_matches[name] = stripped_files.map do |file, file_content|
+    next if matched_files.include?(file)
+    next if best < 10
+    next if file_content !~ /^message/
+
+    score = content.distance(file_content)
+    name_score = name.gsub(/Proto/, '').distance(File.basename(file, '.proto'))
+
+    best = score if score < best
+    matched_files << file if score == 0
+
+    {
+      score: score,
+      name_score: name_score,
+      file: file.gsub(source, '')
+    }
+  end.compact.sort_by{|m| m[:score]}
+
+  bests = sorted_matches[name].take(3)
+  if bests.first[:score] == 0
+    next # Comment to show it anyway
+    bests.reject!{|b| b[:score] > 0}
+  end
+  if bests.first[:name_score] == 0
+    next # Comment to show it anyway
+    bests.reject!{|b| b[:name_score] > 0}
+  end
+  bests.map!{|best| "#{shorten_path(best[:file])} #{colored_score(best[:score], best[:name_score])}"}
+  puts "  - #{name} -> #{bests.join(", ")}"
+end
+
+puts "Generating YML file..."
+File.write(File.expand_path('../../_data/sorted_matches.yml', __FILE__), YAML.dump(sorted_matches))
+puts "done.".green
+puts "You should run ./bin/match-review to generate the mappings file now."
+
+# sorted_matches = {}
+# mappings = {}
+# matched_names = []
+# matched_files = []
+
+# puts 'First pass, look & sort matches...'
+# enums.each do |name|
+#   sorted_matches[name] = enum_files.map do |file|
+#     {
+#       score: name.gsub(/Proto/, '').distance(File.basename(file).gsub('.proto', '')),
+#       src: file.gsub(source, '')
+#     }
+#   end.sort_by{|m| m[:score]}
+# end
+#
+# messages.each do |name|
+#   sorted_matches[name] = message_files.map do |file|
+#     {
+#       score: name.gsub(/Proto/, '').distance(File.basename(file).gsub('.proto', '')),
+#       src: file.gsub(source, '')
+#     }
+#   end.sort_by{|m| m[:score]}
+# end
+#
+# puts 'Second pass, looking for perfect matches...'
+# sorted_matches.each do |name, matches|
+#   if (best = matches.first)[:score] == 0
+#     mappings[name] = best
+#     matched_names << name
+#     matched_files << best[:src]
+#   end
+# end
+#
+# puts 'Third pass, find the best matches'
+# sorted_matches.each do |name, matches|
+#   next if matched_names.include?(name)
+#   best = sorted_matches[name].find do |partial_match|
+#     !matched_files.include?(partial_match[:src])
+#     # Don't mark partially matched files
+#     # matched_names << name
+#     # matched_files << partial_match[:src]
+#   end
+#   mappings[name] = best
+# end
+#
+# puts "# ENUMS:"
+# enums.each do |name|
+#   best = mappings[name]
+#   puts "  - #{name} -> #{best[:src]} #{colored_score(best[:score])}"
+# end
+#
+# puts "\n# MESSAGES:"
+# messages.each do |name|
+#   best = mappings[name]
+#   puts "  - #{name} -> #{best[:src]} #{colored_score(best[:score])}"
+# end
