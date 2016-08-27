@@ -68,10 +68,14 @@ end
 
 def strip_proto_file(source)
   stripped_src = File.read(source)
+    .gsub(/[\t]/, ' ')
     .gsub(/^(syntax|package|import).*/, '')
+    .gsub(/[ ]*oneof Action {/, '')
+    .gsub(/[ ]+enum[ ]+[a-zA-Z0-9_-]+[ ]*{.+?}/m, '')
+    .gsub(/\.[^ ]*\./, '')
     .gsub(/[\n{}]/, '')
-    .gsub(/\..*\./, '')
-    .gsub(/[ \t]+/, ' ')
+    .gsub(/[ ]+/, ' ')
+    .strip
   # puts "|#{stripped_src}|"
   return stripped_src
 end

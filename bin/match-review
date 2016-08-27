@@ -24,10 +24,14 @@ MATCH_FILE_PATH = File.expand_path('../../_data/mappings.yml', __FILE__)
 
 def strip_proto_file(source)
   stripped_src = File.read(File.join(API_SOURCE, source))
+    .gsub(/[\t]/, ' ')
     .gsub(/^(syntax|package|import).*/, '')
+    .gsub(/[ ]*oneof Action {/, '')
+    .gsub(/[ ]+enum[ ]+[a-zA-Z0-9_-]+[ ]*{.+?}/m, '')
+    .gsub(/\.[^ ]*\./, '')
     .gsub(/[\n{}]/, '')
-    .gsub(/\..*\./, '')
-    .gsub(/[ \t]+/, ' ')
+    .gsub(/[ ]+/, ' ')
+    .strip
   # puts "|#{stripped_src}|"
   return stripped_src
 end
@@ -38,8 +42,11 @@ def strip_proto_yaml_enum(enum)
 end
 
 def strip_proto_yaml_message(message)
-  "message #{message.name} #{message.attributes.map{|a| "#{a.modifier} #{a.type} #{a.name} = #{a.tag};"}.join(' ')}"
-    .gsub(/[ \t]+/, ' ')
+  str = "message #{message.name} #{message.attributes.map{|a| "#{a.modifier} #{a.type} #{a.name} = #{a.tag};"}.join(' ')}"
+  # if !message.enums.empty?
+  #   str = "#{str} #{message.enums.map{|e| "enum #{e.name} #{e.values.map{|v| "#{v.name} = #{v.tag};"}.join(' ')}"}.join(' ')}"
+  # end
+  str.gsub(/[ \t]+/, ' ')
 end
 
 def colored_score(score, name_score = -1)
@@ -52,7 +59,7 @@ def colored_score(score, name_score = -1)
     color = :light_blue
   end
   color = :green if name_score == 0
-  "[#{score.round}%]".colorize(color)
+  "[#{score.round(2)}%]".colorize(color)
 end
 
 def save_mappings(mappings)
@@ -72,6 +79,8 @@ matches = File.exists?(MATCH_FILE_PATH) ? YAML.load_file(MATCH_FILE_PATH) : {}
 skipped = []
 
 quit = false
+
+puts "ENUMS:"
 proto.enums.each do |enum|
   break if quit
   sorted_matches[enum.name].each do |match|
@@ -89,7 +98,7 @@ proto.enums.each do |enum|
     stripped_enum = strip_proto_yaml_enum(enum)
     stripped_file = files_cache[match[:file]] || strip_proto_file(match[:file])
 
-    title_len = "# Comparing #{enum.name} with #{match[:file]} [#{match[:score].round}%]".length
+    title_len = "# Comparing #{enum.name} with #{match[:file]} [#{match[:score].round(2)}%]".length
     puts <<-EOF
 
 #{'#'.white} Comparing #{enum.name.white} with #{match[:file].white} #{colored_score(match[:score], match[:name_score])}
@@ -129,6 +138,6 @@ save_mappings(matches)
 if !skipped.empty?
   puts <<-EOF
 Skipped:
-  - #{skipped.join("\n  - ")}"
+  - #{skipped.join("\n  - ")}
   EOF
 end
