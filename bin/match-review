@@ -133,6 +133,61 @@ Do you think they are the same? [y: yes|n: no|s: skip|w: save work|wq: save & qu
   end
 end
 
+unless quit
+  puts "MESSAGES:"
+  proto.messages.each do |message|
+    break if quit
+    sorted_matches[message.name].each do |match|
+      if matches[message.name] && File.exists?(File.join(API_SOURCE, matches[message.name]))
+        puts "=> already matched #{message.name} with #{matches[message.name]}".green
+        matches[message.name] = match[:file]
+        break
+      end
+      if match[:score] == 0
+        puts "=> matched #{message.name} with #{match[:file]}".green
+        matches[message.name] = match[:file]
+        break
+      end
+
+      stripped_message = strip_proto_yaml_message(message)
+      stripped_file = files_cache[match[:file]] || strip_proto_file(match[:file])
+
+      title_len = "# Comparing #{message.name} with #{match[:file]} [#{match[:score].round(2)}%]".length
+      puts <<-EOF
+
+  #{'#'.white} Comparing #{message.name.white} with #{match[:file].white} #{colored_score(match[:score], match[:name_score])}
+  #{'='.white*title_len}
+
+  #{stripped_message}
+  ----------------
+  #{stripped_file}
+
+  Do you think they are the same? [y: yes|n: no|s: skip|w: save work|wq: save & quit]
+      EOF
+      resp = STDIN.gets.strip
+
+      case resp
+      when 'y'
+        puts "=> matched".green
+        matches[message.name] = match[:file]
+        break
+      when 's'
+        puts "=> skipped".yellow
+        skipped << message.name
+        break
+      when 'w'
+        save_mappings(matches)
+        redo
+      when 'wq'
+        quit = true
+        break
+      else
+        redo
+      end
+    end
+  end
+end
+
 save_mappings(matches)
 
 if !skipped.empty?
