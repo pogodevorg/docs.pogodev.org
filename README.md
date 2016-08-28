@@ -1,17 +1,32 @@
-# Pokekon Go Dev Documentation
+[![POGODEV](https://github.com/pogodevorg/assets/blob/master/public/img/logo-github.png?raw=true)](https://pogodev.org)
 
-### Getting Started
+# docs.pogodev.org [![Build Status](https://img.shields.io/travis/pogodev/docs.pogodev.org/master.svg)](https://img.shields.io/travis/pogodev/docs.pogodev.org) [![Coverage Status](https://coveralls.io/repos/github/pogodevorg/docs.pogodev.org/badge.svg?branch=master)](https://coveralls.io/github/pogodevorg/docs.pogodev.org?branch=master) [![license](https://img.shields.io/github/license/pogodevorg/docs.pogodev.org.svg?maxAge=2592000?style=flat-square)](#)
 
-#### Dependencies to run locally
+## Table of Contents
+* [What is it?](#what-is-it)
+* [Installation](#installation)
+  * [Requirements](#requirements)
+  * [Instructions](#instructions)
+* [Documentation](#documentation)
+* [Contributing](#contributing)
+  * [Core Maintainers](#core-maintainers)
+* [Licensing](#licensing)
+  * [Third Party Licenses](#third-party-licenses)
+* [Credits](#credits)
 
+## What is it?
+`docs.pogodev.org` is our open source github pages documentation site backed with Jekyll.
+
+## Installation
+
+### Requirements
 - Linux / OSX
 - Ruby (> 2.0)
 
-#### Let's Get It On
-
+### Instructions
 Set up your project in your code directory
 ```
-git clone https://github.com/pogodevorg/pogodevorg.github.io.git
+git clone https://github.com/pogodevorg/docs.pogodevorg.github.io.git
 cd pogodevorg.github.io.git
 ```
 
@@ -25,10 +40,11 @@ Run the server and watch for changes in your files
 ./bin/server
 ```
 
+## Documentation
+
 ### Helper scripts
 
 #### Main script
-
 - `gen-all` : Generate everything from the `.proto` files in the `proto` folder. This should be the only script you have to call manually.
 
 ```sh
@@ -36,7 +52,6 @@ Run the server and watch for changes in your files
 ```
 
 #### Sub-scripts (If the `gen-all` script fails, PANIC!)
-
 - proto2yml : Create a `.yml` file out of a `.proto` file
 
 ```sh
@@ -55,20 +70,22 @@ Run the server and watch for changes in your files
 ./bin/ymlapi2changelog _data/api_0_31_0.yml _data/api_0_33_0.yml
 ```
 
-### Issues
+## Licensing
+[GNU GPL](https://github.com/pogodevorg/docs.pogodev.org/blob/master/LICENSE) v3 or later.
 
-If you have problems, please create a
-[GitHub Issue](https://github.com/pogodevorg/pogodevorg.github.io/issues).
+### Third Party Licenses
+    None
 
-### Contributing
+## Contributing
+Currently, you can contribute to this project by:
+* Submitting a detailed [issue](https://github.com/pogodevorg/docs.pogodev.org/issues/new).
+* [Forking the project](https://github.com/pogodevorg/docs.pogodev.org/fork), and sending a pull request back to for review.
 
-Have a fix or want to add a feature?
-[Pull Requests](https://github.com/pogodevorg/pogodevorg.github.io/pulls) are welcome!
+### Core Maintainers
 
-### Credits
+* [![Build Status](https://github.com/hamue.png?size=36) - hamue](https://github.com/hamue)
 
-Thank you to all of [the contributors](https://github.com/pogodevorg/pogodevorg.github.io/contributors)!
+* [![Build Status](https://github.com/keyphact.png?size=36) - keyphact](https://github.com/keyphact)
 
-### License
-
-[GPL](LICENSE.md)
+## Credits
+    None
