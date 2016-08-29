@@ -3,23 +3,100 @@
 # THIS IS WIP AND SHOULDN'T BE USED YET
 
 require 'optparse'
+require 'ostruct'
 require 'yaml'
 require 'json'
 require 'erb'
 
-USAGE = "Usage: #{__FILE__} path_to_aeonlucid_repo"
-options = {}
+USAGE = "Usage: #{__FILE__} [options] path_to_POGOProtos_repo"
+options = OpenStruct.new
+options.verbose = false
+options.limit = false
+options.target_ref = "origin/wip-autodoc-generation"
+options.reset_ref = "origin/pogodev-develop"
+options.commit = true
+options.commit_msg = "Auto Generated Stuff"
+options.update_readme = true
+options.push = true
+options.force_push = false
+
 OptionParser.new do |opts|
   opts.banner = USAGE
+  opts.separator ""
+  opts.separator "Specific options:"
 
   opts.on("-v", "--[no-]verbose", "Run verbosely") do |v|
-    options[:verbose] = v
+    options.verbose = v
+  end
+
+  opts.on("-l", "--limit ENUM_OR_MESSAGE",
+          "Limit the generation to the specified ENUM or MESSAGE",
+          "  default: (#{options.limit})") do |file|
+    options.limit = File.expand_path(file)
+  end
+
+  opts.on("-b", "--branch REMOTE/BRANCH",
+          "Put your stuff in the specified BRANCH (on REMOTE if push)",
+          "  default: (#{options.target_ref})") do |branch|
+    options.target_ref = branch
+  end
+
+  opts.on("-r", "--reset REMOTE/BRANCH",
+          "Base your branch on the specified BRANCH on REMOTE",
+          "  default: (#{options.reset_ref})") do |branch|
+    options.reset_ref = branch
+  end
+
+  opts.on("-c", "--[no-]commit",
+          "Commit the change in your branch.",
+          "  default: (#{options.commit})") do |commit|
+    options.commit = commit
+  end
+
+  opts.on("-m", "--message MESSAGE",
+          "Use the given MESSAGE as the commit message.",
+          "  default: (#{options.commit_msg})") do |msg|
+    options.commit_msg = msg
+  end
+
+  opts.on("-p", "--[no-]push",
+          "Push the commit.",
+          "  default: (#{options.push})") do |push|
+    options.push = push
+  end
+
+  opts.on("-f", "--[no-]force-push",
+          "Force push the commit.",
+          "  default: (#{options.force_push})") do |force|
+    options.force_push = force
+  end
+
+  opts.on("--[no-]rekt",
+          "Replace the README file.",
+          "  default: (#{options.update_readme})") do |rekt|
+    options.update_readme = rekt
+  end
+
+  opts.separator ""
+  opts.separator "Common options:"
+  opts.on_tail("-h", "--help", "Show this message") do
+    puts opts
+    exit
   end
 end.parse!
 
-file_arg = ARGV[0]
-puts USAGE unless file_arg
+file_arg = ARGV.last
+unless file_arg && Dir.exists?(file_arg)
+  puts USAGE
+  exit 1
+end
 
+options.target_remote = options.target_ref.split('/').first
+options.target_branch = options.target_ref.split('/').last
+options.reset_remote = options.reset_ref.split('/').first
+options.reset_branch = options.reset_ref.split('/').last
+
+API_ROOT = File.expand_path(file_arg)
 API_SOURCE = File.expand_path(File.join(file_arg, 'src/POGOProtos/'))
 MATCH_FILE_PATH = File.expand_path('../../_data/mappings.yml', __FILE__)
 MATCHES = File.exists?(MATCH_FILE_PATH) ? YAML.load_file(MATCH_FILE_PATH) : {}
@@ -29,7 +106,27 @@ hash = YAML.load_file(File.expand_path('../../_data/api_latest.yml', __FILE__))
 json = hash.to_json
 proto = JSON.parse(json, object_class: OpenStruct)
 
+# Sync with upstream
+Dir.chdir(API_ROOT) do
+  `git fetch --all`
+  `git branch #{options.target_branch} 2>/dev/null`
+  `git checkout #{options.target_branch}`
+  `git reset #{options.reset_remote}/#{options.reset_branch} --hard`
+end
+
+if options.update_readme
+  puts "Updating README"
+  template = File.read(File.expand_path('../../templates/pogoprotos/README.md.erb', __FILE__))
+  outpath = File.join(API_ROOT, 'README.md')
+  # puts outpath
+  # puts ERB.new(template, nil, '-').result(binding)
+  # exit 0
+  IO.write(outpath, ERB.new(template, nil, '-').result(binding))
+end
+
+puts "Updating Enums..."
 proto.enums.each do |enum|
+  next if options.limit && (!MATCHES[enum.name] || options.limit != File.join(API_SOURCE, MATCHES[enum.name]))
   if MATCHES[enum.name] && File.exists?(File.join(API_SOURCE, MATCHES[enum.name]))
     mapping = MATCHES[enum.name].gsub(/^\//, '')
     package = File.dirname(mapping).gsub(/\//, '.')
@@ -64,7 +161,9 @@ def resolve_imports(message)
   imports.uniq.sort
 end
 
+puts "Updating Messages..."
 proto.messages.each do |message|
+  next if options.limit && (!MATCHES[message.name] || options.limit != File.join(API_SOURCE, MATCHES[message.name]))
   if MATCHES[message.name] && File.exists?(File.join(API_SOURCE, MATCHES[message.name]))
     mapping = MATCHES[message.name].gsub(/^\//, '')
     package = File.dirname(mapping).gsub(/\//, '.')
@@ -76,4 +175,11 @@ proto.messages.each do |message|
     # break
     IO.write(outpath, ERB.new(template, nil, '-').result(binding))
   end
+end
+
+# Commit
+Dir.chdir(API_ROOT) do
+  `git add .` if options.commit
+  `git commit -m '#{options.commit_msg}'` if options.commit
+  `git push #{options.force_push ? '-f' : ''} #{options.target_remote} #{options.target_branch}` if options.push
 end
