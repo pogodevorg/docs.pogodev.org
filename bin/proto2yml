@@ -81,7 +81,7 @@ proto.each_with_index do |line, i|
   # Parse message attributes
   if m = line.match(/^\s*((?<modifier>[[:graph:]]+)\s+){0,1}(?<type>[[:graph:]]+)\s+(?<name>[[:graph:]]+)\s+=\s+(?<tag>[[:graph:]]+);\s*$/)
     puts "  Attribute: #{m['name']} (#{m['type']}) #{m['tag']}" if options[:verbose]
-    attribute = OpenStruct.new(type: m['type'], name: m['name'], tag: m['tag'], modifier: m['modifier'])
+    attribute = OpenStruct.new(type: m['type'], name: m['name'], tag: m['tag'].to_i, modifier: m['modifier'])
     stack.last.attributes.push attribute
     next
   end
@@ -89,7 +89,7 @@ proto.each_with_index do |line, i|
   # Parse enum values
   if m = line.match(/^\s*(?<name>[[:graph:]]+)\s+=\s+(?<tag>[[:graph:]]+);\s*$/)
     puts "  Enum value: #{m['name']} (#{m['tag']})" if options[:verbose]
-    value = OpenStruct.new(name: m['name'], tag: m['tag'])
+    value = OpenStruct.new(name: m['name'], tag: m['tag'].to_i)
     stack.last.values.push value
     next
   end
@@ -104,7 +104,10 @@ end
 
 # Sort stuff a bit
 global.enums.sort_by!(&:name)
+global.enums.each{|e| e.values.sort_by!(&:tag)}
 global.messages.sort_by!(&:name)
+global.messages.each{|m| m.attributes.sort_by!(&:tag)}
 global.messages.each{|m| m.enums.sort_by!(&:name)}
+global.messages.each{|m| m.enums.each{|e| e.values.sort_by!(&:tag)}}
 
 puts YAML.dump(global.to_hash)
