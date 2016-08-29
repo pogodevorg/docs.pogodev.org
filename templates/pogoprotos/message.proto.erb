@@ -1,12 +1,18 @@
 syntax = "proto3";
 package POGOProtos.<%= package %>;
+<%- if !(imports = resolve_imports(message)).empty? -%>
+
+<%- imports.each do |import| -%>
+import "<%= import %>";
+<%- end -%>
+<%- end -%>
 
 message <%= basename %> {
 <%- message.attributes.each do |attribute| -%>
 <%- if attribute.modifier -%>
-	<%= attribute.modifier %> <%= attribute.type %> <%= attribute.name %> = <%= attribute.tag %>;
+	<%= attribute.modifier %> <%= attr_type(message, attribute) %> <%= attribute.name %> = <%= attribute.tag %>;
 <%- else -%>
-	<%= attribute.type %> <%= attribute.name %> = <%= attribute.tag %>;
+	<%= attr_type(message, attribute) %> <%= attribute.name %> = <%= attribute.tag %>;
 <%- end -%>
 <%- end -%>
 <%- message.enums.each do |enum| -%>
