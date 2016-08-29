@@ -13,8 +13,8 @@ excerpt: 'FIXME: Add a description'
 
 ## Attributes:
 
-- 2: attack_type ([HoloPokemonType](../../enums/HoloPokemonType/))
 - 1: attack_scalar (float) repeated
+- 2: attack_type ([HoloPokemonType](../../enums/HoloPokemonType/))
 
 ## Enums:
 
