@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+# Overwrite file in POGOProtos
+
+require 'optparse'
+require 'yaml'
+require 'json'
+
+USAGE = "Usage: #{__FILE__}"
+options = {}
+OptionParser.new do |opts|
+  opts.banner = USAGE
+
+  opts.on("-v", "--[no-]verbose", "Run verbosely") do |v|
+    options[:verbose] = v
+  end
+end.parse!
+
+hash = YAML.load_file(File.expand_path('../../_data/api_latest.yml', __FILE__))
+# I prefer objects with direct access to hashes...
+json = hash.to_json
+proto = JSON.parse(json, object_class: OpenStruct)
+
+puts "Enums: #{proto.enums.size}\n  values: #{proto.enums.map(&:values).flatten.size}"
+puts "Messages: #{proto.messages.size}\n  attributes: #{proto.messages.map(&:attributes).flatten.size}\n  enums: #{proto.messages.map(&:enums).flatten.size}\n    values: #{proto.messages.map(&:enums).flatten.map(&:values).flatten.size}"
