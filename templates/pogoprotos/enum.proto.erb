@@ -1,0 +1,8 @@
+syntax = "proto3";
+package POGOProtos.<%= package %>;
+
+enum <%= basename %> {
+<%- enum.values.each do |value| -%>
+	<%= value.name %> = <%= value.tag %>;
+<%- end -%>
+}

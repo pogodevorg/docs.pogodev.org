@@ -1,0 +1,58 @@
+#!/usr/bin/env ruby
+# Overwrite file in POGOProtos
+# THIS IS WIP AND SHOULDN'T BE USED YET
+
+require 'optparse'
+require 'yaml'
+require 'json'
+require 'erb'
+
+USAGE = "Usage: #{__FILE__} path_to_aeonlucid_repo"
+options = {}
+OptionParser.new do |opts|
+  opts.banner = USAGE
+
+  opts.on("-v", "--[no-]verbose", "Run verbosely") do |v|
+    options[:verbose] = v
+  end
+end.parse!
+
+file_arg = ARGV[0]
+puts USAGE unless file_arg
+
+API_SOURCE = File.expand_path(File.join(file_arg, 'src/POGOProtos/'))
+MATCH_FILE_PATH = File.expand_path('../../_data/mappings.yml', __FILE__)
+matches = File.exists?(MATCH_FILE_PATH) ? YAML.load_file(MATCH_FILE_PATH) : {}
+
+hash = YAML.load_file(File.expand_path('../../_data/api_latest.yml', __FILE__))
+# I prefer objects with direct access to hashes...
+json = hash.to_json
+proto = JSON.parse(json, object_class: OpenStruct)
+
+proto.enums.each do |enum|
+  if matches[enum.name] && File.exists?(File.join(API_SOURCE, matches[enum.name]))
+    mapping = matches[enum.name].gsub(/^\//, '')
+    package = File.dirname(mapping).gsub(/\//, '.')
+    basename = File.basename(mapping, '.proto')
+    template = File.read(File.expand_path('../../templates/pogoprotos/enum.proto.erb', __FILE__))
+    outpath = File.join(API_SOURCE, matches[enum.name])
+    # puts outpath
+    # puts ERB.new(template, nil, '-').result(binding)
+    # break
+    IO.write(outpath, ERB.new(template, nil, '-').result(binding))
+  end
+end
+
+proto.messages.each do |message|
+  if matches[message.name] && File.exists?(File.join(API_SOURCE, matches[message.name]))
+    mapping = matches[message.name].gsub(/^\//, '')
+    package = File.dirname(mapping).gsub(/\//, '.')
+    basename = File.basename(mapping, '.proto')
+    template = File.read(File.expand_path('../../templates/pogoprotos/message.proto.erb', __FILE__))
+    outpath = File.join(API_SOURCE, matches[message.name])
+    # puts outpath
+    # puts ERB.new(template, nil, '-').result(binding)
+    # break
+    IO.write(outpath, ERB.new(template, nil, '-').result(binding))
+  end
+end

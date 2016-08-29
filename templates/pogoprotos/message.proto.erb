@@ -1,0 +1,20 @@
+syntax = "proto3";
+package POGOProtos.<%= package %>;
+
+message <%= basename %> {
+<%- message.attributes.each do |attribute| -%>
+<%- if attribute.modifier -%>
+	<%= attribute.modifier %> <%= attribute.type %> <%= attribute.name %> = <%= attribute.tag %>;
+<%- else -%>
+	<%= attribute.type %> <%= attribute.name %> = <%= attribute.tag %>;
+<%- end -%>
+<%- end -%>
+<%- message.enums.each do |enum| -%>
+
+	enum <%= enum.name %> {
+<%- enum.values.each do |value| -%>
+		<%= value.name %> = <%= value.tag %>;
+<%- end -%>
+	}
+<%- end -%>
+}
