@@ -28,7 +28,47 @@
   list-style: none
 }
 
-.docs {
+.page-section.docs {
   h1 { margin-bottom: 1rem; }
-  h2, h3, h4, h5, h6 { margin: 1rem 0; }
+  h2, h3, h4, h5, h6 {
+    margin: 1rem 0;
+    font-weight: 500;
+
+    code {
+      font-size: 67%;
+    }
+  }
+
+  code {
+    font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
+    font-size: 12px;
+  }
+
+  code {
+    color: darken(saturate($main-color, 50%), 10%);
+    background-color: darken($main-bg-color, 10%);
+
+    padding: 0.2em 0;
+    margin: 0;
+    font-size: 85%;
+    border-radius: 3px;
+    -webkit-font-smoothing: initial;
+
+    &:before,
+    &:after {
+      letter-spacing: -0.2em;
+      content: "\00a0";
+    }
+  }
+
+  blockquote {
+    padding: 0 1em;
+    margin-bottom: 1em;
+    margin-left: -4px; //offsets the border so all blockquotes align to a left edge
+    color: #777;
+    border-left: 4px solid #ddd;
+  }
+
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.75rem; }
 }
