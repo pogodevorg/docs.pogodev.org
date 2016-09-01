@@ -32,7 +32,7 @@ excerpt: 'FIXME: Add a description'
 [comment]: <> (YOU CAN EDIT AFTER THIS)
 
 ## Range:
-- normalized_recticle_size: between 0.0 and 2.0
+- normalized_recticle_size: between 1.0 and 2.0
 - spin_modifier: between 0.00 and 1.00
 - normalized_hit_position: between 0.00 and 1.0
 
