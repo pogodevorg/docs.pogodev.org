@@ -21,7 +21,7 @@
 ## Installation
 
 ### Requirements
-- Linux / OSX
+- Linux / macOS
 - Ruby (> 2.0)
 
 ### Instructions
