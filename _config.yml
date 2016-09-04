@@ -5,7 +5,7 @@ baseurl: ''
 homepage: 'https://pogodev.org'
 homepagetitle: 'PogoDev'
 repository: 'pogodevorg/docs.pogodev.org'
-proto_repository: 'AeonLucid/POGOProtos'
+proto_repository: 'pogodevorg/POGOProtos'
 branch: 'master'
 
 latest_api_version: 0.35.0
