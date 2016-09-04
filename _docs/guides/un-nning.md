@@ -5,4 +5,9 @@ category: Guides
 
 # Un*inning
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+* Android
+  * If you have **root** access: install the Xposed module [pokemon-go-xposed](https://github.com/rastapasta/pokemon-go-xposed)
+  * **otherwise**: install a pre-patched version. Try [here](https://github.com/rastapasta/pokemon-go-mitm/blob/master/README.md) to find one.
+
+* iPhone
+  * If you have a **jailbroken** device, use [ilendemli](https://github.com/ilendemli)'s certificate pinning [patch](https://github.com/ilendemli/trustme/blob/master/packages/info.ilendemli.trustme_0.0.1-1_iphoneos-arm.deb)
