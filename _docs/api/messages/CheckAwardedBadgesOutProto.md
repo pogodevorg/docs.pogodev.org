@@ -16,6 +16,7 @@ excerpt: 'FIXME: Add a description'
 - 1: success (bool)
 - 2: awarded_badges ([HoloBadgeType](../../enums/HoloBadgeType/)) repeated
 - 3: awarded_badge_levels (int32) repeated
+- 4: avatar_template_ids (string) repeated
 
 ## Enums:
 

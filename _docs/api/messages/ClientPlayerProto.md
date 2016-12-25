@@ -26,6 +26,8 @@ excerpt: 'FIXME: Add a description'
 - 14: currency_balance ([CurrencyQuantityProto](../CurrencyQuantityProto/)) repeated
 - 15: remaining_codename_claims (int32)
 - 16: buddy_pokemon_proto ([BuddyPokemonProto](../BuddyPokemonProto/))
+- 17: battle_lockout_end_ms (int64)
+- 18: secondary_player_avatar_proto ([PlayerAvatarProto](../PlayerAvatarProto/))
 
 ## Enums:
 

@@ -15,6 +15,7 @@ excerpt: 'FIXME: Add a description'
 
 - 1: pokemon ([PokemonProto](../PokemonProto/))
 - 2: trainer_public_profile ([PlayerPublicProfileProto](../PlayerPublicProfileProto/))
+- 3: training_pokemon ([PokemonProto](../PokemonProto/))
 
 ## Enums:
 

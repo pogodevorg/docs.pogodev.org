@@ -13,12 +13,12 @@ excerpt: 'FIXME: Add a description'
 
 ## Values:
 
-- 0: PLAYER_AVATAR_UNSET
-- 1: PLAYER_AVATAR_MALE
-- 2: PLAYER_AVATAR_FEMALE
+- 0: PLAYER_AVATAR_MALE
+- 1: PLAYER_AVATAR_FEMALE
 
 ## Referenced by:
 
-- None
+- [AvatarCustomizationProto](../../messages/AvatarCustomizationProto/)
+- [ListAvatarCustomizationsProto](../../messages/ListAvatarCustomizationsProto/)
 
 [comment]: <> (YOU CAN EDIT AFTER THIS)

@@ -18,6 +18,7 @@ excerpt: 'FIXME: Add a description'
 - 3: exp_awarded (int32) repeated
 - 4: candy_awarded (int32) repeated
 - 5: stardust_awarded (int32) repeated
+- 6: egg_km_walked (float) repeated
 
 ## Enums:
 

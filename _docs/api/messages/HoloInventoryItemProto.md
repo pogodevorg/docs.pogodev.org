@@ -23,6 +23,8 @@ excerpt: 'FIXME: Add a description'
 - 8: applied_items ([AppliedItemsProto](../AppliedItemsProto/))
 - 9: egg_incubators ([EggIncubatorsProto](../EggIncubatorsProto/))
 - 10: pokemon_family ([PokemonFamilyProto](../PokemonFamilyProto/))
+- 11: quest ([QuestProto](../QuestProto/))
+- 12: avatar_item ([AvatarItemProto](../AvatarItemProto/))
 
 ## Enums:
 

@@ -18,6 +18,7 @@ excerpt: 'FIXME: Add a description'
 - 3: encounter_id (fixed64)
 - 4: fort_id (string)
 - 5: fort_image_url (string)
+- 6: pokemon_display ([PokemonDisplayProto](../PokemonDisplayProto/))
 
 ## Enums:
 

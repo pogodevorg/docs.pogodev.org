@@ -19,6 +19,7 @@ excerpt: 'FIXME: Add a description'
 - 4: expiration_time_ms (int64)
 - 5: latitude (double)
 - 6: longitude (double)
+- 7: pokemon_display ([PokemonDisplayProto](../PokemonDisplayProto/))
 
 ## Enums:
 

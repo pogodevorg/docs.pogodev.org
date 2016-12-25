@@ -54,6 +54,7 @@ excerpt: 'FIXME: Add a description'
 
 ## Referenced by:
 
+- [AvatarCustomizationProto](../../messages/AvatarCustomizationProto/)
 - [BadgeSettingsProto](../../messages/BadgeSettingsProto/)
 - [CheckAwardedBadgesOutProto](../../messages/CheckAwardedBadgesOutProto/)
 - [EquipBadgeProto](../../messages/EquipBadgeProto/)

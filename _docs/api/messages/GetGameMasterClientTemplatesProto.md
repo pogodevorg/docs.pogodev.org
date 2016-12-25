@@ -13,6 +13,9 @@ excerpt: 'FIXME: Add a description'
 
 ## Attributes:
 
+- 1: paginate (bool)
+- 2: page_offset (int32)
+- 3: page_timestamp (uint64)
 
 ## Enums:
 

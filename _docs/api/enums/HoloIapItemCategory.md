@@ -18,6 +18,7 @@ excerpt: 'FIXME: Add a description'
 - 2: IAP_CATEGORY_ITEMS
 - 3: IAP_CATEGORY_UPGRADES
 - 4: IAP_CATEGORY_POKECOINS
+- 5: IAP_CATEGORY_AVATAR
 
 ## Referenced by:
 

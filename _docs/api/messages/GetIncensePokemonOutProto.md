@@ -20,6 +20,7 @@ excerpt: 'FIXME: Add a description'
 - 5: encounter_location (string)
 - 6: encounter_id (fixed64)
 - 7: disappear_time_ms (int64)
+- 8: pokemon_display ([PokemonDisplayProto](../PokemonDisplayProto/))
 
 ## Enums:
 

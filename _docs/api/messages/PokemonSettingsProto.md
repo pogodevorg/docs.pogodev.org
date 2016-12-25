@@ -36,6 +36,7 @@ excerpt: 'FIXME: Add a description'
 - 22: candy_to_evolve (int32)
 - 23: km_buddy_distance (float)
 - 24: buddy_size ([BuddySize](#buddy_size))
+- 25: model_height (float)
 
 ## Enums:
 
@@ -44,6 +45,7 @@ excerpt: 'FIXME: Add a description'
 - 1: BUDDY_SHOULDER
 - 2: BUDDY_BIG
 - 3: BUDDY_FLYING
+- 4: BUDDY_BABY
 
 ## Referenced by:
 

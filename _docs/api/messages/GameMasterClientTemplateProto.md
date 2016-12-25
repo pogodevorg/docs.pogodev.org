@@ -29,6 +29,8 @@ excerpt: 'FIXME: Add a description'
 - 17: iap_settings ([IapSettingsProto](../IapSettingsProto/))
 - 18: pokemon_upgrades ([PokemonUpgradeSettingsProto](../PokemonUpgradeSettingsProto/))
 - 19: equipped_badges ([EquippedBadgeSettingsProto](../EquippedBadgeSettingsProto/))
+- 20: quest_settings ([QuestSettingsProto](../QuestSettingsProto/))
+- 21: avatar_customization ([AvatarCustomizationProto](../AvatarCustomizationProto/))
 
 ## Enums:
 

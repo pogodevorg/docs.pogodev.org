@@ -36,6 +36,8 @@ excerpt: 'FIXME: Add a description'
 - 21: num_pokemon_deployed (int32)
 - 22: num_pokemon_caught_by_type (int32) repeated
 - 23: small_rattata_caught (int32)
+- 24: used_km_pool (double)
+- 25: last_km_refill_ms (int64)
 
 ## Enums:
 

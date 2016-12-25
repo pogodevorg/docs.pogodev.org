@@ -29,6 +29,8 @@ excerpt: 'FIXME: Add a description'
 - 14: cooldown_complete_ms (int64)
 - 15: sponsor ([Sponsor](#sponsor))
 - 16: rendering_type ([RenderingType](#rendering_type))
+- 17: deploy_lockout_end_ms (int64)
+- 18: guard_pokemon_display ([PokemonDisplayProto](../PokemonDisplayProto/))
 
 ## Enums:
 
@@ -39,6 +41,14 @@ excerpt: 'FIXME: Add a description'
 - 0: UNSET
 - 1: MCDONALDS
 - 2: POKEMON_STORE
+- 3: TOHO
+- 4: SOFTBANK
+- 5: GLOBE
+- 6: SPATULA
+- 7: THERMOMETER
+- 8: KNIFE
+- 9: GRILL
+- 10: SMOKER
 
 ## Referenced by:
 

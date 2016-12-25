@@ -15,6 +15,7 @@ excerpt: 'FIXME: Add a description'
 
 - 1: fort_map_data ([PokemonFortProto](../PokemonFortProto/))
 - 2: gym_membership ([GymMembershipProto](../GymMembershipProto/)) repeated
+- 3: deploy_lockout (bool)
 
 ## Enums:
 

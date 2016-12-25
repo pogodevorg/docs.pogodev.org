@@ -15,6 +15,8 @@ excerpt: 'FIXME: Add a description'
 
 - 1: success (bool)
 - 2: player ([ClientPlayerProto](../ClientPlayerProto/))
+- 3: banned (bool)
+- 4: warn (bool)
 
 ## Enums:
 
