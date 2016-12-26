@@ -15,6 +15,7 @@ excerpt: 'FIXME: Add a description'
 
 - 1: country (string)
 - 2: language (string)
+- 3: timezone (string)
 
 ## Enums:
 

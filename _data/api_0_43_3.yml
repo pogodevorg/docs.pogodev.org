@@ -1,0 +1,6357 @@
+---
+enums:
+- name: CameraInterpolation
+  sort_title: camera_interpolation
+  values:
+  - name: CAM_INTERP_CUT
+    tag: 0
+  - name: CAM_INTERP_LINEAR
+    tag: 1
+  - name: CAM_INTERP_SMOOTH
+    tag: 2
+  - name: CAM_INTERP_SMOOTH_ROT_LINEAR_MOVE
+    tag: 3
+  - name: CAM_INTERP_DEPENDS
+    tag: 4
+- name: CameraTarget
+  sort_title: camera_target
+  values:
+  - name: CAM_TARGET_ATTACKER
+    tag: 0
+  - name: CAM_TARGET_ATTACKER_EDGE
+    tag: 1
+  - name: CAM_TARGET_ATTACKER_GROUND
+    tag: 2
+  - name: CAM_TARGET_DEFENDER
+    tag: 3
+  - name: CAM_TARGET_DEFENDER_EDGE
+    tag: 4
+  - name: CAM_TARGET_DEFENDER_GROUND
+    tag: 5
+  - name: CAM_TARGET_ATTACKER_DEFENDER
+    tag: 6
+  - name: CAM_TARGET_ATTACKER_DEFENDER_EDGE
+    tag: 7
+  - name: CAM_TARGET_DEFENDER_ATTACKER
+    tag: 8
+  - name: CAM_TARGET_DEFENDER_ATTACKER_EDGE
+    tag: 9
+  - name: CAM_TARGET_ATTACKER_DEFENDER_MIRROR
+    tag: 11
+  - name: CAM_TARGET_SHOULDER_ATTACKER_DEFENDER
+    tag: 12
+  - name: CAM_TARGET_SHOULDER_ATTACKER_DEFENDER_MIRROR
+    tag: 13
+  - name: CAM_TARGET_ATTACKER_DEFENDER_WORLD
+    tag: 14
+- name: EggIncubatorType
+  sort_title: egg_incubator_type
+  values:
+  - name: INCUBATOR_UNSET
+    tag: 0
+  - name: INCUBATOR_DISTANCE
+    tag: 1
+- name: EncounterType
+  sort_title: encounter_type
+  values:
+  - name: SPAWN_POINT
+    tag: 0
+  - name: INCENSE
+    tag: 1
+  - name: DISK
+    tag: 2
+- name: FortType
+  sort_title: fort_type
+  values:
+  - name: GYM
+    tag: 0
+  - name: CHECKPOINT
+    tag: 1
+- name: HoloActivityType
+  sort_title: holo_activity_type
+  values:
+  - name: ACTIVITY_UNKNOWN
+    tag: 0
+  - name: ACTIVITY_CATCH_POKEMON
+    tag: 1
+  - name: ACTIVITY_CATCH_LEGEND_POKEMON
+    tag: 2
+  - name: ACTIVITY_FLEE_POKEMON
+    tag: 3
+  - name: ACTIVITY_DEFEAT_FORT
+    tag: 4
+  - name: ACTIVITY_EVOLVE_POKEMON
+    tag: 5
+  - name: ACTIVITY_HATCH_EGG
+    tag: 6
+  - name: ACTIVITY_WALK_KM
+    tag: 7
+  - name: ACTIVITY_POKEDEX_ENTRY_NEW
+    tag: 8
+  - name: ACTIVITY_CATCH_FIRST_THROW
+    tag: 9
+  - name: ACTIVITY_CATCH_NICE_THROW
+    tag: 10
+  - name: ACTIVITY_CATCH_GREAT_THROW
+    tag: 11
+  - name: ACTIVITY_CATCH_EXCELLENT_THROW
+    tag: 12
+  - name: ACTIVITY_CATCH_CURVEBALL
+    tag: 13
+  - name: ACTIVITY_CATCH_FIRST_CATCH_OF_DAY
+    tag: 14
+  - name: ACTIVITY_CATCH_MILESTONE
+    tag: 15
+  - name: ACTIVITY_TRAIN_POKEMON
+    tag: 16
+  - name: ACTIVITY_SEARCH_FORT
+    tag: 17
+  - name: ACTIVITY_RELEASE_POKEMON
+    tag: 18
+  - name: ACTIVITY_HATCH_EGG_SMALL_BONUS
+    tag: 19
+  - name: ACTIVITY_HATCH_EGG_MEDIUM_BONUS
+    tag: 20
+  - name: ACTIVITY_HATCH_EGG_LARGE_BONUS
+    tag: 21
+  - name: ACTIVITY_DEFEAT_GYM_DEFENDER
+    tag: 22
+  - name: ACTIVITY_DEFEAT_GYM_LEADER
+    tag: 23
+  - name: ACTIVITY_CATCH_FIRST_CATCH_STREAK_BONUS
+    tag: 24
+  - name: ACTIVITY_SEARCH_FORT_FIRST_OF_THE_DAY
+    tag: 25
+  - name: ACTIVITY_SEARCH_FORT_STREAK_BONUS
+    tag: 26
+- name: HoloBadgeType
+  sort_title: holo_badge_type
+  values:
+  - name: BADGE_UNSET
+    tag: 0
+  - name: BADGE_TRAVEL_KM
+    tag: 1
+  - name: BADGE_POKEDEX_ENTRIES
+    tag: 2
+  - name: BADGE_CAPTURE_TOTAL
+    tag: 3
+  - name: BADGE_DEFEATED_FORT
+    tag: 4
+  - name: BADGE_EVOLVED_TOTAL
+    tag: 5
+  - name: BADGE_HATCHED_TOTAL
+    tag: 6
+  - name: BADGE_ENCOUNTERED_TOTAL
+    tag: 7
+  - name: BADGE_POKESTOPS_VISITED
+    tag: 8
+  - name: BADGE_UNIQUE_POKESTOPS
+    tag: 9
+  - name: BADGE_POKEBALL_THROWN
+    tag: 10
+  - name: BADGE_BIG_MAGIKARP
+    tag: 11
+  - name: BADGE_DEPLOYED_TOTAL
+    tag: 12
+  - name: BADGE_BATTLE_ATTACK_WON
+    tag: 13
+  - name: BADGE_BATTLE_TRAINING_WON
+    tag: 14
+  - name: BADGE_BATTLE_DEFEND_WON
+    tag: 15
+  - name: BADGE_PRESTIGE_RAISED
+    tag: 16
+  - name: BADGE_PRESTIGE_DROPPED
+    tag: 17
+  - name: BADGE_TYPE_NORMAL
+    tag: 18
+  - name: BADGE_TYPE_FIGHTING
+    tag: 19
+  - name: BADGE_TYPE_FLYING
+    tag: 20
+  - name: BADGE_TYPE_POISON
+    tag: 21
+  - name: BADGE_TYPE_GROUND
+    tag: 22
+  - name: BADGE_TYPE_ROCK
+    tag: 23
+  - name: BADGE_TYPE_BUG
+    tag: 24
+  - name: BADGE_TYPE_GHOST
+    tag: 25
+  - name: BADGE_TYPE_STEEL
+    tag: 26
+  - name: BADGE_TYPE_FIRE
+    tag: 27
+  - name: BADGE_TYPE_WATER
+    tag: 28
+  - name: BADGE_TYPE_GRASS
+    tag: 29
+  - name: BADGE_TYPE_ELECTRIC
+    tag: 30
+  - name: BADGE_TYPE_PSYCHIC
+    tag: 31
+  - name: BADGE_TYPE_ICE
+    tag: 32
+  - name: BADGE_TYPE_DRAGON
+    tag: 33
+  - name: BADGE_TYPE_DARK
+    tag: 34
+  - name: BADGE_TYPE_FAIRY
+    tag: 35
+  - name: BADGE_SMALL_RATTATA
+    tag: 36
+  - name: BADGE_PIKACHU
+    tag: 37
+- name: HoloIapItemCategory
+  sort_title: holo_iap_item_category
+  values:
+  - name: IAP_CATEGORY_NONE
+    tag: 0
+  - name: IAP_CATEGORY_BUNDLE
+    tag: 1
+  - name: IAP_CATEGORY_ITEMS
+    tag: 2
+  - name: IAP_CATEGORY_UPGRADES
+    tag: 3
+  - name: IAP_CATEGORY_POKECOINS
+    tag: 4
+- name: HoloItemCategory
+  sort_title: holo_item_category
+  values:
+  - name: ITEM_CATEGORY_NONE
+    tag: 0
+  - name: ITEM_CATEGORY_POKEBALL
+    tag: 1
+  - name: ITEM_CATEGORY_FOOD
+    tag: 2
+  - name: ITEM_CATEGORY_MEDICINE
+    tag: 3
+  - name: ITEM_CATEGORY_BOOST
+    tag: 4
+  - name: ITEM_CATEGORY_UTILITES
+    tag: 5
+  - name: ITEM_CATEGORY_CAMERA
+    tag: 6
+  - name: ITEM_CATEGORY_DISK
+    tag: 7
+  - name: ITEM_CATEGORY_INCUBATOR
+    tag: 8
+  - name: ITEM_CATEGORY_INCENSE
+    tag: 9
+  - name: ITEM_CATEGORY_XP_BOOST
+    tag: 10
+  - name: ITEM_CATEGORY_INVENTORY_UPGRADE
+    tag: 11
+- name: HoloItemEffect
+  sort_title: holo_item_effect
+  values:
+  - name: ITEM_EFFECT_NONE
+    tag: 0
+  - name: ITEM_EFFECT_CAP_NO_FLEE
+    tag: 1000
+  - name: ITEM_EFFECT_CAP_NO_MOVEMENT
+    tag: 1002
+  - name: ITEM_EFFECT_CAP_NO_THREAT
+    tag: 1003
+  - name: ITEM_EFFECT_CAP_TARGET_MAX
+    tag: 1004
+  - name: ITEM_EFFECT_CAP_TARGET_SLOW
+    tag: 1005
+  - name: ITEM_EFFECT_CAP_CHANCE_NIGHT
+    tag: 1006
+  - name: ITEM_EFFECT_CAP_CHANCE_TRAINER
+    tag: 1007
+  - name: ITEM_EFFECT_CAP_CHANCE_FIRST_THROW
+    tag: 1008
+  - name: ITEM_EFFECT_CAP_CHANCE_LEGEND
+    tag: 1009
+  - name: ITEM_EFFECT_CAP_CHANCE_HEAVY
+    tag: 1010
+  - name: ITEM_EFFECT_CAP_CHANCE_REPEAT
+    tag: 1011
+  - name: ITEM_EFFECT_CAP_CHANCE_MULTI_THROW
+    tag: 1012
+  - name: ITEM_EFFECT_CAP_CHANCE_ALWAYS
+    tag: 1013
+  - name: ITEM_EFFECT_CAP_CHANCE_SINGLE_THROW
+    tag: 1014
+- name: HoloItemType
+  sort_title: holo_item_type
+  values:
+  - name: ITEM_TYPE_NONE
+    tag: 0
+  - name: ITEM_TYPE_POKEBALL
+    tag: 1
+  - name: ITEM_TYPE_POTION
+    tag: 2
+  - name: ITEM_TYPE_REVIVE
+    tag: 3
+  - name: ITEM_TYPE_MAP
+    tag: 4
+  - name: ITEM_TYPE_BATTLE
+    tag: 5
+  - name: ITEM_TYPE_FOOD
+    tag: 6
+  - name: ITEM_TYPE_CAMERA
+    tag: 7
+  - name: ITEM_TYPE_DISK
+    tag: 8
+  - name: ITEM_TYPE_INCUBATOR
+    tag: 9
+  - name: ITEM_TYPE_INCENSE
+    tag: 10
+  - name: ITEM_TYPE_XP_BOOST
+    tag: 11
+  - name: ITEM_TYPE_INVENTORY_UPGRADE
+    tag: 12
+- name: HoloPokemonClass
+  sort_title: holo_pokemon_class
+  values:
+  - name: POKEMON_CLASS_NORMAL
+    tag: 0
+  - name: POKEMON_CLASS_LEGENDARY
+    tag: 1
+  - name: POKEMON_CLASS_MYTHIC
+    tag: 2
+- name: HoloPokemonFamilyId
+  sort_title: holo_pokemon_family_id
+  values:
+  - name: FAMILY_UNSET
+    tag: 0
+  - name: V0001_FAMILY_BULBASAUR
+    tag: 1
+  - name: V0004_FAMILY_CHARMANDER
+    tag: 4
+  - name: V0007_FAMILY_SQUIRTLE
+    tag: 7
+  - name: V0010_FAMILY_CATERPIE
+    tag: 10
+  - name: V0013_FAMILY_WEEDLE
+    tag: 13
+  - name: V0016_FAMILY_PIDGEY
+    tag: 16
+  - name: V0019_FAMILY_RATTATA
+    tag: 19
+  - name: V0021_FAMILY_SPEAROW
+    tag: 21
+  - name: V0023_FAMILY_EKANS
+    tag: 23
+  - name: V0025_FAMILY_PIKACHU
+    tag: 25
+  - name: V0027_FAMILY_SANDSHREW
+    tag: 27
+  - name: V0029_FAMILY_NIDORAN
+    tag: 29
+  - name: V0032_FAMILY_NIDORAN
+    tag: 32
+  - name: V0035_FAMILY_CLEFAIRY
+    tag: 35
+  - name: V0037_FAMILY_VULPIX
+    tag: 37
+  - name: V0039_FAMILY_JIGGLYPUFF
+    tag: 39
+  - name: V0041_FAMILY_ZUBAT
+    tag: 41
+  - name: V0043_FAMILY_ODDISH
+    tag: 43
+  - name: V0046_FAMILY_PARAS
+    tag: 46
+  - name: V0048_FAMILY_VENONAT
+    tag: 48
+  - name: V0050_FAMILY_DIGLETT
+    tag: 50
+  - name: V0052_FAMILY_MEOWTH
+    tag: 52
+  - name: V0054_FAMILY_PSYDUCK
+    tag: 54
+  - name: V0056_FAMILY_MANKEY
+    tag: 56
+  - name: V0058_FAMILY_GROWLITHE
+    tag: 58
+  - name: V0060_FAMILY_POLIWAG
+    tag: 60
+  - name: V0063_FAMILY_ABRA
+    tag: 63
+  - name: V0066_FAMILY_MACHOP
+    tag: 66
+  - name: V0069_FAMILY_BELLSPROUT
+    tag: 69
+  - name: V0072_FAMILY_TENTACOOL
+    tag: 72
+  - name: V0074_FAMILY_GEODUDE
+    tag: 74
+  - name: V0077_FAMILY_PONYTA
+    tag: 77
+  - name: V0079_FAMILY_SLOWPOKE
+    tag: 79
+  - name: V0081_FAMILY_MAGNEMITE
+    tag: 81
+  - name: V0083_FAMILY_FARFETCHD
+    tag: 83
+  - name: V0084_FAMILY_DODUO
+    tag: 84
+  - name: V0086_FAMILY_SEEL
+    tag: 86
+  - name: V0088_FAMILY_GRIMER
+    tag: 88
+  - name: V0090_FAMILY_SHELLDER
+    tag: 90
+  - name: V0092_FAMILY_GASTLY
+    tag: 92
+  - name: V0095_FAMILY_ONIX
+    tag: 95
+  - name: V0096_FAMILY_DROWZEE
+    tag: 96
+  - name: V0098_FAMILY_KRABBY
+    tag: 98
+  - name: V0100_FAMILY_VOLTORB
+    tag: 100
+  - name: V0102_FAMILY_EXEGGCUTE
+    tag: 102
+  - name: V0104_FAMILY_CUBONE
+    tag: 104
+  - name: V0106_FAMILY_HITMONLEE
+    tag: 106
+  - name: V0107_FAMILY_HITMONCHAN
+    tag: 107
+  - name: V0108_FAMILY_LICKITUNG
+    tag: 108
+  - name: V0109_FAMILY_KOFFING
+    tag: 109
+  - name: V0111_FAMILY_RHYHORN
+    tag: 111
+  - name: V0113_FAMILY_CHANSEY
+    tag: 113
+  - name: V0114_FAMILY_TANGELA
+    tag: 114
+  - name: V0115_FAMILY_KANGASKHAN
+    tag: 115
+  - name: V0116_FAMILY_HORSEA
+    tag: 116
+  - name: V0118_FAMILY_GOLDEEN
+    tag: 118
+  - name: V0120_FAMILY_STARYU
+    tag: 120
+  - name: V0122_FAMILY_MR_MIME
+    tag: 122
+  - name: V0123_FAMILY_SCYTHER
+    tag: 123
+  - name: V0124_FAMILY_JYNX
+    tag: 124
+  - name: V0125_FAMILY_ELECTABUZZ
+    tag: 125
+  - name: V0126_FAMILY_MAGMAR
+    tag: 126
+  - name: V0127_FAMILY_PINSIR
+    tag: 127
+  - name: V0128_FAMILY_TAUROS
+    tag: 128
+  - name: V0129_FAMILY_MAGIKARP
+    tag: 129
+  - name: V0131_FAMILY_LAPRAS
+    tag: 131
+  - name: V0132_FAMILY_DITTO
+    tag: 132
+  - name: V0133_FAMILY_EEVEE
+    tag: 133
+  - name: V0137_FAMILY_PORYGON
+    tag: 137
+  - name: V0138_FAMILY_OMANYTE
+    tag: 138
+  - name: V0140_FAMILY_KABUTO
+    tag: 140
+  - name: V0142_FAMILY_AERODACTYL
+    tag: 142
+  - name: V0143_FAMILY_SNORLAX
+    tag: 143
+  - name: V0144_FAMILY_ARTICUNO
+    tag: 144
+  - name: V0145_FAMILY_ZAPDOS
+    tag: 145
+  - name: V0146_FAMILY_MOLTRES
+    tag: 146
+  - name: V0147_FAMILY_DRATINI
+    tag: 147
+  - name: V0150_FAMILY_MEWTWO
+    tag: 150
+  - name: V0151_FAMILY_MEW
+    tag: 151
+- name: HoloPokemonId
+  sort_title: holo_pokemon_id
+  values:
+  - name: POKEMON_UNSET
+    tag: 0
+  - name: V0001_POKEMON_BULBASAUR
+    tag: 1
+  - name: V0002_POKEMON_IVYSAUR
+    tag: 2
+  - name: V0003_POKEMON_VENUSAUR
+    tag: 3
+  - name: V0004_POKEMON_CHARMANDER
+    tag: 4
+  - name: V0005_POKEMON_CHARMELEON
+    tag: 5
+  - name: V0006_POKEMON_CHARIZARD
+    tag: 6
+  - name: V0007_POKEMON_SQUIRTLE
+    tag: 7
+  - name: V0008_POKEMON_WARTORTLE
+    tag: 8
+  - name: V0009_POKEMON_BLASTOISE
+    tag: 9
+  - name: V0010_POKEMON_CATERPIE
+    tag: 10
+  - name: V0011_POKEMON_METAPOD
+    tag: 11
+  - name: V0012_POKEMON_BUTTERFREE
+    tag: 12
+  - name: V0013_POKEMON_WEEDLE
+    tag: 13
+  - name: V0014_POKEMON_KAKUNA
+    tag: 14
+  - name: V0015_POKEMON_BEEDRILL
+    tag: 15
+  - name: V0016_POKEMON_PIDGEY
+    tag: 16
+  - name: V0017_POKEMON_PIDGEOTTO
+    tag: 17
+  - name: V0018_POKEMON_PIDGEOT
+    tag: 18
+  - name: V0019_POKEMON_RATTATA
+    tag: 19
+  - name: V0020_POKEMON_RATICATE
+    tag: 20
+  - name: V0021_POKEMON_SPEAROW
+    tag: 21
+  - name: V0022_POKEMON_FEAROW
+    tag: 22
+  - name: V0023_POKEMON_EKANS
+    tag: 23
+  - name: V0024_POKEMON_ARBOK
+    tag: 24
+  - name: V0025_POKEMON_PIKACHU
+    tag: 25
+  - name: V0026_POKEMON_RAICHU
+    tag: 26
+  - name: V0027_POKEMON_SANDSHREW
+    tag: 27
+  - name: V0028_POKEMON_SANDSLASH
+    tag: 28
+  - name: V0029_POKEMON_NIDORAN
+    tag: 29
+  - name: V0030_POKEMON_NIDORINA
+    tag: 30
+  - name: V0031_POKEMON_NIDOQUEEN
+    tag: 31
+  - name: V0032_POKEMON_NIDORAN
+    tag: 32
+  - name: V0033_POKEMON_NIDORINO
+    tag: 33
+  - name: V0034_POKEMON_NIDOKING
+    tag: 34
+  - name: V0035_POKEMON_CLEFAIRY
+    tag: 35
+  - name: V0036_POKEMON_CLEFABLE
+    tag: 36
+  - name: V0037_POKEMON_VULPIX
+    tag: 37
+  - name: V0038_POKEMON_NINETALES
+    tag: 38
+  - name: V0039_POKEMON_JIGGLYPUFF
+    tag: 39
+  - name: V0040_POKEMON_WIGGLYTUFF
+    tag: 40
+  - name: V0041_POKEMON_ZUBAT
+    tag: 41
+  - name: V0042_POKEMON_GOLBAT
+    tag: 42
+  - name: V0043_POKEMON_ODDISH
+    tag: 43
+  - name: V0044_POKEMON_GLOOM
+    tag: 44
+  - name: V0045_POKEMON_VILEPLUME
+    tag: 45
+  - name: V0046_POKEMON_PARAS
+    tag: 46
+  - name: V0047_POKEMON_PARASECT
+    tag: 47
+  - name: V0048_POKEMON_VENONAT
+    tag: 48
+  - name: V0049_POKEMON_VENOMOTH
+    tag: 49
+  - name: V0050_POKEMON_DIGLETT
+    tag: 50
+  - name: V0051_POKEMON_DUGTRIO
+    tag: 51
+  - name: V0052_POKEMON_MEOWTH
+    tag: 52
+  - name: V0053_POKEMON_PERSIAN
+    tag: 53
+  - name: V0054_POKEMON_PSYDUCK
+    tag: 54
+  - name: V0055_POKEMON_GOLDUCK
+    tag: 55
+  - name: V0056_POKEMON_MANKEY
+    tag: 56
+  - name: V0057_POKEMON_PRIMEAPE
+    tag: 57
+  - name: V0058_POKEMON_GROWLITHE
+    tag: 58
+  - name: V0059_POKEMON_ARCANINE
+    tag: 59
+  - name: V0060_POKEMON_POLIWAG
+    tag: 60
+  - name: V0061_POKEMON_POLIWHIRL
+    tag: 61
+  - name: V0062_POKEMON_POLIWRATH
+    tag: 62
+  - name: V0063_POKEMON_ABRA
+    tag: 63
+  - name: V0064_POKEMON_KADABRA
+    tag: 64
+  - name: V0065_POKEMON_ALAKAZAM
+    tag: 65
+  - name: V0066_POKEMON_MACHOP
+    tag: 66
+  - name: V0067_POKEMON_MACHOKE
+    tag: 67
+  - name: V0068_POKEMON_MACHAMP
+    tag: 68
+  - name: V0069_POKEMON_BELLSPROUT
+    tag: 69
+  - name: V0070_POKEMON_WEEPINBELL
+    tag: 70
+  - name: V0071_POKEMON_VICTREEBEL
+    tag: 71
+  - name: V0072_POKEMON_TENTACOOL
+    tag: 72
+  - name: V0073_POKEMON_TENTACRUEL
+    tag: 73
+  - name: V0074_POKEMON_GEODUDE
+    tag: 74
+  - name: V0075_POKEMON_GRAVELER
+    tag: 75
+  - name: V0076_POKEMON_GOLEM
+    tag: 76
+  - name: V0077_POKEMON_PONYTA
+    tag: 77
+  - name: V0078_POKEMON_RAPIDASH
+    tag: 78
+  - name: V0079_POKEMON_SLOWPOKE
+    tag: 79
+  - name: V0080_POKEMON_SLOWBRO
+    tag: 80
+  - name: V0081_POKEMON_MAGNEMITE
+    tag: 81
+  - name: V0082_POKEMON_MAGNETON
+    tag: 82
+  - name: V0083_POKEMON_FARFETCHD
+    tag: 83
+  - name: V0084_POKEMON_DODUO
+    tag: 84
+  - name: V0085_POKEMON_DODRIO
+    tag: 85
+  - name: V0086_POKEMON_SEEL
+    tag: 86
+  - name: V0087_POKEMON_DEWGONG
+    tag: 87
+  - name: V0088_POKEMON_GRIMER
+    tag: 88
+  - name: V0089_POKEMON_MUK
+    tag: 89
+  - name: V0090_POKEMON_SHELLDER
+    tag: 90
+  - name: V0091_POKEMON_CLOYSTER
+    tag: 91
+  - name: V0092_POKEMON_GASTLY
+    tag: 92
+  - name: V0093_POKEMON_HAUNTER
+    tag: 93
+  - name: V0094_POKEMON_GENGAR
+    tag: 94
+  - name: V0095_POKEMON_ONIX
+    tag: 95
+  - name: V0096_POKEMON_DROWZEE
+    tag: 96
+  - name: V0097_POKEMON_HYPNO
+    tag: 97
+  - name: V0098_POKEMON_KRABBY
+    tag: 98
+  - name: V0099_POKEMON_KINGLER
+    tag: 99
+  - name: V0100_POKEMON_VOLTORB
+    tag: 100
+  - name: V0101_POKEMON_ELECTRODE
+    tag: 101
+  - name: V0102_POKEMON_EXEGGCUTE
+    tag: 102
+  - name: V0103_POKEMON_EXEGGUTOR
+    tag: 103
+  - name: V0104_POKEMON_CUBONE
+    tag: 104
+  - name: V0105_POKEMON_MAROWAK
+    tag: 105
+  - name: V0106_POKEMON_HITMONLEE
+    tag: 106
+  - name: V0107_POKEMON_HITMONCHAN
+    tag: 107
+  - name: V0108_POKEMON_LICKITUNG
+    tag: 108
+  - name: V0109_POKEMON_KOFFING
+    tag: 109
+  - name: V0110_POKEMON_WEEZING
+    tag: 110
+  - name: V0111_POKEMON_RHYHORN
+    tag: 111
+  - name: V0112_POKEMON_RHYDON
+    tag: 112
+  - name: V0113_POKEMON_CHANSEY
+    tag: 113
+  - name: V0114_POKEMON_TANGELA
+    tag: 114
+  - name: V0115_POKEMON_KANGASKHAN
+    tag: 115
+  - name: V0116_POKEMON_HORSEA
+    tag: 116
+  - name: V0117_POKEMON_SEADRA
+    tag: 117
+  - name: V0118_POKEMON_GOLDEEN
+    tag: 118
+  - name: V0119_POKEMON_SEAKING
+    tag: 119
+  - name: V0120_POKEMON_STARYU
+    tag: 120
+  - name: V0121_POKEMON_STARMIE
+    tag: 121
+  - name: V0122_POKEMON_MR_MIME
+    tag: 122
+  - name: V0123_POKEMON_SCYTHER
+    tag: 123
+  - name: V0124_POKEMON_JYNX
+    tag: 124
+  - name: V0125_POKEMON_ELECTABUZZ
+    tag: 125
+  - name: V0126_POKEMON_MAGMAR
+    tag: 126
+  - name: V0127_POKEMON_PINSIR
+    tag: 127
+  - name: V0128_POKEMON_TAUROS
+    tag: 128
+  - name: V0129_POKEMON_MAGIKARP
+    tag: 129
+  - name: V0130_POKEMON_GYARADOS
+    tag: 130
+  - name: V0131_POKEMON_LAPRAS
+    tag: 131
+  - name: V0132_POKEMON_DITTO
+    tag: 132
+  - name: V0133_POKEMON_EEVEE
+    tag: 133
+  - name: V0134_POKEMON_VAPOREON
+    tag: 134
+  - name: V0135_POKEMON_JOLTEON
+    tag: 135
+  - name: V0136_POKEMON_FLAREON
+    tag: 136
+  - name: V0137_POKEMON_PORYGON
+    tag: 137
+  - name: V0138_POKEMON_OMANYTE
+    tag: 138
+  - name: V0139_POKEMON_OMASTAR
+    tag: 139
+  - name: V0140_POKEMON_KABUTO
+    tag: 140
+  - name: V0141_POKEMON_KABUTOPS
+    tag: 141
+  - name: V0142_POKEMON_AERODACTYL
+    tag: 142
+  - name: V0143_POKEMON_SNORLAX
+    tag: 143
+  - name: V0144_POKEMON_ARTICUNO
+    tag: 144
+  - name: V0145_POKEMON_ZAPDOS
+    tag: 145
+  - name: V0146_POKEMON_MOLTRES
+    tag: 146
+  - name: V0147_POKEMON_DRATINI
+    tag: 147
+  - name: V0148_POKEMON_DRAGONAIR
+    tag: 148
+  - name: V0149_POKEMON_DRAGONITE
+    tag: 149
+  - name: V0150_POKEMON_MEWTWO
+    tag: 150
+  - name: V0151_POKEMON_MEW
+    tag: 151
+- name: HoloPokemonMove
+  sort_title: holo_pokemon_move
+  values:
+  - name: MOVE_UNSET
+    tag: 0
+  - name: V0001_MOVE_THUNDER_SHOCK
+    tag: 1
+  - name: V0002_MOVE_QUICK_ATTACK
+    tag: 2
+  - name: V0003_MOVE_SCRATCH
+    tag: 3
+  - name: V0004_MOVE_EMBER
+    tag: 4
+  - name: V0005_MOVE_VINE_WHIP
+    tag: 5
+  - name: V0006_MOVE_TACKLE
+    tag: 6
+  - name: V0007_MOVE_RAZOR_LEAF
+    tag: 7
+  - name: V0008_MOVE_TAKE_DOWN
+    tag: 8
+  - name: V0009_MOVE_WATER_GUN
+    tag: 9
+  - name: V0010_MOVE_BITE
+    tag: 10
+  - name: V0011_MOVE_POUND
+    tag: 11
+  - name: V0012_MOVE_DOUBLE_SLAP
+    tag: 12
+  - name: V0013_MOVE_WRAP
+    tag: 13
+  - name: V0014_MOVE_HYPER_BEAM
+    tag: 14
+  - name: V0015_MOVE_LICK
+    tag: 15
+  - name: V0016_MOVE_DARK_PULSE
+    tag: 16
+  - name: V0017_MOVE_SMOG
+    tag: 17
+  - name: V0018_MOVE_SLUDGE
+    tag: 18
+  - name: V0019_MOVE_METAL_CLAW
+    tag: 19
+  - name: V0020_MOVE_VICE_GRIP
+    tag: 20
+  - name: V0021_MOVE_FLAME_WHEEL
+    tag: 21
+  - name: V0022_MOVE_MEGAHORN
+    tag: 22
+  - name: V0023_MOVE_WING_ATTACK
+    tag: 23
+  - name: V0024_MOVE_FLAMETHROWER
+    tag: 24
+  - name: V0025_MOVE_SUCKER_PUNCH
+    tag: 25
+  - name: V0026_MOVE_DIG
+    tag: 26
+  - name: V0027_MOVE_LOW_KICK
+    tag: 27
+  - name: V0028_MOVE_CROSS_CHOP
+    tag: 28
+  - name: V0029_MOVE_PSYCHO_CUT
+    tag: 29
+  - name: V0030_MOVE_PSYBEAM
+    tag: 30
+  - name: V0031_MOVE_EARTHQUAKE
+    tag: 31
+  - name: V0032_MOVE_STONE_EDGE
+    tag: 32
+  - name: V0033_MOVE_ICE_PUNCH
+    tag: 33
+  - name: V0034_MOVE_HEART_STAMP
+    tag: 34
+  - name: V0035_MOVE_DISCHARGE
+    tag: 35
+  - name: V0036_MOVE_FLASH_CANNON
+    tag: 36
+  - name: V0037_MOVE_PECK
+    tag: 37
+  - name: V0038_MOVE_DRILL_PECK
+    tag: 38
+  - name: V0039_MOVE_ICE_BEAM
+    tag: 39
+  - name: V0040_MOVE_BLIZZARD
+    tag: 40
+  - name: V0041_MOVE_AIR_SLASH
+    tag: 41
+  - name: V0042_MOVE_HEAT_WAVE
+    tag: 42
+  - name: V0043_MOVE_TWINEEDLE
+    tag: 43
+  - name: V0044_MOVE_POISON_JAB
+    tag: 44
+  - name: V0045_MOVE_AERIAL_ACE
+    tag: 45
+  - name: V0046_MOVE_DRILL_RUN
+    tag: 46
+  - name: V0047_MOVE_PETAL_BLIZZARD
+    tag: 47
+  - name: V0048_MOVE_MEGA_DRAIN
+    tag: 48
+  - name: V0049_MOVE_BUG_BUZZ
+    tag: 49
+  - name: V0050_MOVE_POISON_FANG
+    tag: 50
+  - name: V0051_MOVE_NIGHT_SLASH
+    tag: 51
+  - name: V0052_MOVE_SLASH
+    tag: 52
+  - name: V0053_MOVE_BUBBLE_BEAM
+    tag: 53
+  - name: V0054_MOVE_SUBMISSION
+    tag: 54
+  - name: V0055_MOVE_KARATE_CHOP
+    tag: 55
+  - name: V0056_MOVE_LOW_SWEEP
+    tag: 56
+  - name: V0057_MOVE_AQUA_JET
+    tag: 57
+  - name: V0058_MOVE_AQUA_TAIL
+    tag: 58
+  - name: V0059_MOVE_SEED_BOMB
+    tag: 59
+  - name: V0060_MOVE_PSYSHOCK
+    tag: 60
+  - name: V0061_MOVE_ROCK_THROW
+    tag: 61
+  - name: V0062_MOVE_ANCIENT_POWER
+    tag: 62
+  - name: V0063_MOVE_ROCK_TOMB
+    tag: 63
+  - name: V0064_MOVE_ROCK_SLIDE
+    tag: 64
+  - name: V0065_MOVE_POWER_GEM
+    tag: 65
+  - name: V0066_MOVE_SHADOW_SNEAK
+    tag: 66
+  - name: V0067_MOVE_SHADOW_PUNCH
+    tag: 67
+  - name: V0068_MOVE_SHADOW_CLAW
+    tag: 68
+  - name: V0069_MOVE_OMINOUS_WIND
+    tag: 69
+  - name: V0070_MOVE_SHADOW_BALL
+    tag: 70
+  - name: V0071_MOVE_BULLET_PUNCH
+    tag: 71
+  - name: V0072_MOVE_MAGNET_BOMB
+    tag: 72
+  - name: V0073_MOVE_STEEL_WING
+    tag: 73
+  - name: V0074_MOVE_IRON_HEAD
+    tag: 74
+  - name: V0075_MOVE_PARABOLIC_CHARGE
+    tag: 75
+  - name: V0076_MOVE_SPARK
+    tag: 76
+  - name: V0077_MOVE_THUNDER_PUNCH
+    tag: 77
+  - name: V0078_MOVE_THUNDER
+    tag: 78
+  - name: V0079_MOVE_THUNDERBOLT
+    tag: 79
+  - name: V0080_MOVE_TWISTER
+    tag: 80
+  - name: V0081_MOVE_DRAGON_BREATH
+    tag: 81
+  - name: V0082_MOVE_DRAGON_PULSE
+    tag: 82
+  - name: V0083_MOVE_DRAGON_CLAW
+    tag: 83
+  - name: V0084_MOVE_DISARMING_VOICE
+    tag: 84
+  - name: V0085_MOVE_DRAINING_KISS
+    tag: 85
+  - name: V0086_MOVE_DAZZLING_GLEAM
+    tag: 86
+  - name: V0087_MOVE_MOONBLAST
+    tag: 87
+  - name: V0088_MOVE_PLAY_ROUGH
+    tag: 88
+  - name: V0089_MOVE_CROSS_POISON
+    tag: 89
+  - name: V0090_MOVE_SLUDGE_BOMB
+    tag: 90
+  - name: V0091_MOVE_SLUDGE_WAVE
+    tag: 91
+  - name: V0092_MOVE_GUNK_SHOT
+    tag: 92
+  - name: V0093_MOVE_MUD_SHOT
+    tag: 93
+  - name: V0094_MOVE_BONE_CLUB
+    tag: 94
+  - name: V0095_MOVE_BULLDOZE
+    tag: 95
+  - name: V0096_MOVE_MUD_BOMB
+    tag: 96
+  - name: V0097_MOVE_FURY_CUTTER
+    tag: 97
+  - name: V0098_MOVE_BUG_BITE
+    tag: 98
+  - name: V0099_MOVE_SIGNAL_BEAM
+    tag: 99
+  - name: V0100_MOVE_X_SCISSOR
+    tag: 100
+  - name: V0101_MOVE_FLAME_CHARGE
+    tag: 101
+  - name: V0102_MOVE_FLAME_BURST
+    tag: 102
+  - name: V0103_MOVE_FIRE_BLAST
+    tag: 103
+  - name: V0104_MOVE_BRINE
+    tag: 104
+  - name: V0105_MOVE_WATER_PULSE
+    tag: 105
+  - name: V0106_MOVE_SCALD
+    tag: 106
+  - name: V0107_MOVE_HYDRO_PUMP
+    tag: 107
+  - name: V0108_MOVE_PSYCHIC
+    tag: 108
+  - name: V0109_MOVE_PSYSTRIKE
+    tag: 109
+  - name: V0110_MOVE_ICE_SHARD
+    tag: 110
+  - name: V0111_MOVE_ICY_WIND
+    tag: 111
+  - name: V0112_MOVE_FROST_BREATH
+    tag: 112
+  - name: V0113_MOVE_ABSORB
+    tag: 113
+  - name: V0114_MOVE_GIGA_DRAIN
+    tag: 114
+  - name: V0115_MOVE_FIRE_PUNCH
+    tag: 115
+  - name: V0116_MOVE_SOLAR_BEAM
+    tag: 116
+  - name: V0117_MOVE_LEAF_BLADE
+    tag: 117
+  - name: V0118_MOVE_POWER_WHIP
+    tag: 118
+  - name: V0119_MOVE_SPLASH
+    tag: 119
+  - name: V0120_MOVE_ACID
+    tag: 120
+  - name: V0121_MOVE_AIR_CUTTER
+    tag: 121
+  - name: V0122_MOVE_HURRICANE
+    tag: 122
+  - name: V0123_MOVE_BRICK_BREAK
+    tag: 123
+  - name: V0124_MOVE_CUT
+    tag: 124
+  - name: V0125_MOVE_SWIFT
+    tag: 125
+  - name: V0126_MOVE_HORN_ATTACK
+    tag: 126
+  - name: V0127_MOVE_STOMP
+    tag: 127
+  - name: V0128_MOVE_HEADBUTT
+    tag: 128
+  - name: V0129_MOVE_HYPER_FANG
+    tag: 129
+  - name: V0130_MOVE_SLAM
+    tag: 130
+  - name: V0131_MOVE_BODY_SLAM
+    tag: 131
+  - name: V0132_MOVE_REST
+    tag: 132
+  - name: V0133_MOVE_STRUGGLE
+    tag: 133
+  - name: V0134_MOVE_SCALD_BLASTOISE
+    tag: 134
+  - name: V0135_MOVE_HYDRO_PUMP_BLASTOISE
+    tag: 135
+  - name: V0136_MOVE_WRAP_GREEN
+    tag: 136
+  - name: V0137_MOVE_WRAP_PINK
+    tag: 137
+  - name: V0200_MOVE_FURY_CUTTER_FAST
+    tag: 200
+  - name: V0201_MOVE_BUG_BITE_FAST
+    tag: 201
+  - name: V0202_MOVE_BITE_FAST
+    tag: 202
+  - name: V0203_MOVE_SUCKER_PUNCH_FAST
+    tag: 203
+  - name: V0204_MOVE_DRAGON_BREATH_FAST
+    tag: 204
+  - name: V0205_MOVE_THUNDER_SHOCK_FAST
+    tag: 205
+  - name: V0206_MOVE_SPARK_FAST
+    tag: 206
+  - name: V0207_MOVE_LOW_KICK_FAST
+    tag: 207
+  - name: V0208_MOVE_KARATE_CHOP_FAST
+    tag: 208
+  - name: V0209_MOVE_EMBER_FAST
+    tag: 209
+  - name: V0210_MOVE_WING_ATTACK_FAST
+    tag: 210
+  - name: V0211_MOVE_PECK_FAST
+    tag: 211
+  - name: V0212_MOVE_LICK_FAST
+    tag: 212
+  - name: V0213_MOVE_SHADOW_CLAW_FAST
+    tag: 213
+  - name: V0214_MOVE_VINE_WHIP_FAST
+    tag: 214
+  - name: V0215_MOVE_RAZOR_LEAF_FAST
+    tag: 215
+  - name: V0216_MOVE_MUD_SHOT_FAST
+    tag: 216
+  - name: V0217_MOVE_ICE_SHARD_FAST
+    tag: 217
+  - name: V0218_MOVE_FROST_BREATH_FAST
+    tag: 218
+  - name: V0219_MOVE_QUICK_ATTACK_FAST
+    tag: 219
+  - name: V0220_MOVE_SCRATCH_FAST
+    tag: 220
+  - name: V0221_MOVE_TACKLE_FAST
+    tag: 221
+  - name: V0222_MOVE_POUND_FAST
+    tag: 222
+  - name: V0223_MOVE_CUT_FAST
+    tag: 223
+  - name: V0224_MOVE_POISON_JAB_FAST
+    tag: 224
+  - name: V0225_MOVE_ACID_FAST
+    tag: 225
+  - name: V0226_MOVE_PSYCHO_CUT_FAST
+    tag: 226
+  - name: V0227_MOVE_ROCK_THROW_FAST
+    tag: 227
+  - name: V0228_MOVE_METAL_CLAW_FAST
+    tag: 228
+  - name: V0229_MOVE_BULLET_PUNCH_FAST
+    tag: 229
+  - name: V0230_MOVE_WATER_GUN_FAST
+    tag: 230
+  - name: V0231_MOVE_SPLASH_FAST
+    tag: 231
+  - name: V0232_MOVE_WATER_GUN_FAST_BLASTOISE
+    tag: 232
+  - name: V0233_MOVE_MUD_SLAP_FAST
+    tag: 233
+  - name: V0234_MOVE_ZEN_HEADBUTT_FAST
+    tag: 234
+  - name: V0235_MOVE_CONFUSION_FAST
+    tag: 235
+  - name: V0236_MOVE_POISON_STING_FAST
+    tag: 236
+  - name: V0237_MOVE_BUBBLE_FAST
+    tag: 237
+  - name: V0238_MOVE_FEINT_ATTACK_FAST
+    tag: 238
+  - name: V0239_MOVE_STEEL_WING_FAST
+    tag: 239
+  - name: V0240_MOVE_FIRE_FANG_FAST
+    tag: 240
+  - name: V0241_MOVE_ROCK_SMASH_FAST
+    tag: 241
+- name: HoloPokemonMovementType
+  sort_title: holo_pokemon_movement_type
+  values:
+  - name: POKEMON_ENC_MOVEMENT_STATIC
+    tag: 0
+  - name: POKEMON_ENC_MOVEMENT_JUMP
+    tag: 1
+  - name: POKEMON_ENC_MOVEMENT_VERTICAL
+    tag: 2
+  - name: POKEMON_ENC_MOVEMENT_PSYCHIC
+    tag: 3
+  - name: POKEMON_ENC_MOVEMENT_ELECTRIC
+    tag: 4
+  - name: POKEMON_ENC_MOVEMENT_FLYING
+    tag: 5
+  - name: POKEMON_ENC_MOVEMENT_HOVERING
+    tag: 6
+- name: HoloPokemonNature
+  sort_title: holo_pokemon_nature
+  values:
+  - name: NATURE_UNKNOWN
+    tag: 0
+  - name: V0001_POKEMON_NATURE_STOIC
+    tag: 1
+  - name: V0002_POKEMON_NATURE_ASSASSIN
+    tag: 2
+  - name: V0003_POKEMON_NATURE_GUARDIAN
+    tag: 3
+  - name: V0004_POKEMON_NATURE_RAIDER
+    tag: 4
+  - name: V0005_POKEMON_NATURE_PROTECTOR
+    tag: 5
+  - name: V0006_POKEMON_NATURE_SENTRY
+    tag: 6
+  - name: V0007_POKEMON_NATURE_CHAMPION
+    tag: 7
+- name: HoloPokemonType
+  sort_title: holo_pokemon_type
+  values:
+  - name: POKEMON_TYPE_NONE
+    tag: 0
+  - name: POKEMON_TYPE_NORMAL
+    tag: 1
+  - name: POKEMON_TYPE_FIGHTING
+    tag: 2
+  - name: POKEMON_TYPE_FLYING
+    tag: 3
+  - name: POKEMON_TYPE_POISON
+    tag: 4
+  - name: POKEMON_TYPE_GROUND
+    tag: 5
+  - name: POKEMON_TYPE_ROCK
+    tag: 6
+  - name: POKEMON_TYPE_BUG
+    tag: 7
+  - name: POKEMON_TYPE_GHOST
+    tag: 8
+  - name: POKEMON_TYPE_STEEL
+    tag: 9
+  - name: POKEMON_TYPE_FIRE
+    tag: 10
+  - name: POKEMON_TYPE_WATER
+    tag: 11
+  - name: POKEMON_TYPE_GRASS
+    tag: 12
+  - name: POKEMON_TYPE_ELECTRIC
+    tag: 13
+  - name: POKEMON_TYPE_PSYCHIC
+    tag: 14
+  - name: POKEMON_TYPE_ICE
+    tag: 15
+  - name: POKEMON_TYPE_DRAGON
+    tag: 16
+  - name: POKEMON_TYPE_DARK
+    tag: 17
+  - name: POKEMON_TYPE_FAIRY
+    tag: 18
+- name: InventoryUpgradeType
+  sort_title: inventory_upgrade_type
+  values:
+  - name: UPGRADE_UNSET
+    tag: 0
+  - name: INCREASE_ITEM_STORAGE
+    tag: 1
+  - name: INCREASE_POKEMON_STORAGE
+    tag: 2
+- name: Item
+  sort_title: item
+  values:
+  - name: ITEM_UNKNOWN
+    tag: 0
+  - name: ITEM_POKE_BALL
+    tag: 1
+  - name: ITEM_GREAT_BALL
+    tag: 2
+  - name: ITEM_ULTRA_BALL
+    tag: 3
+  - name: ITEM_MASTER_BALL
+    tag: 4
+  - name: ITEM_POTION
+    tag: 101
+  - name: ITEM_SUPER_POTION
+    tag: 102
+  - name: ITEM_HYPER_POTION
+    tag: 103
+  - name: ITEM_MAX_POTION
+    tag: 104
+  - name: ITEM_REVIVE
+    tag: 201
+  - name: ITEM_MAX_REVIVE
+    tag: 202
+  - name: ITEM_LUCKY_EGG
+    tag: 301
+  - name: ITEM_INCENSE_ORDINARY
+    tag: 401
+  - name: ITEM_INCENSE_SPICY
+    tag: 402
+  - name: ITEM_INCENSE_COOL
+    tag: 403
+  - name: ITEM_INCENSE_FLORAL
+    tag: 404
+  - name: ITEM_TROY_DISK
+    tag: 501
+  - name: ITEM_X_ATTACK
+    tag: 602
+  - name: ITEM_X_DEFENSE
+    tag: 603
+  - name: ITEM_X_MIRACLE
+    tag: 604
+  - name: ITEM_RAZZ_BERRY
+    tag: 701
+  - name: ITEM_BLUK_BERRY
+    tag: 702
+  - name: ITEM_NANAB_BERRY
+    tag: 703
+  - name: ITEM_WEPAR_BERRY
+    tag: 704
+  - name: ITEM_PINAP_BERRY
+    tag: 705
+  - name: ITEM_SPECIAL_CAMERA
+    tag: 801
+  - name: ITEM_INCUBATOR_BASIC_UNLIMITED
+    tag: 901
+  - name: ITEM_INCUBATOR_BASIC
+    tag: 902
+  - name: ITEM_POKEMON_STORAGE_UPGRADE
+    tag: 1001
+  - name: ITEM_ITEM_STORAGE_UPGRADE
+    tag: 1002
+- name: Method
+  sort_title: method
+  values:
+  - name: METHOD_UNSET
+    tag: 0
+  - name: PLAYER_UPDATE
+    tag: 1
+  - name: GET_PLAYER
+    tag: 2
+  - name: GET_INVENTORY
+    tag: 4
+  - name: DOWNLOAD_SETTINGS
+    tag: 5
+  - name: DOWNLOAD_ITEM_TEMPLATES
+    tag: 6
+  - name: DOWNLOAD_REMOTE_CONFIG_VERSION
+    tag: 7
+  - name: FORT_SEARCH
+    tag: 101
+  - name: ENCOUNTER
+    tag: 102
+  - name: CATCH_POKEMON
+    tag: 103
+  - name: FORT_DETAILS
+    tag: 104
+  - name: ITEM_USE
+    tag: 105
+  - name: GET_MAP_OBJECTS
+    tag: 106
+  - name: FORT_DEPLOY_POKEMON
+    tag: 110
+  - name: FORT_RECALL_POKEMON
+    tag: 111
+  - name: RELEASE_POKEMON
+    tag: 112
+  - name: USE_ITEM_POTION
+    tag: 113
+  - name: USE_ITEM_CAPTURE
+    tag: 114
+  - name: USE_ITEM_FLEE
+    tag: 115
+  - name: USE_ITEM_REVIVE
+    tag: 116
+  - name: TRADE_SEARCH
+    tag: 117
+  - name: TRADE_OFFER
+    tag: 118
+  - name: TRADE_RESPONSE
+    tag: 119
+  - name: TRADE_RESULT
+    tag: 120
+  - name: GET_PLAYER_PROFILE
+    tag: 121
+  - name: GET_ITEM_PACK
+    tag: 122
+  - name: BUY_ITEM_PACK
+    tag: 123
+  - name: BUY_GEM_PACK
+    tag: 124
+  - name: EVOLVE_POKEMON
+    tag: 125
+  - name: GET_HATCHED_EGGS
+    tag: 126
+  - name: ENCOUNTER_TUTORIAL_COMPLETE
+    tag: 127
+  - name: LEVEL_UP_REWARDS
+    tag: 128
+  - name: CHECK_AWARDED_BADGES
+    tag: 129
+  - name: USE_ITEM_GYM
+    tag: 133
+  - name: GET_GYM_DETAILS
+    tag: 134
+  - name: START_GYM_BATTLE
+    tag: 135
+  - name: ATTACK_GYM
+    tag: 136
+  - name: RECYCLE_INVENTORY_ITEM
+    tag: 137
+  - name: COLLECT_DAILY_BONUS
+    tag: 138
+  - name: USE_ITEM_XP_BOOST
+    tag: 139
+  - name: USE_ITEM_EGG_INCUBATOR
+    tag: 140
+  - name: USE_INCENSE
+    tag: 141
+  - name: GET_INCENSE_POKEMON
+    tag: 142
+  - name: INCENSE_ENCOUNTER
+    tag: 143
+  - name: ADD_FORT_MODIFIER
+    tag: 144
+  - name: DISK_ENCOUNTER
+    tag: 145
+  - name: COLLECT_DAILY_DEFENDER_BONUS
+    tag: 146
+  - name: UPGRADE_POKEMON
+    tag: 147
+  - name: SET_FAVORITE_POKEMON
+    tag: 148
+  - name: NICKNAME_POKEMON
+    tag: 149
+  - name: EQUIP_BADGE
+    tag: 150
+  - name: SET_CONTACT_SETTINGS
+    tag: 151
+  - name: SET_BUDDY_POKEMON
+    tag: 152
+  - name: GET_BUDDY_WALKED
+    tag: 153
+  - name: GET_ASSET_DIGEST
+    tag: 300
+  - name: GET_DOWNLOAD_URLS
+    tag: 301
+  - name: GET_SUGGESTED_CODENAMES
+    tag: 401
+  - name: CHECK_CODENAME_AVAILABLE
+    tag: 402
+  - name: CLAIM_CODENAME
+    tag: 403
+  - name: SET_AVATAR
+    tag: 404
+  - name: SET_PLAYER_TEAM
+    tag: 405
+  - name: MARK_TUTORIAL_COMPLETE
+    tag: 406
+  - name: LOAD_SPAWN_POINTS
+    tag: 500
+  - name: CHECK_CHALLENGE
+    tag: 600
+  - name: VERIFY_CHALLENGE
+    tag: 601
+  - name: ECHO
+    tag: 666
+  - name: DEBUG_UPDATE_INVENTORY
+    tag: 700
+  - name: DEBUG_DELETE_PLAYER
+    tag: 701
+  - name: SFIDA_REGISTRATION
+    tag: 800
+  - name: SFIDA_ACTION_LOG
+    tag: 801
+  - name: SFIDA_CERTIFICATION
+    tag: 802
+  - name: SFIDA_UPDATE
+    tag: 803
+  - name: SFIDA_ACTION
+    tag: 804
+  - name: SFIDA_DOWSER
+    tag: 805
+  - name: SFIDA_CAPTURE
+    tag: 806
+- name: Platform
+  sort_title: platform
+  values:
+  - name: PLATFORM_UNSET
+    tag: 0
+  - name: PLATFORM_IOS
+    tag: 1
+  - name: PLATFORM_ANDROID
+    tag: 2
+  - name: PLATFORM_OSX
+    tag: 3
+  - name: PLATFORM_WINDOWS
+    tag: 4
+- name: PlayerAvatarType
+  sort_title: player_avatar_type
+  values:
+  - name: PLAYER_AVATAR_UNSET
+    tag: 0
+  - name: PLAYER_AVATAR_MALE
+    tag: 1
+  - name: PLAYER_AVATAR_FEMALE
+    tag: 2
+- name: PokemonCreateContext
+  sort_title: pokemon_create_context
+  values:
+  - name: CREATE_CONTEXT_WILD
+    tag: 0
+  - name: CREATE_CONTEXT_EGG
+    tag: 1
+  - name: CREATE_CONTEXT_EVOLVE
+    tag: 2
+- name: QuestType
+  sort_title: quest_type
+  values:
+  - name: QUEST_UNKNOWN_TYPE
+    tag: 0
+  - name: QUEST_FIRST_CATCH_OF_THE_DAY
+    tag: 1
+  - name: QUEST_FIRST_POKESTOP_OF_THE_DAY
+    tag: 2
+- name: Team
+  sort_title: team
+  values:
+  - name: UNSET
+    tag: 0
+  - name: TEAM_BLUE
+    tag: 1
+  - name: TEAM_RED
+    tag: 2
+  - name: TEAM_YELLOW
+    tag: 3
+- name: TutorialCompletion
+  sort_title: tutorial_completion
+  values:
+  - name: LEGAL_SCREEN
+    tag: 0
+  - name: AVATAR_SELECTION
+    tag: 1
+  - name: ACCOUNT_CREATION
+    tag: 2
+  - name: POKEMON_CAPTURE
+    tag: 3
+  - name: NAME_SELECTION
+    tag: 4
+  - name: POKEMON_BERRY
+    tag: 5
+  - name: USE_ITEM
+    tag: 6
+  - name: FIRST_TIME_EXPERIENCE_COMPLETE
+    tag: 7
+  - name: POKESTOP_TUTORIAL
+    tag: 8
+  - name: GYM_TUTORIAL
+    tag: 9
+messages:
+- name: ActionLogEntry
+  sort_title: action_log_entry
+  attributes:
+  - type: int64
+    name: timestamp_ms
+    tag: 1
+    modifier: 
+  - type: bool
+    name: sfida
+    tag: 2
+    modifier: 
+  - type: CatchPokemonLogEntry
+    name: catch_pokemon
+    tag: 3
+    modifier: 
+  - type: FortSearchLogEntry
+    name: fort_search
+    tag: 4
+    modifier: 
+  - type: BuddyPokemonLogEntry
+    name: buddy_pokemon
+    tag: 5
+    modifier: 
+  enums: []
+- name: AddFortModifierOutProto
+  sort_title: add_fort_modifier_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: FortDetailsOutProto
+    name: fort_details_out_proto
+    tag: 2
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: NO_RESULT_SET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: FORT_ALREADY_HAS_MODIFIER
+      tag: 2
+    - name: TOO_FAR_AWAY
+      tag: 3
+    - name: NO_ITEM_IN_INVENTORY
+      tag: 4
+- name: AddFortModifierProto
+  sort_title: add_fort_modifier_proto
+  attributes:
+  - type: Item
+    name: modifier_type
+    tag: 1
+    modifier: 
+  - type: string
+    name: fort_id
+    tag: 2
+    modifier: 
+  - type: double
+    name: player_lat_degrees
+    tag: 3
+    modifier: 
+  - type: double
+    name: player_lng_degrees
+    tag: 4
+    modifier: 
+  enums: []
+- name: AppliedItemProto
+  sort_title: applied_item_proto
+  attributes:
+  - type: Item
+    name: item
+    tag: 1
+    modifier: 
+  - type: HoloItemType
+    name: item_type
+    tag: 2
+    modifier: 
+  - type: int64
+    name: expiration_ms
+    tag: 3
+    modifier: 
+  - type: int64
+    name: applied_ms
+    tag: 4
+    modifier: 
+  enums: []
+- name: AppliedItemsProto
+  sort_title: applied_items_proto
+  attributes:
+  - type: AppliedItemProto
+    name: item
+    tag: 4
+    modifier: repeated
+  enums: []
+- name: AssetDigestEntryProto
+  sort_title: asset_digest_entry_proto
+  attributes:
+  - type: string
+    name: asset_id
+    tag: 1
+    modifier: 
+  - type: string
+    name: bundle_name
+    tag: 2
+    modifier: 
+  - type: int64
+    name: version
+    tag: 3
+    modifier: 
+  - type: fixed32
+    name: checksum
+    tag: 4
+    modifier: 
+  - type: int32
+    name: size
+    tag: 5
+    modifier: 
+  - type: bytes
+    name: key
+    tag: 6
+    modifier: 
+  enums: []
+- name: AssetDigestOutProto
+  sort_title: asset_digest_out_proto
+  attributes:
+  - type: AssetDigestEntryProto
+    name: digest
+    tag: 1
+    modifier: repeated
+  - type: uint64
+    name: timestamp
+    tag: 2
+    modifier: 
+  enums: []
+- name: AssetDigestRequestProto
+  sort_title: asset_digest_request_proto
+  attributes:
+  - type: Platform
+    name: platform
+    tag: 1
+    modifier: 
+  - type: string
+    name: device_manufacturer
+    tag: 2
+    modifier: 
+  - type: string
+    name: device_model
+    tag: 3
+    modifier: 
+  - type: string
+    name: locale
+    tag: 4
+    modifier: 
+  - type: uint32
+    name: app_version
+    tag: 5
+    modifier: 
+  enums: []
+- name: AttackGymOutProto
+  sort_title: attack_gym_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: BattleLogProto
+    name: battle_log
+    tag: 2
+    modifier: 
+  - type: string
+    name: battle_id
+    tag: 3
+    modifier: 
+  - type: PokemonInfo
+    name: active_defender
+    tag: 4
+    modifier: 
+  - type: PokemonInfo
+    name: active_attacker
+    tag: 5
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: ERROR_INVALID_ATTACK_ACTIONS
+      tag: 2
+    - name: ERROR_NOT_IN_RANGE
+      tag: 3
+- name: AttackGymProto
+  sort_title: attack_gym_proto
+  attributes:
+  - type: string
+    name: gym_id
+    tag: 1
+    modifier: 
+  - type: string
+    name: battle_id
+    tag: 2
+    modifier: 
+  - type: BattleActionProto
+    name: attacker_actions
+    tag: 3
+    modifier: repeated
+  - type: BattleActionProto
+    name: last_retrieved_action
+    tag: 4
+    modifier: 
+  - type: double
+    name: player_lat_degrees
+    tag: 5
+    modifier: 
+  - type: double
+    name: player_lng_degrees
+    tag: 6
+    modifier: 
+  enums: []
+- name: AwardItemProto
+  sort_title: award_item_proto
+  attributes:
+  - type: Item
+    name: item
+    tag: 1
+    modifier: 
+  - type: int32
+    name: item_count
+    tag: 2
+    modifier: 
+  enums: []
+- name: BadgeCaptureReward
+  sort_title: badge_capture_reward
+  attributes:
+  - type: float
+    name: capture_reward_multiplier
+    tag: 1
+    modifier: 
+  enums: []
+- name: BadgeSettingsProto
+  sort_title: badge_settings_proto
+  attributes:
+  - type: HoloBadgeType
+    name: badge_type
+    tag: 1
+    modifier: 
+  - type: int32
+    name: badge_ranks
+    tag: 2
+    modifier: 
+  - type: int32
+    name: targets
+    tag: 3
+    modifier: repeated
+  - type: BadgeCaptureReward
+    name: capture_reward
+    tag: 4
+    modifier: repeated
+  enums: []
+- name: BattleActionProto
+  sort_title: battle_action_proto
+  attributes:
+  - type: ActionType
+    name: type
+    tag: 1
+    modifier: 
+  - type: int64
+    name: action_start_ms
+    tag: 2
+    modifier: 
+  - type: int32
+    name: duration_ms
+    tag: 3
+    modifier: 
+  - type: int32
+    name: energy_delta
+    tag: 5
+    modifier: 
+  - type: int32
+    name: attacker_index
+    tag: 6
+    modifier: 
+  - type: int32
+    name: target_index
+    tag: 7
+    modifier: 
+  - type: fixed64
+    name: active_pokemon_id
+    tag: 8
+    modifier: 
+  - type: BattleParticipantProto
+    name: joined_player
+    tag: 9
+    modifier: 
+  - type: BattleResultsProto
+    name: battle_results
+    tag: 10
+    modifier: 
+  - type: int64
+    name: damage_window_start_ms
+    tag: 11
+    modifier: 
+  - type: int64
+    name: damage_window_end_ms
+    tag: 12
+    modifier: 
+  - type: BattleParticipantProto
+    name: quit_player
+    tag: 13
+    modifier: 
+  - type: fixed64
+    name: target_pokemon_id
+    tag: 14
+    modifier: 
+  enums:
+  - name: ActionType
+    sort_title: action_type
+    values:
+    - name: UNSET
+      tag: 0
+    - name: ATTACK
+      tag: 1
+    - name: DODGE
+      tag: 2
+    - name: SPECIAL_ATTACK
+      tag: 3
+    - name: SWAP_POKEMON
+      tag: 4
+    - name: FAINT
+      tag: 5
+    - name: PLAYER_JOIN
+      tag: 6
+    - name: PLAYER_QUIT
+      tag: 7
+    - name: VICTORY
+      tag: 8
+    - name: DEFEAT
+      tag: 9
+    - name: TIMED_OUT
+      tag: 10
+- name: BattleAttributesProto
+  sort_title: battle_attributes_proto
+  attributes:
+  - type: float
+    name: sta_percent
+    tag: 1
+    modifier: 
+  - type: float
+    name: atk_percent
+    tag: 2
+    modifier: 
+  - type: float
+    name: def_percent
+    tag: 3
+    modifier: 
+  - type: float
+    name: duration_s
+    tag: 4
+    modifier: 
+  enums: []
+- name: BattleLogProto
+  sort_title: battle_log_proto
+  attributes:
+  - type: State
+    name: state
+    tag: 1
+    modifier: 
+  - type: BattleType
+    name: battle_type
+    tag: 2
+    modifier: 
+  - type: int64
+    name: server_ms
+    tag: 3
+    modifier: 
+  - type: BattleActionProto
+    name: battle_actions
+    tag: 4
+    modifier: repeated
+  - type: int64
+    name: battle_start_ms
+    tag: 5
+    modifier: 
+  - type: int64
+    name: battle_end_ms
+    tag: 6
+    modifier: 
+  enums:
+  - name: BattleType
+    sort_title: battle_type
+    values:
+    - name: BATTLE_TYPE_UNSET
+      tag: 0
+    - name: NORMAL
+      tag: 1
+    - name: TRAINING
+      tag: 2
+  - name: State
+    sort_title: state
+    values:
+    - name: STATE_UNSET
+      tag: 0
+    - name: ACTIVE
+      tag: 1
+    - name: VICTORY
+      tag: 2
+    - name: DEFEATED
+      tag: 3
+    - name: TIMED_OUT
+      tag: 4
+- name: BattleParticipantProto
+  sort_title: battle_participant_proto
+  attributes:
+  - type: PokemonInfo
+    name: active_pokemon
+    tag: 1
+    modifier: 
+  - type: PlayerPublicProfileProto
+    name: trainer_public_profile
+    tag: 2
+    modifier: 
+  - type: PokemonInfo
+    name: reserve_pokemon
+    tag: 3
+    modifier: repeated
+  - type: PokemonInfo
+    name: defeated_pokemon
+    tag: 4
+    modifier: repeated
+  enums: []
+- name: BattleResultsProto
+  sort_title: battle_results_proto
+  attributes:
+  - type: GymStateProto
+    name: gym_state
+    tag: 1
+    modifier: 
+  - type: BattleParticipantProto
+    name: attackers
+    tag: 2
+    modifier: repeated
+  - type: int32
+    name: player_xp_awarded
+    tag: 3
+    modifier: repeated
+  - type: int64
+    name: next_defender_pokemon_id
+    tag: 4
+    modifier: 
+  - type: int32
+    name: gym_points_delta
+    tag: 5
+    modifier: 
+  enums: []
+- name: BuddyPokemonLogEntry
+  sort_title: buddy_pokemon_log_entry
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: HoloPokemonId
+    name: pokemon_type
+    tag: 2
+    modifier: 
+  - type: int32
+    name: amount
+    tag: 3
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: CANDY_FOUND
+      tag: 1
+- name: BuddyPokemonProto
+  sort_title: buddy_pokemon_proto
+  attributes:
+  - type: fixed64
+    name: buddy_pokemon_id
+    tag: 1
+    modifier: 
+  - type: double
+    name: start_km_walked
+    tag: 2
+    modifier: 
+  - type: double
+    name: last_km_awarded
+    tag: 3
+    modifier: 
+  enums: []
+- name: CameraSettingsProto
+  sort_title: camera_settings_proto
+  attributes:
+  - type: string
+    name: next_camera
+    tag: 1
+    modifier: 
+  - type: CameraInterpolation
+    name: interpolation
+    tag: 2
+    modifier: repeated
+  - type: CameraTarget
+    name: target_type
+    tag: 3
+    modifier: repeated
+  - type: float
+    name: ease_in_speed
+    tag: 4
+    modifier: repeated
+  - type: float
+    name: ease_out_speed
+    tag: 5
+    modifier: repeated
+  - type: float
+    name: duration_s
+    tag: 6
+    modifier: repeated
+  - type: float
+    name: wait_s
+    tag: 7
+    modifier: repeated
+  - type: float
+    name: transition_s
+    tag: 8
+    modifier: repeated
+  - type: float
+    name: angle_deg
+    tag: 9
+    modifier: repeated
+  - type: float
+    name: angle_offset_deg
+    tag: 10
+    modifier: repeated
+  - type: float
+    name: pitch_deg
+    tag: 11
+    modifier: repeated
+  - type: float
+    name: pitch_offset_deg
+    tag: 12
+    modifier: repeated
+  - type: float
+    name: roll_deg
+    tag: 13
+    modifier: repeated
+  - type: float
+    name: distance_m
+    tag: 14
+    modifier: repeated
+  - type: float
+    name: height_percent
+    tag: 15
+    modifier: repeated
+  - type: float
+    name: vert_ctr_ratio
+    tag: 16
+    modifier: repeated
+  enums: []
+- name: CaptureProbabilityProto
+  sort_title: capture_probability_proto
+  attributes:
+  - type: Item
+    name: pokeball_type
+    tag: 1
+    modifier: repeated
+  - type: float
+    name: capture_probability
+    tag: 2
+    modifier: repeated
+  - type: double
+    name: reticle_difficulty_scale
+    tag: 12
+    modifier: 
+  enums: []
+- name: CaptureScoreProto
+  sort_title: capture_score_proto
+  attributes:
+  - type: HoloActivityType
+    name: activity_type
+    tag: 1
+    modifier: repeated
+  - type: int32
+    name: exp
+    tag: 2
+    modifier: repeated
+  - type: int32
+    name: candy
+    tag: 3
+    modifier: repeated
+  - type: int32
+    name: stardust
+    tag: 4
+    modifier: repeated
+  enums: []
+- name: CatchPokemonLogEntry
+  sort_title: catch_pokemon_log_entry
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: int32
+    name: pokedex_number
+    tag: 2
+    modifier: 
+  - type: int32
+    name: combat_points
+    tag: 3
+    modifier: 
+  - type: fixed64
+    name: pokemon_id
+    tag: 4
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: POKEMON_CAPTURED
+      tag: 1
+    - name: POKEMON_FLED
+      tag: 2
+    - name: POKEMON_HATCHED
+      tag: 3
+- name: CatchPokemonOutProto
+  sort_title: catch_pokemon_out_proto
+  attributes:
+  - type: Status
+    name: status
+    tag: 1
+    modifier: 
+  - type: double
+    name: miss_percent
+    tag: 2
+    modifier: 
+  - type: fixed64
+    name: captured_pokemon_id
+    tag: 3
+    modifier: 
+  - type: CaptureScoreProto
+    name: scores
+    tag: 4
+    modifier: 
+  - type: CaptureReason
+    name: capture_reason
+    tag: 5
+    modifier: 
+  enums:
+  - name: CaptureReason
+    sort_title: capture_reason
+    values:
+    - name: UNSET
+      tag: 0
+    - name: DEFAULT
+      tag: 1
+    - name: ELEMENTAL_BADGE
+      tag: 2
+  - name: Status
+    sort_title: status
+    values:
+    - name: CATCH_ERROR
+      tag: 0
+    - name: CATCH_SUCCESS
+      tag: 1
+    - name: CATCH_ESCAPE
+      tag: 2
+    - name: CATCH_FLEE
+      tag: 3
+    - name: CATCH_MISSED
+      tag: 4
+- name: CatchPokemonProto
+  sort_title: catch_pokemon_proto
+  attributes:
+  - type: fixed64
+    name: encounter_id
+    tag: 1
+    modifier: 
+  - type: int32
+    name: pokeball
+    tag: 2
+    modifier: 
+  - type: double
+    name: normalized_reticle_size
+    tag: 3
+    modifier: 
+  - type: string
+    name: spawn_point_guid
+    tag: 4
+    modifier: 
+  - type: bool
+    name: hit_pokemon
+    tag: 5
+    modifier: 
+  - type: double
+    name: spin_modifier
+    tag: 6
+    modifier: 
+  - type: double
+    name: normalized_hit_position
+    tag: 7
+    modifier: 
+  enums: []
+- name: CheckAwardedBadgesOutProto
+  sort_title: check_awarded_badges_out_proto
+  attributes:
+  - type: bool
+    name: success
+    tag: 1
+    modifier: 
+  - type: HoloBadgeType
+    name: awarded_badges
+    tag: 2
+    modifier: repeated
+  - type: int32
+    name: awarded_badge_levels
+    tag: 3
+    modifier: repeated
+  enums: []
+- name: CheckAwardedBadgesProto
+  sort_title: check_awarded_badges_proto
+  attributes: []
+  enums: []
+- name: CheckChallengeOutProto
+  sort_title: check_challenge_out_proto
+  attributes:
+  - type: bool
+    name: show_challenge
+    tag: 1
+    modifier: 
+  - type: string
+    name: challenge_url
+    tag: 2
+    modifier: 
+  enums: []
+- name: CheckChallengeProto
+  sort_title: check_challenge_proto
+  attributes:
+  - type: bool
+    name: debug_request
+    tag: 1
+    modifier: 
+  enums: []
+- name: CheckCodenameAvailableRequestProto
+  sort_title: check_codename_available_request_proto
+  attributes:
+  - type: string
+    name: codename
+    tag: 1
+    modifier: 
+  enums: []
+- name: ClaimCodenameRequestProto
+  sort_title: claim_codename_request_proto
+  attributes:
+  - type: string
+    name: codename
+    tag: 1
+    modifier: 
+  enums: []
+- name: ClientFortModifierProto
+  sort_title: client_fort_modifier_proto
+  attributes:
+  - type: Item
+    name: modifier_type
+    tag: 1
+    modifier: 
+  - type: int64
+    name: expiration_time_ms
+    tag: 2
+    modifier: 
+  - type: string
+    name: deploying_player_codename
+    tag: 3
+    modifier: 
+  enums: []
+- name: ClientMapCellProto
+  sort_title: client_map_cell_proto
+  attributes:
+  - type: uint64
+    name: s2_cell_id
+    tag: 1
+    modifier: 
+  - type: int64
+    name: as_of_time_ms
+    tag: 2
+    modifier: 
+  - type: PokemonFortProto
+    name: fort
+    tag: 3
+    modifier: repeated
+  - type: ClientSpawnPointProto
+    name: spawn_point
+    tag: 4
+    modifier: repeated
+  - type: WildPokemonProto
+    name: wild_pokemon
+    tag: 5
+    modifier: repeated
+  - type: string
+    name: deleted_object
+    tag: 6
+    modifier: repeated
+  - type: bool
+    name: is_truncated_list
+    tag: 7
+    modifier: 
+  - type: PokemonSummaryFortProto
+    name: fort_summary
+    tag: 8
+    modifier: repeated
+  - type: ClientSpawnPointProto
+    name: decimated_spawn_point
+    tag: 9
+    modifier: repeated
+  - type: MapPokemonProto
+    name: catchable_pokemon
+    tag: 10
+    modifier: repeated
+  - type: NearbyPokemonProto
+    name: nearby_pokemon
+    tag: 11
+    modifier: repeated
+  enums: []
+- name: ClientPlayerProto
+  sort_title: client_player_proto
+  attributes:
+  - type: int64
+    name: creation_time_ms
+    tag: 1
+    modifier: 
+  - type: string
+    name: name
+    tag: 2
+    modifier: 
+  - type: int32
+    name: team
+    tag: 5
+    modifier: 
+  - type: TutorialCompletion
+    name: tutorial_complete
+    tag: 7
+    modifier: repeated
+  - type: PlayerAvatarProto
+    name: player_avatar_proto
+    tag: 8
+    modifier: 
+  - type: int32
+    name: max_pokemon_storage
+    tag: 9
+    modifier: 
+  - type: int32
+    name: max_item_storage
+    tag: 10
+    modifier: 
+  - type: DailyBonusProto
+    name: daily_bonus_proto
+    tag: 11
+    modifier: 
+  - type: EquippedBadgeProto
+    name: equipped_badge_proto
+    tag: 12
+    modifier: 
+  - type: ContactSettingsProto
+    name: contact_settings_proto
+    tag: 13
+    modifier: 
+  - type: CurrencyQuantityProto
+    name: currency_balance
+    tag: 14
+    modifier: repeated
+  - type: int32
+    name: remaining_codename_claims
+    tag: 15
+    modifier: 
+  - type: BuddyPokemonProto
+    name: buddy_pokemon_proto
+    tag: 16
+    modifier: 
+  enums: []
+- name: ClientSpawnPointProto
+  sort_title: client_spawn_point_proto
+  attributes:
+  - type: double
+    name: latitude
+    tag: 2
+    modifier: 
+  - type: double
+    name: longitude
+    tag: 3
+    modifier: 
+  enums: []
+- name: ClientVersionProto
+  sort_title: client_version_proto
+  attributes:
+  - type: string
+    name: min_version
+    tag: 1
+    modifier: 
+  enums: []
+- name: CodenameResultProto
+  sort_title: codename_result_proto
+  attributes:
+  - type: string
+    name: codename
+    tag: 1
+    modifier: 
+  - type: string
+    name: user_message
+    tag: 2
+    modifier: 
+  - type: bool
+    name: is_assignable
+    tag: 3
+    modifier: 
+  - type: Status
+    name: status
+    tag: 4
+    modifier: 
+  - type: ClientPlayerProto
+    name: updated_player
+    tag: 5
+    modifier: 
+  enums:
+  - name: Status
+    sort_title: status
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: CODENAME_NOT_AVAILABLE
+      tag: 2
+    - name: CODENAME_NOT_VALID
+      tag: 3
+    - name: CURRENT_OWNER
+      tag: 4
+    - name: CODENAME_CHANGE_NOT_ALLOWED
+      tag: 5
+- name: CollectDailyBonusOutProto
+  sort_title: collect_daily_bonus_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: FAILURE
+      tag: 2
+    - name: TOO_SOON
+      tag: 3
+- name: CollectDailyBonusProto
+  sort_title: collect_daily_bonus_proto
+  attributes: []
+  enums: []
+- name: CollectDailyDefenderBonusOutProto
+  sort_title: collect_daily_defender_bonus_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: string
+    name: currency_type
+    tag: 2
+    modifier: repeated
+  - type: int32
+    name: currency_awarded
+    tag: 3
+    modifier: repeated
+  - type: int32
+    name: num_defenders
+    tag: 4
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: FAILURE
+      tag: 2
+    - name: TOO_SOON
+      tag: 3
+    - name: NO_DEFENDERS
+      tag: 4
+- name: CollectDailyDefenderBonusProto
+  sort_title: collect_daily_defender_bonus_proto
+  attributes: []
+  enums: []
+- name: ContactSettingsProto
+  sort_title: contact_settings_proto
+  attributes:
+  - type: bool
+    name: send_marketing_emails
+    tag: 1
+    modifier: 
+  - type: bool
+    name: send_push_notifications
+    tag: 2
+    modifier: 
+  enums: []
+- name: CurrencyQuantityProto
+  sort_title: currency_quantity_proto
+  attributes:
+  - type: string
+    name: currency_type
+    tag: 1
+    modifier: 
+  - type: int32
+    name: quantity
+    tag: 2
+    modifier: 
+  enums: []
+- name: DailyBonusProto
+  sort_title: daily_bonus_proto
+  attributes:
+  - type: int64
+    name: next_collect_timestamp_ms
+    tag: 1
+    modifier: 
+  - type: int64
+    name: next_defender_bonus_collect_timestamp_ms
+    tag: 2
+    modifier: 
+  enums: []
+- name: DailyQuestProto
+  sort_title: daily_quest_proto
+  attributes:
+  - type: int32
+    name: current_period_bucket
+    tag: 1
+    modifier: 
+  - type: int32
+    name: current_streak_count
+    tag: 2
+    modifier: 
+  enums: []
+- name: DebugDeletePlayerOutProto
+  sort_title: debug_delete_player_out_proto
+  attributes:
+  - type: bool
+    name: success
+    tag: 1
+    modifier: 
+  enums: []
+- name: DebugDeletePlayerProto
+  sort_title: debug_delete_player_proto
+  attributes: []
+  enums: []
+- name: DebugUpdateInventoryOutProto
+  sort_title: debug_update_inventory_out_proto
+  attributes:
+  - type: bool
+    name: success
+    tag: 1
+    modifier: 
+  enums: []
+- name: DebugUpdateInventoryProto
+  sort_title: debug_update_inventory_proto
+  attributes:
+  - type: PokemonProto
+    name: pokemon
+    tag: 1
+    modifier: repeated
+  - type: ItemProto
+    name: item
+    tag: 2
+    modifier: repeated
+  enums: []
+- name: DiskEncounterOutProto
+  sort_title: disk_encounter_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: PokemonProto
+    name: pokemon
+    tag: 2
+    modifier: 
+  - type: CaptureProbabilityProto
+    name: capture_probability
+    tag: 3
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNKNOWN
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: NOT_AVAILABLE
+      tag: 2
+    - name: NOT_IN_RANGE
+      tag: 3
+    - name: ENCOUNTER_ALREADY_FINISHED
+      tag: 4
+    - name: POKEMON_INVENTORY_FULL
+      tag: 5
+- name: DiskEncounterProto
+  sort_title: disk_encounter_proto
+  attributes:
+  - type: int64
+    name: encounter_id
+    tag: 1
+    modifier: 
+  - type: string
+    name: fort_id
+    tag: 2
+    modifier: 
+  - type: double
+    name: player_lat_degrees
+    tag: 3
+    modifier: 
+  - type: double
+    name: player_lng_degrees
+    tag: 4
+    modifier: 
+  enums: []
+- name: DownloadSettingsActionProto
+  sort_title: download_settings_action_proto
+  attributes:
+  - type: string
+    name: sha1
+    tag: 1
+    modifier: 
+  enums: []
+- name: DownloadSettingsResponseProto
+  sort_title: download_settings_response_proto
+  attributes:
+  - type: string
+    name: error
+    tag: 1
+    modifier: 
+  - type: string
+    name: sha1
+    tag: 2
+    modifier: 
+  - type: bytes
+    name: values
+    tag: 3
+    modifier: 
+  enums: []
+- name: DownloadUrlEntryProto
+  sort_title: download_url_entry_proto
+  attributes:
+  - type: string
+    name: asset_id
+    tag: 1
+    modifier: 
+  - type: string
+    name: url
+    tag: 2
+    modifier: 
+  - type: int32
+    name: size
+    tag: 3
+    modifier: 
+  - type: fixed32
+    name: checksum
+    tag: 4
+    modifier: 
+  enums: []
+- name: DownloadUrlOutProto
+  sort_title: download_url_out_proto
+  attributes:
+  - type: DownloadUrlEntryProto
+    name: download_urls
+    tag: 1
+    modifier: repeated
+  enums: []
+- name: DownloadUrlRequestProto
+  sort_title: download_url_request_proto
+  attributes:
+  - type: string
+    name: asset_id
+    tag: 1
+    modifier: repeated
+  enums: []
+- name: EchoOutProto
+  sort_title: echo_out_proto
+  attributes:
+  - type: string
+    name: context
+    tag: 1
+    modifier: 
+  enums: []
+- name: EchoProto
+  sort_title: echo_proto
+  attributes: []
+  enums: []
+- name: EggIncubatorAttributesProto
+  sort_title: egg_incubator_attributes_proto
+  attributes:
+  - type: EggIncubatorType
+    name: incubator_type
+    tag: 1
+    modifier: 
+  - type: int32
+    name: uses
+    tag: 2
+    modifier: 
+  - type: float
+    name: distance_multiplier
+    tag: 3
+    modifier: 
+  enums: []
+- name: EggIncubatorProto
+  sort_title: egg_incubator_proto
+  attributes:
+  - type: string
+    name: item_id
+    tag: 1
+    modifier: 
+  - type: Item
+    name: item
+    tag: 2
+    modifier: 
+  - type: EggIncubatorType
+    name: incubator_type
+    tag: 3
+    modifier: 
+  - type: int32
+    name: uses_remaining
+    tag: 4
+    modifier: 
+  - type: int64
+    name: pokemon_id
+    tag: 5
+    modifier: 
+  - type: double
+    name: start_km_walked
+    tag: 6
+    modifier: 
+  - type: double
+    name: target_km_walked
+    tag: 7
+    modifier: 
+  enums: []
+- name: EggIncubatorsProto
+  sort_title: egg_incubators_proto
+  attributes:
+  - type: EggIncubatorProto
+    name: egg_incubator
+    tag: 1
+    modifier: repeated
+  enums: []
+- name: EncounterOutProto
+  sort_title: encounter_out_proto
+  attributes:
+  - type: WildPokemonProto
+    name: pokemon
+    tag: 1
+    modifier: 
+  - type: Background
+    name: background
+    tag: 2
+    modifier: 
+  - type: Status
+    name: status
+    tag: 3
+    modifier: 
+  - type: CaptureProbabilityProto
+    name: capture_probability
+    tag: 4
+    modifier: 
+  enums:
+  - name: Background
+    sort_title: background
+    values:
+    - name: PARK
+      tag: 0
+    - name: DESERT
+      tag: 1
+  - name: Status
+    sort_title: status
+    values:
+    - name: ENCOUNTER_ERROR
+      tag: 0
+    - name: ENCOUNTER_SUCCESS
+      tag: 1
+    - name: ENCOUNTER_NOT_FOUND
+      tag: 2
+    - name: ENCOUNTER_CLOSED
+      tag: 3
+    - name: ENCOUNTER_POKEMON_FLED
+      tag: 4
+    - name: ENCOUNTER_NOT_IN_RANGE
+      tag: 5
+    - name: ENCOUNTER_ALREADY_HAPPENED
+      tag: 6
+    - name: POKEMON_INVENTORY_FULL
+      tag: 7
+- name: EncounterProto
+  sort_title: encounter_proto
+  attributes:
+  - type: fixed64
+    name: encounter_id
+    tag: 1
+    modifier: 
+  - type: string
+    name: spawnpoint_id
+    tag: 2
+    modifier: 
+  - type: double
+    name: player_lat_degrees
+    tag: 3
+    modifier: 
+  - type: double
+    name: player_lng_degrees
+    tag: 4
+    modifier: 
+  enums: []
+- name: EncounterSettingsProto
+  sort_title: encounter_settings_proto
+  attributes:
+  - type: float
+    name: spin_bonus_threshold
+    tag: 1
+    modifier: 
+  - type: float
+    name: excellent_throw_threshold
+    tag: 2
+    modifier: 
+  - type: float
+    name: great_throw_threshold
+    tag: 3
+    modifier: 
+  - type: float
+    name: nice_throw_threshold
+    tag: 4
+    modifier: 
+  - type: int32
+    name: milestone_threshold
+    tag: 5
+    modifier: 
+  enums: []
+- name: EncounterTutorialCompleteOutProto
+  sort_title: encounter_tutorial_complete_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: PokemonProto
+    name: pokemon
+    tag: 2
+    modifier: 
+  - type: CaptureScoreProto
+    name: scores
+    tag: 3
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: ERROR_INVALID_POKEMON
+      tag: 2
+- name: EncounterTutorialCompleteProto
+  sort_title: encounter_tutorial_complete_proto
+  attributes:
+  - type: int32
+    name: pokedex_id
+    tag: 1
+    modifier: 
+  enums: []
+- name: EquipBadgeOutProto
+  sort_title: equip_badge_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: EquippedBadgeProto
+    name: equipped
+    tag: 2
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: COOLDOWN_ACTIVE
+      tag: 2
+    - name: NOT_QUALIFIED
+      tag: 3
+- name: EquipBadgeProto
+  sort_title: equip_badge_proto
+  attributes:
+  - type: HoloBadgeType
+    name: badge
+    tag: 1
+    modifier: 
+  enums: []
+- name: EquippedBadgeProto
+  sort_title: equipped_badge_proto
+  attributes:
+  - type: HoloBadgeType
+    name: equipped_badge
+    tag: 1
+    modifier: 
+  - type: int32
+    name: level
+    tag: 2
+    modifier: 
+  - type: int64
+    name: next_equip_change_allowed_timestamp_ms
+    tag: 3
+    modifier: 
+  enums: []
+- name: EquippedBadgeSettingsProto
+  sort_title: equipped_badge_settings_proto
+  attributes:
+  - type: int64
+    name: equip_badge_cooldown_ms
+    tag: 1
+    modifier: 
+  - type: float
+    name: catch_probability_bonus
+    tag: 2
+    modifier: repeated
+  - type: float
+    name: flee_probability_bonus
+    tag: 3
+    modifier: repeated
+  enums: []
+- name: EvolvePokemonOutProto
+  sort_title: evolve_pokemon_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: PokemonProto
+    name: evolved_pokemon
+    tag: 2
+    modifier: 
+  - type: int32
+    name: exp_awarded
+    tag: 3
+    modifier: 
+  - type: int32
+    name: candy_awarded
+    tag: 4
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: FAILED_POKEMON_MISSING
+      tag: 2
+    - name: FAILED_INSUFFICIENT_RESOURCES
+      tag: 3
+    - name: FAILED_POKEMON_CANNOT_EVOLVE
+      tag: 4
+    - name: FAILED_POKEMON_IS_DEPLOYED
+      tag: 5
+- name: EvolvePokemonProto
+  sort_title: evolve_pokemon_proto
+  attributes:
+  - type: fixed64
+    name: pokemon_id
+    tag: 1
+    modifier: 
+  enums: []
+- name: ExperienceBoostAttributesProto
+  sort_title: experience_boost_attributes_proto
+  attributes:
+  - type: float
+    name: xp_multiplier
+    tag: 1
+    modifier: 
+  - type: int32
+    name: boost_duration_ms
+    tag: 2
+    modifier: 
+  enums: []
+- name: FestivalSettingsProto
+  sort_title: festival_settings_proto
+  attributes:
+  - type: FestivalType
+    name: festival_type
+    tag: 1
+    modifier: 
+  - type: string
+    name: key
+    tag: 2
+    modifier: 
+  - type: string
+    name: vector
+    tag: 3
+    modifier: 
+  enums:
+  - name: FestivalType
+    sort_title: festival_type
+    values:
+    - name: NONE
+      tag: 0
+    - name: HALLOWEEN
+      tag: 1
+- name: FoodAttributesProto
+  sort_title: food_attributes_proto
+  attributes:
+  - type: HoloItemEffect
+    name: item_effect
+    tag: 1
+    modifier: repeated
+  - type: float
+    name: item_effect_percent
+    tag: 2
+    modifier: repeated
+  - type: float
+    name: growth_percent
+    tag: 3
+    modifier: 
+  enums: []
+- name: FortDeployOutProto
+  sort_title: fort_deploy_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: FortDetailsOutProto
+    name: fort_details_out_proto
+    tag: 2
+    modifier: 
+  - type: PokemonProto
+    name: egg_pokemon
+    tag: 3
+    modifier: 
+  - type: GymStateProto
+    name: gym_state_proto
+    tag: 4
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: NO_RESULT_SET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: ERROR_ALREADY_HAS_POKEMON_ON_FORT
+      tag: 2
+    - name: ERROR_OPPOSING_TEAM_OWNS_FORT
+      tag: 3
+    - name: ERROR_FORT_IS_FULL
+      tag: 4
+    - name: ERROR_NOT_IN_RANGE
+      tag: 5
+    - name: ERROR_PLAYER_HAS_NO_TEAM
+      tag: 6
+    - name: ERROR_POKEMON_NOT_FULL_HP
+      tag: 7
+    - name: ERROR_PLAYER_BELOW_MINIMUM_LEVEL
+      tag: 8
+    - name: ERROR_POKEMON_IS_BUDDY
+      tag: 9
+- name: FortDeployProto
+  sort_title: fort_deploy_proto
+  attributes:
+  - type: string
+    name: fort_id
+    tag: 1
+    modifier: 
+  - type: fixed64
+    name: pokemon_id
+    tag: 2
+    modifier: 
+  - type: double
+    name: player_lat_degrees
+    tag: 3
+    modifier: 
+  - type: double
+    name: player_lng_degrees
+    tag: 4
+    modifier: 
+  enums: []
+- name: FortDetailsOutProto
+  sort_title: fort_details_out_proto
+  attributes:
+  - type: string
+    name: id
+    tag: 1
+    modifier: 
+  - type: int32
+    name: team
+    tag: 2
+    modifier: 
+  - type: PokemonProto
+    name: pokemon
+    tag: 3
+    modifier: repeated
+  - type: string
+    name: name
+    tag: 4
+    modifier: 
+  - type: string
+    name: image_url
+    tag: 5
+    modifier: repeated
+  - type: int32
+    name: fp
+    tag: 6
+    modifier: 
+  - type: int32
+    name: stamina
+    tag: 7
+    modifier: 
+  - type: int32
+    name: max_stamina
+    tag: 8
+    modifier: 
+  - type: FortType
+    name: fort_type
+    tag: 9
+    modifier: 
+  - type: double
+    name: latitude
+    tag: 10
+    modifier: 
+  - type: double
+    name: longitude
+    tag: 11
+    modifier: 
+  - type: string
+    name: description
+    tag: 12
+    modifier: 
+  - type: ClientFortModifierProto
+    name: modifier
+    tag: 13
+    modifier: repeated
+  enums: []
+- name: FortDetailsProto
+  sort_title: fort_details_proto
+  attributes:
+  - type: string
+    name: id
+    tag: 1
+    modifier: 
+  - type: double
+    name: latitude
+    tag: 2
+    modifier: 
+  - type: double
+    name: longitude
+    tag: 3
+    modifier: 
+  enums: []
+- name: FortModifierAttributesProto
+  sort_title: fort_modifier_attributes_proto
+  attributes:
+  - type: int32
+    name: modifier_lifetime_seconds
+    tag: 1
+    modifier: 
+  - type: int32
+    name: troy_disk_num_pokemon_spawned
+    tag: 2
+    modifier: 
+  enums: []
+- name: FortRecallOutProto
+  sort_title: fort_recall_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: FortDetailsOutProto
+    name: fort_details_out_proto
+    tag: 2
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: NO_RESULT_SET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: ERROR_NOT_IN_RANGE
+      tag: 2
+    - name: ERROR_POKEMON_NOT_ON_FORT
+      tag: 3
+    - name: ERROR_NO_PLAYER
+      tag: 4
+- name: FortRecallProto
+  sort_title: fort_recall_proto
+  attributes:
+  - type: string
+    name: fort_id
+    tag: 1
+    modifier: 
+  - type: fixed64
+    name: pokemon_id
+    tag: 2
+    modifier: 
+  - type: double
+    name: player_lat_degrees
+    tag: 3
+    modifier: 
+  - type: double
+    name: player_lng_degrees
+    tag: 4
+    modifier: 
+  enums: []
+- name: FortRenderingType
+  sort_title: fort_rendering_type
+  attributes: []
+  enums: []
+- name: FortSearchLogEntry
+  sort_title: fort_search_log_entry
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: string
+    name: fort_id
+    tag: 2
+    modifier: 
+  - type: ItemProto
+    name: items
+    tag: 3
+    modifier: repeated
+  - type: int32
+    name: eggs
+    tag: 4
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+- name: FortSearchOutProto
+  sort_title: fort_search_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: AwardItemProto
+    name: items
+    tag: 2
+    modifier: repeated
+  - type: int32
+    name: gems_awarded
+    tag: 3
+    modifier: 
+  - type: PokemonProto
+    name: egg_pokemon
+    tag: 4
+    modifier: 
+  - type: int32
+    name: xp_awarded
+    tag: 5
+    modifier: 
+  - type: int64
+    name: cooldown_complete
+    tag: 6
+    modifier: 
+  - type: int32
+    name: chain_hack_sequence_number
+    tag: 7
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: NO_RESULT_SET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: OUT_OF_RANGE
+      tag: 2
+    - name: IN_COOLDOWN_PERIOD
+      tag: 3
+    - name: INVENTORY_FULL
+      tag: 4
+    - name: EXCEEDED_DAILY_LIMIT
+      tag: 5
+- name: FortSearchProto
+  sort_title: fort_search_proto
+  attributes:
+  - type: string
+    name: id
+    tag: 1
+    modifier: 
+  - type: double
+    name: player_lat_degrees
+    tag: 2
+    modifier: 
+  - type: double
+    name: player_lng_degrees
+    tag: 3
+    modifier: 
+  - type: double
+    name: fort_lat_degrees
+    tag: 4
+    modifier: 
+  - type: double
+    name: fort_lng_degrees
+    tag: 5
+    modifier: 
+  enums: []
+- name: FortSettingsProto
+  sort_title: fort_settings_proto
+  attributes:
+  - type: double
+    name: interaction_range_meters
+    tag: 1
+    modifier: 
+  - type: int32
+    name: max_total_deployed_pokemon
+    tag: 2
+    modifier: 
+  - type: int32
+    name: max_player_deployed_pokemon
+    tag: 3
+    modifier: 
+  - type: double
+    name: deploy_stamina_multiplier
+    tag: 4
+    modifier: 
+  - type: double
+    name: deploy_attack_multiplier
+    tag: 5
+    modifier: 
+  - type: double
+    name: far_interaction_range_meters
+    tag: 6
+    modifier: 
+  enums: []
+- name: FortSponsor
+  sort_title: fort_sponsor
+  attributes: []
+  enums: []
+- name: GameMasterClientTemplateProto
+  sort_title: game_master_client_template_proto
+  attributes:
+  - type: string
+    name: template_id
+    tag: 1
+    modifier: 
+  - type: PokemonSettingsProto
+    name: pokemon
+    tag: 2
+    modifier: 
+  - type: ItemSettingsProto
+    name: item
+    tag: 3
+    modifier: 
+  - type: MoveSettingsProto
+    name: move
+    tag: 4
+    modifier: 
+  - type: MoveSequenceSettingsProto
+    name: move_sequence
+    tag: 5
+    modifier: 
+  - type: TypeEffectiveSettingsProto
+    name: type_effective
+    tag: 8
+    modifier: 
+  - type: BadgeSettingsProto
+    name: badge
+    tag: 10
+    modifier: 
+  - type: CameraSettingsProto
+    name: camera
+    tag: 11
+    modifier: 
+  - type: PlayerLevelSettingsProto
+    name: player_level
+    tag: 12
+    modifier: 
+  - type: GymLevelSettingsProto
+    name: gym_level
+    tag: 13
+    modifier: 
+  - type: GymBattleSettingsProto
+    name: battle_settings
+    tag: 14
+    modifier: 
+  - type: EncounterSettingsProto
+    name: encounter_settings
+    tag: 15
+    modifier: 
+  - type: IapItemDisplayProto
+    name: iap_item_display
+    tag: 16
+    modifier: 
+  - type: IapSettingsProto
+    name: iap_settings
+    tag: 17
+    modifier: 
+  - type: PokemonUpgradeSettingsProto
+    name: pokemon_upgrades
+    tag: 18
+    modifier: 
+  - type: EquippedBadgeSettingsProto
+    name: equipped_badges
+    tag: 19
+    modifier: 
+  enums: []
+- name: GetActionLogRequest
+  sort_title: get_action_log_request
+  attributes: []
+  enums: []
+- name: GetActionLogResponse
+  sort_title: get_action_log_response
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: ActionLogEntry
+    name: log
+    tag: 2
+    modifier: repeated
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+- name: GetBuddyWalkedOutProto
+  sort_title: get_buddy_walked_out_proto
+  attributes:
+  - type: bool
+    name: success
+    tag: 1
+    modifier: 
+  - type: HoloPokemonFamilyId
+    name: family_candy_id
+    tag: 2
+    modifier: 
+  - type: int32
+    name: candy_earned_count
+    tag: 3
+    modifier: 
+  enums: []
+- name: GetBuddyWalkedProto
+  sort_title: get_buddy_walked_proto
+  attributes: []
+  enums: []
+- name: GetGameMasterClientTemplatesOutProto
+  sort_title: get_game_master_client_templates_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: GameMasterClientTemplateProto
+    name: items
+    tag: 2
+    modifier: repeated
+  - type: uint64
+    name: timestamp
+    tag: 3
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+- name: GetGameMasterClientTemplatesProto
+  sort_title: get_game_master_client_templates_proto
+  attributes: []
+  enums: []
+- name: GetGymDetailsOutProto
+  sort_title: get_gym_details_out_proto
+  attributes:
+  - type: GymStateProto
+    name: gym_state
+    tag: 1
+    modifier: 
+  - type: string
+    name: name
+    tag: 2
+    modifier: 
+  - type: string
+    name: url
+    tag: 3
+    modifier: repeated
+  - type: Result
+    name: result
+    tag: 4
+    modifier: 
+  - type: string
+    name: description
+    tag: 5
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: ERROR_NOT_IN_RANGE
+      tag: 2
+- name: GetGymDetailsProto
+  sort_title: get_gym_details_proto
+  attributes:
+  - type: string
+    name: gym_id
+    tag: 1
+    modifier: 
+  - type: double
+    name: player_lat_degrees
+    tag: 2
+    modifier: 
+  - type: double
+    name: player_lng_degrees
+    tag: 3
+    modifier: 
+  - type: double
+    name: gym_lat_degrees
+    tag: 4
+    modifier: 
+  - type: double
+    name: gym_lng_degrees
+    tag: 5
+    modifier: 
+  - type: string
+    name: client_version
+    tag: 6
+    modifier: 
+  enums: []
+- name: GetHatchedEggsOutProto
+  sort_title: get_hatched_eggs_out_proto
+  attributes:
+  - type: bool
+    name: success
+    tag: 1
+    modifier: 
+  - type: fixed64
+    name: pokemon_id
+    tag: 2
+    modifier: repeated
+  - type: int32
+    name: exp_awarded
+    tag: 3
+    modifier: repeated
+  - type: int32
+    name: candy_awarded
+    tag: 4
+    modifier: repeated
+  - type: int32
+    name: stardust_awarded
+    tag: 5
+    modifier: repeated
+  - type: float
+    name: egg_km_walked
+    tag: 6
+    modifier: repeated
+  enums: []
+- name: GetHatchedEggsProto
+  sort_title: get_hatched_eggs_proto
+  attributes: []
+  enums: []
+- name: GetIncensePokemonOutProto
+  sort_title: get_incense_pokemon_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: int32
+    name: pokemon_type_id
+    tag: 2
+    modifier: 
+  - type: double
+    name: lat
+    tag: 3
+    modifier: 
+  - type: double
+    name: lng
+    tag: 4
+    modifier: 
+  - type: string
+    name: encounter_location
+    tag: 5
+    modifier: 
+  - type: fixed64
+    name: encounter_id
+    tag: 6
+    modifier: 
+  - type: int64
+    name: disappear_time_ms
+    tag: 7
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: INCENSE_ENCOUNTER_UNKNOWN
+      tag: 0
+    - name: INCENSE_ENCOUNTER_AVAILABLE
+      tag: 1
+    - name: INCENSE_ENCOUNTER_NOT_AVAILABLE
+      tag: 2
+- name: GetIncensePokemonProto
+  sort_title: get_incense_pokemon_proto
+  attributes:
+  - type: double
+    name: player_lat_degrees
+    tag: 1
+    modifier: 
+  - type: double
+    name: player_lng_degrees
+    tag: 2
+    modifier: 
+  enums: []
+- name: GetInventoryOutProto
+  sort_title: get_inventory_out_proto
+  attributes:
+  - type: bool
+    name: success
+    tag: 1
+    modifier: 
+  - type: InventoryDeltaProto
+    name: inventory_delta
+    tag: 2
+    modifier: 
+  enums: []
+- name: GetInventoryProto
+  sort_title: get_inventory_proto
+  attributes:
+  - type: int64
+    name: timestamp_millis
+    tag: 1
+    modifier: 
+  - type: Item
+    name: item_been_seen
+    tag: 2
+    modifier: repeated
+  enums: []
+- name: GetMapObjectsOutProto
+  sort_title: get_map_objects_out_proto
+  attributes:
+  - type: ClientMapCellProto
+    name: map_cell
+    tag: 1
+    modifier: repeated
+  - type: Status
+    name: status
+    tag: 2
+    modifier: 
+  enums:
+  - name: Status
+    sort_title: status
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: LOCATION_UNSET
+      tag: 2
+- name: GetMapObjectsProto
+  sort_title: get_map_objects_proto
+  attributes:
+  - type: uint64
+    name: cell_id
+    tag: 1
+    modifier: repeated
+  - type: int64
+    name: since_time_ms
+    tag: 2
+    modifier: repeated
+  - type: double
+    name: player_lat
+    tag: 3
+    modifier: 
+  - type: double
+    name: player_lng
+    tag: 4
+    modifier: 
+  enums: []
+- name: GetPlayerOutProto
+  sort_title: get_player_out_proto
+  attributes:
+  - type: bool
+    name: success
+    tag: 1
+    modifier: 
+  - type: ClientPlayerProto
+    name: player
+    tag: 2
+    modifier: 
+  - type: bool
+    name: banned
+    tag: 3
+    modifier: 
+  - type: bool
+    name: warn
+    tag: 4
+    modifier: 
+  enums: []
+- name: GetPlayerProto
+  sort_title: get_player_proto
+  attributes:
+  - type: PlayerLocaleProto
+    name: player_locale
+    tag: 1
+    modifier: 
+  enums: []
+- name: GetRemoteConfigVersionsOutProto
+  sort_title: get_remote_config_versions_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: uint64
+    name: game_master_timestamp
+    tag: 2
+    modifier: 
+  - type: uint64
+    name: asset_digest_timestamp
+    tag: 3
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+- name: GetRemoteConfigVersionsProto
+  sort_title: get_remote_config_versions_proto
+  attributes:
+  - type: Platform
+    name: platform
+    tag: 1
+    modifier: 
+  - type: string
+    name: device_manufacturer
+    tag: 2
+    modifier: 
+  - type: string
+    name: device_model
+    tag: 3
+    modifier: 
+  - type: string
+    name: locale
+    tag: 4
+    modifier: 
+  - type: uint32
+    name: app_version
+    tag: 5
+    modifier: 
+  enums: []
+- name: GetSuggestedCodenamesRequestProto
+  sort_title: get_suggested_codenames_request_proto
+  attributes: []
+  enums: []
+- name: GetSuggestedCodenamesResponseProto
+  sort_title: get_suggested_codenames_response_proto
+  attributes:
+  - type: string
+    name: codename
+    tag: 1
+    modifier: repeated
+  - type: bool
+    name: success
+    tag: 2
+    modifier: 
+  enums: []
+- name: GlobalSettingsProto
+  sort_title: global_settings_proto
+  attributes:
+  - type: FortSettingsProto
+    name: fort_settings
+    tag: 2
+    modifier: 
+  - type: MapSettingsProto
+    name: map_settings
+    tag: 3
+    modifier: 
+  - type: LevelSettingsProto
+    name: level_settings
+    tag: 4
+    modifier: 
+  - type: InventorySettingsProto
+    name: inventory_settings
+    tag: 5
+    modifier: 
+  - type: string
+    name: minimum_client_version
+    tag: 6
+    modifier: 
+  - type: GpsSettingsProto
+    name: gps_settings
+    tag: 7
+    modifier: 
+  - type: FestivalSettingsProto
+    name: festival_settings
+    tag: 8
+    modifier: 
+  enums: []
+- name: GpsSettingsProto
+  sort_title: gps_settings_proto
+  attributes:
+  - type: float
+    name: driving_warning_speed_meters_per_second
+    tag: 1
+    modifier: 
+  - type: float
+    name: driving_warning_cooldown_minutes
+    tag: 2
+    modifier: 
+  - type: float
+    name: driving_speed_sample_interval_seconds
+    tag: 3
+    modifier: 
+  - type: int32
+    name: driving_speed_sample_count
+    tag: 4
+    modifier: 
+  enums: []
+- name: GymBattleSettingsProto
+  sort_title: gym_battle_settings_proto
+  attributes:
+  - type: float
+    name: energy_per_sec
+    tag: 1
+    modifier: 
+  - type: float
+    name: dodge_energy_cost
+    tag: 2
+    modifier: 
+  - type: float
+    name: retarget_seconds
+    tag: 3
+    modifier: 
+  - type: float
+    name: enemy_attack_interval
+    tag: 4
+    modifier: 
+  - type: float
+    name: attack_server_interval
+    tag: 5
+    modifier: 
+  - type: float
+    name: round_duration_seconds
+    tag: 6
+    modifier: 
+  - type: float
+    name: bonus_time_per_ally_seconds
+    tag: 7
+    modifier: 
+  - type: int32
+    name: maximum_attackers_per_battle
+    tag: 8
+    modifier: 
+  - type: float
+    name: same_type_attack_bonus_multiplier
+    tag: 9
+    modifier: 
+  - type: int32
+    name: maximum_energy
+    tag: 10
+    modifier: 
+  - type: float
+    name: energy_delta_per_health_lost
+    tag: 11
+    modifier: 
+  - type: int32
+    name: dodge_duration_ms
+    tag: 12
+    modifier: 
+  - type: int32
+    name: minimum_player_level
+    tag: 13
+    modifier: 
+  - type: int32
+    name: swap_duration_ms
+    tag: 14
+    modifier: 
+  - type: float
+    name: dodge_damage_reduction_percent
+    tag: 15
+    modifier: 
+  enums: []
+- name: GymLevelSettingsProto
+  sort_title: gym_level_settings_proto
+  attributes:
+  - type: int32
+    name: required_exp
+    tag: 1
+    modifier: repeated
+  - type: int32
+    name: leader_slots
+    tag: 2
+    modifier: repeated
+  - type: int32
+    name: trainer_slots
+    tag: 3
+    modifier: repeated
+  - type: int32
+    name: search_roll_bonus
+    tag: 4
+    modifier: repeated
+  enums: []
+- name: GymMembershipProto
+  sort_title: gym_membership_proto
+  attributes:
+  - type: PokemonProto
+    name: pokemon
+    tag: 1
+    modifier: 
+  - type: PlayerPublicProfileProto
+    name: trainer_public_profile
+    tag: 2
+    modifier: 
+  - type: PokemonProto
+    name: training_pokemon
+    tag: 3
+    modifier: 
+  enums: []
+- name: GymStateProto
+  sort_title: gym_state_proto
+  attributes:
+  - type: PokemonFortProto
+    name: fort_map_data
+    tag: 1
+    modifier: 
+  - type: GymMembershipProto
+    name: gym_membership
+    tag: 2
+    modifier: repeated
+  enums: []
+- name: HoloInventoryItemProto
+  sort_title: holo_inventory_item_proto
+  attributes:
+  - type: PokemonProto
+    name: pokemon
+    tag: 1
+    modifier: 
+  - type: ItemProto
+    name: item
+    tag: 2
+    modifier: 
+  - type: PokedexEntryProto
+    name: pokedex_entry
+    tag: 3
+    modifier: 
+  - type: PlayerStatsProto
+    name: player_stats
+    tag: 4
+    modifier: 
+  - type: PlayerCurrencyProto
+    name: player_currency
+    tag: 5
+    modifier: 
+  - type: PlayerCameraProto
+    name: player_camera
+    tag: 6
+    modifier: 
+  - type: InventoryUpgradesProto
+    name: inventory_upgrades
+    tag: 7
+    modifier: 
+  - type: AppliedItemsProto
+    name: applied_items
+    tag: 8
+    modifier: 
+  - type: EggIncubatorsProto
+    name: egg_incubators
+    tag: 9
+    modifier: 
+  - type: PokemonFamilyProto
+    name: pokemon_family
+    tag: 10
+    modifier: 
+  - type: QuestProto
+    name: quest
+    tag: 11
+    modifier: 
+  enums: []
+- name: HoloInventoryKeyProto
+  sort_title: holo_inventory_key_proto
+  attributes:
+  - type: fixed64
+    name: pokemon_id
+    tag: 1
+    modifier: 
+  - type: Item
+    name: item
+    tag: 2
+    modifier: 
+  - type: int32
+    name: pokedex_entry_id
+    tag: 3
+    modifier: 
+  - type: bool
+    name: player_stats
+    tag: 4
+    modifier: 
+  - type: bool
+    name: player_currency
+    tag: 5
+    modifier: 
+  - type: bool
+    name: player_camera
+    tag: 6
+    modifier: 
+  - type: bool
+    name: inventory_upgrades
+    tag: 7
+    modifier: 
+  - type: bool
+    name: applied_items
+    tag: 8
+    modifier: 
+  - type: bool
+    name: egg_incubators
+    tag: 9
+    modifier: 
+  - type: int32
+    name: pokemon_family_id
+    tag: 10
+    modifier: 
+  - type: QuestType
+    name: quest_type
+    tag: 11
+    modifier: 
+  enums: []
+- name: IapItemDisplayProto
+  sort_title: iap_item_display_proto
+  attributes:
+  - type: string
+    name: sku
+    tag: 1
+    modifier: 
+  - type: HoloIapItemCategory
+    name: category
+    tag: 2
+    modifier: 
+  - type: int32
+    name: sort_order
+    tag: 3
+    modifier: 
+  - type: Item
+    name: items
+    tag: 4
+    modifier: repeated
+  - type: int32
+    name: counts
+    tag: 5
+    modifier: repeated
+  enums: []
+- name: IapSettingsProto
+  sort_title: iap_settings_proto
+  attributes:
+  - type: int32
+    name: daily_bonus_coins
+    tag: 1
+    modifier: 
+  - type: int32
+    name: daily_defender_bonus_per_pokemon
+    tag: 2
+    modifier: repeated
+  - type: int32
+    name: daily_defender_bonus_max_defenders
+    tag: 3
+    modifier: 
+  - type: string
+    name: daily_defender_bonus_currency
+    tag: 4
+    modifier: repeated
+  - type: int64
+    name: min_time_between_claims_ms
+    tag: 5
+    modifier: 
+  - type: bool
+    name: daily_bonus_enabled
+    tag: 6
+    modifier: 
+  - type: bool
+    name: daily_defender_bonus_enabled
+    tag: 7
+    modifier: 
+  enums: []
+- name: IncenseAttributesProto
+  sort_title: incense_attributes_proto
+  attributes:
+  - type: int32
+    name: incense_lifetime_seconds
+    tag: 1
+    modifier: 
+  - type: HoloPokemonType
+    name: pokemon_type
+    tag: 2
+    modifier: repeated
+  - type: float
+    name: pokemon_incense_type_probability
+    tag: 3
+    modifier: 
+  - type: int32
+    name: standing_time_between_encounters_sec
+    tag: 4
+    modifier: 
+  - type: int32
+    name: moving_time_between_encounter_sec
+    tag: 5
+    modifier: 
+  - type: int32
+    name: distance_required_for_shorter_interval_meters
+    tag: 6
+    modifier: 
+  - type: int32
+    name: pokemon_attracted_length_sec
+    tag: 7
+    modifier: 
+  enums: []
+- name: IncenseEncounterOutProto
+  sort_title: incense_encounter_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: PokemonProto
+    name: pokemon
+    tag: 2
+    modifier: 
+  - type: CaptureProbabilityProto
+    name: capture_probability
+    tag: 3
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: INCENSE_ENCOUNTER_UNKNOWN
+      tag: 0
+    - name: INCENSE_ENCOUNTER_SUCCESS
+      tag: 1
+    - name: INCENSE_ENCOUNTER_NOT_AVAILABLE
+      tag: 2
+    - name: POKEMON_INVENTORY_FULL
+      tag: 3
+- name: IncenseEncounterProto
+  sort_title: incense_encounter_proto
+  attributes:
+  - type: int64
+    name: encounter_id
+    tag: 1
+    modifier: 
+  - type: string
+    name: encounter_location
+    tag: 2
+    modifier: 
+  enums: []
+- name: InventoryDeltaProto
+  sort_title: inventory_delta_proto
+  attributes:
+  - type: int64
+    name: original_timestamp
+    tag: 1
+    modifier: 
+  - type: int64
+    name: new_timestamp
+    tag: 2
+    modifier: 
+  - type: InventoryItemProto
+    name: inventory_item
+    tag: 3
+    modifier: repeated
+  enums: []
+- name: InventoryItemProto
+  sort_title: inventory_item_proto
+  attributes:
+  - type: int64
+    name: modified_timestamp
+    tag: 1
+    modifier: 
+  - type: bytes
+    name: deleted_item_key
+    tag: 2
+    modifier: 
+  - type: bytes
+    name: item
+    tag: 3
+    modifier: 
+  enums: []
+- name: InventoryProto
+  sort_title: inventory_proto
+  attributes:
+  - type: InventoryItemProto
+    name: inventory_item
+    tag: 1
+    modifier: repeated
+  enums: []
+- name: InventorySettingsProto
+  sort_title: inventory_settings_proto
+  attributes:
+  - type: int32
+    name: max_pokemon
+    tag: 1
+    modifier: 
+  - type: int32
+    name: max_bag_items
+    tag: 2
+    modifier: 
+  - type: int32
+    name: base_pokemon
+    tag: 3
+    modifier: 
+  - type: int32
+    name: base_bag_items
+    tag: 4
+    modifier: 
+  - type: int32
+    name: base_eggs
+    tag: 5
+    modifier: 
+  enums: []
+- name: InventoryUpgradeAttributesProto
+  sort_title: inventory_upgrade_attributes_proto
+  attributes:
+  - type: int32
+    name: additional_storage
+    tag: 1
+    modifier: 
+  - type: InventoryUpgradeType
+    name: upgrade_type
+    tag: 2
+    modifier: 
+  enums: []
+- name: InventoryUpgradeProto
+  sort_title: inventory_upgrade_proto
+  attributes:
+  - type: Item
+    name: item
+    tag: 1
+    modifier: 
+  - type: InventoryUpgradeType
+    name: upgrade_type
+    tag: 2
+    modifier: 
+  - type: int32
+    name: additional_storage
+    tag: 3
+    modifier: 
+  enums: []
+- name: InventoryUpgradesProto
+  sort_title: inventory_upgrades_proto
+  attributes:
+  - type: InventoryUpgradeProto
+    name: inventory_upgrade
+    tag: 1
+    modifier: repeated
+  enums: []
+- name: ItemProto
+  sort_title: item_proto
+  attributes:
+  - type: Item
+    name: item
+    tag: 1
+    modifier: 
+  - type: int32
+    name: count
+    tag: 2
+    modifier: 
+  - type: bool
+    name: unseen
+    tag: 3
+    modifier: 
+  enums: []
+- name: ItemSettingsProto
+  sort_title: item_settings_proto
+  attributes:
+  - type: Item
+    name: unique_id
+    tag: 1
+    modifier: 
+  - type: HoloItemType
+    name: item_type
+    tag: 2
+    modifier: 
+  - type: HoloItemCategory
+    name: category
+    tag: 3
+    modifier: 
+  - type: float
+    name: drop_freq
+    tag: 4
+    modifier: 
+  - type: int32
+    name: drop_trainer_level
+    tag: 5
+    modifier: 
+  - type: PokeBallAttributesProto
+    name: pokeball
+    tag: 6
+    modifier: 
+  - type: PotionAttributesProto
+    name: potion
+    tag: 7
+    modifier: 
+  - type: ReviveAttributesProto
+    name: revive
+    tag: 8
+    modifier: 
+  - type: BattleAttributesProto
+    name: battle
+    tag: 9
+    modifier: 
+  - type: FoodAttributesProto
+    name: food
+    tag: 10
+    modifier: 
+  - type: InventoryUpgradeAttributesProto
+    name: inventory_upgrade
+    tag: 11
+    modifier: 
+  - type: ExperienceBoostAttributesProto
+    name: xp_boost
+    tag: 12
+    modifier: 
+  - type: IncenseAttributesProto
+    name: incense
+    tag: 13
+    modifier: 
+  - type: EggIncubatorAttributesProto
+    name: egg_incubator
+    tag: 14
+    modifier: 
+  - type: FortModifierAttributesProto
+    name: fort_modifier
+    tag: 15
+    modifier: 
+  enums: []
+- name: LevelSettingsProto
+  sort_title: level_settings_proto
+  attributes:
+  - type: double
+    name: trainer_cp_modifier
+    tag: 2
+    modifier: 
+  - type: double
+    name: trainer_difficulty_modifier
+    tag: 3
+    modifier: 
+  enums: []
+- name: LevelUpRewardsOutProto
+  sort_title: level_up_rewards_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: AwardItemProto
+    name: items
+    tag: 2
+    modifier: repeated
+  - type: Item
+    name: items_unlocked
+    tag: 4
+    modifier: repeated
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: AWARDED_ALREADY
+      tag: 2
+- name: LevelUpRewardsProto
+  sort_title: level_up_rewards_proto
+  attributes:
+  - type: int32
+    name: level
+    tag: 1
+    modifier: 
+  enums: []
+- name: MapPokemonProto
+  sort_title: map_pokemon_proto
+  attributes:
+  - type: string
+    name: spawnpoint_id
+    tag: 1
+    modifier: 
+  - type: fixed64
+    name: encounter_id
+    tag: 2
+    modifier: 
+  - type: int32
+    name: pokedex_type_id
+    tag: 3
+    modifier: 
+  - type: int64
+    name: expiration_time_ms
+    tag: 4
+    modifier: 
+  - type: double
+    name: latitude
+    tag: 5
+    modifier: 
+  - type: double
+    name: longitude
+    tag: 6
+    modifier: 
+  enums: []
+- name: MapSettingsProto
+  sort_title: map_settings_proto
+  attributes:
+  - type: double
+    name: pokemon_visible_range
+    tag: 1
+    modifier: 
+  - type: double
+    name: poke_nav_range_meters
+    tag: 2
+    modifier: 
+  - type: double
+    name: encounter_range_meters
+    tag: 3
+    modifier: 
+  - type: float
+    name: get_map_objects_min_refresh_seconds
+    tag: 4
+    modifier: 
+  - type: float
+    name: get_map_objects_max_refresh_seconds
+    tag: 5
+    modifier: 
+  - type: float
+    name: get_map_objects_min_distance_meters
+    tag: 6
+    modifier: 
+  - type: string
+    name: google_maps_api_key
+    tag: 7
+    modifier: 
+  enums: []
+- name: MarkTutorialCompleteOutProto
+  sort_title: mark_tutorial_complete_out_proto
+  attributes:
+  - type: bool
+    name: success
+    tag: 1
+    modifier: 
+  - type: ClientPlayerProto
+    name: player
+    tag: 2
+    modifier: 
+  enums: []
+- name: MarkTutorialCompleteProto
+  sort_title: mark_tutorial_complete_proto
+  attributes:
+  - type: TutorialCompletion
+    name: tutorial_complete
+    tag: 1
+    modifier: repeated
+  - type: bool
+    name: send_marketing_emails
+    tag: 2
+    modifier: 
+  - type: bool
+    name: send_push_notifications
+    tag: 3
+    modifier: 
+  enums: []
+- name: MoveSequenceSettingsProto
+  sort_title: move_sequence_settings_proto
+  attributes:
+  - type: string
+    name: sequence
+    tag: 1
+    modifier: repeated
+  enums: []
+- name: MoveSettingsProto
+  sort_title: move_settings_proto
+  attributes:
+  - type: HoloPokemonMove
+    name: unique_id
+    tag: 1
+    modifier: 
+  - type: int32
+    name: animation_id
+    tag: 2
+    modifier: 
+  - type: HoloPokemonType
+    name: type
+    tag: 3
+    modifier: 
+  - type: float
+    name: power
+    tag: 4
+    modifier: 
+  - type: float
+    name: accuracy_chance
+    tag: 5
+    modifier: 
+  - type: float
+    name: critical_chance
+    tag: 6
+    modifier: 
+  - type: float
+    name: heal_scalar
+    tag: 7
+    modifier: 
+  - type: float
+    name: stamina_loss_scalar
+    tag: 8
+    modifier: 
+  - type: int32
+    name: trainer_level_min
+    tag: 9
+    modifier: 
+  - type: int32
+    name: trainer_level_max
+    tag: 10
+    modifier: 
+  - type: string
+    name: vfx_name
+    tag: 11
+    modifier: 
+  - type: int32
+    name: duration_ms
+    tag: 12
+    modifier: 
+  - type: int32
+    name: damage_window_start_ms
+    tag: 13
+    modifier: 
+  - type: int32
+    name: damage_window_end_ms
+    tag: 14
+    modifier: 
+  - type: int32
+    name: energy_delta
+    tag: 15
+    modifier: 
+  enums: []
+- name: NearbyPokemonProto
+  sort_title: nearby_pokemon_proto
+  attributes:
+  - type: int32
+    name: pokedex_number
+    tag: 1
+    modifier: 
+  - type: float
+    name: distance_meters
+    tag: 2
+    modifier: 
+  - type: fixed64
+    name: encounter_id
+    tag: 3
+    modifier: 
+  - type: string
+    name: fort_id
+    tag: 4
+    modifier: 
+  - type: string
+    name: fort_image_url
+    tag: 5
+    modifier: 
+  enums: []
+- name: NicknamePokemonOutProto
+  sort_title: nickname_pokemon_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: ERROR_INVALID_NICKNAME
+      tag: 2
+    - name: ERROR_POKEMON_NOT_FOUND
+      tag: 3
+    - name: ERROR_POKEMON_IS_EGG
+      tag: 4
+- name: NicknamePokemonProto
+  sort_title: nickname_pokemon_proto
+  attributes:
+  - type: fixed64
+    name: pokemon_id
+    tag: 1
+    modifier: 
+  - type: string
+    name: nickname
+    tag: 2
+    modifier: 
+  enums: []
+- name: PlayerAvatarProto
+  sort_title: player_avatar_proto
+  attributes:
+  - type: int32
+    name: skin
+    tag: 2
+    modifier: 
+  - type: int32
+    name: hair
+    tag: 3
+    modifier: 
+  - type: int32
+    name: shirt
+    tag: 4
+    modifier: 
+  - type: int32
+    name: pants
+    tag: 5
+    modifier: 
+  - type: int32
+    name: hat
+    tag: 6
+    modifier: 
+  - type: int32
+    name: shoes
+    tag: 7
+    modifier: 
+  - type: int32
+    name: avatar
+    tag: 8
+    modifier: 
+  - type: int32
+    name: eyes
+    tag: 9
+    modifier: 
+  - type: int32
+    name: backpack
+    tag: 10
+    modifier: 
+  enums: []
+- name: PlayerBadgeProto
+  sort_title: player_badge_proto
+  attributes:
+  - type: HoloBadgeType
+    name: badge_type
+    tag: 1
+    modifier: 
+  - type: int32
+    name: rank
+    tag: 2
+    modifier: 
+  - type: int32
+    name: start_value
+    tag: 3
+    modifier: 
+  - type: int32
+    name: end_value
+    tag: 4
+    modifier: 
+  - type: double
+    name: current_value
+    tag: 5
+    modifier: 
+  enums: []
+- name: PlayerCameraProto
+  sort_title: player_camera_proto
+  attributes:
+  - type: bool
+    name: default_camera
+    tag: 1
+    modifier: 
+  enums: []
+- name: PlayerCurrencyProto
+  sort_title: player_currency_proto
+  attributes:
+  - type: int32
+    name: gems
+    tag: 1
+    modifier: 
+  enums: []
+- name: PlayerLevelSettingsProto
+  sort_title: player_level_settings_proto
+  attributes:
+  - type: int32
+    name: rank_num
+    tag: 1
+    modifier: repeated
+  - type: int32
+    name: required_exp
+    tag: 2
+    modifier: repeated
+  - type: float
+    name: cp_multiplier
+    tag: 3
+    modifier: repeated
+  - type: int32
+    name: max_egg_player_level
+    tag: 4
+    modifier: 
+  - type: int32
+    name: max_encounter_player_level
+    tag: 5
+    modifier: 
+  enums: []
+- name: PlayerLocaleProto
+  sort_title: player_locale_proto
+  attributes:
+  - type: string
+    name: country
+    tag: 1
+    modifier: 
+  - type: string
+    name: language
+    tag: 2
+    modifier: 
+  enums: []
+- name: PlayerProfileOutProto
+  sort_title: player_profile_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: int64
+    name: start_time
+    tag: 2
+    modifier: 
+  - type: PlayerBadgeProto
+    name: badges
+    tag: 3
+    modifier: repeated
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+- name: PlayerProfileProto
+  sort_title: player_profile_proto
+  attributes:
+  - type: string
+    name: player_name
+    tag: 1
+    modifier: 
+  enums: []
+- name: PlayerPublicProfileProto
+  sort_title: player_public_profile_proto
+  attributes:
+  - type: string
+    name: name
+    tag: 1
+    modifier: 
+  - type: int32
+    name: level
+    tag: 2
+    modifier: 
+  - type: PlayerAvatarProto
+    name: avatar
+    tag: 3
+    modifier: 
+  enums: []
+- name: PlayerStatsProto
+  sort_title: player_stats_proto
+  attributes:
+  - type: int32
+    name: level
+    tag: 1
+    modifier: 
+  - type: int64
+    name: experience
+    tag: 2
+    modifier: 
+  - type: int64
+    name: prev_level_exp
+    tag: 3
+    modifier: 
+  - type: int64
+    name: next_level_exp
+    tag: 4
+    modifier: 
+  - type: float
+    name: km_walked
+    tag: 5
+    modifier: 
+  - type: int32
+    name: num_pokemon_encountered
+    tag: 6
+    modifier: 
+  - type: int32
+    name: num_unique_pokedex_entries
+    tag: 7
+    modifier: 
+  - type: int32
+    name: num_pokemon_captured
+    tag: 8
+    modifier: 
+  - type: int32
+    name: num_evolutions
+    tag: 9
+    modifier: 
+  - type: int32
+    name: poke_stop_visits
+    tag: 10
+    modifier: 
+  - type: int32
+    name: number_of_pokeball_thrown
+    tag: 11
+    modifier: 
+  - type: int32
+    name: num_eggs_hatched
+    tag: 12
+    modifier: 
+  - type: int32
+    name: big_magikarp_caught
+    tag: 13
+    modifier: 
+  - type: int32
+    name: num_battle_attack_won
+    tag: 14
+    modifier: 
+  - type: int32
+    name: num_battle_attack_total
+    tag: 15
+    modifier: 
+  - type: int32
+    name: num_battle_defended_won
+    tag: 16
+    modifier: 
+  - type: int32
+    name: num_battle_training_won
+    tag: 17
+    modifier: 
+  - type: int32
+    name: num_battle_training_total
+    tag: 18
+    modifier: 
+  - type: int32
+    name: prestige_raised_total
+    tag: 19
+    modifier: 
+  - type: int32
+    name: prestige_dropped_total
+    tag: 20
+    modifier: 
+  - type: int32
+    name: num_pokemon_deployed
+    tag: 21
+    modifier: 
+  - type: int32
+    name: num_pokemon_caught_by_type
+    tag: 22
+    modifier: repeated
+  - type: int32
+    name: small_rattata_caught
+    tag: 23
+    modifier: 
+  enums: []
+- name: PlayerUpdateOutProto
+  sort_title: player_update_out_proto
+  attributes:
+  - type: WildPokemonProto
+    name: wild_pokemon
+    tag: 1
+    modifier: repeated
+  - type: PokemonFortProto
+    name: fort
+    tag: 2
+    modifier: repeated
+  - type: int32
+    name: forts_nearby
+    tag: 3
+    modifier: 
+  enums: []
+- name: PlayerUpdateProto
+  sort_title: player_update_proto
+  attributes:
+  - type: double
+    name: lat
+    tag: 1
+    modifier: 
+  - type: double
+    name: lng
+    tag: 2
+    modifier: 
+  enums: []
+- name: PokeBallAttributesProto
+  sort_title: poke_ball_attributes_proto
+  attributes:
+  - type: HoloItemEffect
+    name: item_effect
+    tag: 1
+    modifier: 
+  - type: float
+    name: capture_multi
+    tag: 2
+    modifier: 
+  - type: float
+    name: capture_multi_effect
+    tag: 3
+    modifier: 
+  - type: float
+    name: item_effect_mod
+    tag: 4
+    modifier: 
+  enums: []
+- name: PokedexEntryProto
+  sort_title: pokedex_entry_proto
+  attributes:
+  - type: int32
+    name: pokedex_entry_number
+    tag: 1
+    modifier: 
+  - type: int32
+    name: times_encountered
+    tag: 2
+    modifier: 
+  - type: int32
+    name: times_captured
+    tag: 3
+    modifier: 
+  - type: int32
+    name: evolution_stone_pieces
+    tag: 4
+    modifier: 
+  - type: int32
+    name: evolution_stones
+    tag: 5
+    modifier: 
+  enums: []
+- name: PokemonCameraAttributesProto
+  sort_title: pokemon_camera_attributes_proto
+  attributes:
+  - type: float
+    name: disk_radius_m
+    tag: 1
+    modifier: 
+  - type: float
+    name: cyl_radius_m
+    tag: 2
+    modifier: 
+  - type: float
+    name: cyl_height_m
+    tag: 3
+    modifier: 
+  - type: float
+    name: cyl_ground_m
+    tag: 4
+    modifier: 
+  - type: float
+    name: shoulder_mode_scale
+    tag: 5
+    modifier: 
+  enums: []
+- name: PokemonEncounterAttributesProto
+  sort_title: pokemon_encounter_attributes_proto
+  attributes:
+  - type: float
+    name: base_capture_rate
+    tag: 1
+    modifier: 
+  - type: float
+    name: base_flee_rate
+    tag: 2
+    modifier: 
+  - type: float
+    name: collision_radius_m
+    tag: 3
+    modifier: 
+  - type: float
+    name: collision_height_m
+    tag: 4
+    modifier: 
+  - type: float
+    name: collision_head_radius_m
+    tag: 5
+    modifier: 
+  - type: HoloPokemonMovementType
+    name: movement_type
+    tag: 6
+    modifier: 
+  - type: float
+    name: movement_timer_s
+    tag: 7
+    modifier: 
+  - type: float
+    name: jump_time_s
+    tag: 8
+    modifier: 
+  - type: float
+    name: attack_timer_s
+    tag: 9
+    modifier: 
+  enums: []
+- name: PokemonFamilyProto
+  sort_title: pokemon_family_proto
+  attributes:
+  - type: HoloPokemonFamilyId
+    name: family_id
+    tag: 1
+    modifier: 
+  - type: int32
+    name: candy
+    tag: 2
+    modifier: 
+  enums: []
+- name: PokemonFortProto
+  sort_title: pokemon_fort_proto
+  attributes:
+  - type: string
+    name: fort_id
+    tag: 1
+    modifier: 
+  - type: int64
+    name: last_modified_ms
+    tag: 2
+    modifier: 
+  - type: double
+    name: latitude
+    tag: 3
+    modifier: 
+  - type: double
+    name: longitude
+    tag: 4
+    modifier: 
+  - type: int32
+    name: team
+    tag: 5
+    modifier: 
+  - type: int32
+    name: guard_pokemon_id
+    tag: 6
+    modifier: 
+  - type: int32
+    name: guard_pokemon_level
+    tag: 7
+    modifier: 
+  - type: bool
+    name: enabled
+    tag: 8
+    modifier: 
+  - type: FortType
+    name: fort_type
+    tag: 9
+    modifier: 
+  - type: int64
+    name: gym_points
+    tag: 10
+    modifier: 
+  - type: bool
+    name: is_in_battle
+    tag: 11
+    modifier: 
+  - type: Item
+    name: active_fort_modifier
+    tag: 12
+    modifier: repeated
+  - type: MapPokemonProto
+    name: active_pokemon
+    tag: 13
+    modifier: 
+  - type: int64
+    name: cooldown_complete_ms
+    tag: 14
+    modifier: 
+  - type: Sponsor
+    name: sponsor
+    tag: 15
+    modifier: 
+  - type: RenderingType
+    name: rendering_type
+    tag: 16
+    modifier: 
+  enums:
+  - name: RenderingType
+    sort_title: rendering_type
+    values:
+    - name: DEFAULT
+      tag: 0
+    - name: INTERNAL_TEST
+      tag: 1
+  - name: Sponsor
+    sort_title: sponsor
+    values:
+    - name: UNSET
+      tag: 0
+    - name: MCDONALDS
+      tag: 1
+    - name: POKEMON_STORE
+      tag: 2
+    - name: TOHO
+      tag: 3
+    - name: SOFTBANK
+      tag: 4
+- name: PokemonInfo
+  sort_title: pokemon_info
+  attributes:
+  - type: PokemonProto
+    name: pokemon
+    tag: 1
+    modifier: 
+  - type: int32
+    name: current_health
+    tag: 2
+    modifier: 
+  - type: int32
+    name: current_energy
+    tag: 3
+    modifier: 
+  enums: []
+- name: PokemonProto
+  sort_title: pokemon_proto
+  attributes:
+  - type: fixed64
+    name: id
+    tag: 1
+    modifier: 
+  - type: int32
+    name: pokemon_id
+    tag: 2
+    modifier: 
+  - type: int32
+    name: cp
+    tag: 3
+    modifier: 
+  - type: int32
+    name: stamina
+    tag: 4
+    modifier: 
+  - type: int32
+    name: max_stamina
+    tag: 5
+    modifier: 
+  - type: int32
+    name: move1
+    tag: 6
+    modifier: 
+  - type: int32
+    name: move2
+    tag: 7
+    modifier: 
+  - type: string
+    name: deployed_fort_id
+    tag: 8
+    modifier: 
+  - type: string
+    name: owner_name
+    tag: 9
+    modifier: 
+  - type: bool
+    name: is_egg
+    tag: 10
+    modifier: 
+  - type: double
+    name: egg_km_walked_target
+    tag: 11
+    modifier: 
+  - type: double
+    name: egg_km_walked_start
+    tag: 12
+    modifier: 
+  - type: PokemonCreateContext
+    name: origin
+    tag: 14
+    modifier: 
+  - type: float
+    name: height_m
+    tag: 15
+    modifier: 
+  - type: float
+    name: weight_kg
+    tag: 16
+    modifier: 
+  - type: int32
+    name: individual_attack
+    tag: 17
+    modifier: 
+  - type: int32
+    name: individual_defense
+    tag: 18
+    modifier: 
+  - type: int32
+    name: individual_stamina
+    tag: 19
+    modifier: 
+  - type: float
+    name: cp_multiplier
+    tag: 20
+    modifier: 
+  - type: Item
+    name: pokeball
+    tag: 21
+    modifier: 
+  - type: int64
+    name: captured_s2_cell_id
+    tag: 22
+    modifier: 
+  - type: int32
+    name: battles_attacked
+    tag: 23
+    modifier: 
+  - type: int32
+    name: battles_defended
+    tag: 24
+    modifier: 
+  - type: string
+    name: egg_incubator_id
+    tag: 25
+    modifier: 
+  - type: int64
+    name: creation_time_ms
+    tag: 26
+    modifier: 
+  - type: int32
+    name: num_upgrades
+    tag: 27
+    modifier: 
+  - type: float
+    name: additional_cp_multiplier
+    tag: 28
+    modifier: 
+  - type: bool
+    name: favorite
+    tag: 29
+    modifier: 
+  - type: string
+    name: nickname
+    tag: 30
+    modifier: 
+  - type: bool
+    name: from_fort
+    tag: 31
+    modifier: 
+  - type: int32
+    name: buddy_candy_awarded
+    tag: 32
+    modifier: 
+  - type: float
+    name: buddy_km_walked
+    tag: 33
+    modifier: 
+  - type: int32
+    name: display_pokemon_id
+    tag: 34
+    modifier: 
+  - type: int32
+    name: display_cp
+    tag: 35
+    modifier: 
+  enums: []
+- name: PokemonSettingsProto
+  sort_title: pokemon_settings_proto
+  attributes:
+  - type: HoloPokemonId
+    name: unique_id
+    tag: 1
+    modifier: 
+  - type: float
+    name: model_scale
+    tag: 3
+    modifier: 
+  - type: HoloPokemonType
+    name: type1
+    tag: 4
+    modifier: 
+  - type: HoloPokemonType
+    name: type2
+    tag: 5
+    modifier: 
+  - type: PokemonCameraAttributesProto
+    name: camera
+    tag: 6
+    modifier: 
+  - type: PokemonEncounterAttributesProto
+    name: encounter
+    tag: 7
+    modifier: 
+  - type: PokemonStatsAttributesProto
+    name: stats
+    tag: 8
+    modifier: 
+  - type: HoloPokemonMove
+    name: quick_moves
+    tag: 9
+    modifier: repeated
+  - type: HoloPokemonMove
+    name: cinematic_moves
+    tag: 10
+    modifier: repeated
+  - type: float
+    name: anim_time
+    tag: 11
+    modifier: repeated
+  - type: HoloPokemonId
+    name: evolution
+    tag: 12
+    modifier: repeated
+  - type: int32
+    name: evolution_pips
+    tag: 13
+    modifier: 
+  - type: HoloPokemonClass
+    name: pokemon_class
+    tag: 14
+    modifier: 
+  - type: float
+    name: pokedex_height_m
+    tag: 15
+    modifier: 
+  - type: float
+    name: pokedex_weight_kg
+    tag: 16
+    modifier: 
+  - type: HoloPokemonId
+    name: parent_id
+    tag: 17
+    modifier: 
+  - type: float
+    name: height_std_dev
+    tag: 18
+    modifier: 
+  - type: float
+    name: weight_std_dev
+    tag: 19
+    modifier: 
+  - type: float
+    name: km_distance_to_hatch
+    tag: 20
+    modifier: 
+  - type: HoloPokemonFamilyId
+    name: family_id
+    tag: 21
+    modifier: 
+  - type: int32
+    name: candy_to_evolve
+    tag: 22
+    modifier: 
+  - type: float
+    name: km_buddy_distance
+    tag: 23
+    modifier: 
+  - type: BuddySize
+    name: buddy_size
+    tag: 24
+    modifier: 
+  enums:
+  - name: BuddySize
+    sort_title: buddy_size
+    values:
+    - name: BUDDY_MEDIUM
+      tag: 0
+    - name: BUDDY_SHOULDER
+      tag: 1
+    - name: BUDDY_BIG
+      tag: 2
+    - name: BUDDY_FLYING
+      tag: 3
+- name: PokemonStatsAttributesProto
+  sort_title: pokemon_stats_attributes_proto
+  attributes:
+  - type: int32
+    name: base_stamina
+    tag: 1
+    modifier: 
+  - type: int32
+    name: base_attack
+    tag: 2
+    modifier: 
+  - type: int32
+    name: base_defense
+    tag: 3
+    modifier: 
+  - type: int32
+    name: dodge_energy_delta
+    tag: 8
+    modifier: 
+  enums: []
+- name: PokemonSummaryFortProto
+  sort_title: pokemon_summary_fort_proto
+  attributes:
+  - type: string
+    name: fort_summary_id
+    tag: 1
+    modifier: 
+  - type: int64
+    name: last_modified_ms
+    tag: 2
+    modifier: 
+  - type: double
+    name: latitude
+    tag: 3
+    modifier: 
+  - type: double
+    name: longitude
+    tag: 4
+    modifier: 
+  enums: []
+- name: PokemonUpgradeSettingsProto
+  sort_title: pokemon_upgrade_settings_proto
+  attributes:
+  - type: int32
+    name: upgrades_per_level
+    tag: 1
+    modifier: 
+  - type: int32
+    name: allowed_levels_above_player
+    tag: 2
+    modifier: 
+  - type: int32
+    name: candy_cost
+    tag: 3
+    modifier: repeated
+  - type: int32
+    name: stardust_cost
+    tag: 4
+    modifier: repeated
+  enums: []
+- name: PollForTradeResponseOutProto
+  sort_title: poll_for_trade_response_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: PokemonProto
+    name: return_pokemon
+    tag: 2
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: ACCEPT_OFFER
+      tag: 1
+    - name: TRADE_CANCELED
+      tag: 2
+- name: PollForTradeResponseProto
+  sort_title: poll_for_trade_response_proto
+  attributes:
+  - type: uint64
+    name: trade_id
+    tag: 1
+    modifier: 
+  - type: fixed64
+    name: pokemon_id
+    tag: 2
+    modifier: 
+  - type: bool
+    name: request_cancel
+    tag: 3
+    modifier: 
+  enums: []
+- name: PotionAttributesProto
+  sort_title: potion_attributes_proto
+  attributes:
+  - type: float
+    name: sta_percent
+    tag: 1
+    modifier: 
+  - type: int32
+    name: sta_amount
+    tag: 2
+    modifier: 
+  enums: []
+- name: PtcToken
+  sort_title: ptc_token
+  attributes:
+  - type: string
+    name: token
+    tag: 1
+    modifier: 
+  - type: int32
+    name: expiration
+    tag: 2
+    modifier: 
+  enums: []
+- name: QuestProto
+  sort_title: quest_proto
+  attributes:
+  - type: QuestType
+    name: quest_type
+    tag: 1
+    modifier: 
+  - type: DailyQuestProto
+    name: daily_quest
+    tag: 2
+    modifier: 
+  enums: []
+- name: RecycleItemOutProto
+  sort_title: recycle_item_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: int32
+    name: new_count
+    tag: 2
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: ERROR_NOT_ENOUGH_COPIES
+      tag: 2
+    - name: ERROR_CANNOT_RECYCLE_INCUBATORS
+      tag: 3
+- name: RecycleItemProto
+  sort_title: recycle_item_proto
+  attributes:
+  - type: Item
+    name: item
+    tag: 1
+    modifier: 
+  - type: int32
+    name: count
+    tag: 2
+    modifier: 
+  enums: []
+- name: RegisterSfidaRequest
+  sort_title: register_sfida_request
+  attributes:
+  - type: string
+    name: sfida_id
+    tag: 1
+    modifier: 
+  enums: []
+- name: RegisterSfidaResponse
+  sort_title: register_sfida_response
+  attributes:
+  - type: bytes
+    name: access_token
+    tag: 1
+    modifier: 
+  enums: []
+- name: ReleasePokemonOutProto
+  sort_title: release_pokemon_out_proto
+  attributes:
+  - type: Status
+    name: status
+    tag: 1
+    modifier: 
+  - type: int32
+    name: candy_awarded
+    tag: 2
+    modifier: 
+  enums:
+  - name: Status
+    sort_title: status
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: POKEMON_DEPLOYED
+      tag: 2
+    - name: FAILED
+      tag: 3
+    - name: ERROR_POKEMON_IS_EGG
+      tag: 4
+    - name: ERROR_POKEMON_IS_BUDDY
+      tag: 5
+- name: ReleasePokemonProto
+  sort_title: release_pokemon_proto
+  attributes:
+  - type: fixed64
+    name: pokemon_id
+    tag: 1
+    modifier: 
+  - type: fixed64
+    name: pokemon_ids
+    tag: 2
+    modifier: repeated
+  enums: []
+- name: ReviveAttributesProto
+  sort_title: revive_attributes_proto
+  attributes:
+  - type: float
+    name: sta_percent
+    tag: 1
+    modifier: 
+  enums: []
+- name: SetAvatarOutProto
+  sort_title: set_avatar_out_proto
+  attributes:
+  - type: Status
+    name: status
+    tag: 1
+    modifier: 
+  - type: ClientPlayerProto
+    name: player
+    tag: 2
+    modifier: 
+  enums:
+  - name: Status
+    sort_title: status
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: AVATAR_ALREADY_SET
+      tag: 2
+    - name: FAILURE
+      tag: 3
+- name: SetAvatarProto
+  sort_title: set_avatar_proto
+  attributes:
+  - type: PlayerAvatarProto
+    name: player_avatar_proto
+    tag: 2
+    modifier: 
+  enums: []
+- name: SetBuddyPokemonOutProto
+  sort_title: set_buddy_pokemon_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: BuddyPokemonProto
+    name: updated_buddy
+    tag: 2
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNEST
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: ERROR_POKEMON_DEPLOYED
+      tag: 2
+    - name: ERROR_POKEMON_NOT_OWNED
+      tag: 3
+    - name: ERROR_POKEMON_IS_EGG
+      tag: 4
+- name: SetBuddyPokemonProto
+  sort_title: set_buddy_pokemon_proto
+  attributes:
+  - type: fixed64
+    name: pokemon_id
+    tag: 1
+    modifier: 
+  enums: []
+- name: SetContactSettingsOutProto
+  sort_title: set_contact_settings_out_proto
+  attributes:
+  - type: Status
+    name: status
+    tag: 1
+    modifier: 
+  - type: ClientPlayerProto
+    name: player
+    tag: 2
+    modifier: 
+  enums:
+  - name: Status
+    sort_title: status
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: FAILURE
+      tag: 2
+- name: SetContactSettingsProto
+  sort_title: set_contact_settings_proto
+  attributes:
+  - type: ContactSettingsProto
+    name: contact_settings_proto
+    tag: 1
+    modifier: 
+  enums: []
+- name: SetFavoritePokemonOutProto
+  sort_title: set_favorite_pokemon_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: ERROR_POKEMON_NOT_FOUND
+      tag: 2
+    - name: ERROR_POKEMON_IS_EGG
+      tag: 3
+- name: SetFavoritePokemonProto
+  sort_title: set_favorite_pokemon_proto
+  attributes:
+  - type: int64
+    name: pokemon_id
+    tag: 1
+    modifier: 
+  - type: bool
+    name: is_favorite
+    tag: 2
+    modifier: 
+  enums: []
+- name: SetPlayerTeamOutProto
+  sort_title: set_player_team_out_proto
+  attributes:
+  - type: Status
+    name: status
+    tag: 1
+    modifier: 
+  - type: ClientPlayerProto
+    name: player
+    tag: 2
+    modifier: 
+  enums:
+  - name: Status
+    sort_title: status
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: TEAM_ALREADY_SET
+      tag: 2
+    - name: FAILURE
+      tag: 3
+- name: SetPlayerTeamProto
+  sort_title: set_player_team_proto
+  attributes:
+  - type: Team
+    name: team
+    tag: 1
+    modifier: 
+  enums: []
+- name: StartGymBattleOutProto
+  sort_title: start_gym_battle_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: int64
+    name: battle_start_ms
+    tag: 2
+    modifier: 
+  - type: int64
+    name: battle_end_ms
+    tag: 3
+    modifier: 
+  - type: string
+    name: battle_id
+    tag: 4
+    modifier: 
+  - type: BattleParticipantProto
+    name: defender
+    tag: 5
+    modifier: 
+  - type: BattleLogProto
+    name: battle_log
+    tag: 6
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: ERROR_GYM_NOT_FOUND
+      tag: 2
+    - name: ERROR_GYM_NEUTRAL
+      tag: 3
+    - name: ERROR_GYM_WRONG_TEAM
+      tag: 4
+    - name: ERROR_GYM_EMPTY
+      tag: 5
+    - name: ERROR_INVALID_DEFENDER
+      tag: 6
+    - name: ERROR_TRAINING_INVALID_ATTACKER_COUNT
+      tag: 7
+    - name: ERROR_ALL_POKEMON_FAINTED
+      tag: 8
+    - name: ERROR_TOO_MANY_BATTLES
+      tag: 9
+    - name: ERROR_TOO_MANY_PLAYERS
+      tag: 10
+    - name: ERROR_GYM_BATTLE_LOCKOUT
+      tag: 11
+    - name: ERROR_PLAYER_BELOW_MINIMUM_LEVEL
+      tag: 12
+    - name: ERROR_NOT_IN_RANGE
+      tag: 13
+- name: StartGymBattleProto
+  sort_title: start_gym_battle_proto
+  attributes:
+  - type: string
+    name: gym_id
+    tag: 1
+    modifier: 
+  - type: fixed64
+    name: attacking_pokemon_id
+    tag: 2
+    modifier: repeated
+  - type: fixed64
+    name: defending_pokemon_id
+    tag: 3
+    modifier: 
+  - type: double
+    name: player_lat_degrees
+    tag: 4
+    modifier: 
+  - type: double
+    name: player_lng_degrees
+    tag: 5
+    modifier: 
+  enums: []
+- name: TradingOfferOutProto
+  sort_title: trading_offer_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: uint64
+    name: trade_id
+    tag: 2
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: CONNECTION_LOST
+      tag: 2
+- name: TradingOfferProto
+  sort_title: trading_offer_proto
+  attributes:
+  - type: string
+    name: trading_player
+    tag: 1
+    modifier: 
+  - type: fixed64
+    name: pokemon_id
+    tag: 2
+    modifier: 
+  enums: []
+- name: TradingResultOutProto
+  sort_title: trading_result_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: TRADE_COMPLETE
+      tag: 1
+    - name: TRADE_CANCELLED_OFFER
+      tag: 2
+- name: TradingResultProto
+  sort_title: trading_result_proto
+  attributes:
+  - type: uint64
+    name: trade_id
+    tag: 1
+    modifier: 
+  - type: bool
+    name: player_accept
+    tag: 2
+    modifier: 
+  enums: []
+- name: TradingSearchOutProto
+  sort_title: trading_search_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: string
+    name: player_names
+    tag: 2
+    modifier: repeated
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+- name: TradingSearchProto
+  sort_title: trading_search_proto
+  attributes:
+  - type: double
+    name: lat
+    tag: 1
+    modifier: 
+  - type: double
+    name: lng
+    tag: 2
+    modifier: 
+  enums: []
+- name: TypeEffectiveSettingsProto
+  sort_title: type_effective_settings_proto
+  attributes:
+  - type: float
+    name: attack_scalar
+    tag: 1
+    modifier: repeated
+  - type: HoloPokemonType
+    name: attack_type
+    tag: 2
+    modifier: 
+  enums: []
+- name: UpgradePokemonOutProto
+  sort_title: upgrade_pokemon_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: PokemonProto
+    name: upgraded_pokemon
+    tag: 2
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: ERROR_POKEMON_NOT_FOUND
+      tag: 2
+    - name: ERROR_INSUFFICIENT_RESOURCES
+      tag: 3
+    - name: ERROR_UPGRADE_NOT_AVAILABLE
+      tag: 4
+    - name: ERROR_POKEMON_IS_DEPLOYED
+      tag: 5
+- name: UpgradePokemonProto
+  sort_title: upgrade_pokemon_proto
+  attributes:
+  - type: fixed64
+    name: pokemon_id
+    tag: 1
+    modifier: 
+  enums: []
+- name: UseIncenseActionOutProto
+  sort_title: use_incense_action_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: AppliedItemProto
+    name: applied_incense
+    tag: 2
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNKNOWN
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: INCENSE_ALREADY_ACTIVE
+      tag: 2
+    - name: NONE_IN_INVENTORY
+      tag: 3
+    - name: LOCATION_UNSET
+      tag: 4
+- name: UseIncenseActionProto
+  sort_title: use_incense_action_proto
+  attributes:
+  - type: Item
+    name: incense_type
+    tag: 1
+    modifier: 
+  enums: []
+- name: UseItemCaptureOutProto
+  sort_title: use_item_capture_out_proto
+  attributes:
+  - type: bool
+    name: success
+    tag: 1
+    modifier: 
+  - type: double
+    name: item_capture_mult
+    tag: 2
+    modifier: 
+  - type: double
+    name: item_flee_mult
+    tag: 3
+    modifier: 
+  - type: bool
+    name: stop_movement
+    tag: 4
+    modifier: 
+  - type: bool
+    name: stop_attack
+    tag: 5
+    modifier: 
+  - type: bool
+    name: target_max
+    tag: 6
+    modifier: 
+  - type: bool
+    name: target_slow
+    tag: 7
+    modifier: 
+  enums: []
+- name: UseItemCaptureProto
+  sort_title: use_item_capture_proto
+  attributes:
+  - type: Item
+    name: item
+    tag: 1
+    modifier: 
+  - type: fixed64
+    name: encounter_id
+    tag: 2
+    modifier: 
+  - type: string
+    name: spawn_point_guid
+    tag: 3
+    modifier: 
+  enums: []
+- name: UseItemEggIncubatorOutProto
+  sort_title: use_item_egg_incubator_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: EggIncubatorProto
+    name: egg_incubator
+    tag: 2
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: ERROR_INCUBATOR_NOT_FOUND
+      tag: 2
+    - name: ERROR_POKEMON_EGG_NOT_FOUND
+      tag: 3
+    - name: ERROR_POKEMON_ID_NOT_EGG
+      tag: 4
+    - name: ERROR_INCUBATOR_ALREADY_IN_USE
+      tag: 5
+    - name: ERROR_POKEMON_ALREADY_INCUBATING
+      tag: 6
+    - name: ERROR_INCUBATOR_NO_USES_REMAINING
+      tag: 7
+- name: UseItemEggIncubatorProto
+  sort_title: use_item_egg_incubator_proto
+  attributes:
+  - type: string
+    name: item_id
+    tag: 1
+    modifier: 
+  - type: int64
+    name: pokemond_id
+    tag: 2
+    modifier: 
+  enums: []
+- name: UseItemGymOutProto
+  sort_title: use_item_gym_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: int64
+    name: updated_gp
+    tag: 2
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: ERROR_CANNOT_USE
+      tag: 2
+    - name: ERROR_NOT_IN_RANGE
+      tag: 3
+- name: UseItemGymProto
+  sort_title: use_item_gym_proto
+  attributes:
+  - type: Item
+    name: item
+    tag: 1
+    modifier: 
+  - type: string
+    name: gym_id
+    tag: 2
+    modifier: 
+  - type: double
+    name: player_lat_degrees
+    tag: 3
+    modifier: 
+  - type: double
+    name: player_lng_degrees
+    tag: 4
+    modifier: 
+  enums: []
+- name: UseItemPotionOutProto
+  sort_title: use_item_potion_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: int32
+    name: stamina
+    tag: 2
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: ERROR_NO_POKEMON
+      tag: 2
+    - name: ERROR_CANNOT_USE
+      tag: 3
+    - name: ERROR_DEPLOYED_TO_FORT
+      tag: 4
+- name: UseItemPotionProto
+  sort_title: use_item_potion_proto
+  attributes:
+  - type: Item
+    name: item
+    tag: 1
+    modifier: 
+  - type: fixed64
+    name: pokemon_id
+    tag: 2
+    modifier: 
+  enums: []
+- name: UseItemReviveOutProto
+  sort_title: use_item_revive_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: int32
+    name: stamina
+    tag: 2
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: ERROR_NO_POKEMON
+      tag: 2
+    - name: ERROR_CANNOT_USE
+      tag: 3
+    - name: ERROR_DEPLOYED_TO_FORT
+      tag: 4
+- name: UseItemReviveProto
+  sort_title: use_item_revive_proto
+  attributes:
+  - type: Item
+    name: item
+    tag: 1
+    modifier: 
+  - type: fixed64
+    name: pokemon_id
+    tag: 2
+    modifier: 
+  enums: []
+- name: UseItemXpBoostOutProto
+  sort_title: use_item_xp_boost_out_proto
+  attributes:
+  - type: Result
+    name: result
+    tag: 1
+    modifier: 
+  - type: AppliedItemsProto
+    name: applied_items
+    tag: 2
+    modifier: 
+  enums:
+  - name: Result
+    sort_title: result
+    values:
+    - name: UNSET
+      tag: 0
+    - name: SUCCESS
+      tag: 1
+    - name: ERROR_INVALID_ITEM_TYPE
+      tag: 2
+    - name: ERROR_XP_BOOST_ALREADY_ACTIVE
+      tag: 3
+    - name: ERROR_NO_ITEMS_REMAINING
+      tag: 4
+    - name: ERROR_LOCATION_UNSET
+      tag: 5
+- name: UseItemXpBoostProto
+  sort_title: use_item_xp_boost_proto
+  attributes:
+  - type: Item
+    name: item
+    tag: 1
+    modifier: 
+  enums: []
+- name: VerifyChallengeOutProto
+  sort_title: verify_challenge_out_proto
+  attributes:
+  - type: bool
+    name: success
+    tag: 1
+    modifier: 
+  enums: []
+- name: VerifyChallengeProto
+  sort_title: verify_challenge_proto
+  attributes:
+  - type: string
+    name: token
+    tag: 1
+    modifier: 
+  enums: []
+- name: WildPokemonProto
+  sort_title: wild_pokemon_proto
+  attributes:
+  - type: fixed64
+    name: encounter_id
+    tag: 1
+    modifier: 
+  - type: int64
+    name: last_modified_ms
+    tag: 2
+    modifier: 
+  - type: double
+    name: latitude
+    tag: 3
+    modifier: 
+  - type: double
+    name: longitude
+    tag: 4
+    modifier: 
+  - type: string
+    name: spawn_point_id
+    tag: 5
+    modifier: 
+  - type: PokemonProto
+    name: pokemon
+    tag: 7
+    modifier: 
+  - type: int32
+    name: time_till_hidden_ms
+    tag: 11
+    modifier: 
+  enums: []

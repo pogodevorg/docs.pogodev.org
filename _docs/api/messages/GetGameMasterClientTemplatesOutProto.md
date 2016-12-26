@@ -16,12 +16,15 @@ excerpt: 'FIXME: Add a description'
 - 1: result ([Result](#result))
 - 2: items ([GameMasterClientTemplateProto](../GameMasterClientTemplateProto/)) repeated
 - 3: timestamp (uint64)
+- 4: page_offset (int32)
 
 ## Enums:
 
 ### Result
 - 0: UNSET
 - 1: SUCCESS
+- 2: PAGE
+- 3: RETRY
 
 ## Referenced by:
 

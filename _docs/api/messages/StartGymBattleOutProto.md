@@ -19,6 +19,7 @@ excerpt: 'FIXME: Add a description'
 - 4: battle_id (string)
 - 5: defender ([BattleParticipantProto](../BattleParticipantProto/))
 - 6: battle_log ([BattleLogProto](../BattleLogProto/))
+- 7: attacker ([BattleParticipantProto](../BattleParticipantProto/))
 
 ## Enums:
 

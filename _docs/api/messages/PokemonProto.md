@@ -44,6 +44,10 @@ excerpt: 'FIXME: Add a description'
 - 30: nickname (string)
 - 31: from_fort (bool)
 - 32: buddy_candy_awarded (int32)
+- 33: buddy_km_walked (float)
+- 34: display_pokemon_id (int32)
+- 35: display_cp (int32)
+- 36: pokemon_display ([PokemonDisplayProto](../PokemonDisplayProto/))
 
 ## Enums:
 

@@ -20,6 +20,7 @@ excerpt: 'FIXME: Add a description'
 - 5: get_map_objects_max_refresh_seconds (float)
 - 6: get_map_objects_min_distance_meters (float)
 - 7: google_maps_api_key (string)
+- 8: min_nearby_hide_sightings (int32)
 
 ## Enums:
 

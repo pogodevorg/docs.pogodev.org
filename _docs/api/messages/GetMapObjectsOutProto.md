@@ -15,6 +15,7 @@ excerpt: 'FIXME: Add a description'
 
 - 1: map_cell ([ClientMapCellProto](../ClientMapCellProto/)) repeated
 - 2: status ([Status](#status))
+- 3: time_of_day ([TimeOfDay](#time_of_day))
 
 ## Enums:
 
@@ -22,6 +23,10 @@ excerpt: 'FIXME: Add a description'
 - 0: UNSET
 - 1: SUCCESS
 - 2: LOCATION_UNSET
+### TimeOfDay
+- 0: NONE
+- 1: DAY
+- 2: NIGHT
 
 ## Referenced by:
 

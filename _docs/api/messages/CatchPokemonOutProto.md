@@ -17,9 +17,15 @@ excerpt: 'FIXME: Add a description'
 - 2: miss_percent (double)
 - 3: captured_pokemon_id (fixed64)
 - 4: scores ([CaptureScoreProto](../CaptureScoreProto/))
+- 5: capture_reason ([CaptureReason](#capture_reason))
+- 6: display_pokedex_id (int32)
 
 ## Enums:
 
+### CaptureReason
+- 0: UNSET
+- 1: DEFAULT
+- 2: ELEMENTAL_BADGE
 ### Status
 - 0: CATCH_ERROR
 - 1: CATCH_SUCCESS

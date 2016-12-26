@@ -22,6 +22,15 @@ excerpt: 'FIXME: Add a description'
 - 8: avatar (int32)
 - 9: eyes (int32)
 - 10: backpack (int32)
+- 11: avatar_hair (string)
+- 12: avatar_shirt (string)
+- 13: avatar_pants (string)
+- 14: avatar_hat (string)
+- 15: avatar_shoes (string)
+- 16: avatar_eyes (string)
+- 17: avatar_backpack (string)
+- 18: avatar_gloves (string)
+- 19: avatar_socks (string)
 
 ## Enums:
 

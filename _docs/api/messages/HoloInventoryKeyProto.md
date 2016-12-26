@@ -23,6 +23,8 @@ excerpt: 'FIXME: Add a description'
 - 8: applied_items (bool)
 - 9: egg_incubators (bool)
 - 10: pokemon_family_id (int32)
+- 11: quest_type ([QuestType](../../enums/QuestType/))
+- 12: avatar_template_id (string)
 
 ## Enums:
 

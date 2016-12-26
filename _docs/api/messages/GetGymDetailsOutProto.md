@@ -18,6 +18,7 @@ excerpt: 'FIXME: Add a description'
 - 3: url (string) repeated
 - 4: result ([Result](#result))
 - 5: description (string)
+- 6: secondary_url (string) repeated
 
 ## Enums:
 

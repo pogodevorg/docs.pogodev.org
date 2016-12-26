@@ -23,6 +23,9 @@ excerpt: 'FIXME: Add a description'
 - 1: SUCCESS
 - 2: AVATAR_ALREADY_SET
 - 3: FAILURE
+- 4: SLOT_NOT_ALLOWED
+- 5: ITEM_NOT_OWNED
+- 6: INVALID_AVATAR_TYPE
 
 ## Referenced by:
 

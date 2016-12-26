@@ -88,5 +88,7 @@ Currently, you can contribute to this project by:
 
 * [![Build Status](https://github.com/keyphact.png?size=36) - keyphact](https://github.com/keyphact)
 
+* [![Build Status](https://github.com/HatchingEgg.png?size=36) - HatchingEgg](https://github.com/HatchingEgg)
+
 ## Credits
     None

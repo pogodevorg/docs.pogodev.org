@@ -15,6 +15,7 @@ excerpt: 'FIXME: Add a description'
 
 - 1: item ([Item](../../enums/Item/))
 - 2: item_count (int32)
+- 3: bonus_count (int32)
 
 ## Enums:
 
