@@ -8,7 +8,7 @@ repository: 'pogodevorg/docs.pogodev.org'
 proto_repository: 'pogodevorg/POGOProtos'
 branch: 'master'
 
-latest_api_version: 0.43.0
+latest_api_version: 0.57.4
 
 markdown: kramdown
 highlighter: rouge
